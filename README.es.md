@@ -23,15 +23,6 @@ Comandos CLI, opciones frecuentes, ejemplos cortos y troubleshooting, organizado
 - Usamos direcciones reservadas para documentación. Revisa el impacto antes de ejecutar comandos de configuración en producción.
 - Nunca publiques credenciales, tokens, configuraciones privadas ni datos de clientes.
 
-## 🪨 Obsidian
-
-1. Clona el repositorio en tu PC.
-2. Abre la carpeta clonada como una **bóveda (vault) de Obsidian**.
-3. Si quieres sincronización automática, configura el plugin comunitario **Obsidian Git**.
-4. La configuración local de Obsidian se excluye mediante [\`.gitignore\`](.gitignore).
-
-No se necesita MCP ni consumir la API de OpenAI para sincronizar GitHub con Obsidian. Más adelante podremos incorporar MCP de manera independiente.
-
 ## ✍️ Contribuciones
 
 Utiliza nuestra [plantilla en español](Templates/command-reference.es.md) o [en inglés](Templates/command-reference.md). Prioriza claridad, brevedad, ejemplos seguros y compatibilidad por sistema operativo.
