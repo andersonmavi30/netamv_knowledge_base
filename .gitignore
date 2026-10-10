@@ -1,0 +1,15 @@
+# Local Obsidian configuration, UI state and plugin data
+.obsidian/
+.trash/
+# Local credentials / environments
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+# OS and editor artifacts
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
