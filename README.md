@@ -23,15 +23,6 @@ Concise commands, commonly used options, short examples and troubleshooting note
 - Sample IPs in the documentation use reserved TEST-NET addresses; never paste lab configuration into production without reviewing impact.
 - Do not commit passwords, tokens, private configuration or customer information.
 
-## 🪨 Use with Obsidian
-
-1. Clone this GitHub repository to your computer.
-2. Open the cloned directory as an **Obsidian vault**.
-3. Optionally install the community **Obsidian Git** plugin to configure pull/push.
-4. Keep local Obsidian settings out of Git (see [\`.gitignore\`](.gitignore)).
-
-**No MCP server or paid OpenAI API is required** for GitHub ↔ Obsidian synchronization. MCP can be added independently later.
-
 ## ✍️ Contributing
 
 Use the [English](Templates/command-reference.md) or [Spanish](Templates/command-reference.es.md) reference template. Keep examples safe, short and vendor/OS-specific. Include the applicable version or mark it as **not yet validated**.
