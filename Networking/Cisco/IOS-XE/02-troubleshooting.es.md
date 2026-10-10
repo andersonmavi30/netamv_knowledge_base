@@ -9,7 +9,7 @@ validation: not-lab-verified
 
 [🇬🇧 English](02-troubleshooting.md) · [🇨🇴 Español](02-troubleshooting.es.md) · [↩ Cisco](../README.es.md)
 
-**Plataforma:** Cisco / IOS XE · **Compatibilidad:** Cisco IOS XE 17.x (device/model-specific; verify your release).
+**Plataforma:** Cisco / IOS XE · **Compatibilidad:** Cisco IOS XE 17.x (depende del modelo; valida tu versión).
 
 ## `ping 192.0.2.10`
 

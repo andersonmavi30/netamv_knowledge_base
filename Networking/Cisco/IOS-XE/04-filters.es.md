@@ -9,7 +9,7 @@ validation: not-lab-verified
 
 [🇬🇧 English](04-filters.md) · [🇨🇴 Español](04-filters.es.md) · [↩ Cisco](../README.es.md)
 
-**Plataforma:** Cisco / IOS XE · **Compatibilidad:** Cisco IOS XE 17.x (device/model-specific; verify your release).
+**Plataforma:** Cisco / IOS XE · **Compatibilidad:** Cisco IOS XE 17.x (depende del modelo; valida tu versión).
 
 ## `show ip interface brief | include GigabitEthernet`
 

@@ -9,7 +9,7 @@ validation: not-lab-verified
 
 [🇬🇧 English](03-interfaces.md) · [🇨🇴 Español](03-interfaces.es.md) · [↩ Cisco](../README.es.md)
 
-**Plataforma:** Cisco / IOS XE · **Compatibilidad:** Cisco IOS XE 17.x (device/model-specific; verify your release).
+**Plataforma:** Cisco / IOS XE · **Compatibilidad:** Cisco IOS XE 17.x (depende del modelo; valida tu versión).
 
 ## `show running-config interface GigabitEthernet1/0/1`
 
