@@ -21,6 +21,8 @@ show version
 - **Arguments:** No options.
 - **Use case:** Identify the IOS release before a change.
 
+- **Practical filter:** `show version | include IOS|uptime` — Filter or verify relevant output; inspect full output when additional context is needed.
+
 ## `show ip interface brief`
 
 ```text
@@ -30,6 +32,8 @@ show ip interface brief
 - **Purpose:** Summarize IPv4 addresses and link state.
 - **Arguments:** brief: concise view.
 - **Use case:** Check that GigabitEthernet0/0 is up/up.
+
+- **Practical filter:** `show ip interface brief | include GigabitEthernet` — Filter or verify relevant output; inspect full output when additional context is needed.
 
 ## `show ip route`
 
@@ -41,6 +45,8 @@ show ip route
 - **Arguments:** No options.
 - **Use case:** Find an active route.
 
+- **Practical filter:** `show ip route 198.51.100.10` — Filter or verify relevant output; inspect full output when additional context is needed.
+
 ## `show running-config`
 
 ```text
@@ -50,6 +56,9 @@ show running-config
 - **Purpose:** Inspect the active device configuration.
 - **Arguments:** No options.
 - **Use case:** Review before changing a device.
+
+- **Practical filter:** `show interfaces GigabitEthernet0/0 | include line protocol|errors|drops` — Filter or verify relevant output; inspect full output when additional context is needed.
+
 
 > Short reference, not lab-verified. Validate using built-in CLI help and documentation for your model/release.
 

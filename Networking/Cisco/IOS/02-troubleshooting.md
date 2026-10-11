@@ -21,6 +21,8 @@ ping 192.0.2.10
 - **Arguments:** 192.0.2.10: destination.
 - **Use case:** Verify access to a lab host.
 
+- **Practical filter:** `show ip route 192.0.2.10` — Filter or verify relevant output; inspect full output when additional context is needed.
+
 ## `traceroute 192.0.2.10`
 
 ```text
@@ -30,6 +32,8 @@ traceroute 192.0.2.10
 - **Purpose:** Trace hops toward a destination.
 - **Arguments:** 192.0.2.10: destination.
 - **Use case:** Locate where a path stops.
+
+- **Practical filter:** `show ip route 192.0.2.10` — Filter or verify relevant output; inspect full output when additional context is needed.
 
 ## `show interfaces GigabitEthernet0/0`
 
@@ -41,6 +45,8 @@ show interfaces GigabitEthernet0/0
 - **Arguments:** GigabitEthernet0/0: device-specific interface name.
 - **Use case:** Look for CRC errors.
 
+- **Practical filter:** `show logging | include LINK|LINEPROTO` — Filter or verify relevant output; inspect full output when additional context is needed.
+
 ## `show logging`
 
 ```text
@@ -50,6 +56,9 @@ show logging
 - **Purpose:** Display system log messages.
 - **Arguments:** No options.
 - **Use case:** Find a link-down event.
+
+- **Practical filter:** `show interfaces GigabitEthernet0/0 | include errors|drops|CRC` — Filter or verify relevant output; inspect full output when additional context is needed.
+
 
 > Short reference, not lab-verified. Validate using built-in CLI help and documentation for your model/release.
 

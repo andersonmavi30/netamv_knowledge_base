@@ -21,6 +21,8 @@ show version
 - **Parámetros:** Sin opciones.
 - **Ejemplo de uso:** Identificar la versión antes de cambiar.
 
+- **Filtro práctico:** `show version | include IOS|uptime` — Filtra o verifica únicamente la información relevante; consulta la salida completa si necesitas contexto.
+
 ## `show ip interface brief`
 
 ```text
@@ -30,6 +32,8 @@ show ip interface brief
 - **Sirve para:** Resume direcciones IPv4 y estado de enlaces.
 - **Parámetros:** brief: vista resumida.
 - **Ejemplo de uso:** Verificar que GigabitEthernet0/0 está up/up.
+
+- **Filtro práctico:** `show ip interface brief | include GigabitEthernet` — Filtra o verifica únicamente la información relevante; consulta la salida completa si necesitas contexto.
 
 ## `show ip route`
 
@@ -41,6 +45,8 @@ show ip route
 - **Parámetros:** Sin opciones.
 - **Ejemplo de uso:** Encontrar una ruta activa.
 
+- **Filtro práctico:** `show ip route 198.51.100.10` — Filtra o verifica únicamente la información relevante; consulta la salida completa si necesitas contexto.
+
 ## `show running-config`
 
 ```text
@@ -50,6 +56,9 @@ show running-config
 - **Sirve para:** Consulta la configuración activa.
 - **Parámetros:** Sin opciones.
 - **Ejemplo de uso:** Revisar antes de configurar.
+
+- **Filtro práctico:** `show interfaces GigabitEthernet0/0 | include line protocol|errors|drops` — Filtra o verifica únicamente la información relevante; consulta la salida completa si necesitas contexto.
+
 
 > Referencia breve, no validada en laboratorio. Valida con la ayuda de la CLI y documentación del modelo/release.
 

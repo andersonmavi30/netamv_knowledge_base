@@ -27,6 +27,8 @@ end
 - **Use case:** Bring up a lab LAN interface.
 - **Caution:** Changing a production interface can interrupt connectivity.
 
+- **Practical filter:** `show running-config | section ^interface GigabitEthernet0/0` — Filter or verify relevant output; inspect full output when additional context is needed.
+
 ## `show ip interface brief`
 
 ```text
@@ -36,6 +38,8 @@ show ip interface brief
 - **Purpose:** Verify configured addresses and interface state.
 - **Arguments:** brief: concise output.
 - **Use case:** Confirm IP and up/up.
+
+- **Practical filter:** `show ip interface brief | include GigabitEthernet0/0` — Filter or verify relevant output; inspect full output when additional context is needed.
 
 ## `show running-config interface GigabitEthernet0/0`
 
@@ -47,6 +51,8 @@ show running-config interface GigabitEthernet0/0
 - **Arguments:** Interface name: replace to match your model.
 - **Use case:** Review LAN interface settings.
 
+- **Practical filter:** `show ip interface brief | include GigabitEthernet0/0` — Filter or verify relevant output; inspect full output when additional context is needed.
+
 ## `copy running-config startup-config`
 
 ```text
@@ -56,6 +62,9 @@ copy running-config startup-config
 - **Purpose:** Save active configuration to startup.
 - **Arguments:** running-config: source; startup-config: destination.
 - **Use case:** Preserve tested changes.
+
+- **Practical filter:** `show running-config | section ^interface GigabitEthernet0/0` — Filter or verify relevant output; inspect full output when additional context is needed.
+
 
 > Short reference, not lab-verified. Validate using built-in CLI help and documentation for your model/release.
 
