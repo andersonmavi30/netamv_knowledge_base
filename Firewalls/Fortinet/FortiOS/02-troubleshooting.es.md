@@ -21,6 +21,8 @@ execute ping 192.0.2.10
 - **Parámetros:** Cambia la IP de documentación por la del laboratorio.
 - **Ejemplo de uso:** Probar alcance antes de revisar políticas.
 
+- **Filtro práctico:** `get router info routing-table all | grep 192.0.2` — Tras fallar el ping, busca el prefijo del laboratorio.
+
 ## `execute traceroute 192.0.2.10`
 
 ```text
@@ -30,6 +32,8 @@ execute traceroute 192.0.2.10
 - **Sirve para:** Consulta los saltos de red hacia un destino.
 - **Parámetros:** La IP es el destino.
 - **Ejemplo de uso:** Detectar una ruta inesperada.
+
+- **Filtro práctico:** `get router info routing-table all | grep 192.0.2` — Comprueba la ruta después del traceroute.
 
 ## `diagnose sniffer packet any 'host 192.0.2.10 and tcp port 443' 4 20 l`
 
@@ -42,6 +46,8 @@ diagnose sniffer packet any 'host 192.0.2.10 and tcp port 443' 4 20 l
 - **Ejemplo de uso:** Confirmar interfaz de entrada y salida del TCP/443.
 - **Precaución:** Las capturas pueden mostrar metadatos. Limita el alcance; Ctrl+C detiene antes.
 
+- **Filtro práctico:** `diagnose sniffer packet any 'host 192.0.2.10 and tcp port 443' 4 20 l` — El filtro BPF ya está dentro del sniffer; no requiere pipe.
+
 ## `diagnose vpn tunnel list`
 
 ```text
@@ -51,6 +57,9 @@ diagnose vpn tunnel list
 - **Sirve para:** Consulta información de diagnóstico de túneles IPsec.
 - **Parámetros:** Sin parámetros.
 - **Ejemplo de uso:** Comprobar SAs en el diagnóstico de VPN.
+
+- **Filtro práctico:** `diagnose vpn tunnel list | grep -i name=` — Busca nombres de túneles; revisa la salida completa para conocer su estado.
+
 
 > **Nota:** Referencia rápida, no verificada en laboratorio; confirma sintaxis y permisos en tu modelo y versión.
 

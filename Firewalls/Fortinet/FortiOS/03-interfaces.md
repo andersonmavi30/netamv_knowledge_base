@@ -21,6 +21,8 @@ show system interface
 - **Arguments:** No arguments.
 - **Use case:** Review before changing an interface.
 
+- **Practical filter:** `show system interface | grep -f port3` — See the port's configuration block with context.
+
 ## `config system interface`
 
 ```text
@@ -38,6 +40,8 @@ end
 - **Use case:** Enable ICMP management on an isolated lab LAN.
 - **Caution:** Changes take effect immediately. set allowaccess replaces the previous protocol list; never paste blindly in production.
 
+- **Practical filter:** `show system interface | grep -f port3` — Validate port3 IP, alias and access after applying changes.
+
 ## `get system interface`
 
 ```text
@@ -47,6 +51,9 @@ get system interface
 - **Purpose:** Verify interface state and IP after the change.
 - **Arguments:** No arguments.
 - **Use case:** Check the new lab IP appears.
+
+- **Practical filter:** `get system interface | grep -i port3` — Find the interface in operational output.
+
 
 > **Note:** Quick reference, not lab-verified; confirm syntax and permissions on your model and release.
 

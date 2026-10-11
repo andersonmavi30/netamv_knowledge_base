@@ -21,6 +21,8 @@ get system status | grep Version
 - **Parámetros:** |: tubería; grep: búsqueda de texto.
 - **Ejemplo de uso:** Localizar versión de firmware.
 
+- **Filtro práctico:** `get system status | grep -i hostname` — Ejemplo real: busca el hostname sin distinguir mayúsculas.
+
 ## `get system status | grep -i hostname`
 
 ```text
@@ -30,6 +32,8 @@ get system status | grep -i hostname
 - **Sirve para:** Busca sin distinguir mayúsculas/minúsculas.
 - **Parámetros:** -i: ignora mayúsculas/minúsculas.
 - **Ejemplo de uso:** Buscar el hostname sin importar mayúsculas.
+
+- **Filtro práctico:** `get system status | grep -i version` — Busca la versión del firmware con -i.
 
 ## `show system interface | grep -f port3`
 
@@ -41,6 +45,8 @@ show system interface | grep -f port3
 - **Parámetros:** -f: salida con contexto de configuración.
 - **Ejemplo de uso:** Ubicar los ajustes de port3.
 
+- **Filtro práctico:** `show firewall address | grep -f LAB-NET` — Conserva el contexto del objeto coincidente.
+
 ## `get system interface | grep -n port3`
 
 ```text
@@ -50,6 +56,9 @@ get system interface | grep -n port3
 - **Sirve para:** Muestra coincidencias con número de línea.
 - **Parámetros:** -n: numeración de líneas.
 - **Ejemplo de uso:** Encontrar port3 en salidas extensas.
+
+- **Filtro práctico:** `diagnose vpn tunnel list | grep -n name=` — Busca nombres de túneles con números de línea.
+
 
 > **Nota:** Referencia rápida, no verificada en laboratorio; confirma sintaxis y permisos en tu modelo y versión.
 

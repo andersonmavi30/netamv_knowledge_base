@@ -21,6 +21,8 @@ show system interface
 - **Parámetros:** Sin parámetros.
 - **Ejemplo de uso:** Revisar antes de modificar una interfaz.
 
+- **Filtro práctico:** `show system interface | grep -f port3` — Consulta el bloque de configuración del puerto con contexto.
+
 ## `config system interface`
 
 ```text
@@ -38,6 +40,8 @@ end
 - **Ejemplo de uso:** Permitir ping a una interfaz de laboratorio.
 - **Precaución:** Los cambios aplican inmediatamente. set allowaccess reemplaza la lista previa; nunca pegar sin revisar en producción.
 
+- **Filtro práctico:** `show system interface | grep -f port3` — Valida IP, alias y accesos de port3 después de configurar.
+
 ## `get system interface`
 
 ```text
@@ -47,6 +51,9 @@ get system interface
 - **Sirve para:** Verifica estado e IP después del cambio.
 - **Parámetros:** Sin parámetros.
 - **Ejemplo de uso:** Confirmar que aparezca la nueva IP.
+
+- **Filtro práctico:** `get system interface | grep -i port3` — Ubica la interfaz en la salida operativa.
+
 
 > **Nota:** Referencia rápida, no verificada en laboratorio; confirma sintaxis y permisos en tu modelo y versión.
 

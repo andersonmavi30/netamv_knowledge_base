@@ -21,6 +21,8 @@ get system status
 - **Parámetros:** Sin parámetros.
 - **Ejemplo de uso:** Identificar firmware antes de diagnosticar.
 
+- **Filtro práctico:** `get system status | grep -i hostname` — Ubica rápidamente el hostname.
+
 ## `get system performance status`
 
 ```text
@@ -30,6 +32,8 @@ get system performance status
 - **Sirve para:** Consulta CPU, memoria, uptime y estadísticas de sesiones.
 - **Parámetros:** Sin parámetros.
 - **Ejemplo de uso:** Revisión rápida de salud.
+
+- **Filtro práctico:** `get system performance status | grep -i cpu` — Filtra líneas relacionadas con CPU.
 
 ## `get system interface`
 
@@ -41,6 +45,8 @@ get system interface
 - **Parámetros:** Sin parámetros.
 - **Ejemplo de uso:** Consultar la IP de una interfaz.
 
+- **Filtro práctico:** `get system interface | grep -i port3` — Encuentra port3; para ver todas sus propiedades consulta la salida completa.
+
 ## `get router info routing-table all`
 
 ```text
@@ -50,6 +56,9 @@ get router info routing-table all
 - **Sirve para:** Muestra la tabla de enrutamiento.
 - **Parámetros:** all: muestra rutas de varios protocolos.
 - **Ejemplo de uso:** Validar el siguiente salto hacia una red.
+
+- **Filtro práctico:** `get router info routing-table all | grep 198.51.100` — Busca un prefijo; filtrar texto no equivale a consultar la ruta efectiva.
+
 
 > **Nota:** Referencia rápida, no verificada en laboratorio; confirma sintaxis y permisos en tu modelo y versión.
 

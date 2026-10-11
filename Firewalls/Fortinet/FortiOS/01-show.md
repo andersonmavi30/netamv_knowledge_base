@@ -21,6 +21,8 @@ get system status
 - **Arguments:** No arguments.
 - **Use case:** Identify the firmware before troubleshooting.
 
+- **Practical filter:** `get system status | grep -i hostname` — Locate hostname quickly.
+
 ## `get system performance status`
 
 ```text
@@ -30,6 +32,8 @@ get system performance status
 - **Purpose:** Check CPU, memory, uptime and session statistics.
 - **Arguments:** No arguments.
 - **Use case:** Quick health check.
+
+- **Practical filter:** `get system performance status | grep -i cpu` — Focus on CPU-related lines.
 
 ## `get system interface`
 
@@ -41,6 +45,8 @@ get system interface
 - **Arguments:** No arguments.
 - **Use case:** Find an interface IP.
 
+- **Practical filter:** `get system interface | grep -i port3` — Find port3; other properties may require full output.
+
 ## `get router info routing-table all`
 
 ```text
@@ -50,6 +56,9 @@ get router info routing-table all
 - **Purpose:** Display the routing table.
 - **Arguments:** all: show routes across protocols.
 - **Use case:** Validate the next hop for a destination.
+
+- **Practical filter:** `get router info routing-table all | grep 198.51.100` — Find a prefix; text filtering is not a forwarding lookup.
+
 
 > **Note:** Quick reference, not lab-verified; confirm syntax and permissions on your model and release.
 
