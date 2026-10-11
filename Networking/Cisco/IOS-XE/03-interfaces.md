@@ -21,6 +21,8 @@ show running-config interface GigabitEthernet1/0/1
 - **Arguments:** Interface ID varies by platform.
 - **Use case:** Compare before making a change.
 
+- **Practical filter:** `show running-config | section ^interface GigabitEthernet1/0/1` — Filter or verify relevant data; inspect full output when more context is needed.
+
 ## `configure terminal`
 
 ```text
@@ -36,6 +38,8 @@ end
 - **Use case:** Activate a lab-facing link.
 - **Caution:** Enabling a port changes live connectivity. Confirm the port role first.
 
+- **Practical filter:** `show ip interface brief | include GigabitEthernet1/0/1` — Filter or verify relevant data; inspect full output when more context is needed.
+
 ## `show ip interface brief`
 
 ```text
@@ -45,6 +49,8 @@ show ip interface brief
 - **Purpose:** Validate address and line status after configuration.
 - **Arguments:** brief: summary.
 - **Use case:** Confirm interface is up/up when the link is active.
+
+- **Practical filter:** `show ip interface brief | include GigabitEthernet1/0/1` — Filter or verify relevant data; inspect full output when more context is needed.
 
 ## `copy running-config startup-config`
 
@@ -56,6 +62,9 @@ copy running-config startup-config
 - **Arguments:** running-config: source; startup-config: destination.
 - **Use case:** Save only after validating desired changes.
 - **Caution:** Saving overwrites the saved startup configuration.
+
+- **Practical filter:** `show running-config | section ^interface GigabitEthernet1/0/1` — Filter or verify relevant data; inspect full output when more context is needed.
+
 
 > **Note:** Quick reference, not lab-verified; confirm syntax and permissions on your model and release.
 

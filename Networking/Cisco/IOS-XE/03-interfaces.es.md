@@ -21,6 +21,8 @@ show running-config interface GigabitEthernet1/0/1
 - **Parámetros:** La identificación de interfaz cambia según modelo.
 - **Ejemplo de uso:** Comparar antes de aplicar cambios.
 
+- **Filtro práctico:** `show running-config | section ^interface GigabitEthernet1/0/1` — Filtra o verifica información relevante; consulta la salida completa cuando necesites contexto.
+
 ## `configure terminal`
 
 ```text
@@ -36,6 +38,8 @@ end
 - **Ejemplo de uso:** Habilitar un enlace de laboratorio.
 - **Precaución:** Habilitar un puerto cambia conectividad. Verifica antes su función.
 
+- **Filtro práctico:** `show ip interface brief | include GigabitEthernet1/0/1` — Filtra o verifica información relevante; consulta la salida completa cuando necesites contexto.
+
 ## `show ip interface brief`
 
 ```text
@@ -45,6 +49,8 @@ show ip interface brief
 - **Sirve para:** Verifica IP y estado después de la configuración.
 - **Parámetros:** brief: resumen.
 - **Ejemplo de uso:** Confirmar up/up cuando exista enlace.
+
+- **Filtro práctico:** `show ip interface brief | include GigabitEthernet1/0/1` — Filtra o verifica información relevante; consulta la salida completa cuando necesites contexto.
 
 ## `copy running-config startup-config`
 
@@ -56,6 +62,9 @@ copy running-config startup-config
 - **Parámetros:** running-config: origen; startup-config: destino.
 - **Ejemplo de uso:** Guardar solo tras verificar los cambios.
 - **Precaución:** El guardado sobrescribe la configuración de inicio.
+
+- **Filtro práctico:** `show running-config | section ^interface GigabitEthernet1/0/1` — Filtra o verifica información relevante; consulta la salida completa cuando necesites contexto.
+
 
 > **Nota:** Referencia rápida, no verificada en laboratorio; confirma sintaxis y permisos en tu modelo y versión.
 

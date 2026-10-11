@@ -21,6 +21,8 @@ ping 192.0.2.10
 - **Arguments:** IP: target host.
 - **Use case:** Confirm reachability from the router.
 
+- **Practical filter:** `show ip route 192.0.2.10` — Filter or verify relevant data; inspect full output when more context is needed.
+
 ## `traceroute 192.0.2.10`
 
 ```text
@@ -30,6 +32,8 @@ traceroute 192.0.2.10
 - **Purpose:** Display hop-by-hop path toward an IPv4 destination.
 - **Arguments:** IP: destination.
 - **Use case:** Locate a path failure.
+
+- **Practical filter:** `show ip route 192.0.2.10` — Filter or verify relevant data; inspect full output when more context is needed.
 
 ## `show logging`
 
@@ -41,6 +45,8 @@ show logging
 - **Arguments:** No arguments.
 - **Use case:** Find link flap events.
 
+- **Practical filter:** `show logging | include LINK|LINEPROTO` — Filter or verify relevant data; inspect full output when more context is needed.
+
 ## `show interfaces GigabitEthernet1/0/1`
 
 ```text
@@ -50,6 +56,9 @@ show interfaces GigabitEthernet1/0/1
 - **Purpose:** Review link state, duplex, counters and errors.
 - **Arguments:** Interface name: choose a real port on your device.
 - **Use case:** Look for input errors and discards.
+
+- **Practical filter:** `show interfaces GigabitEthernet1/0/1 | include errors|drops|CRC` — Filter or verify relevant data; inspect full output when more context is needed.
+
 
 > **Note:** Quick reference, not lab-verified; confirm syntax and permissions on your model and release.
 

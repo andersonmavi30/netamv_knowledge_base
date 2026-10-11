@@ -23,6 +23,8 @@ end
 - **Parámetros:** configure terminal: entrar a configuración; hostname: nombre; end: salir.
 - **Ejemplo de uso:** Identificar un router de laboratorio.
 
+- **Verificación:** `show running-config | include ^hostname` — Filtra o verifica información relevante; consulta la salida completa cuando necesites contexto.
+
 ## `configure terminal`
 
 ```text
@@ -35,6 +37,8 @@ end
 - **Sirve para:** Crea una loopback con IPv4 /32.
 - **Parámetros:** interface Loopback0: interfaz virtual; ip address: IP y máscara.
 - **Ejemplo de uso:** Usar una IP estable en un laboratorio.
+
+- **Verificación:** `show ip interface brief | include Loopback0` — Filtra o verifica información relevante; consulta la salida completa cuando necesites contexto.
 
 ## `configure terminal`
 
@@ -49,6 +53,8 @@ end
 - **Ejemplo de uso:** Llegar a otra red del laboratorio.
 - **Precaución:** Verifica que el siguiente salto sea alcanzable.
 
+- **Verificación:** `show ip route 198.51.100.10` — Filtra o verifica información relevante; consulta la salida completa cuando necesites contexto.
+
 ## `configure terminal`
 
 ```text
@@ -60,6 +66,8 @@ end
 - **Sirve para:** Habilita un buffer de logs en memoria.
 - **Parámetros:** 16384: tamaño en bytes (los límites varían según equipo).
 - **Ejemplo de uso:** Revisar eventos con show logging.
+
+- **Verificación:** `show running-config | include logging buffered` — Filtra o verifica información relevante; consulta la salida completa cuando necesites contexto.
 
 ## `configure terminal`
 
@@ -73,6 +81,8 @@ end
 - **Parámetros:** log: mensajes syslog; datetime: fecha/hora; msec: milisegundos.
 - **Ejemplo de uso:** Correlacionar eventos por hora.
 
+- **Verificación:** `show running-config | include service timestamps` — Filtra o verifica información relevante; consulta la salida completa cuando necesites contexto.
+
 ## `copy running-config startup-config`
 
 ```text
@@ -83,6 +93,9 @@ copy running-config startup-config
 - **Parámetros:** running-config: origen; startup-config: destino guardado.
 - **Ejemplo de uso:** Conservar cambios validados tras reiniciar.
 - **Precaución:** Guarda únicamente cambios que deseas conservar.
+
+- **Verificación:** `show running-config | include ^hostname|^ip route` — Filtra o verifica información relevante; consulta la salida completa cuando necesites contexto.
+
 
 > Referencia breve, no validada en laboratorio. Valida con la ayuda de la CLI y documentación del modelo/release.
 

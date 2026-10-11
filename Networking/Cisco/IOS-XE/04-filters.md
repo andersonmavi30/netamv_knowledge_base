@@ -21,6 +21,8 @@ show ip interface brief | include GigabitEthernet
 - **Arguments:** |: pipe; include: matching lines.
 - **Use case:** Find GigabitEthernet status quickly.
 
+- **Practical filter:** `show ip interface brief | include GigabitEthernet1/0/1` — Filter or verify relevant data; inspect full output when more context is needed.
+
 ## `show logging | exclude LINK`
 
 ```text
@@ -30,6 +32,8 @@ show logging | exclude LINK
 - **Purpose:** Hide log lines matching LINK.
 - **Arguments:** exclude: remove matching lines.
 - **Use case:** Focus on other logs.
+
+- **Practical filter:** `show logging | include LINK|LINEPROTO` — Filter or verify relevant data; inspect full output when more context is needed.
 
 ## `show running-config | section interface`
 
@@ -41,6 +45,8 @@ show running-config | section interface
 - **Arguments:** section: include matching configuration blocks.
 - **Use case:** Review several interface configs.
 
+- **Practical filter:** `show running-config | section ^interface GigabitEthernet1/0/1` — Filter or verify relevant data; inspect full output when more context is needed.
+
 ## `show running-config | begin interface`
 
 ```text
@@ -50,6 +56,9 @@ show running-config | begin interface
 - **Purpose:** Show output from the first matching interface onward.
 - **Arguments:** begin: start at first match (not an exact-section filter).
 - **Use case:** Jump past the header of the running config.
+
+- **Practical filter:** `show ip route 198.51.100.10` — Filter or verify relevant data; inspect full output when more context is needed.
+
 
 > **Note:** Quick reference, not lab-verified; confirm syntax and permissions on your model and release.
 

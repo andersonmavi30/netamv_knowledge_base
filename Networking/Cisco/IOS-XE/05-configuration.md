@@ -23,6 +23,8 @@ end
 - **Arguments:** configure terminal: enter config; hostname: device name; end: exit.
 - **Use case:** Identify a lab router.
 
+- **Verification:** `show running-config | include ^hostname` — Filter or verify relevant data; inspect full output when more context is needed.
+
 ## `configure terminal`
 
 ```text
@@ -35,6 +37,8 @@ end
 - **Purpose:** Create a loopback with an IPv4 /32 address.
 - **Arguments:** interface Loopback0: virtual interface; ip address: IP and mask.
 - **Use case:** Use a stable router ID in a lab.
+
+- **Verification:** `show ip interface brief | include Loopback0` — Filter or verify relevant data; inspect full output when more context is needed.
 
 ## `configure terminal`
 
@@ -49,6 +53,8 @@ end
 - **Use case:** Reach a second lab segment.
 - **Caution:** Ensure the next hop is reachable before deployment.
 
+- **Verification:** `show ip route 198.51.100.10` — Filter or verify relevant data; inspect full output when more context is needed.
+
 ## `configure terminal`
 
 ```text
@@ -60,6 +66,8 @@ end
 - **Purpose:** Enable a bounded in-memory logging buffer.
 - **Arguments:** 16384: desired buffer size in bytes (platform limits vary).
 - **Use case:** Review messages using show logging.
+
+- **Verification:** `show running-config | include logging buffered` — Filter or verify relevant data; inspect full output when more context is needed.
 
 ## `configure terminal`
 
@@ -73,6 +81,8 @@ end
 - **Arguments:** log: syslog messages; datetime: date/time; msec: milliseconds.
 - **Use case:** Correlate events by time.
 
+- **Verification:** `show running-config | include service timestamps` — Filter or verify relevant data; inspect full output when more context is needed.
+
 ## `copy running-config startup-config`
 
 ```text
@@ -83,6 +93,9 @@ copy running-config startup-config
 - **Arguments:** running-config: source; startup-config: saved destination.
 - **Use case:** Persist tested configuration over a reload.
 - **Caution:** Only save changes you intend to keep.
+
+- **Verification:** `show running-config | include ^hostname|^ip route` — Filter or verify relevant data; inspect full output when more context is needed.
+
 
 > Short reference, not lab-verified. Validate using built-in CLI help and documentation for your model/release.
 
