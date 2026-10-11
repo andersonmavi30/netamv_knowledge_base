@@ -9,7 +9,7 @@ validation: not-lab-verified
 
 [🇬🇧 English](03-interfaces.md) · [🇨🇴 Español](03-interfaces.es.md) · [↩ Fortinet](../README.md)
 
-**Platform:** Fortinet / FortiOS · **Compatibility:** FortiOS 7.4 (examples; verify your release).
+**Platform:** Fortinet / FortiOS · **Compatibility:** FortiOS 7.x (verify your exact release).
 
 ## `show system interface`
 

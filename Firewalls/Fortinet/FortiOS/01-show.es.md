@@ -9,7 +9,7 @@ validation: not-lab-verified
 
 [🇬🇧 English](01-show.md) · [🇨🇴 Español](01-show.es.md) · [↩ Fortinet](../README.es.md)
 
-**Plataforma:** Fortinet / FortiOS · **Compatibilidad:** FortiOS 7.4 (ejemplos; valida tu versión).
+**Plataforma:** Fortinet / FortiOS · **Compatibilidad:** FortiOS 7.x (comprueba tu versión exacta).
 
 ## `get system status`
 

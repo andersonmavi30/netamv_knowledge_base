@@ -9,7 +9,7 @@ validation: not-lab-verified
 
 [🇬🇧 English](02-troubleshooting.md) · [🇨🇴 Español](02-troubleshooting.es.md) · [↩ Fortinet](../README.md)
 
-**Platform:** Fortinet / FortiOS · **Compatibility:** FortiOS 7.4 (examples; verify your release).
+**Platform:** Fortinet / FortiOS · **Compatibility:** FortiOS 7.x (verify your exact release).
 
 ## `execute ping 192.0.2.10`
 

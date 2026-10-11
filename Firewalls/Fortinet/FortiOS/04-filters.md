@@ -9,7 +9,7 @@ validation: not-lab-verified
 
 [🇬🇧 English](04-filters.md) · [🇨🇴 Español](04-filters.es.md) · [↩ Fortinet](../README.md)
 
-**Platform:** Fortinet / FortiOS · **Compatibility:** FortiOS 7.4 (examples; verify your release).
+**Platform:** Fortinet / FortiOS · **Compatibility:** FortiOS 7.x (verify your exact release).
 
 ## `get system status | grep Version`
 
