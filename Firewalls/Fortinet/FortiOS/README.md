@@ -1,14 +1,25 @@
-# FortiOS CLI Reference
+# FortiOS — CLI quick reference
 
 [🇬🇧 English](README.md) · [🇨🇴 Español](README.es.md) · [↩ Fortinet](../README.md)
 
-**Reference platform:** FortiOS 7.4. Short examples for show, troubleshooting, interfaces and filters. Not lab-verified.
+**Reference version:** FortiOS 7.x. Not a guarantee that every command is present across releases.
 
-## Quick commands
+## Index
 
-- [Show and status](01-show.md)
+- [Show / status](01-show.md)
 - [Troubleshooting](02-troubleshooting.md)
-- [Interfaces](03-interfaces.md)
-- [CLI output filters](04-filters.md)
+- [Interface configuration](03-interfaces.md)
+- [Output filters](04-filters.md)
+- [General configuration](05-configuration.md)
 
-> Use CLI help and vendor documentation to confirm syntax for your exact software release.
+## ✅ Check release & syntax
+
+```text
+get system status
+config firewall address
+    ?
+```
+
+Identify the precise firmware and use `?` at the appropriate CLI level.
+
+> Illustrative examples pending lab validation. Check the release-specific documentation before production.

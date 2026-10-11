@@ -1,14 +1,26 @@
-# Referencia CLI de Cisco IOS XE
+# IOS XE — Referencia de comandos
 
 [🇬🇧 English](README.md) · [🇨🇴 Español](README.es.md) · [↩ Cisco](../README.es.md)
 
-**Versión orientativa:** Cisco IOS XE 17.x (depende del modelo; valida tu versión). Ejemplos de consulta, troubleshooting, interfaces y filtros. No verificados en laboratorio.
+**Versión orientativa:** IOS XE 17.x. No garantiza que todas las variantes del CLI estén disponibles.
 
-## Comandos rápidos
+## Índice
 
-- [Consultas y estado](01-show.es.md)
+- [Consultas / estado](01-show.es.md)
 - [Diagnóstico](02-troubleshooting.es.md)
-- [Interfaces](03-interfaces.es.md)
-- [Filtros CLI](04-filters.es.md)
+- [Configuración de interfaces](03-interfaces.es.md)
+- [Filtros de salida](04-filters.es.md)
+- [Configuración general](05-configuration.es.md)
 
-> Usa la ayuda CLI y la documentación oficial para confirmar opciones de tu firmware.
+## ✅ Validar versión y sintaxis
+
+```text
+show version
+configure terminal
+?
+end
+```
+
+Confirma IOS/IOS XE y las opciones disponibles en el equipo; la interfaz cambia según modelo.
+
+> Ejemplos ilustrativos pendientes de validación en laboratorio. Consulta la documentación de tu versión antes de producción.
