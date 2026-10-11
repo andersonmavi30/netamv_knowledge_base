@@ -10,6 +10,7 @@ FortiGate system information, diagnostics, interface configuration and CLI filte
 - [Troubleshooting](FortiOS/02-troubleshooting.md) · [ES](FortiOS/02-troubleshooting.es.md)
 - [Interface configuration](FortiOS/03-interfaces.md) · [ES](FortiOS/03-interfaces.es.md)
 - [Output filters](FortiOS/04-filters.md) · [ES](FortiOS/04-filters.es.md)
+- [General configuration](FortiOS/05-configuration.md) · [ES](FortiOS/05-configuration.es.md)
 
 **Versions:** FortiOS 7.x (illustrative; verify exact command syntax on the target release). Examples are **not marked as lab-verified**.
 

@@ -1,16 +1,15 @@
-# Cisco — IOS-XE
+# Cisco — IOS & IOS XE
 
 [🇬🇧 English](README.md) · [🇨🇴 Español](README.es.md) · [↩ Networking](../README.md)
 
-Cisco IOS XE commands for routing, switching and day-to-day operations. IOS XR and NX-OS have distinct CLI and are out of scope for now.
+CLI references for classic Cisco IOS and IOS XE, maintained separately.
 
-## 📋 CLI quick reference
+## Classic IOS (15.x)
 
-- [Show / status](IOS-XE/01-show.md) · [ES](IOS-XE/01-show.es.md)
-- [Troubleshooting](IOS-XE/02-troubleshooting.md) · [ES](IOS-XE/02-troubleshooting.es.md)
-- [Interface configuration](IOS-XE/03-interfaces.md) · [ES](IOS-XE/03-interfaces.es.md)
-- [Output filters](IOS-XE/04-filters.md) · [ES](IOS-XE/04-filters.es.md)
+[Show](IOS/01-show.md) · [Troubleshooting](IOS/02-troubleshooting.md) · [Interfaces](IOS/03-interfaces.md) · [Filters](IOS/04-filters.md) · [Configuration](IOS/05-configuration.md)
 
-**Versions:** Cisco IOS XE 17.x (illustrative; verify exact command syntax on the target release). Examples are **not marked as lab-verified**.
+## IOS XE (17.x)
 
-**Safety:** configuration and debug commands can affect production traffic. Test in a lab first.
+[Show](IOS-XE/01-show.md) · [Troubleshooting](IOS-XE/02-troubleshooting.md) · [Interfaces](IOS-XE/03-interfaces.md) · [Filters](IOS-XE/04-filters.md) · [Configuration](IOS-XE/05-configuration.md)
+
+**Note:** verify version and syntax with `show version` and `?`. Pending lab verification.
