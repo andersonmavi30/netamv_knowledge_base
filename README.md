@@ -12,8 +12,10 @@ Concise commands, commonly used options, short examples and troubleshooting note
 | 🛡️ [Firewalls](Firewalls/README.md) | [Fortinet](Firewalls/Fortinet/README.md) | FortiOS | [Show](Firewalls/Fortinet/FortiOS/01-show.md) · [Troubleshooting](Firewalls/Fortinet/FortiOS/02-troubleshooting.md) · [Interfaces](Firewalls/Fortinet/FortiOS/03-interfaces.md) · [Filters](Firewalls/Fortinet/FortiOS/04-filters.md) |
 | 🌐 [Networking](Networking/README.md) | [Cisco](Networking/Cisco/README.md) | IOS XE | [Show](Networking/Cisco/IOS-XE/01-show.md) · [Troubleshooting](Networking/Cisco/IOS-XE/02-troubleshooting.md) · [Interfaces](Networking/Cisco/IOS-XE/03-interfaces.md) · [Filters](Networking/Cisco/IOS-XE/04-filters.md) |
 | 🌐 [Networking](Networking/README.md) | [Cisco](Networking/Cisco/README.md) | IOS 15.x | [Show](Networking/Cisco/IOS/01-show.md) · [Troubleshooting](Networking/Cisco/IOS/02-troubleshooting.md) · [Configuration](Networking/Cisco/IOS/05-configuration.md) |
+| 🌐 [Networking](Networking/README.md) | [MikroTik](Networking/MikroTik/README.md) | RouterOS 7.x | [Show](Networking/MikroTik/RouterOS/01-show.md) · [Troubleshooting](Networking/MikroTik/RouterOS/02-troubleshooting.md) · [Filters](Networking/MikroTik/RouterOS/04-filters.md) |
+| 🌐 [Networking](Networking/README.md) | [Huawei](Networking/Huawei/README.md) | VRP V200 (model-dependent) | [Show](Networking/Huawei/VRP/01-show.md) · [Troubleshooting](Networking/Huawei/VRP/02-troubleshooting.md) · [Filters](Networking/Huawei/VRP/04-filters.md) |
 
-**Current scope:** Fortinet/FortiOS 7.x, Cisco classic IOS and IOS XE. Other technologies will be added progressively.
+**Current scope:** FortiOS 7.x, Cisco IOS / IOS XE, MikroTik RouterOS 7.x and Huawei VRP. Other technologies will be added progressively.
 
 ## 🧭 How to use
 

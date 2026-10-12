@@ -12,8 +12,10 @@ Comandos CLI, opciones frecuentes, ejemplos cortos y troubleshooting, organizado
 | 🛡️ [Firewalls](Firewalls/README.es.md) | [Fortinet](Firewalls/Fortinet/README.es.md) | FortiOS | [Consultas](Firewalls/Fortinet/FortiOS/01-show.es.md) · [Diagnóstico](Firewalls/Fortinet/FortiOS/02-troubleshooting.es.md) · [Interfaces](Firewalls/Fortinet/FortiOS/03-interfaces.es.md) · [Filtros](Firewalls/Fortinet/FortiOS/04-filters.es.md) |
 | 🌐 [Networking](Networking/README.es.md) | [Cisco](Networking/Cisco/README.es.md) | IOS XE | [Consultas](Networking/Cisco/IOS-XE/01-show.es.md) · [Diagnóstico](Networking/Cisco/IOS-XE/02-troubleshooting.es.md) · [Interfaces](Networking/Cisco/IOS-XE/03-interfaces.es.md) · [Filtros](Networking/Cisco/IOS-XE/04-filters.es.md) |
 | 🌐 [Networking](Networking/README.es.md) | [Cisco](Networking/Cisco/README.es.md) | IOS 15.x | [Consultas](Networking/Cisco/IOS/01-show.es.md) · [Diagnóstico](Networking/Cisco/IOS/02-troubleshooting.es.md) · [Configuración](Networking/Cisco/IOS/05-configuration.es.md) |
+| 🌐 [Networking](Networking/README.es.md) | [MikroTik](Networking/MikroTik/README.es.md) | RouterOS 7.x | [Consultas](Networking/MikroTik/RouterOS/01-show.es.md) · [Diagnóstico](Networking/MikroTik/RouterOS/02-troubleshooting.es.md) · [Filtros](Networking/MikroTik/RouterOS/04-filters.es.md) |
+| 🌐 [Networking](Networking/README.es.md) | [Huawei](Networking/Huawei/README.es.md) | VRP V200 (según modelo) | [Consultas](Networking/Huawei/VRP/01-show.es.md) · [Diagnóstico](Networking/Huawei/VRP/02-troubleshooting.es.md) · [Filtros](Networking/Huawei/VRP/04-filters.es.md) |
 
-**Alcance actual:** Fortinet/FortiOS 7.x, Cisco IOS clásico e IOS XE. Ampliaremos el contenido progresivamente.
+**Alcance actual:** FortiOS 7.x, Cisco IOS / IOS XE, MikroTik RouterOS 7.x y Huawei VRP. Ampliaremos el contenido progresivamente.
 
 ## 🧭 Cómo utilizarla
 
