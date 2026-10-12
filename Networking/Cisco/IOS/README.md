@@ -4,6 +4,8 @@
 
 **Reference version:** IOS 15.x (classic). Not a guarantee that every command is present across releases.
 
+- [Additional operations](06-operations.md)
+
 ## Index
 
 - [Show / status](01-show.md)

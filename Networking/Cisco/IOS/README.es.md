@@ -4,6 +4,8 @@
 
 **Versión orientativa:** IOS 15.x (classic). No garantiza que todas las variantes del CLI estén disponibles.
 
+- [Operación adicional](06-operations.es.md)
+
 ## Índice
 
 - [Consultas / estado](01-show.es.md)
