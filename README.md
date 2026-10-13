@@ -17,7 +17,7 @@
 - ⚖️ **Load Balancers** *(planned)*
 - 🖥️ **Servers** *(planned)*
 - 📦 **Virtualization** *(planned)*
-- ⚙️ **DevOps / NetDevOps** *(planned)*
+- ⚙️ **NetDevOps & Network Automation - DevNet** *(planned)*
 
 Choose a **pillar → vendor → operating system → command topic**. Each vendor page links to its short CLI references.
 
