@@ -14,3 +14,5 @@
 - [Additional operations](06-operations.md)
 
 > Illustrative examples: not yet validated in a lab.
+
+- [More operational commands](07-field-commands.md)

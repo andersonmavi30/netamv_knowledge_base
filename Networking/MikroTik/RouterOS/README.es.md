@@ -17,3 +17,5 @@
 Usa `print where propiedad=valor`, `~` para patrones y `detail` para más campos. **No uses `| include` de Cisco ni `grep` de Linux aquí.**
 
 > Comandos de ejemplo; no ejecutados en equipos reales.
+
+- [Más comandos operativos](07-field-commands.es.md)

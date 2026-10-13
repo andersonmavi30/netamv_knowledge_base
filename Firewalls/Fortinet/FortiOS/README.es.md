@@ -25,3 +25,5 @@ config firewall address
 Confirma la versión exacta y revisa la ayuda contextual (usa `?` en el nivel correcto).
 
 > Ejemplos ilustrativos pendientes de validación en laboratorio. Consulta la documentación de tu versión antes de producción.
+
+- [Más comandos operativos](07-field-commands.es.md)

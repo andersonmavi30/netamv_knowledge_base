@@ -26,3 +26,5 @@ end
 Confirm IOS/IOS XE and the commands supported by your model; interface names vary.
 
 > Illustrative examples pending lab validation. Check the release-specific documentation before production.
+
+- [More operational commands](07-field-commands.md)

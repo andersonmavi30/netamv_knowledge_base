@@ -17,3 +17,5 @@
 Use `print where property=value`, `~` for pattern matches and `detail` for additional fields. **Do not use Cisco's `| include` or Linux `grep` syntax here.**
 
 > Illustrative commands; not tested on production devices.
+
+- [More operational commands](07-field-commands.md)

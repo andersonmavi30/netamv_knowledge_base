@@ -14,3 +14,5 @@
 - [Operación adicional](06-operations.es.md)
 
 > Ejemplos orientativos: pendientes de validación en laboratorio.
+
+- [Más comandos operativos](07-field-commands.es.md)

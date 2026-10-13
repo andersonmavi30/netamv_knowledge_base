@@ -26,3 +26,5 @@ end
 Confirma IOS/IOS XE y las opciones disponibles en el equipo; la interfaz cambia según modelo.
 
 > Ejemplos ilustrativos pendientes de validación en laboratorio. Consulta la documentación de tu versión antes de producción.
+
+- [Más comandos operativos](07-field-commands.es.md)
