@@ -2,10 +2,10 @@
 
 [🇬🇧 English](README.md) · [🇨🇴 Español](README.es.md) · [🏠 Home](../README.md)
 
-Firewall CLI references by vendor and OS.
-
 ## Vendors
 
-- [Fortinet — FortiOS](Fortinet/README.md): [Show](Fortinet/FortiOS/01-show.md) · [Troubleshooting](Fortinet/FortiOS/02-troubleshooting.md) · [Interfaces](Fortinet/FortiOS/03-interfaces.md) · [Filters](Fortinet/FortiOS/04-filters.md)
+- **[Fortinet — FortiOS 7.x](Fortinet/README.md)** · [CLI reference](Fortinet/FortiOS/README.md)
+- Palo Alto — PAN-OS *(planned)*
+- Check Point — Gaia *(planned)*
 
-*Additional vendors will be added progressively.*
+Vendor pages contain show, troubleshooting, interface, filters and operational commands. Verify your device's release before use.

@@ -2,7 +2,7 @@
 tags: [cli, huawei, vrp, show]
 vendor: Huawei
 os: "VRP"
-versions: "S-series VRP V200 (platform/release specific)"
+versions: "VRP (generic; confirm your device's release)"
 validation: not-lab-verified
 ---
 
@@ -10,7 +10,7 @@ validation: not-lab-verified
 
 [🇬🇧 English](01-show.md) · [🇨🇴 Español](01-show.es.md) · [↩ Huawei](../README.es.md)
 
-**Plataforma:** Huawei / VRP · **Versión orientativa:** S-series VRP V200 (platform/release specific).
+**Plataforma:** Huawei / VRP · **Versión orientativa:** VRP (generic; confirm your device's release).
 
 ## `display version`
 

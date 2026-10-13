@@ -2,34 +2,31 @@
 
 [🇬🇧 English](README.md) · [🇨🇴 Español](README.es.md)
 
-**Base de conocimiento bilingüe de IT y NetDevOps.**
-Comandos CLI, opciones frecuentes, ejemplos cortos y troubleshooting, organizados por categoría, fabricante y sistema operativo.
+**Base de conocimiento bilingüe de IT y NetDevOps.** Comandos prácticos, explicación breve de parámetros, filtros de operación y ejemplos sencillos.
 
-## 📚 Explorar
+## 🌳 Árbol de conocimiento
 
-| Categoría | Fabricante | Sistema operativo | Guías rápidas |
-|---|---|---|---|
-| 🛡️ [Firewalls](Firewalls/README.es.md) | [Fortinet](Firewalls/Fortinet/README.es.md) | FortiOS | [Consultas](Firewalls/Fortinet/FortiOS/01-show.es.md) · [Diagnóstico](Firewalls/Fortinet/FortiOS/02-troubleshooting.es.md) · [Interfaces](Firewalls/Fortinet/FortiOS/03-interfaces.es.md) · [Filtros](Firewalls/Fortinet/FortiOS/04-filters.es.md) |
-| 🌐 [Networking](Networking/README.es.md) | [Cisco](Networking/Cisco/README.es.md) | IOS XE | [Consultas](Networking/Cisco/IOS-XE/01-show.es.md) · [Diagnóstico](Networking/Cisco/IOS-XE/02-troubleshooting.es.md) · [Interfaces](Networking/Cisco/IOS-XE/03-interfaces.es.md) · [Filtros](Networking/Cisco/IOS-XE/04-filters.es.md) |
-| 🌐 [Networking](Networking/README.es.md) | [Cisco](Networking/Cisco/README.es.md) | IOS 15.x | [Consultas](Networking/Cisco/IOS/01-show.es.md) · [Diagnóstico](Networking/Cisco/IOS/02-troubleshooting.es.md) · [Configuración](Networking/Cisco/IOS/05-configuration.es.md) |
-| 🌐 [Networking](Networking/README.es.md) | [MikroTik](Networking/MikroTik/README.es.md) | RouterOS 7.x | [Consultas](Networking/MikroTik/RouterOS/01-show.es.md) · [Diagnóstico](Networking/MikroTik/RouterOS/02-troubleshooting.es.md) · [Filtros](Networking/MikroTik/RouterOS/04-filters.es.md) |
-| 🌐 [Networking](Networking/README.es.md) | [Huawei](Networking/Huawei/README.es.md) | VRP V200 (según modelo) | [Consultas](Networking/Huawei/VRP/01-show.es.md) · [Diagnóstico](Networking/Huawei/VRP/02-troubleshooting.es.md) · [Filtros](Networking/Huawei/VRP/04-filters.es.md) |
+- 🛡️ **[Firewalls](Firewalls/README.es.md)**
+  - ↳ [Fortinet · FortiOS 7.x](Firewalls/Fortinet/README.es.md)
+  - ↳ Palo Alto · PAN-OS *(próximamente)*
+  - ↳ Check Point · Gaia *(próximamente)*
+- 🌐 **[Networking](Networking/README.es.md)**
+  - ↳ [Cisco · IOS / IOS XE](Networking/Cisco/README.es.md)
+  - ↳ [MikroTik · RouterOS 7.x](Networking/MikroTik/README.es.md)
+  - ↳ [Huawei · VRP](Networking/Huawei/README.es.md)
+- ⚖️ **Balanceadores** *(próximamente)*
+- 🖥️ **Servidores** *(próximamente)*
+- 📦 **Virtualización** *(próximamente)*
+- ⚙️ **DevOps / NetDevOps** *(próximamente)*
 
-**Alcance actual:** FortiOS 7.x, Cisco IOS / IOS XE, MikroTik RouterOS 7.x y Huawei VRP. Ampliaremos el contenido progresivamente.
+Navega por **pilar → fabricante → sistema operativo → categoría de comandos**. Cada fabricante contiene sus guías CLI resumidas.
 
-## 🧭 Cómo utilizarla
-
-- Entra al fabricante, selecciona el sistema operativo y el tipo de comando.
-- Cada ficha resume **comando → utilidad → parámetros comunes → ejemplo**.
-- Documentación principal en inglés (\`.md\`) y traducción al español (\`.es.md\`).
-- Las versiones indican el alcance orientativo; **no garantizan compatibilidad**. Valida la sintaxis en tu versión de firmware.
-- Usamos direcciones reservadas para documentación. Revisa el impacto antes de ejecutar comandos de configuración en producción.
-- Nunca publiques credenciales, tokens, configuraciones privadas ni datos de clientes.
+> **Compatibilidad:** las versiones son orientativas, no una garantía. Revisa la versión instalada y la ayuda contextual (`?`) antes de cambiar un equipo. Los ejemplos son para laboratorios controlados, no procedimientos validados en producción.
 
 ## ✍️ Contribuciones
 
-Utiliza nuestra [plantilla en español](Templates/command-reference.es.md) o [en inglés](Templates/command-reference.md). Prioriza claridad, brevedad, ejemplos seguros y compatibilidad por sistema operativo.
+Usa la [plantilla en español](Templates/command-reference.es.md) o [en inglés](Templates/command-reference.md). Cada entrada debe ir al grano: **comando, utilidad, parámetros y ejemplo/filtro real**. No publiques credenciales ni datos de clientes.
 
 ## 📄 Licencia
 
-Documentación © 2026 Anderson Martínez Virviescas, bajo [Creative Commons Attribution 4.0 International](LICENSE) (CC BY 4.0). Las marcas pertenecen a sus respectivos titulares.
+Documentación original © 2026 Anderson Martínez Virviescas · [CC BY 4.0](LICENSE). Las marcas pertenecen a sus titulares.

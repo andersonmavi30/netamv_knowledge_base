@@ -2,7 +2,7 @@
 tags: [cli, huawei, vrp, interfaces]
 vendor: Huawei
 os: "VRP"
-versions: "S-series VRP V200 (platform/release specific)"
+versions: "VRP (generic; confirm your device's release)"
 validation: not-lab-verified
 ---
 
@@ -10,7 +10,7 @@ validation: not-lab-verified
 
 [🇬🇧 English](03-interfaces.md) · [🇨🇴 Español](03-interfaces.es.md) · [↩ Huawei](../README.md)
 
-**Platform:** Huawei / VRP · **Reference version:** S-series VRP V200 (platform/release specific).
+**Platform:** Huawei / VRP · **Reference version:** VRP (generic; confirm your device's release).
 
 ## `display interface brief | include GigabitEthernet0/0/1`
 

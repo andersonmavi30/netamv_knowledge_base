@@ -2,34 +2,31 @@
 
 [🇬🇧 English](README.md) · [🇨🇴 Español](README.es.md)
 
-**A practical, bilingual IT / NetDevOps CLI knowledge base.**
-Concise commands, commonly used options, short examples and troubleshooting notes — organized by domain, vendor and operating system.
+**Bilingual IT & NetDevOps CLI knowledge base.** Practical commands, concise flag explanations, operational filters and short examples.
 
-## 📚 Browse
+## 🌳 Knowledge tree
 
-| Domain | Vendor | Operating system | Quick reference |
-|---|---|---|---|
-| 🛡️ [Firewalls](Firewalls/README.md) | [Fortinet](Firewalls/Fortinet/README.md) | FortiOS | [Show](Firewalls/Fortinet/FortiOS/01-show.md) · [Troubleshooting](Firewalls/Fortinet/FortiOS/02-troubleshooting.md) · [Interfaces](Firewalls/Fortinet/FortiOS/03-interfaces.md) · [Filters](Firewalls/Fortinet/FortiOS/04-filters.md) |
-| 🌐 [Networking](Networking/README.md) | [Cisco](Networking/Cisco/README.md) | IOS XE | [Show](Networking/Cisco/IOS-XE/01-show.md) · [Troubleshooting](Networking/Cisco/IOS-XE/02-troubleshooting.md) · [Interfaces](Networking/Cisco/IOS-XE/03-interfaces.md) · [Filters](Networking/Cisco/IOS-XE/04-filters.md) |
-| 🌐 [Networking](Networking/README.md) | [Cisco](Networking/Cisco/README.md) | IOS 15.x | [Show](Networking/Cisco/IOS/01-show.md) · [Troubleshooting](Networking/Cisco/IOS/02-troubleshooting.md) · [Configuration](Networking/Cisco/IOS/05-configuration.md) |
-| 🌐 [Networking](Networking/README.md) | [MikroTik](Networking/MikroTik/README.md) | RouterOS 7.x | [Show](Networking/MikroTik/RouterOS/01-show.md) · [Troubleshooting](Networking/MikroTik/RouterOS/02-troubleshooting.md) · [Filters](Networking/MikroTik/RouterOS/04-filters.md) |
-| 🌐 [Networking](Networking/README.md) | [Huawei](Networking/Huawei/README.md) | VRP V200 (model-dependent) | [Show](Networking/Huawei/VRP/01-show.md) · [Troubleshooting](Networking/Huawei/VRP/02-troubleshooting.md) · [Filters](Networking/Huawei/VRP/04-filters.md) |
+- 🛡️ **[Firewalls](Firewalls/README.md)**
+  - ↳ [Fortinet · FortiOS 7.x](Firewalls/Fortinet/README.md)
+  - ↳ Palo Alto · PAN-OS *(planned)*
+  - ↳ Check Point · Gaia *(planned)*
+- 🌐 **[Networking](Networking/README.md)**
+  - ↳ [Cisco · IOS / IOS XE](Networking/Cisco/README.md)
+  - ↳ [MikroTik · RouterOS 7.x](Networking/MikroTik/README.md)
+  - ↳ [Huawei · VRP](Networking/Huawei/README.md)
+- ⚖️ **Load Balancers** *(planned)*
+- 🖥️ **Servers** *(planned)*
+- 📦 **Virtualization** *(planned)*
+- ⚙️ **DevOps / NetDevOps** *(planned)*
 
-**Current scope:** FortiOS 7.x, Cisco IOS / IOS XE, MikroTik RouterOS 7.x and Huawei VRP. Other technologies will be added progressively.
+Choose a **pillar → vendor → operating system → command topic**. Each vendor page links to its short CLI references.
 
-## 🧭 How to use
-
-- Find a vendor and OS, then choose **Show**, **Troubleshooting**, **Interfaces** or **Filters**.
-- Each reference is short: **command → purpose → common arguments → example**.
-- English files end in \`.md\`; Spanish translations use \`.es.md\`.
-- **Version notes describe intended scope, not certification of compatibility.** Verify syntax against the exact firmware/software release before using it.
-- Sample IPs in the documentation use reserved TEST-NET addresses; never paste lab configuration into production without reviewing impact.
-- Do not commit passwords, tokens, private configuration or customer information.
+> **Compatibility:** OS versions are guidelines, not guarantees. Use the device's version command and contextual CLI help (`?`) before applying any change. Configuration examples are for controlled lab use, not validated production procedures.
 
 ## ✍️ Contributing
 
-Use the [English](Templates/command-reference.md) or [Spanish](Templates/command-reference.es.md) reference template. Keep examples safe, short and vendor/OS-specific. Include the applicable version or mark it as **not yet validated**.
+Use the [English](Templates/command-reference.md) or [Spanish](Templates/command-reference.es.md) template. Keep every entry focused: **command, purpose, options, practical example/filter**. Do not publish credentials, client IP addresses or confidential configuration.
 
 ## 📄 License
 
-Documentation © 2026 Anderson Martínez Virviescas, distributed under [Creative Commons Attribution 4.0 International](LICENSE) (CC BY 4.0). Third-party trademarks remain their owners' property.
+Original documentation © 2026 Anderson Martínez Virviescas · [CC BY 4.0](LICENSE). Trademarks belong to their owners.

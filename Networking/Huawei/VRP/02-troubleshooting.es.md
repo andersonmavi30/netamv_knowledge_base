@@ -2,7 +2,7 @@
 tags: [cli, huawei, vrp, troubleshooting]
 vendor: Huawei
 os: "VRP"
-versions: "S-series VRP V200 (platform/release specific)"
+versions: "VRP (generic; confirm your device's release)"
 validation: not-lab-verified
 ---
 
@@ -10,7 +10,7 @@ validation: not-lab-verified
 
 [🇬🇧 English](02-troubleshooting.md) · [🇨🇴 Español](02-troubleshooting.es.md) · [↩ Huawei](../README.es.md)
 
-**Plataforma:** Huawei / VRP · **Versión orientativa:** S-series VRP V200 (platform/release specific).
+**Plataforma:** Huawei / VRP · **Versión orientativa:** VRP (generic; confirm your device's release).
 
 ## `ping 192.0.2.10`
 
