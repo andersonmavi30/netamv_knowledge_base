@@ -17,7 +17,7 @@
 - ⚖️ **Balanceadores** *(próximamente)*
 - 🖥️ **Servidores** *(próximamente)*
 - 📦 **Virtualización** *(próximamente)*
-- ⚙️ **NetDevOps & Network Automatio - DevNet** *(próximamente)*
+- ⚙️ **NetDevOps & Network Automation - DevNet** *(próximamente)*
 
 Navega por **pilar → fabricante → sistema operativo → categoría de comandos**. Cada fabricante contiene sus guías CLI resumidas.
 
