@@ -12,6 +12,7 @@
 - [Filters](04-filters.md)
 - [Configuration](05-configuration.md)
 - [Additional operations](06-operations.md)
+- [🧪 Packet capture / debug](08-packet-debug.md)
 
 > Illustrative examples: not yet validated in a lab.
 

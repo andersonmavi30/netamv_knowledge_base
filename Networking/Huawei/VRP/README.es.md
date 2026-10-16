@@ -12,6 +12,7 @@
 - [Filtros](04-filters.es.md)
 - [Configuración](05-configuration.es.md)
 - [Operación adicional](06-operations.es.md)
+- [🧪 Captura / debug](08-packet-debug.es.md)
 
 > Ejemplos orientativos: pendientes de validación en laboratorio.
 

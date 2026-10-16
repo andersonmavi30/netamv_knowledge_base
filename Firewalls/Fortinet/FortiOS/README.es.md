@@ -13,6 +13,7 @@
 - [Configuración de interfaces](03-interfaces.es.md)
 - [Filtros de salida](04-filters.es.md)
 - [Configuración general](05-configuration.es.md)
+- [🧪 Captura / debug](08-packet-debug.es.md)
 
 ## ✅ Validar versión y sintaxis
 

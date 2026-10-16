@@ -13,6 +13,7 @@
 - [Interface configuration](03-interfaces.md)
 - [Output filters](04-filters.md)
 - [General configuration](05-configuration.md)
+- [🧪 Packet capture / debug](08-packet-debug.md)
 
 ## ✅ Check release & syntax
 

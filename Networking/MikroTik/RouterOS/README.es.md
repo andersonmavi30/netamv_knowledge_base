@@ -11,6 +11,7 @@
 - [🔌 Interfaces](03-interfaces.es.md)
 - [🔍 Filtros operativos](04-filters.es.md)
 - [⚙️ Configuración general](05-configuration.es.md)
+- [🧪 Captura / debug](08-packet-debug.es.md)
 
 ## Diferencias de CLI
 

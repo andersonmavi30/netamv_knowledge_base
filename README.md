@@ -14,6 +14,7 @@
   - ↳ [Cisco · IOS / IOS XE](Networking/Cisco/README.md)
   - ↳ [MikroTik · RouterOS 7.x](Networking/MikroTik/README.md)
   - ↳ [Huawei · VRP](Networking/Huawei/README.md)
+  - ↳ [Dell · OS6 / OS9 / OS10](Networking/Dell/README.md)
 - ⚖️ **Load Balancers** *(planned)*
 - 🖥️ **Servers** *(planned)*
 - 📦 **Virtualization** *(planned)*

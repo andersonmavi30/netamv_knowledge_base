@@ -14,6 +14,7 @@
   - ↳ [Cisco · IOS / IOS XE](Networking/Cisco/README.es.md)
   - ↳ [MikroTik · RouterOS 7.x](Networking/MikroTik/README.es.md)
   - ↳ [Huawei · VRP](Networking/Huawei/README.es.md)
+  - ↳ [Dell · OS6 / OS9 / OS10](Networking/Dell/README.es.md)
 - ⚖️ **Balanceadores** *(próximamente)*
 - 🖥️ **Servidores** *(próximamente)*
 - 📦 **Virtualización** *(próximamente)*
