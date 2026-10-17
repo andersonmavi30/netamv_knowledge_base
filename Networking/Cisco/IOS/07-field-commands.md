@@ -39,24 +39,6 @@ show access-lists 101
 - **Parameters:** 101: ACL ID
 - **Filter / lookup:** `show access-lists 101 | include deny`
 
-## `show cdp neighbors detail`
 
-```text
-show cdp neighbors detail
-```
-
-- **Purpose:** Show CDP neighbors.
-- **Parameters:** detail: more fields
-- **Filter / lookup:** `show cdp neighbors detail | include Device ID`
-
-## `show interfaces GigabitEthernet0/0`
-
-```text
-show interfaces GigabitEthernet0/0
-```
-
-- **Purpose:** Inspect interface statistics.
-- **Parameters:** Interface: model-specific
-- **Filter / lookup:** `show interfaces GigabitEthernet0/0 | include CRC|errors|drops`
 
 > Examples pending lab validation. Confirm the release and syntax with CLI help.

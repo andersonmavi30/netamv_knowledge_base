@@ -39,24 +39,6 @@ show access-lists 101
 - **Parameters:** 101: ACL ID
 - **Filter / lookup:** `show access-lists 101 | include deny`
 
-## `show ip bgp summary`
 
-```text
-show ip bgp summary
-```
-
-- **Purpose:** Inspect BGP peers where supported.
-- **Parameters:** summary: condensed
-- **Filter / lookup:** `show ip bgp summary | include Idle`
-
-## `show logging`
-
-```text
-show logging
-```
-
-- **Purpose:** Inspect syslog messages.
-- **Parameters:** No flags
-- **Filter / lookup:** `show logging | include LINK|LINEPROTO`
 
 > Examples pending lab validation. Confirm the release and syntax with CLI help.
