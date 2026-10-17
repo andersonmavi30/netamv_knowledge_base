@@ -12,7 +12,7 @@ validation: not-lab-verified
 
 **Platform:** Huawei / VRP · **Reference version:** VRP (generic; confirm your device's release).
 
-## `system-view`
+## Configure sysname
 
 ```text
 system-view
@@ -24,7 +24,7 @@ return
 - **Parameters/filters:** system-view: configuration; sysname: hostname; return: user view.
 - **Operational example:** Label a Huawei lab switch.
 
-## `system-view`
+## Configure VLAN 10 access port
 
 ```text
 system-view
@@ -42,7 +42,7 @@ return
 - **Operational example:** Attach a lab workstation to VLAN 10.
 - **Caution:** Check existing trunk/port role; may interrupt traffic.
 
-## `system-view`
+## Add a static route
 
 ```text
 system-view

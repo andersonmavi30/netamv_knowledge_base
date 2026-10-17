@@ -13,7 +13,7 @@ validation: not-lab-verified
 **Plataforma:** Huawei / VRP · **Versión orientativa:** VRP (generic; confirm your device's release).
 
 
-## `system-view`
+## Habilitar y describir interfaz
 
 ```text
 system-view
@@ -29,7 +29,7 @@ return
 - **Caso real:** Activar un uplink de laboratorio.
 - **Precaución:** Cambia estado de enlace; los roles varían según VRP.
 
-## `system-view`
+## Crear VLANIF10 con IPv4
 
 ```text
 system-view

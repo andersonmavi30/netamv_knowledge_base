@@ -13,7 +13,7 @@ validation: not-lab-verified
 **Platform:** Huawei / VRP · **Reference version:** VRP (generic; confirm your device's release).
 
 
-## `system-view`
+## Enable and label a port
 
 ```text
 system-view
@@ -29,7 +29,7 @@ return
 - **Operational example:** Activate a lab uplink.
 - **Caution:** Changes link state; port roles may vary by VRP family.
 
-## `system-view`
+## Configure VLANIF10 with IPv4
 
 ```text
 system-view
