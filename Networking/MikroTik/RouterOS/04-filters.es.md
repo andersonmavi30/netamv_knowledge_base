@@ -12,15 +12,6 @@ validation: not-lab-verified
 
 **Plataforma:** MikroTik / RouterOS · **Versión orientativa:** 7.x.
 
-## `/interface print where name~"ether"`
-
-```text
-/interface print where name~"ether"
-```
-
-- **Sirve para:** Filtra interfaces por parte del nombre.
-- **Parámetros/filtros:** ~: expresión regular, no pipe de Unix.
-- **Caso real:** Listar puertos físicos.
 
 ## `/ip route print where dst-address="198.51.100.0/24"`
 

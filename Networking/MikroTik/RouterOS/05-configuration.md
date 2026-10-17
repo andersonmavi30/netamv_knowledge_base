@@ -43,15 +43,6 @@ validation: not-lab-verified
 - **Parameters/filters:** list: group; address: member IP; comment: label.
 - **Operational example:** Manage lab destinations by group.
 
-## `/ip route print where dst-address="198.51.100.0/24"`
-
-```text
-/ip route print where dst-address="198.51.100.0/24"
-```
-
-- **Purpose:** Verify the new route.
-- **Parameters/filters:** where: select exact prefix.
-- **Operational example:** Check gateway and active flags.
 
 > Verify commands and options with on-device CLI help; examples are not yet lab-validated.
 

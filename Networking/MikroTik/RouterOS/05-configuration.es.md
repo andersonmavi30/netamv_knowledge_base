@@ -43,15 +43,6 @@ validation: not-lab-verified
 - **Parámetros/filtros:** list: grupo; address: IP miembro; comment: etiqueta.
 - **Caso real:** Agrupar destinos del laboratorio.
 
-## `/ip route print where dst-address="198.51.100.0/24"`
-
-```text
-/ip route print where dst-address="198.51.100.0/24"
-```
-
-- **Sirve para:** Verifica la nueva ruta.
-- **Parámetros/filtros:** where: prefijo exacto.
-- **Caso real:** Revisar gateway y estado activo.
 
 > Verifica los comandos y opciones mediante la ayuda CLI del equipo; ejemplos pendientes de validación en laboratorio.
 
