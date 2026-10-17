@@ -12,15 +12,6 @@ validation: not-lab-verified
 
 **Platform:** Huawei / VRP · **Reference version:** VRP (generic; confirm your device's release).
 
-## `display interface brief | include GigabitEthernet0/0/1`
-
-```text
-display interface brief | include GigabitEthernet0/0/1
-```
-
-- **Purpose:** Find one physical interface.
-- **Parameters/filters:** | include: filter output lines.
-- **Operational example:** Check port up/down state.
 
 ## `system-view`
 
