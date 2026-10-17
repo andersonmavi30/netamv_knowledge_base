@@ -64,16 +64,6 @@ show interfaces status
 - **Operational example:** Locate down or err-disabled ports.
 - **Filter/verification:** `show interfaces status | include notconnect|err-disabled`
 
-## `show logging`
-
-```text
-show logging
-```
-
-- **Purpose:** Review buffered logs.
-- **Parameters:** No arguments.
-- **Operational example:** Find link flaps.
-- **Filter/verification:** `show logging | include LINK|LINEPROTO`
 
 ## `show ip route 198.51.100.10`
 

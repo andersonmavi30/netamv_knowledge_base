@@ -64,16 +64,6 @@ show interfaces status
 - **Caso real:** Ubicar puertos down.
 - **Filtro/validación:** `show interfaces status | include notconnect|err-disabled`
 
-## `show logging`
-
-```text
-show logging
-```
-
-- **Sirve para:** Consulta buffer de logs.
-- **Parámetros:** Sin argumentos.
-- **Caso real:** Buscar flapping.
-- **Filtro/validación:** `show logging | include LINK|LINEPROTO`
 
 ## `show ip route 198.51.100.10`
 

@@ -22,15 +22,6 @@ display current-configuration | include sysname
 - **Parámetros/filtros:** | include: conserva coincidencias.
 - **Caso real:** Identificar equipo sin leer toda la config.
 
-## `display interface brief | include GigabitEthernet0/0/1`
-
-```text
-display interface brief | include GigabitEthernet0/0/1
-```
-
-- **Sirve para:** Consulta un puerto en lugar de todos.
-- **Parámetros/filtros:** include: muestra coincidencias.
-- **Caso real:** Revisar estado de puerto específico.
 
 ## `display logbuffer | include ERROR`
 

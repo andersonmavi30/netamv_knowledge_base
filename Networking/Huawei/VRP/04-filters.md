@@ -22,15 +22,6 @@ display current-configuration | include sysname
 - **Parameters/filters:** | include: keep matching lines.
 - **Operational example:** Identify the machine without full config.
 
-## `display interface brief | include GigabitEthernet0/0/1`
-
-```text
-display interface brief | include GigabitEthernet0/0/1
-```
-
-- **Purpose:** Inspect one port, not the whole list.
-- **Parameters/filters:** include: show matches.
-- **Operational example:** Check a specific port's status.
 
 ## `display logbuffer | include ERROR`
 
