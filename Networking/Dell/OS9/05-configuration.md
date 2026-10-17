@@ -1,5 +1,5 @@
 ---
-tags: [dell, os9, cli]
+tags: [cli, dell, os9, configuration]
 validation: not-lab-verified
 ---
 
@@ -7,9 +7,9 @@ validation: not-lab-verified
 
 [🇬🇧 English](05-configuration.md) · [🇨🇴 Español](05-configuration.es.md) · [↩ Index](README.md)
 
-**Reference scope:** Dell Networking OS9 / FTOS — Force10-derived platforms, model-dependent.
+**Compatibility:** Dell Networking OS9 / Force10; confirm the platform and FTOS-derived CLI. Verify with `show version` and `?`.
 
-## `configure`
+## `hostname DELL-LAB`
 
 ```text
 configure
@@ -17,10 +17,9 @@ hostname DELL-LAB
 end
 ```
 
-- **Purpose:** Set hostname in a lab configuration.
-- **Parameters:** configure: config mode; hostname: system name; end: leave.
-- **Practical use:** Rename switch.
-- **Verification:** `show running-config`
+- **Purpose:** Set hostname on compatible OS9 versions.
+- **Options:** hostname: device name.
+- **Real use:** Name test switch.
 
 ## `write memory`
 
@@ -28,11 +27,20 @@ end
 write memory
 ```
 
-- **Purpose:** Save configuration on supported OS9 trains.
-- **Parameters:** write memory: persist settings.
-- **Practical use:** Keep approved settings after reload.
-- **Verification:** `show running-config`
+- **Purpose:** Save validated settings.
+- **Options:** write memory: persist configuration.
+- **Real use:** Keep configuration after reload.
 
-> Illustrative, not lab-verified. Dell hardware families have different CLI; consult model/release-specific documentation before execution.
+## `show configuration`
 
-[Dell Support](https://www.dell.com/support/home/en-us/products/networking)
+```text
+show configuration
+```
+
+- **Purpose:** Inspect configuration in supporting OS9 modes.
+- **Options:** Available in supported configuration contexts.
+- **Real use:** Review before save.
+
+> Validate commands on the installed model and release; not lab-tested.
+
+[Dell documentation](https://i.dell.com/sites/doccontent/shared-content/data-sheets/en/Documents/ESG-Dell-Force10-FTOS-CLI-Spec-Sheet.pdf)

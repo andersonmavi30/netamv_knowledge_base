@@ -1,5 +1,5 @@
 ---
-tags: [dell, os10, cli]
+tags: [cli, dell, os10, troubleshooting]
 validation: not-lab-verified
 ---
 
@@ -7,18 +7,7 @@ validation: not-lab-verified
 
 [🇬🇧 English](02-troubleshooting.md) · [🇨🇴 Español](02-troubleshooting.es.md) · [↩ Index](README.md)
 
-**Reference scope:** Dell SmartFabric OS10 — supported PowerSwitch platforms; verify release/model.
-
-## `show interface`
-
-```text
-show interface
-```
-
-- **Purpose:** Inspect interface health.
-- **Parameters:** Add interface ID per model.
-- **Practical use:** Find uplink errors.
-- **Verification:** `show interface`
+**Compatibility:** Dell SmartFabric OS10 (PowerSwitch hardware/release dependent). Verify with `show version` and `?`.
 
 ## `show logging`
 
@@ -26,22 +15,30 @@ show interface
 show logging
 ```
 
-- **Purpose:** Inspect OS10 events where available.
-- **Parameters:** CLI variants may vary by release.
-- **Practical use:** Investigate link flap.
-- **Verification:** `show logging`
+- **Purpose:** Inspect log events.
+- **Options:** No flags.
+- **Real use:** Investigate link flaps.
 
-## `show ip route`
+## `show interface ethernet 1/1/1`
 
 ```text
-show ip route
+show interface ethernet 1/1/1
 ```
 
-- **Purpose:** Review routing table.
-- **Parameters:** No arguments.
-- **Practical use:** Confirm expected route.
-- **Verification:** `show ip route`
+- **Purpose:** Inspect a physical interface.
+- **Options:** 1/1/1: node/slot/port.
+- **Real use:** Look for link drops.
 
-> Illustrative, not lab-verified. Dell hardware families have different CLI; consult model/release-specific documentation before execution.
+## `show mac address-table`
 
-[Dell Support](https://www.dell.com/support/home/en-us/products/networking)
+```text
+show mac address-table
+```
+
+- **Purpose:** Review L2 forwarding table on compatible releases.
+- **Options:** No flags.
+- **Real use:** Locate learned MAC.
+
+> Validate commands on the installed model and release; not lab-tested.
+
+[Dell documentation](https://www.dell.com/support/manuals/en-us/dell-emc-smartfabric-os10/smartfabric-os-user-guide-10-5-0/Filter-show-commands?guid=guid-758c857a-eba2-477a-a8f5-f0738c185e54&lang=en-us)

@@ -1,36 +1,54 @@
 ---
-tags: [dell, os9, cli]
+tags: [cli, dell, os9, filters]
 validation: not-lab-verified
 ---
 
-# Filters — Dell OS9
+# Output filters — Dell OS9
 
 [🇬🇧 English](04-filters.md) · [🇨🇴 Español](04-filters.es.md) · [↩ Index](README.md)
 
-**Reference scope:** Dell Networking OS9 / FTOS — Force10-derived platforms, model-dependent.
+**Compatibility:** Dell Networking OS9 / Force10; confirm the platform and FTOS-derived CLI. Verify with `show version` and `?`.
 
-## `show interfaces`
-
-```text
-show interfaces
-```
-
-- **Purpose:** Inspect output before selecting OS9-specific CLI filters.
-- **Parameters:** Pipe options differ across releases; verify with ?.
-- **Practical use:** Search operational data.
-- **Verification:** `show interfaces`
-
-## `show ip route`
+## `show running-config | grep hostname`
 
 ```text
-show ip route
+show running-config | grep hostname
 ```
 
-- **Purpose:** Review route output before platform-specific filtering.
-- **Parameters:** Use CLI help for exact filter syntax.
-- **Practical use:** Find destination networks.
-- **Verification:** `show ip route`
+- **Purpose:** Filter hostname from full configuration.
+- **Options:** | grep: matching lines.
+- **Real use:** Identify switch name.
 
-> Illustrative, not lab-verified. Dell hardware families have different CLI; consult model/release-specific documentation before execution.
+## `show interfaces | grep error`
 
-[Dell Support](https://www.dell.com/support/home/en-us/products/networking)
+```text
+show interfaces | grep error
+```
+
+- **Purpose:** Show lines mentioning port errors.
+- **Options:** | grep: case-sensitive match.
+- **Real use:** Spot port faults.
+
+## `show ip route | grep 198.51.100`
+
+```text
+show ip route | grep 198.51.100
+```
+
+- **Purpose:** Find a route prefix by text.
+- **Options:** | grep: text, not route lookup.
+- **Real use:** Locate a lab prefix.
+
+## `show logging | except INFO`
+
+```text
+show logging | except INFO
+```
+
+- **Purpose:** Hide lines labeled INFO.
+- **Options:** | except: exclude matches.
+- **Real use:** Focus on critical events.
+
+> Validate commands on the installed model and release; not lab-tested.
+
+[Dell documentation](https://i.dell.com/sites/doccontent/shared-content/data-sheets/en/Documents/ESG-Dell-Force10-FTOS-CLI-Spec-Sheet.pdf)

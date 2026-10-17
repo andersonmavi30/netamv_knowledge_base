@@ -1,36 +1,46 @@
 ---
-tags: [dell, os9, cli]
+tags: [cli, dell, os9, packet-debug]
 validation: not-lab-verified
 ---
 
-# Diagnóstico de paquetes — Dell OS9
+# Mirroring / debug — Dell OS9
 
 [🇬🇧 English](08-packet-debug.md) · [🇨🇴 Español](08-packet-debug.es.md) · [↩ Índice](README.es.md)
 
-**Versión orientativa:** Dell Networking OS9 / FTOS — Force10-derived platforms, model-dependent.
+**Compatibilidad:** Dell Networking OS9 / Force10; confirm the platform and FTOS-derived CLI. Verifica con `show version` y `?`.
 
-## `show interfaces`
+> ⚠️ Dell no usa un sniffer universal. Port mirroring exige un puerto de análisis y autorización. Detén las sesiones al terminar; los paquetes pueden incluir datos sensibles.
 
-```text
-show interfaces
-```
-
-- **Sirve para:** Usa contadores para identificar fallos.
-- **Parámetros:** Consulta contadores del puerto.
-- **Caso práctico:** Revisar errores y descartes.
-- **Verificación:** `show interfaces`
-
-## `show logging`
+## `monitor interface ?`
 
 ```text
-show logging
+monitor interface ?
 ```
 
-- **Sirve para:** Revisa eventos; no es captura PCAP.
-- **Parámetros:** Sin flags.
-- **Caso práctico:** Analizar flapping.
-- **Verificación:** `show logging`
+- **Sirve para:** Consultar sintaxis de monitor de interfaz en OS9.
+- **Parámetros:** ?: ayuda contextual; no es PCAP.
+- **Caso real:** Consultar contadores en vivo.
 
-> Referencia orientativa y pendiente de validación en laboratorio. Dell tiene familias con CLI diferentes; comprueba la documentación del modelo antes de ejecutar comandos.
+## `show interfaces | grep CRC`
 
-[Dell Support](https://www.dell.com/support/home/en-us/products/networking)
+```text
+show interfaces | grep CRC
+```
+
+- **Sirve para:** Busca contadores CRC en salida.
+- **Parámetros:** | grep: filtrado por texto.
+- **Caso real:** Confirmar errores físicos.
+
+## `show logging | grep OSPF`
+
+```text
+show logging | grep OSPF
+```
+
+- **Sirve para:** Busca eventos OSPF.
+- **Parámetros:** | grep: eventos coincidentes.
+- **Caso real:** Investigar reinicios OSPF.
+
+> Los comandos se deben validar en la versión y modelo instalados; no se han probado en laboratorio.
+
+[Guía de Dell](https://i.dell.com/sites/doccontent/shared-content/data-sheets/en/Documents/ESG-Dell-Force10-FTOS-CLI-Spec-Sheet.pdf)

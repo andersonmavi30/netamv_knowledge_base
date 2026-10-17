@@ -1,36 +1,54 @@
 ---
-tags: [dell, os10, cli]
+tags: [cli, dell, os10, filters]
 validation: not-lab-verified
 ---
 
-# Filtros — Dell OS10
+# Filtros de salida — Dell OS10
 
 [🇬🇧 English](04-filters.md) · [🇨🇴 Español](04-filters.es.md) · [↩ Índice](README.es.md)
 
-**Versión orientativa:** Dell SmartFabric OS10 — supported PowerSwitch platforms; verify release/model.
+**Compatibilidad:** Dell SmartFabric OS10 (PowerSwitch hardware/release dependent). Verifica con `show version` y `?`.
 
-## `show running-configuration`
-
-```text
-show running-configuration
-```
-
-- **Sirve para:** Consulta configuración antes de filtros particulares.
-- **Parámetros:** Verifica pipe y regex con ayuda CLI.
-- **Caso práctico:** Localizar interfaz.
-- **Verificación:** `show running-configuration`
-
-## `show ip route`
+## `show running-configuration | grep hostname`
 
 ```text
-show ip route
+show running-configuration | grep hostname
 ```
 
-- **Sirve para:** Consulta rutas; filtra tras validar sintaxis.
-- **Parámetros:** OS10 no es idéntico a Cisco IOS.
-- **Caso práctico:** Revisar ruta destino.
-- **Verificación:** `show ip route`
+- **Sirve para:** Encuentra hostname.
+- **Parámetros:** | grep: coincidencias.
+- **Caso real:** Identificar equipo.
 
-> Referencia orientativa y pendiente de validación en laboratorio. Dell tiene familias con CLI diferentes; comprueba la documentación del modelo antes de ejecutar comandos.
+## `show interface status | grep down`
 
-[Dell Support](https://www.dell.com/support/home/en-us/products/networking)
+```text
+show interface status | grep down
+```
+
+- **Sirve para:** Filtra interfaces caídas.
+- **Parámetros:** | grep: patrón de texto.
+- **Caso real:** Ubicar fallas de enlace.
+
+## `show ip route | grep 198.51.100`
+
+```text
+show ip route | grep 198.51.100
+```
+
+- **Sirve para:** Buscar prefijo.
+- **Parámetros:** | grep: texto, no lookup.
+- **Caso real:** Encontrar prefijo.
+
+## `show running-configuration | except description`
+
+```text
+show running-configuration | except description
+```
+
+- **Sirve para:** Oculta líneas description.
+- **Parámetros:** | except: omite coincidencias.
+- **Caso real:** Revisar configuración.
+
+> Los comandos se deben validar en la versión y modelo instalados; no se han probado en laboratorio.
+
+[Guía de Dell](https://www.dell.com/support/manuals/en-us/dell-emc-smartfabric-os10/smartfabric-os-user-guide-10-5-0/Filter-show-commands?guid=guid-758c857a-eba2-477a-a8f5-f0738c185e54&lang=en-us)

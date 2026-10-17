@@ -1,5 +1,5 @@
 ---
-tags: [dell, os9, cli]
+tags: [cli, dell, os9, interfaces]
 validation: not-lab-verified
 ---
 
@@ -7,18 +7,17 @@ validation: not-lab-verified
 
 [🇬🇧 English](03-interfaces.md) · [🇨🇴 Español](03-interfaces.es.md) · [↩ Index](README.md)
 
-**Reference scope:** Dell Networking OS9 / FTOS — Force10-derived platforms, model-dependent.
+**Compatibility:** Dell Networking OS9 / Force10; confirm the platform and FTOS-derived CLI. Verify with `show version` and `?`.
 
-## `show interfaces`
+## `show interfaces tengigabitethernet 0/1`
 
 ```text
-show interfaces
+show interfaces tengigabitethernet 0/1
 ```
 
-- **Purpose:** Check link status and counters.
-- **Parameters:** No arguments.
-- **Practical use:** Diagnose failing uplink.
-- **Verification:** `show interfaces`
+- **Purpose:** Inspect one link on a compatible Force10 switch.
+- **Options:** Interface name: verify unit/port.
+- **Real use:** Check uplink CRC/errors.
 
 ## `show running-config`
 
@@ -26,11 +25,24 @@ show interfaces
 show running-config
 ```
 
-- **Purpose:** Review interface blocks before making changes.
-- **Parameters:** No arguments.
-- **Practical use:** Find active port config.
-- **Verification:** `show running-config`
+- **Purpose:** Review interface configuration before changes.
+- **Options:** No flags.
+- **Real use:** Identify interface block.
 
-> Illustrative, not lab-verified. Dell hardware families have different CLI; consult model/release-specific documentation before execution.
+## `interface tengigabitethernet 0/1`
 
-[Dell Support](https://www.dell.com/support/home/en-us/products/networking)
+```text
+configure
+interface tengigabitethernet 0/1
+ description LAB-UPLINK
+exit
+end
+```
+
+- **Purpose:** Label an uplink on a compatible OS9 platform.
+- **Options:** interface: physical port; description: label.
+- **Real use:** Label a lab port.
+
+> Validate commands on the installed model and release; not lab-tested.
+
+[Dell documentation](https://i.dell.com/sites/doccontent/shared-content/data-sheets/en/Documents/ESG-Dell-Force10-FTOS-CLI-Spec-Sheet.pdf)

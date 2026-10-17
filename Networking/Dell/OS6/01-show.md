@@ -1,5 +1,5 @@
 ---
-tags: [dell, os6, cli]
+tags: [cli, dell, os6, show]
 validation: not-lab-verified
 ---
 
@@ -7,7 +7,7 @@ validation: not-lab-verified
 
 [🇬🇧 English](01-show.md) · [🇨🇴 Español](01-show.es.md) · [↩ Index](README.md)
 
-**Reference scope:** Dell Networking OS6 — generally N-series (check model/release).
+**Compatibility:** OS6 / N-Series; CLI output filtering is available in OS6 6.6+ where supported. Verify with `show version` and `?`.
 
 ## `show version`
 
@@ -15,10 +15,9 @@ validation: not-lab-verified
 show version
 ```
 
-- **Purpose:** Show OS release and hardware details.
-- **Parameters:** No arguments.
-- **Practical use:** Identify software before maintenance.
-- **Verification:** `show version`
+- **Purpose:** Identify switch software and hardware.
+- **Options:** No flags.
+- **Real use:** Confirm OS6 before commands.
 
 ## `show interfaces status`
 
@@ -26,10 +25,9 @@ show version
 show interfaces status
 ```
 
-- **Purpose:** Summarize port connection state on supported N-series models.
-- **Parameters:** status: port summary.
-- **Practical use:** Find disconnected ports.
-- **Verification:** `show interfaces status`
+- **Purpose:** List physical port operational states.
+- **Options:** status: compact view.
+- **Real use:** Locate inactive links.
 
 ## `show vlan`
 
@@ -37,22 +35,20 @@ show interfaces status
 show vlan
 ```
 
-- **Purpose:** Show configured VLANs.
-- **Parameters:** No arguments.
-- **Practical use:** Check VLAN 10.
-- **Verification:** `show vlan`
+- **Purpose:** List configured VLANs.
+- **Options:** No flags.
+- **Real use:** Find VLAN 10.
 
-## `show logging`
+## `show ip route`
 
 ```text
-show logging
+show ip route
 ```
 
-- **Purpose:** Inspect system logging.
-- **Parameters:** No arguments.
-- **Practical use:** Find link flap alarms.
-- **Verification:** `show logging`
+- **Purpose:** Display IPv4 routing information.
+- **Options:** No flags; requires L3 capability.
+- **Real use:** Check default route.
 
-> Illustrative, not lab-verified. Dell hardware families have different CLI; consult model/release-specific documentation before execution.
+> Validate commands on the installed model and release; not lab-tested.
 
-[Dell Support](https://www.dell.com/support/home/en-us/products/networking)
+[Dell documentation](https://dl.dell.com/manuals/common/n-series-v663_cli_en-us.pdf)

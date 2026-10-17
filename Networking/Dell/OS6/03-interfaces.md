@@ -1,5 +1,5 @@
 ---
-tags: [dell, os6, cli]
+tags: [cli, dell, os6, interfaces]
 validation: not-lab-verified
 ---
 
@@ -7,34 +7,42 @@ validation: not-lab-verified
 
 [🇬🇧 English](03-interfaces.md) · [🇨🇴 Español](03-interfaces.es.md) · [↩ Index](README.md)
 
-**Reference scope:** Dell Networking OS6 — generally N-series (check model/release).
+**Compatibility:** OS6 / N-Series; CLI output filtering is available in OS6 6.6+ where supported. Verify with `show version` and `?`.
 
-## `show interfaces status`
+## `show interfaces switchport`
 
 ```text
-show interfaces status
+show interfaces switchport
 ```
 
-- **Purpose:** Review port status before changes.
-- **Parameters:** status: short view.
-- **Practical use:** Find uplink state.
-- **Verification:** `show interfaces status`
+- **Purpose:** Inspect Layer 2 port modes.
+- **Options:** No flags.
+- **Real use:** Review trunk/access state.
 
-## `configure`
+## `show running-config interface gigabitethernet 1/0/1`
+
+```text
+show running-config interface gigabitethernet 1/0/1
+```
+
+- **Purpose:** Review the configuration of one port.
+- **Options:** interface: port selection.
+- **Real use:** Check access VLAN before change.
+
+## `interface gigabitethernet 1/0/2`
 
 ```text
 configure
-interface gigabitethernet 1/0/1
+interface gigabitethernet 1/0/2
  description LAB-UPLINK
-exit
+ exit
 exit
 ```
 
-- **Purpose:** Label a test port; exact interface syntax varies by model.
-- **Parameters:** interface: select port; description: label.
-- **Practical use:** Mark a lab uplink.
-- **Verification:** `show interfaces status`
+- **Purpose:** Set a lab port description.
+- **Options:** interface: port; description: label.
+- **Real use:** Identify a lab uplink.
 
-> Illustrative, not lab-verified. Dell hardware families have different CLI; consult model/release-specific documentation before execution.
+> Validate commands on the installed model and release; not lab-tested.
 
-[Dell Support](https://www.dell.com/support/home/en-us/products/networking)
+[Dell documentation](https://dl.dell.com/manuals/common/n-series-v663_cli_en-us.pdf)

@@ -1,5 +1,5 @@
 ---
-tags: [dell, os10, cli]
+tags: [cli, dell, os10, show]
 validation: not-lab-verified
 ---
 
@@ -7,7 +7,7 @@ validation: not-lab-verified
 
 [🇬🇧 English](01-show.md) · [🇨🇴 Español](01-show.es.md) · [↩ Índice](README.es.md)
 
-**Versión orientativa:** Dell SmartFabric OS10 — supported PowerSwitch platforms; verify release/model.
+**Compatibilidad:** Dell SmartFabric OS10 (PowerSwitch hardware/release dependent). Verifica con `show version` y `?`.
 
 ## `show version`
 
@@ -16,9 +16,8 @@ show version
 ```
 
 - **Sirve para:** Identifica versión OS10.
-- **Parámetros:** Sin parámetros.
-- **Caso práctico:** Comprobar versión.
-- **Verificación:** `show version`
+- **Parámetros:** Sin opciones.
+- **Caso real:** Comprobar versión.
 
 ## `show interface status`
 
@@ -26,10 +25,9 @@ show version
 show interface status
 ```
 
-- **Sirve para:** Resume interfaces; validar en tu versión.
+- **Sirve para:** Resume puertos Ethernet.
 - **Parámetros:** status: resumen.
-- **Caso práctico:** Buscar enlaces down.
-- **Verificación:** `show interface status`
+- **Caso real:** Buscar puertos caídos.
 
 ## `show ip route`
 
@@ -37,10 +35,9 @@ show interface status
 show ip route
 ```
 
-- **Sirve para:** Muestra rutas.
-- **Parámetros:** Sin parámetros.
-- **Caso práctico:** Buscar prefijos.
-- **Verificación:** `show ip route`
+- **Sirve para:** Muestra tabla de rutas.
+- **Parámetros:** Sin opciones.
+- **Caso real:** Buscar prefijo.
 
 ## `show vlan`
 
@@ -48,11 +45,10 @@ show ip route
 show vlan
 ```
 
-- **Sirve para:** Consulta VLAN.
-- **Parámetros:** Sin parámetros.
-- **Caso práctico:** Revisar VLAN.
-- **Verificación:** `show vlan`
+- **Sirve para:** Muestra VLAN.
+- **Parámetros:** Sin opciones.
+- **Caso real:** Revisar VLAN 10.
 
-> Referencia orientativa y pendiente de validación en laboratorio. Dell tiene familias con CLI diferentes; comprueba la documentación del modelo antes de ejecutar comandos.
+> Los comandos se deben validar en la versión y modelo instalados; no se han probado en laboratorio.
 
-[Dell Support](https://www.dell.com/support/home/en-us/products/networking)
+[Guía de Dell](https://www.dell.com/support/manuals/en-us/dell-emc-smartfabric-os10/smartfabric-os-user-guide-10-5-0/Filter-show-commands?guid=guid-758c857a-eba2-477a-a8f5-f0738c185e54&lang=en-us)

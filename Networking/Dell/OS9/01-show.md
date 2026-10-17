@@ -1,5 +1,5 @@
 ---
-tags: [dell, os9, cli]
+tags: [cli, dell, os9, show]
 validation: not-lab-verified
 ---
 
@@ -7,7 +7,7 @@ validation: not-lab-verified
 
 [🇬🇧 English](01-show.md) · [🇨🇴 Español](01-show.es.md) · [↩ Index](README.md)
 
-**Reference scope:** Dell Networking OS9 / FTOS — Force10-derived platforms, model-dependent.
+**Compatibility:** Dell Networking OS9 / Force10; confirm the platform and FTOS-derived CLI. Verify with `show version` and `?`.
 
 ## `show version`
 
@@ -15,10 +15,9 @@ validation: not-lab-verified
 show version
 ```
 
-- **Purpose:** Display OS9 release and system information.
-- **Parameters:** No arguments.
-- **Practical use:** Identify a Force10-derived platform.
-- **Verification:** `show version`
+- **Purpose:** Identify OS9 release and hardware.
+- **Options:** No flags.
+- **Real use:** Confirm OS9 before maintenance.
 
 ## `show interfaces`
 
@@ -26,10 +25,9 @@ show version
 show interfaces
 ```
 
-- **Purpose:** Display operational interface details.
-- **Parameters:** No arguments.
-- **Practical use:** Review traffic counters.
-- **Verification:** `show interfaces`
+- **Purpose:** Review port state and counters.
+- **Options:** No flags.
+- **Real use:** Find down links.
 
 ## `show ip route`
 
@@ -37,10 +35,9 @@ show interfaces
 show ip route
 ```
 
-- **Purpose:** Inspect the routing table.
-- **Parameters:** No arguments.
-- **Practical use:** Check next hops.
-- **Verification:** `show ip route`
+- **Purpose:** Inspect IPv4 routes.
+- **Options:** No flags.
+- **Real use:** Check destination routes.
 
 ## `show vlan`
 
@@ -48,11 +45,10 @@ show ip route
 show vlan
 ```
 
-- **Purpose:** Display VLAN configuration where switching is supported.
-- **Parameters:** No arguments.
-- **Practical use:** Locate VLAN 10.
-- **Verification:** `show vlan`
+- **Purpose:** Review VLAN inventory on switching platforms.
+- **Options:** No flags; availability varies.
+- **Real use:** Find VLAN 10.
 
-> Illustrative, not lab-verified. Dell hardware families have different CLI; consult model/release-specific documentation before execution.
+> Validate commands on the installed model and release; not lab-tested.
 
-[Dell Support](https://www.dell.com/support/home/en-us/products/networking)
+[Dell documentation](https://i.dell.com/sites/doccontent/shared-content/data-sheets/en/Documents/ESG-Dell-Force10-FTOS-CLI-Spec-Sheet.pdf)

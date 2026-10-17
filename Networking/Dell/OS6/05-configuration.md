@@ -1,5 +1,5 @@
 ---
-tags: [dell, os6, cli]
+tags: [cli, dell, os6, configuration]
 validation: not-lab-verified
 ---
 
@@ -7,9 +7,9 @@ validation: not-lab-verified
 
 [🇬🇧 English](05-configuration.md) · [🇨🇴 Español](05-configuration.es.md) · [↩ Index](README.md)
 
-**Reference scope:** Dell Networking OS6 — generally N-series (check model/release).
+**Compatibility:** OS6 / N-Series; CLI output filtering is available in OS6 6.6+ where supported. Verify with `show version` and `?`.
 
-## `configure`
+## `hostname DELL-LAB`
 
 ```text
 configure
@@ -17,10 +17,22 @@ hostname DELL-LAB
 exit
 ```
 
-- **Purpose:** Set the device hostname on supported OS6 versions.
-- **Parameters:** hostname: device name.
-- **Practical use:** Identify lab switch.
-- **Verification:** `show running-config`
+- **Purpose:** Change hostname.
+- **Options:** hostname: device name.
+- **Real use:** Name a lab switch.
+
+## `vlan 10`
+
+```text
+configure
+vlan 10
+exit
+exit
+```
+
+- **Purpose:** Create VLAN 10 on supported OS6 switches.
+- **Options:** vlan 10: VLAN identifier.
+- **Real use:** Prepare test LAN.
 
 ## `copy running-config startup-config`
 
@@ -28,11 +40,10 @@ exit
 copy running-config startup-config
 ```
 
-- **Purpose:** Save active configuration where supported.
-- **Parameters:** running-config: source; startup-config: destination.
-- **Practical use:** Keep tested changes after reboot.
-- **Verification:** `show running-config`
+- **Purpose:** Save running configuration.
+- **Options:** running-config: source; startup-config: destination.
+- **Real use:** Persist approved settings.
 
-> Illustrative, not lab-verified. Dell hardware families have different CLI; consult model/release-specific documentation before execution.
+> Validate commands on the installed model and release; not lab-tested.
 
-[Dell Support](https://www.dell.com/support/home/en-us/products/networking)
+[Dell documentation](https://dl.dell.com/manuals/common/n-series-v663_cli_en-us.pdf)

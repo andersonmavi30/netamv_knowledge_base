@@ -1,36 +1,54 @@
 ---
-tags: [dell, os6, cli]
+tags: [cli, dell, os6, filters]
 validation: not-lab-verified
 ---
 
-# Filters — Dell OS6
+# Output filters — Dell OS6
 
 [🇬🇧 English](04-filters.md) · [🇨🇴 Español](04-filters.es.md) · [↩ Index](README.md)
 
-**Reference scope:** Dell Networking OS6 — generally N-series (check model/release).
+**Compatibility:** OS6 / N-Series; CLI output filtering is available in OS6 6.6+ where supported. Verify with `show version` and `?`.
 
-## `show running-config`
-
-```text
-show running-config
-```
-
-- **Purpose:** Review configuration; confirm whether pipe filters are supported on this release.
-- **Parameters:** Output filters differ across OS6 revisions.
-- **Practical use:** Find interface settings.
-- **Verification:** `show running-config`
-
-## `show logging`
+## `show running-config | include hostname`
 
 ```text
-show logging
+show running-config | include hostname
 ```
 
-- **Purpose:** Inspect events before applying platform-specific filters.
-- **Parameters:** Check available filters with on-device ?.
-- **Practical use:** Investigate port flaps.
-- **Verification:** `show logging`
+- **Purpose:** Find only the hostname configuration.
+- **Options:** | include: matching lines.
+- **Real use:** Identify the switch quickly.
 
-> Illustrative, not lab-verified. Dell hardware families have different CLI; consult model/release-specific documentation before execution.
+## `show running-config | section interface`
 
-[Dell Support](https://www.dell.com/support/home/en-us/products/networking)
+```text
+show running-config | section interface
+```
+
+- **Purpose:** Find interface configuration sections.
+- **Options:** | section: matching block.
+- **Real use:** Inspect port configurations.
+
+## `show interfaces status | include 1/0/1`
+
+```text
+show interfaces status | include 1/0/1
+```
+
+- **Purpose:** Find an exact port in a list.
+- **Options:** | include: search text.
+- **Real use:** Check the uplink.
+
+## `show logging | exclude LINK`
+
+```text
+show logging | exclude LINK
+```
+
+- **Purpose:** Hide repetitive link messages.
+- **Options:** | exclude: omit matches.
+- **Real use:** Focus on other alarms.
+
+> Validate commands on the installed model and release; not lab-tested.
+
+[Dell documentation](https://dl.dell.com/manuals/common/n-series-v663_cli_en-us.pdf)

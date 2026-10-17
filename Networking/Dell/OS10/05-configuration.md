@@ -1,5 +1,5 @@
 ---
-tags: [dell, os10, cli]
+tags: [cli, dell, os10, configuration]
 validation: not-lab-verified
 ---
 
@@ -7,9 +7,9 @@ validation: not-lab-verified
 
 [🇬🇧 English](05-configuration.md) · [🇨🇴 Español](05-configuration.es.md) · [↩ Index](README.md)
 
-**Reference scope:** Dell SmartFabric OS10 — supported PowerSwitch platforms; verify release/model.
+**Compatibility:** Dell SmartFabric OS10 (PowerSwitch hardware/release dependent). Verify with `show version` and `?`.
 
-## `configure terminal`
+## `hostname DELL-LAB`
 
 ```text
 configure terminal
@@ -18,9 +18,8 @@ end
 ```
 
 - **Purpose:** Configure device hostname.
-- **Parameters:** configure terminal: config mode; hostname: name; end: exit.
-- **Practical use:** Name lab switch.
-- **Verification:** `show running-configuration`
+- **Options:** hostname: device name.
+- **Real use:** Name lab switch.
 
 ## `copy running-configuration startup-configuration`
 
@@ -28,11 +27,20 @@ end
 copy running-configuration startup-configuration
 ```
 
-- **Purpose:** Save OS10 configuration on supporting releases.
-- **Parameters:** running-configuration: source; startup-configuration: target.
-- **Practical use:** Persist a checked change.
-- **Verification:** `show running-configuration`
+- **Purpose:** Save checked configuration.
+- **Options:** running-configuration: source; startup-configuration: target.
+- **Real use:** Persist config.
 
-> Illustrative, not lab-verified. Dell hardware families have different CLI; consult model/release-specific documentation before execution.
+## `show startup-configuration`
 
-[Dell Support](https://www.dell.com/support/home/en-us/products/networking)
+```text
+show startup-configuration
+```
+
+- **Purpose:** Check saved settings.
+- **Options:** No flags.
+- **Real use:** Compare with running configuration.
+
+> Validate commands on the installed model and release; not lab-tested.
+
+[Dell documentation](https://www.dell.com/support/manuals/en-us/dell-emc-smartfabric-os10/smartfabric-os-user-guide-10-5-0/Filter-show-commands?guid=guid-758c857a-eba2-477a-a8f5-f0738c185e54&lang=en-us)

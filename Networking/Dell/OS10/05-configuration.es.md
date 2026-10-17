@@ -1,5 +1,5 @@
 ---
-tags: [dell, os10, cli]
+tags: [cli, dell, os10, configuration]
 validation: not-lab-verified
 ---
 
@@ -7,9 +7,9 @@ validation: not-lab-verified
 
 [🇬🇧 English](05-configuration.md) · [🇨🇴 Español](05-configuration.es.md) · [↩ Índice](README.es.md)
 
-**Versión orientativa:** Dell SmartFabric OS10 — supported PowerSwitch platforms; verify release/model.
+**Compatibilidad:** Dell SmartFabric OS10 (PowerSwitch hardware/release dependent). Verifica con `show version` y `?`.
 
-## `configure terminal`
+## `hostname DELL-LAB`
 
 ```text
 configure terminal
@@ -18,9 +18,8 @@ end
 ```
 
 - **Sirve para:** Configura hostname.
-- **Parámetros:** configure terminal: modo config; hostname: nombre; end: salir.
-- **Caso práctico:** Nombrar switch.
-- **Verificación:** `show running-configuration`
+- **Parámetros:** hostname: nombre.
+- **Caso real:** Nombrar switch.
 
 ## `copy running-configuration startup-configuration`
 
@@ -28,11 +27,20 @@ end
 copy running-configuration startup-configuration
 ```
 
-- **Sirve para:** Guarda configuración OS10 donde aplique.
+- **Sirve para:** Guarda configuración revisada.
 - **Parámetros:** running-configuration: origen; startup-configuration: destino.
-- **Caso práctico:** Persistir cambio validado.
-- **Verificación:** `show running-configuration`
+- **Caso real:** Persistir cambios.
 
-> Referencia orientativa y pendiente de validación en laboratorio. Dell tiene familias con CLI diferentes; comprueba la documentación del modelo antes de ejecutar comandos.
+## `show startup-configuration`
 
-[Dell Support](https://www.dell.com/support/home/en-us/products/networking)
+```text
+show startup-configuration
+```
+
+- **Sirve para:** Consulta configuración guardada.
+- **Parámetros:** Sin opciones.
+- **Caso real:** Comparar con running.
+
+> Los comandos se deben validar en la versión y modelo instalados; no se han probado en laboratorio.
+
+[Guía de Dell](https://www.dell.com/support/manuals/en-us/dell-emc-smartfabric-os10/smartfabric-os-user-guide-10-5-0/Filter-show-commands?guid=guid-758c857a-eba2-477a-a8f5-f0738c185e54&lang=en-us)

@@ -1,36 +1,46 @@
 ---
-tags: [dell, os9, cli]
+tags: [cli, dell, os9, packet-debug]
 validation: not-lab-verified
 ---
 
-# Packet diagnostics — Dell OS9
+# Packet mirroring / debug — Dell OS9
 
 [🇬🇧 English](08-packet-debug.md) · [🇨🇴 Español](08-packet-debug.es.md) · [↩ Index](README.md)
 
-**Reference scope:** Dell Networking OS9 / FTOS — Force10-derived platforms, model-dependent.
+**Compatibility:** Dell Networking OS9 / Force10; confirm the platform and FTOS-derived CLI. Verify with `show version` and `?`.
 
-## `show interfaces`
+> ⚠️ Dell has no universal CLI sniffer. Port mirroring requires a dedicated analysis port and authorization. Clean up after testing; captures may expose sensitive data.
 
-```text
-show interfaces
-```
-
-- **Purpose:** Use interface counters to narrow traffic faults.
-- **Parameters:** Check counters on target port.
-- **Practical use:** Check errors and drops.
-- **Verification:** `show interfaces`
-
-## `show logging`
+## `monitor interface ?`
 
 ```text
-show logging
+monitor interface ?
 ```
 
-- **Purpose:** Inspect control-plane events; not a PCAP capture.
-- **Parameters:** No flags.
-- **Practical use:** Trace link flap timeline.
-- **Verification:** `show logging`
+- **Purpose:** Discover real-time interface-monitor syntax on this OS9 build.
+- **Options:** ?: contextual help; not a PCAP capture.
+- **Real use:** Check live counters safely.
 
-> Illustrative, not lab-verified. Dell hardware families have different CLI; consult model/release-specific documentation before execution.
+## `show interfaces | grep CRC`
 
-[Dell Support](https://www.dell.com/support/home/en-us/products/networking)
+```text
+show interfaces | grep CRC
+```
+
+- **Purpose:** Locate CRC counters in verbose output.
+- **Options:** | grep: text filtering.
+- **Real use:** Confirm physical layer issues.
+
+## `show logging | grep OSPF`
+
+```text
+show logging | grep OSPF
+```
+
+- **Purpose:** Locate OSPF control-plane events.
+- **Options:** | grep: matching events.
+- **Real use:** Investigate OSPF restarts.
+
+> Validate commands on the installed model and release; not lab-tested.
+
+[Dell documentation](https://i.dell.com/sites/doccontent/shared-content/data-sheets/en/Documents/ESG-Dell-Force10-FTOS-CLI-Spec-Sheet.pdf)

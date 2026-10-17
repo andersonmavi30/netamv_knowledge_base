@@ -1,5 +1,5 @@
 ---
-tags: [dell, os6, cli]
+tags: [cli, dell, os6, show]
 validation: not-lab-verified
 ---
 
@@ -7,7 +7,7 @@ validation: not-lab-verified
 
 [🇬🇧 English](01-show.md) · [🇨🇴 Español](01-show.es.md) · [↩ Índice](README.es.md)
 
-**Versión orientativa:** Dell Networking OS6 — generally N-series (check model/release).
+**Compatibilidad:** OS6 / N-Series; CLI output filtering is available in OS6 6.6+ where supported. Verifica con `show version` y `?`.
 
 ## `show version`
 
@@ -15,10 +15,9 @@ validation: not-lab-verified
 show version
 ```
 
-- **Sirve para:** Muestra versión y hardware.
-- **Parámetros:** Sin parámetros.
-- **Caso práctico:** Identificar sistema antes de mantenimiento.
-- **Verificación:** `show version`
+- **Sirve para:** Identifica sistema y hardware.
+- **Parámetros:** Sin opciones.
+- **Caso real:** Confirmar OS6.
 
 ## `show interfaces status`
 
@@ -26,10 +25,9 @@ show version
 show interfaces status
 ```
 
-- **Sirve para:** Resume puertos en modelos N compatibles.
-- **Parámetros:** status: resumen de puertos.
-- **Caso práctico:** Encontrar puertos desconectados.
-- **Verificación:** `show interfaces status`
+- **Sirve para:** Muestra estados de puertos.
+- **Parámetros:** status: vista resumida.
+- **Caso real:** Localizar enlaces inactivos.
 
 ## `show vlan`
 
@@ -37,22 +35,20 @@ show interfaces status
 show vlan
 ```
 
-- **Sirve para:** Muestra VLAN configuradas.
-- **Parámetros:** Sin parámetros.
-- **Caso práctico:** Comprobar VLAN 10.
-- **Verificación:** `show vlan`
+- **Sirve para:** Lista VLAN configuradas.
+- **Parámetros:** Sin opciones.
+- **Caso real:** Buscar VLAN 10.
 
-## `show logging`
+## `show ip route`
 
 ```text
-show logging
+show ip route
 ```
 
-- **Sirve para:** Consulta logs del sistema.
-- **Parámetros:** Sin parámetros.
-- **Caso práctico:** Buscar alarmas de interfaz.
-- **Verificación:** `show logging`
+- **Sirve para:** Muestra rutas IPv4.
+- **Parámetros:** Sin opciones; requiere L3.
+- **Caso real:** Verificar ruta predeterminada.
 
-> Referencia orientativa y pendiente de validación en laboratorio. Dell tiene familias con CLI diferentes; comprueba la documentación del modelo antes de ejecutar comandos.
+> Los comandos se deben validar en la versión y modelo instalados; no se han probado en laboratorio.
 
-[Dell Support](https://www.dell.com/support/home/en-us/products/networking)
+[Guía de Dell](https://dl.dell.com/manuals/common/n-series-v663_cli_en-us.pdf)

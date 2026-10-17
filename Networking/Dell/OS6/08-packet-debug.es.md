@@ -1,36 +1,46 @@
 ---
-tags: [dell, os6, cli]
+tags: [cli, dell, os6, packet-debug]
 validation: not-lab-verified
 ---
 
-# Diagnóstico de paquetes — Dell OS6
+# Mirroring / debug — Dell OS6
 
 [🇬🇧 English](08-packet-debug.md) · [🇨🇴 Español](08-packet-debug.es.md) · [↩ Índice](README.es.md)
 
-**Versión orientativa:** Dell Networking OS6 — generally N-series (check model/release).
+**Compatibilidad:** OS6 / N-Series; CLI output filtering is available in OS6 6.6+ where supported. Verifica con `show version` y `?`.
 
-## `show interfaces counters`
+> ⚠️ Dell no usa un sniffer universal. Port mirroring exige un puerto de análisis y autorización. Detén las sesiones al terminar; los paquetes pueden incluir datos sensibles.
 
-```text
-show interfaces counters
-```
-
-- **Sirve para:** Usa contadores para analizar pérdida de paquetes.
-- **Parámetros:** counters: estadísticas de tráfico/errores.
-- **Caso práctico:** Buscar descartes crecientes.
-- **Verificación:** `show interfaces counters`
-
-## `show logging`
+## `show monitor session 1`
 
 ```text
-show logging
+show monitor session 1
 ```
 
-- **Sirve para:** Consulta eventos de enlaces y protocolos.
-- **Parámetros:** Sin flags; filtros dependen de versión.
-- **Caso práctico:** Investigar caídas frecuentes.
-- **Verificación:** `show logging`
+- **Sirve para:** Consulta sesión de port mirroring donde aplique.
+- **Parámetros:** 1: ID de sesión; validar compatibilidad.
+- **Caso real:** Enviar tráfico a Wireshark externo.
 
-> Referencia orientativa y pendiente de validación en laboratorio. Dell tiene familias con CLI diferentes; comprueba la documentación del modelo antes de ejecutar comandos.
+## `show statistics gigabitethernet 1/0/1`
 
-[Dell Support](https://www.dell.com/support/home/en-us/products/networking)
+```text
+show statistics gigabitethernet 1/0/1
+```
+
+- **Sirve para:** Consulta estadísticas de paquetes.
+- **Parámetros:** Puerto: unidad/slot/puerto.
+- **Caso real:** Correlacionar pérdidas antes de capturar.
+
+## `show tech-support`
+
+```text
+show tech-support
+```
+
+- **Sirve para:** Recolecta diagnóstico de soporte; puede ser sensible.
+- **Parámetros:** Sin flags; salida extensa.
+- **Caso real:** Investigar fallas de hardware.
+
+> Los comandos se deben validar en la versión y modelo instalados; no se han probado en laboratorio.
+
+[Guía de Dell](https://dl.dell.com/manuals/common/n-series-v663_cli_en-us.pdf)

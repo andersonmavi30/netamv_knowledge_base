@@ -1,5 +1,5 @@
 ---
-tags: [dell, os6, cli]
+tags: [cli, dell, os6, configuration]
 validation: not-lab-verified
 ---
 
@@ -7,9 +7,9 @@ validation: not-lab-verified
 
 [🇬🇧 English](05-configuration.md) · [🇨🇴 Español](05-configuration.es.md) · [↩ Índice](README.es.md)
 
-**Versión orientativa:** Dell Networking OS6 — generally N-series (check model/release).
+**Compatibilidad:** OS6 / N-Series; CLI output filtering is available in OS6 6.6+ where supported. Verifica con `show version` y `?`.
 
-## `configure`
+## `hostname DELL-LAB`
 
 ```text
 configure
@@ -17,10 +17,22 @@ hostname DELL-LAB
 exit
 ```
 
-- **Sirve para:** Configura hostname en OS6 compatible.
-- **Parámetros:** hostname: nombre del equipo.
-- **Caso práctico:** Identificar switch de prueba.
-- **Verificación:** `show running-config`
+- **Sirve para:** Cambia hostname.
+- **Parámetros:** hostname: nombre.
+- **Caso real:** Nombrar switch de prueba.
+
+## `vlan 10`
+
+```text
+configure
+vlan 10
+exit
+exit
+```
+
+- **Sirve para:** Crea VLAN 10 en equipos OS6 compatibles.
+- **Parámetros:** vlan 10: ID de VLAN.
+- **Caso real:** Preparar LAN de prueba.
 
 ## `copy running-config startup-config`
 
@@ -28,11 +40,10 @@ exit
 copy running-config startup-config
 ```
 
-- **Sirve para:** Guarda configuración activa donde aplique.
+- **Sirve para:** Guarda configuración activa.
 - **Parámetros:** running-config: origen; startup-config: destino.
-- **Caso práctico:** Conservar cambios tras reinicio.
-- **Verificación:** `show running-config`
+- **Caso real:** Guardar cambios aprobados.
 
-> Referencia orientativa y pendiente de validación en laboratorio. Dell tiene familias con CLI diferentes; comprueba la documentación del modelo antes de ejecutar comandos.
+> Los comandos se deben validar en la versión y modelo instalados; no se han probado en laboratorio.
 
-[Dell Support](https://www.dell.com/support/home/en-us/products/networking)
+[Guía de Dell](https://dl.dell.com/manuals/common/n-series-v663_cli_en-us.pdf)

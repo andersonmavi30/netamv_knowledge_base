@@ -1,36 +1,46 @@
 ---
-tags: [dell, os6, cli]
+tags: [cli, dell, os6, packet-debug]
 validation: not-lab-verified
 ---
 
-# Packet diagnostics — Dell OS6
+# Packet mirroring / debug — Dell OS6
 
 [🇬🇧 English](08-packet-debug.md) · [🇨🇴 Español](08-packet-debug.es.md) · [↩ Index](README.md)
 
-**Reference scope:** Dell Networking OS6 — generally N-series (check model/release).
+**Compatibility:** OS6 / N-Series; CLI output filtering is available in OS6 6.6+ where supported. Verify with `show version` and `?`.
 
-## `show interfaces counters`
+> ⚠️ Dell has no universal CLI sniffer. Port mirroring requires a dedicated analysis port and authorization. Clean up after testing; captures may expose sensitive data.
 
-```text
-show interfaces counters
-```
-
-- **Purpose:** Use interface counters as an initial packet-loss diagnostic.
-- **Parameters:** counters: error/traffic statistics.
-- **Practical use:** Look for increasing discard counters.
-- **Verification:** `show interfaces counters`
-
-## `show logging`
+## `show monitor session 1`
 
 ```text
-show logging
+show monitor session 1
 ```
 
-- **Purpose:** Review link and protocol events.
-- **Parameters:** No flags; filtering is release-dependent.
-- **Practical use:** Investigate frequent link flaps.
-- **Verification:** `show logging`
+- **Purpose:** Inspect a port mirroring session where supported.
+- **Options:** 1: session ID; check monitor-session support.
+- **Real use:** Send traffic to external Wireshark.
 
-> Illustrative, not lab-verified. Dell hardware families have different CLI; consult model/release-specific documentation before execution.
+## `show statistics gigabitethernet 1/0/1`
 
-[Dell Support](https://www.dell.com/support/home/en-us/products/networking)
+```text
+show statistics gigabitethernet 1/0/1
+```
+
+- **Purpose:** Inspect port packet statistics.
+- **Options:** Port: unit/slot/port.
+- **Real use:** Correlate loss before capturing.
+
+## `show tech-support`
+
+```text
+show tech-support
+```
+
+- **Purpose:** Collect broad support diagnostics; may be sensitive.
+- **Options:** No flags; output can be large.
+- **Real use:** Investigate unresolved hardware issues.
+
+> Validate commands on the installed model and release; not lab-tested.
+
+[Dell documentation](https://dl.dell.com/manuals/common/n-series-v663_cli_en-us.pdf)

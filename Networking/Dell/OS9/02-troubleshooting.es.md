@@ -1,5 +1,5 @@
 ---
-tags: [dell, os9, cli]
+tags: [cli, dell, os9, troubleshooting]
 validation: not-lab-verified
 ---
 
@@ -7,18 +7,7 @@ validation: not-lab-verified
 
 [🇬🇧 English](02-troubleshooting.md) · [🇨🇴 Español](02-troubleshooting.es.md) · [↩ Índice](README.es.md)
 
-**Versión orientativa:** Dell Networking OS9 / FTOS — Force10-derived platforms, model-dependent.
-
-## `show interfaces`
-
-```text
-show interfaces
-```
-
-- **Sirve para:** Revisa errores y enlace.
-- **Parámetros:** Salida varía según puerto.
-- **Caso práctico:** Investigar descartes.
-- **Verificación:** `show interfaces`
+**Compatibilidad:** Dell Networking OS9 / Force10; confirm the platform and FTOS-derived CLI. Verifica con `show version` y `?`.
 
 ## `show logging`
 
@@ -26,22 +15,30 @@ show interfaces
 show logging
 ```
 
-- **Sirve para:** Consulta eventos del sistema.
-- **Parámetros:** Sin parámetros.
-- **Caso práctico:** Buscar transiciones de puerto.
-- **Verificación:** `show logging`
+- **Sirve para:** Consulta logs OS9.
+- **Parámetros:** Sin opciones.
+- **Caso real:** Revisar flapping.
 
-## `show ip route`
+## `show arp`
 
 ```text
-show ip route
+show arp
 ```
 
-- **Sirve para:** Revisa rutas instaladas.
-- **Parámetros:** Sin parámetros.
-- **Caso práctico:** Encontrar ruta faltante.
-- **Verificación:** `show ip route`
+- **Sirve para:** Revisa vecinos ARP en equipos compatibles.
+- **Parámetros:** Sin opciones.
+- **Caso real:** Verificar ARP de gateway.
 
-> Referencia orientativa y pendiente de validación en laboratorio. Dell tiene familias con CLI diferentes; comprueba la documentación del modelo antes de ejecutar comandos.
+## `show ip ospf neighbor`
 
-[Dell Support](https://www.dell.com/support/home/en-us/products/networking)
+```text
+show ip ospf neighbor
+```
+
+- **Sirve para:** Consulta vecinos OSPF cuando esté activo.
+- **Parámetros:** Sin opciones.
+- **Caso real:** Localizar adyacencias incompletas.
+
+> Los comandos se deben validar en la versión y modelo instalados; no se han probado en laboratorio.
+
+[Guía de Dell](https://i.dell.com/sites/doccontent/shared-content/data-sheets/en/Documents/ESG-Dell-Force10-FTOS-CLI-Spec-Sheet.pdf)

@@ -1,5 +1,5 @@
 ---
-tags: [dell, os6, cli]
+tags: [cli, dell, os6, troubleshooting]
 validation: not-lab-verified
 ---
 
@@ -7,7 +7,7 @@ validation: not-lab-verified
 
 [🇬🇧 English](02-troubleshooting.md) · [🇨🇴 Español](02-troubleshooting.es.md) · [↩ Índice](README.es.md)
 
-**Versión orientativa:** Dell Networking OS6 — generally N-series (check model/release).
+**Compatibilidad:** OS6 / N-Series; CLI output filtering is available in OS6 6.6+ where supported. Verifica con `show version` y `?`.
 
 ## `ping 192.0.2.10`
 
@@ -15,33 +15,30 @@ validation: not-lab-verified
 ping 192.0.2.10
 ```
 
-- **Sirve para:** Prueba conectividad IPv4.
+- **Sirve para:** Prueba conectividad desde el switch.
 - **Parámetros:** IP: destino.
-- **Caso práctico:** Probar gestión.
-- **Verificación:** `ping 192.0.2.10`
+- **Caso real:** Verificar alcance al gateway.
 
-## `show interfaces counters`
-
-```text
-show interfaces counters
-```
-
-- **Sirve para:** Consulta contadores en modelos compatibles.
-- **Parámetros:** counters: estadísticas de interfaces.
-- **Caso práctico:** Buscar errores o descartes.
-- **Verificación:** `show interfaces counters`
-
-## `show logging`
+## `show interfaces counters errors gigabitethernet 1/0/1`
 
 ```text
-show logging
+show interfaces counters errors gigabitethernet 1/0/1
 ```
 
-- **Sirve para:** Revisa errores y eventos.
-- **Parámetros:** Sin parámetros.
-- **Caso práctico:** Identificar hora de caída.
-- **Verificación:** `show logging`
+- **Sirve para:** Consulta errores de un puerto.
+- **Parámetros:** errors: solo errores; puerto: unidad/slot/puerto.
+- **Caso real:** Encontrar CRC o descartes.
 
-> Referencia orientativa y pendiente de validación en laboratorio. Dell tiene familias con CLI diferentes; comprueba la documentación del modelo antes de ejecutar comandos.
+## `show spanning-tree active`
 
-[Dell Support](https://www.dell.com/support/home/en-us/products/networking)
+```text
+show spanning-tree active
+```
+
+- **Sirve para:** Consulta puertos STP activos.
+- **Parámetros:** active: instancias operativas.
+- **Caso real:** Investigar enlaces bloqueados.
+
+> Los comandos se deben validar en la versión y modelo instalados; no se han probado en laboratorio.
+
+[Guía de Dell](https://dl.dell.com/manuals/common/n-series-v663_cli_en-us.pdf)

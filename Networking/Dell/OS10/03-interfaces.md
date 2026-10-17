@@ -1,5 +1,5 @@
 ---
-tags: [dell, os10, cli]
+tags: [cli, dell, os10, interfaces]
 validation: not-lab-verified
 ---
 
@@ -7,30 +7,42 @@ validation: not-lab-verified
 
 [🇬🇧 English](03-interfaces.md) · [🇨🇴 Español](03-interfaces.es.md) · [↩ Index](README.md)
 
-**Reference scope:** Dell SmartFabric OS10 — supported PowerSwitch platforms; verify release/model.
+**Compatibility:** Dell SmartFabric OS10 (PowerSwitch hardware/release dependent). Verify with `show version` and `?`.
 
-## `show interface status`
-
-```text
-show interface status
-```
-
-- **Purpose:** Review interface status.
-- **Parameters:** status: summary.
-- **Practical use:** Find a link that is down.
-- **Verification:** `show interface status`
-
-## `show running-configuration`
+## `show running-configuration interface ethernet 1/1/2`
 
 ```text
-show running-configuration
+show running-configuration interface ethernet 1/1/2
 ```
 
-- **Purpose:** Inspect current configuration.
-- **Parameters:** No arguments.
-- **Practical use:** Check port descriptions.
-- **Verification:** `show running-configuration`
+- **Purpose:** Review one interface's running configuration.
+- **Options:** ethernet 1/1/2: physical port.
+- **Real use:** Inspect current uplink role.
 
-> Illustrative, not lab-verified. Dell hardware families have different CLI; consult model/release-specific documentation before execution.
+## `show interface phy-eth 1/1/2`
 
-[Dell Support](https://www.dell.com/support/home/en-us/products/networking)
+```text
+show interface phy-eth 1/1/2
+```
+
+- **Purpose:** Inspect physical transceiver/link details.
+- **Options:** phy-eth: physical media status.
+- **Real use:** Diagnose transceiver fault.
+
+## `interface ethernet 1/1/2`
+
+```text
+configure terminal
+interface ethernet 1/1/2
+ description LAB-UPLINK
+ exit
+end
+```
+
+- **Purpose:** Label a lab uplink.
+- **Options:** interface: physical port; description: label.
+- **Real use:** Identify correct cable.
+
+> Validate commands on the installed model and release; not lab-tested.
+
+[Dell documentation](https://www.dell.com/support/manuals/en-us/dell-emc-smartfabric-os10/smartfabric-os-user-guide-10-5-0/Filter-show-commands?guid=guid-758c857a-eba2-477a-a8f5-f0738c185e54&lang=en-us)

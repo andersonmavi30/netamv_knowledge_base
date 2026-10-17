@@ -1,36 +1,54 @@
 ---
-tags: [dell, os6, cli]
+tags: [cli, dell, os6, filters]
 validation: not-lab-verified
 ---
 
-# Filtros — Dell OS6
+# Filtros de salida — Dell OS6
 
 [🇬🇧 English](04-filters.md) · [🇨🇴 Español](04-filters.es.md) · [↩ Índice](README.es.md)
 
-**Versión orientativa:** Dell Networking OS6 — generally N-series (check model/release).
+**Compatibilidad:** OS6 / N-Series; CLI output filtering is available in OS6 6.6+ where supported. Verifica con `show version` y `?`.
 
-## `show running-config`
-
-```text
-show running-config
-```
-
-- **Sirve para:** Revisa configuración; confirma si admite filtros pipe.
-- **Parámetros:** Filtros varían entre revisiones.
-- **Caso práctico:** Buscar ajustes de puerto.
-- **Verificación:** `show running-config`
-
-## `show logging`
+## `show running-config | include hostname`
 
 ```text
-show logging
+show running-config | include hostname
 ```
 
-- **Sirve para:** Consulta eventos antes de filtrar.
-- **Parámetros:** Consulta ? para filtros disponibles.
-- **Caso práctico:** Investigar flapping.
-- **Verificación:** `show logging`
+- **Sirve para:** Busca solo el hostname.
+- **Parámetros:** | include: líneas coincidentes.
+- **Caso real:** Identificar switch.
 
-> Referencia orientativa y pendiente de validación en laboratorio. Dell tiene familias con CLI diferentes; comprueba la documentación del modelo antes de ejecutar comandos.
+## `show running-config | section interface`
 
-[Dell Support](https://www.dell.com/support/home/en-us/products/networking)
+```text
+show running-config | section interface
+```
+
+- **Sirve para:** Busca secciones de interfaces.
+- **Parámetros:** | section: bloque coincidente.
+- **Caso real:** Revisar configuraciones.
+
+## `show interfaces status | include 1/0/1`
+
+```text
+show interfaces status | include 1/0/1
+```
+
+- **Sirve para:** Busca puerto en listado.
+- **Parámetros:** | include: busca texto.
+- **Caso real:** Ver uplink.
+
+## `show logging | exclude LINK`
+
+```text
+show logging | exclude LINK
+```
+
+- **Sirve para:** Oculta mensajes de enlace repetidos.
+- **Parámetros:** | exclude: omite coincidencias.
+- **Caso real:** Revisar otras alarmas.
+
+> Los comandos se deben validar en la versión y modelo instalados; no se han probado en laboratorio.
+
+[Guía de Dell](https://dl.dell.com/manuals/common/n-series-v663_cli_en-us.pdf)

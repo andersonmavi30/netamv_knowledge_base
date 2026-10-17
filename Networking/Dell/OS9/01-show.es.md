@@ -1,5 +1,5 @@
 ---
-tags: [dell, os9, cli]
+tags: [cli, dell, os9, show]
 validation: not-lab-verified
 ---
 
@@ -7,7 +7,7 @@ validation: not-lab-verified
 
 [🇬🇧 English](01-show.md) · [🇨🇴 Español](01-show.es.md) · [↩ Índice](README.es.md)
 
-**Versión orientativa:** Dell Networking OS9 / FTOS — Force10-derived platforms, model-dependent.
+**Compatibilidad:** Dell Networking OS9 / Force10; confirm the platform and FTOS-derived CLI. Verifica con `show version` y `?`.
 
 ## `show version`
 
@@ -15,10 +15,9 @@ validation: not-lab-verified
 show version
 ```
 
-- **Sirve para:** Muestra versión OS9 y sistema.
-- **Parámetros:** Sin parámetros.
-- **Caso práctico:** Identificar plataforma Force10.
-- **Verificación:** `show version`
+- **Sirve para:** Identifica versión OS9 y hardware.
+- **Parámetros:** Sin opciones.
+- **Caso real:** Confirmar OS9.
 
 ## `show interfaces`
 
@@ -26,10 +25,9 @@ show version
 show interfaces
 ```
 
-- **Sirve para:** Muestra detalles de interfaces.
-- **Parámetros:** Sin parámetros.
-- **Caso práctico:** Consultar contadores.
-- **Verificación:** `show interfaces`
+- **Sirve para:** Consulta puertos y contadores.
+- **Parámetros:** Sin opciones.
+- **Caso real:** Encontrar enlaces caídos.
 
 ## `show ip route`
 
@@ -37,10 +35,9 @@ show interfaces
 show ip route
 ```
 
-- **Sirve para:** Consulta tabla de rutas.
-- **Parámetros:** Sin parámetros.
-- **Caso práctico:** Revisar siguientes saltos.
-- **Verificación:** `show ip route`
+- **Sirve para:** Consulta rutas IPv4.
+- **Parámetros:** Sin opciones.
+- **Caso real:** Comprobar rutas.
 
 ## `show vlan`
 
@@ -48,11 +45,10 @@ show ip route
 show vlan
 ```
 
-- **Sirve para:** Muestra VLAN cuando la plataforma lo admite.
-- **Parámetros:** Sin parámetros.
-- **Caso práctico:** Ubicar VLAN 10.
-- **Verificación:** `show vlan`
+- **Sirve para:** Consulta VLAN en equipos L2.
+- **Parámetros:** Sin opciones; depende del equipo.
+- **Caso real:** Buscar VLAN 10.
 
-> Referencia orientativa y pendiente de validación en laboratorio. Dell tiene familias con CLI diferentes; comprueba la documentación del modelo antes de ejecutar comandos.
+> Los comandos se deben validar en la versión y modelo instalados; no se han probado en laboratorio.
 
-[Dell Support](https://www.dell.com/support/home/en-us/products/networking)
+[Guía de Dell](https://i.dell.com/sites/doccontent/shared-content/data-sheets/en/Documents/ESG-Dell-Force10-FTOS-CLI-Spec-Sheet.pdf)
