@@ -49,14 +49,5 @@ display stp brief
 - **Parámetros:** brief: salida breve
 - **Filtro / consulta:** `display stp brief | include DISCARDING`
 
-## `display ip routing-table 198.51.100.10`
-
-```text
-display ip routing-table 198.51.100.10
-```
-
-- **Sirve para:** Consulta ruta hacia destino.
-- **Parámetros:** IP: destino
-- **Filtro / consulta:** `display ip routing-table | include 198.51.100`
 
 > Ejemplos pendientes de validación práctica. Confirma versión y sintaxis con la ayuda de CLI.

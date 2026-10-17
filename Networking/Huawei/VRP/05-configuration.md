@@ -55,15 +55,6 @@ return
 - **Operational example:** Reach a remote lab subnet.
 - **Caution:** Needs L3 support and reachable next hop.
 
-## `display current-configuration | include sysname`
-
-```text
-display current-configuration | include sysname
-```
-
-- **Purpose:** Verify the hostname after change.
-- **Parameters/filters:** include: find relevant line.
-- **Operational example:** Confirm HW-LAB.
 
 ## `save`
 

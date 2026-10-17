@@ -55,15 +55,6 @@ return
 - **Caso real:** Llegar a subred remota.
 - **Precaución:** Requiere soporte L3 y next-hop alcanzable.
 
-## `display current-configuration | include sysname`
-
-```text
-display current-configuration | include sysname
-```
-
-- **Sirve para:** Verifica hostname después de cambiar.
-- **Parámetros/filtros:** include: encuentra línea relevante.
-- **Caso real:** Confirmar HW-LAB.
 
 ## `save`
 

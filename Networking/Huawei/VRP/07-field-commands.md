@@ -49,14 +49,5 @@ display stp brief
 - **Parameters:** brief: short output
 - **Filter / lookup:** `display stp brief | include DISCARDING`
 
-## `display ip routing-table 198.51.100.10`
-
-```text
-display ip routing-table 198.51.100.10
-```
-
-- **Purpose:** Look up destination routing.
-- **Parameters:** IP: destination
-- **Filter / lookup:** `display ip routing-table | include 198.51.100`
 
 > Examples pending lab validation. Confirm the release and syntax with CLI help.
