@@ -42,18 +42,6 @@ end
 
 - **Practical filter:** `show system interface | grep -f port3` — Validate port3 IP, alias and access after applying changes.
 
-## `get system interface`
-
-```text
-get system interface
-```
-
-- **Purpose:** Verify interface state and IP after the change.
-- **Arguments:** No arguments.
-- **Use case:** Check the new lab IP appears.
-
-- **Practical filter:** `get system interface | grep -i port3` — Find the interface in operational output.
-
 
 > **Note:** Quick reference, not lab-verified; confirm syntax and permissions on your model and release.
 

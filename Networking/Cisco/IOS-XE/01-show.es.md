@@ -47,18 +47,6 @@ show ip route
 
 - **Filtro práctico:** `show ip route 198.51.100.10` — Filtra o verifica información relevante; consulta la salida completa cuando necesites contexto.
 
-## `show interfaces GigabitEthernet1/0/1`
-
-```text
-show interfaces GigabitEthernet1/0/1
-```
-
-- **Sirve para:** Consulta estado de enlace, tráfico y contadores de errores.
-- **Parámetros:** El nombre de la interfaz depende del modelo.
-- **Ejemplo de uso:** Investigar errores CRC o descartes.
-
-- **Filtro práctico:** `show interfaces GigabitEthernet1/0/1 | include line protocol|errors|drops` — Filtra o verifica información relevante; consulta la salida completa cuando necesites contexto.
-
 
 > **Nota:** Referencia rápida, no verificada en laboratorio; confirma sintaxis y permisos en tu modelo y versión.
 

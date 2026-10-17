@@ -47,18 +47,6 @@ show ip route
 
 - **Practical filter:** `show ip route 198.51.100.10` — Filter or verify relevant data; inspect full output when more context is needed.
 
-## `show interfaces GigabitEthernet1/0/1`
-
-```text
-show interfaces GigabitEthernet1/0/1
-```
-
-- **Purpose:** Inspect link state, traffic and error counters.
-- **Arguments:** Interface name varies by device model.
-- **Use case:** Investigate CRC errors or drops.
-
-- **Practical filter:** `show interfaces GigabitEthernet1/0/1 | include line protocol|errors|drops` — Filter or verify relevant data; inspect full output when more context is needed.
-
 
 > **Note:** Quick reference, not lab-verified; confirm syntax and permissions on your model and release.
 

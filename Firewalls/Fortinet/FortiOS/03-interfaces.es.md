@@ -42,18 +42,6 @@ end
 
 - **Filtro práctico:** `show system interface | grep -f port3` — Valida IP, alias y accesos de port3 después de configurar.
 
-## `get system interface`
-
-```text
-get system interface
-```
-
-- **Sirve para:** Verifica estado e IP después del cambio.
-- **Parámetros:** Sin parámetros.
-- **Ejemplo de uso:** Confirmar que aparezca la nueva IP.
-
-- **Filtro práctico:** `get system interface | grep -i port3` — Ubica la interfaz en la salida operativa.
-
 
 > **Nota:** Referencia rápida, no verificada en laboratorio; confirma sintaxis y permisos en tu modelo y versión.
 
