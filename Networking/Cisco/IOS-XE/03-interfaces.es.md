@@ -40,30 +40,6 @@ end
 
 - **Filtro práctico:** `show ip interface brief | include GigabitEthernet1/0/1` — Filtra o verifica información relevante; consulta la salida completa cuando necesites contexto.
 
-## `show ip interface brief`
-
-```text
-show ip interface brief
-```
-
-- **Sirve para:** Verifica IP y estado después de la configuración.
-- **Parámetros:** brief: resumen.
-- **Ejemplo de uso:** Confirmar up/up cuando exista enlace.
-
-- **Filtro práctico:** `show ip interface brief | include GigabitEthernet1/0/1` — Filtra o verifica información relevante; consulta la salida completa cuando necesites contexto.
-
-## `copy running-config startup-config`
-
-```text
-copy running-config startup-config
-```
-
-- **Sirve para:** Guarda la configuración activa para conservarla tras reinicio.
-- **Parámetros:** running-config: origen; startup-config: destino.
-- **Ejemplo de uso:** Guardar solo tras verificar los cambios.
-- **Precaución:** El guardado sobrescribe la configuración de inicio.
-
-- **Filtro práctico:** `show running-config | section ^interface GigabitEthernet1/0/1` — Filtra o verifica información relevante; consulta la salida completa cuando necesites contexto.
 
 
 > **Nota:** Referencia rápida, no verificada en laboratorio; confirma sintaxis y permisos en tu modelo y versión.
