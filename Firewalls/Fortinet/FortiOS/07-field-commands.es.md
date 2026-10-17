@@ -19,35 +19,8 @@ get system ha status
 - **Parámetros:** Sin flags
 - **Filtro / consulta:** `get system ha status | grep -i mode`
 
-## `diagnose sys session stat`
 
-```text
-diagnose sys session stat
-```
 
-- **Sirve para:** Consulta estadísticas de sesiones.
-- **Parámetros:** stat: cuentas de sesiones
-- **Filtro / consulta:** `diagnose sys session stat | grep -i session`
-
-## `diagnose vpn ike gateway list`
-
-```text
-diagnose vpn ike gateway list
-```
-
-- **Sirve para:** Consulta gateways IKE.
-- **Parámetros:** list: gateways
-- **Filtro / consulta:** `diagnose vpn ike gateway list | grep -i name=`
-
-## `get router info routing-table all`
-
-```text
-get router info routing-table all
-```
-
-- **Sirve para:** Consulta rutas actuales.
-- **Parámetros:** all: tabla completa
-- **Filtro / consulta:** `get router info routing-table all | grep 198.51.100`
 
 ## `show firewall address`
 

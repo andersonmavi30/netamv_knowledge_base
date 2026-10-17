@@ -53,16 +53,6 @@ diagnose vpn ike gateway list
 - **Caso real:** Revisar estado fase 1.
 - **Filtro/validación:** `diagnose vpn ike gateway list | grep -i name=`
 
-## `diagnose vpn tunnel list`
-
-```text
-diagnose vpn tunnel list
-```
-
-- **Sirve para:** Consulta túneles IPsec negociados.
-- **Parámetros:** list: información de túneles.
-- **Caso real:** Revisar SAs de VPN.
-- **Filtro/validación:** `diagnose vpn tunnel list | grep -i name=`
 
 ## `execute backup full-config tftp lab-backup.conf 192.0.2.20`
 
@@ -86,15 +76,5 @@ diagnose debug reset
 - **Caso real:** Preparar una sesión debug corta.
 - **Filtro/validación:** `diagnose debug status`
 
-## `diagnose debug disable`
-
-```text
-diagnose debug disable
-```
-
-- **Sirve para:** Detiene mensajes debug.
-- **Parámetros:** disable: detiene debug.
-- **Caso real:** Detener salida debug elevada.
-- **Filtro/validación:** `diagnose debug status`
 
 > No probado en laboratorio; verificar con la ayuda CLI y documentación de la versión antes de ejecutarlo. Los respaldos completos y las salidas de diagnóstico pueden contener datos sensibles.

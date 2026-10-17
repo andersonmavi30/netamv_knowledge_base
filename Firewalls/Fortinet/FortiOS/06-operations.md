@@ -53,16 +53,6 @@ diagnose vpn ike gateway list
 - **Operational example:** Review phase-1 status.
 - **Filter/verification:** `diagnose vpn ike gateway list | grep -i name=`
 
-## `diagnose vpn tunnel list`
-
-```text
-diagnose vpn tunnel list
-```
-
-- **Purpose:** Review negotiated IPsec tunnels.
-- **Parameters:** list: tunnel information.
-- **Operational example:** Check SAs for a named VPN.
-- **Filter/verification:** `diagnose vpn tunnel list | grep -i name=`
 
 ## `execute backup full-config tftp lab-backup.conf 192.0.2.20`
 
@@ -86,15 +76,5 @@ diagnose debug reset
 - **Operational example:** Prepare a short debug session.
 - **Filter/verification:** `diagnose debug status`
 
-## `diagnose debug disable`
-
-```text
-diagnose debug disable
-```
-
-- **Purpose:** Stop debug messages.
-- **Parameters:** disable: stop debug output.
-- **Operational example:** Stop high-volume debug quickly.
-- **Filter/verification:** `diagnose debug status`
 
 > Not lab-tested; verify against release-specific CLI help. Full backups and debug output may expose sensitive information.
