@@ -11,7 +11,7 @@ validation: not-lab-verified
 
 **Platform:** Cisco / IOS XE · **Reference versions:** IOS XE 17.x. Confirm each command on the installed release.
 
-## `configure terminal`
+## Set hostname
 
 ```text
 configure terminal
@@ -25,7 +25,7 @@ end
 
 - **Verification:** `show running-config | include ^hostname` — Filter or verify relevant data; inspect full output when more context is needed.
 
-## `configure terminal`
+## Configure Loopback0
 
 ```text
 configure terminal
@@ -40,7 +40,7 @@ end
 
 - **Verification:** `show ip interface brief | include Loopback0` — Filter or verify relevant data; inspect full output when more context is needed.
 
-## `configure terminal`
+## Add static route
 
 ```text
 configure terminal
@@ -55,7 +55,7 @@ end
 
 - **Verification:** `show ip route 198.51.100.10` — Filter or verify relevant data; inspect full output when more context is needed.
 
-## `configure terminal`
+## Configure buffered logging
 
 ```text
 configure terminal
@@ -69,7 +69,7 @@ end
 
 - **Verification:** `show running-config | include logging buffered` — Filter or verify relevant data; inspect full output when more context is needed.
 
-## `configure terminal`
+## Configure log timestamps
 
 ```text
 configure terminal
