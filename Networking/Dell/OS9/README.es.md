@@ -14,3 +14,5 @@
 - [Filtros](04-filters.es.md)
 - [Configuración](05-configuration.es.md)
 - [Diagnóstico de paquetes](08-packet-debug.es.md)
+
+- [Cinco verificaciones operativas nuevas](09-operational-checks.es.md)

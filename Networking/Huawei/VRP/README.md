@@ -17,3 +17,5 @@
 > Illustrative examples: not yet validated in a lab.
 
 - [More operational commands](07-field-commands.md)
+
+- [Five new operational checks](09-operational-checks.md)

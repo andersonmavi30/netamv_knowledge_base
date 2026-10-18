@@ -14,3 +14,5 @@
 - [Filters](04-filters.md)
 - [Configuration](05-configuration.md)
 - [Packet diagnostics](08-packet-debug.md)
+
+- [Five new operational checks](09-operational-checks.md)
