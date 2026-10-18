@@ -29,3 +29,5 @@ Confirma IOS/IOS XE y las opciones disponibles en el equipo; la interfaz cambia 
 > Ejemplos ilustrativos pendientes de validación en laboratorio. Consulta la documentación de tu versión antes de producción.
 
 - [Más comandos operativos](07-field-commands.es.md)
+
+- [Cinco verificaciones operativas nuevas](09-operational-checks.es.md)

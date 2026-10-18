@@ -20,3 +20,5 @@ Usa `print where propiedad=valor`, `~` para patrones y `detail` para más campos
 > Comandos de ejemplo; no ejecutados en equipos reales.
 
 - [Más comandos operativos](07-field-commands.es.md)
+
+- [Cinco verificaciones operativas nuevas](09-operational-checks.es.md)

@@ -20,3 +20,5 @@ Use `print where property=value`, `~` for pattern matches and `detail` for addit
 > Illustrative commands; not tested on production devices.
 
 - [More operational commands](07-field-commands.md)
+
+- [Five new operational checks](09-operational-checks.md)

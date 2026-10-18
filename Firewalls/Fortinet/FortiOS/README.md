@@ -28,3 +28,5 @@ Identify the precise firmware and use `?` at the appropriate CLI level.
 > Illustrative examples pending lab validation. Check the release-specific documentation before production.
 
 - [More operational commands](07-field-commands.md)
+
+- [Five new operational checks](09-operational-checks.md)
