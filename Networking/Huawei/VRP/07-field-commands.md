@@ -12,7 +12,7 @@ validation: not-lab-verified
 ## `display lldp neighbor brief`
 
 ```text
-display lldp neighbor brief
+display lldp neighbor brief | include GigabitEthernet
 ```
 
 - **Purpose:** List LLDP neighbors.
@@ -22,7 +22,7 @@ display lldp neighbor brief
 ## `display vlan`
 
 ```text
-display vlan
+display vlan | include 10
 ```
 
 - **Purpose:** Show VLAN information.
@@ -32,7 +32,7 @@ display vlan
 ## `display mac-address`
 
 ```text
-display mac-address
+display mac-address | include 0011-2233-4455
 ```
 
 - **Purpose:** Inspect MAC address table.
@@ -42,7 +42,7 @@ display mac-address
 ## `display stp brief`
 
 ```text
-display stp brief
+display stp brief | include DISCARDING
 ```
 
 - **Purpose:** Summarize STP state.

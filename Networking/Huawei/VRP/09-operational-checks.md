@@ -12,7 +12,7 @@ validation: not-lab-verified
 ## Interface error counters
 
 ```text
-display interface counters errors
+display interface counters errors | include GigabitEthernet
 ```
 
 - **Purpose:** Check error counters across interfaces.
@@ -23,7 +23,7 @@ display interface counters errors
 ## OSPF neighbors overview
 
 ```text
-display ospf peer brief
+display ospf peer brief | include Init
 ```
 
 - **Purpose:** List OSPF peers in compact form.
@@ -34,7 +34,7 @@ display ospf peer brief
 ## Static route table
 
 ```text
-display ip routing-table protocol static
+display ip routing-table protocol static | include 198.51.100
 ```
 
 - **Purpose:** Display only static routes.

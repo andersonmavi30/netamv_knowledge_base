@@ -12,7 +12,7 @@ validation: not-lab-verified
 ## Contadores de errores
 
 ```text
-display interface counters errors
+display interface counters errors | include GigabitEthernet
 ```
 
 - **Sirve para:** Consulta errores de interfaces.
@@ -23,7 +23,7 @@ display interface counters errors
 ## Resumen de vecinos OSPF
 
 ```text
-display ospf peer brief
+display ospf peer brief | include Init
 ```
 
 - **Sirve para:** Lista vecinos OSPF resumidos.
@@ -34,7 +34,7 @@ display ospf peer brief
 ## Tabla de rutas estáticas
 
 ```text
-display ip routing-table protocol static
+display ip routing-table protocol static | include 198.51.100
 ```
 
 - **Sirve para:** Muestra solo rutas estáticas.
