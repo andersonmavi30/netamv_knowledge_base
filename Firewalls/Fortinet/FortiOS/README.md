@@ -30,3 +30,5 @@ Identify the precise firmware and use `?` at the appropriate CLI level.
 - [More operational commands](07-field-commands.md)
 
 - [Five new operational checks](09-operational-checks.md)
+
+- [Five new targeted operational queries](10-targeted-queries.md)

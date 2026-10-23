@@ -30,3 +30,5 @@ Confirma la versión exacta y revisa la ayuda contextual (usa `?` en el nivel co
 - [Más comandos operativos](07-field-commands.es.md)
 
 - [Cinco verificaciones operativas nuevas](09-operational-checks.es.md)
+
+- [Cinco búsquedas operativas nuevas](10-targeted-queries.es.md)

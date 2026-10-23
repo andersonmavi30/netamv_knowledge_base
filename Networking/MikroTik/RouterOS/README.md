@@ -22,3 +22,5 @@ Use `print where property=value`, `~` for pattern matches and `detail` for addit
 - [More operational commands](07-field-commands.md)
 
 - [Five new operational checks](09-operational-checks.md)
+
+- [Five new targeted operational queries](10-targeted-queries.md)
