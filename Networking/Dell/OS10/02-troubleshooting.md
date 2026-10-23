@@ -12,7 +12,7 @@ validation: not-lab-verified
 ## `show logging`
 
 ```text
-show logging
+show logging | grep DOWN
 ```
 
 - **Purpose:** Inspect log events.

@@ -12,7 +12,7 @@ validation: not-lab-verified
 ## `show version`
 
 ```text
-show version
+show version | include Version
 ```
 
 - **Sirve para:** Identifica sistema y hardware.
@@ -22,7 +22,7 @@ show version
 ## `show interfaces status`
 
 ```text
-show interfaces status
+show interfaces status | include 1/0/1
 ```
 
 - **Sirve para:** Muestra estados de puertos.
@@ -32,7 +32,7 @@ show interfaces status
 ## `show vlan`
 
 ```text
-show vlan
+show vlan | include 10
 ```
 
 - **Sirve para:** Lista VLAN configuradas.
@@ -42,7 +42,7 @@ show vlan
 ## `show ip route`
 
 ```text
-show ip route
+show ip route | include 198.51.100
 ```
 
 - **Sirve para:** Muestra rutas IPv4.

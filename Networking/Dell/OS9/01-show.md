@@ -12,7 +12,7 @@ validation: not-lab-verified
 ## `show version`
 
 ```text
-show version
+show version | grep Version
 ```
 
 - **Purpose:** Identify OS9 release and hardware.
@@ -22,7 +22,7 @@ show version
 ## `show interfaces`
 
 ```text
-show interfaces
+show interfaces | grep error
 ```
 
 - **Purpose:** Review port state and counters.
@@ -32,7 +32,7 @@ show interfaces
 ## `show ip route`
 
 ```text
-show ip route
+show ip route | grep 198.51.100
 ```
 
 - **Purpose:** Inspect IPv4 routes.
@@ -42,7 +42,7 @@ show ip route
 ## `show vlan`
 
 ```text
-show vlan
+show vlan | grep 10
 ```
 
 - **Purpose:** Review VLAN inventory on switching platforms.

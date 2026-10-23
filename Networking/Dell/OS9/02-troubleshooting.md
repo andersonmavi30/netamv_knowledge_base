@@ -12,7 +12,7 @@ validation: not-lab-verified
 ## `show logging`
 
 ```text
-show logging
+show logging | grep DOWN
 ```
 
 - **Purpose:** Inspect OS9 log messages.
@@ -22,7 +22,7 @@ show logging
 ## `show arp`
 
 ```text
-show arp
+show arp | grep 192.0.2
 ```
 
 - **Purpose:** Check learned ARP neighbors on supporting platforms.

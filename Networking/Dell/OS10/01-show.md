@@ -12,7 +12,7 @@ validation: not-lab-verified
 ## `show version`
 
 ```text
-show version
+show version | grep Version
 ```
 
 - **Purpose:** Identify OS10 version.
@@ -22,7 +22,7 @@ show version
 ## `show interface status`
 
 ```text
-show interface status
+show interface status | grep down
 ```
 
 - **Purpose:** Summarize Ethernet ports.
@@ -32,7 +32,7 @@ show interface status
 ## `show ip route`
 
 ```text
-show ip route
+show ip route | grep 198.51.100
 ```
 
 - **Purpose:** Display routing table.
@@ -42,7 +42,7 @@ show ip route
 ## `show vlan`
 
 ```text
-show vlan
+show vlan | grep 10
 ```
 
 - **Purpose:** Display VLAN inventory.

@@ -12,7 +12,7 @@ validation: not-lab-verified
 ## `show version`
 
 ```text
-show version
+show version | grep Version
 ```
 
 - **Sirve para:** Identifica versión OS9 y hardware.
@@ -22,7 +22,7 @@ show version
 ## `show interfaces`
 
 ```text
-show interfaces
+show interfaces | grep error
 ```
 
 - **Sirve para:** Consulta puertos y contadores.
@@ -32,7 +32,7 @@ show interfaces
 ## `show ip route`
 
 ```text
-show ip route
+show ip route | grep 198.51.100
 ```
 
 - **Sirve para:** Consulta rutas IPv4.
@@ -42,7 +42,7 @@ show ip route
 ## `show vlan`
 
 ```text
-show vlan
+show vlan | grep 10
 ```
 
 - **Sirve para:** Consulta VLAN en equipos L2.
