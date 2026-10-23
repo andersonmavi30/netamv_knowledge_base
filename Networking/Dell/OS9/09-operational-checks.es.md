@@ -12,7 +12,7 @@ validation: not-lab-verified
 ## Vecinos LLDP
 
 ```text
-show lldp neighbors
+show lldp neighbors | grep UPLINK
 ```
 
 - **Sirve para:** Descubre dispositivos vecinos.
@@ -23,7 +23,7 @@ show lldp neighbors
 ## Resumen de LAG
 
 ```text
-show port-channel summary
+show port-channel summary | grep Po
 ```
 
 - **Sirve para:** Revisa estado de agregación donde aplique.
@@ -34,7 +34,7 @@ show port-channel summary
 ## Resumen BGP
 
 ```text
-show ip bgp summary
+show ip bgp summary | grep Idle
 ```
 
 - **Sirve para:** Consulta sesiones BGP en equipos L3.
@@ -45,7 +45,7 @@ show ip bgp summary
 ## Aprendizaje MAC
 
 ```text
-show mac-address-table
+show mac-address-table | grep 0011
 ```
 
 - **Sirve para:** Muestra MAC L2 aprendidas en equipos compatibles.
@@ -56,7 +56,7 @@ show mac-address-table
 ## Vecinos OSPF
 
 ```text
-show ip ospf neighbor
+show ip ospf neighbor | grep FULL
 ```
 
 - **Sirve para:** Muestra adyacencias OSPF.

@@ -12,7 +12,7 @@ validation: not-lab-verified
 ## LLDP neighbors
 
 ```text
-show lldp neighbors
+show lldp neighbors | grep UPLINK
 ```
 
 - **Purpose:** Discover attached network devices.
@@ -23,7 +23,7 @@ show lldp neighbors
 ## LAG member states
 
 ```text
-show port-channel summary
+show port-channel summary | grep Po
 ```
 
 - **Purpose:** Inspect LAG health where supported.
@@ -34,7 +34,7 @@ show port-channel summary
 ## OSPF adjacency states
 
 ```text
-show ip ospf neighbor
+show ip ospf neighbor | grep FULL
 ```
 
 - **Purpose:** Inspect OSPF neighbor state.
@@ -56,7 +56,7 @@ show interface ethernet 1/1/1 transceiver
 ## BGP peer summary
 
 ```text
-show ip bgp summary
+show ip bgp summary | grep Idle
 ```
 
 - **Purpose:** Review BGP sessions on BGP-enabled switches.

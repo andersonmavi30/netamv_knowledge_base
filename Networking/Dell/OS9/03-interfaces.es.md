@@ -22,7 +22,7 @@ show interfaces tengigabitethernet 0/1
 ## `show running-config`
 
 ```text
-show running-config
+show running-config | grep hostname
 ```
 
 - **Sirve para:** Consulta configuración antes de cambiar.

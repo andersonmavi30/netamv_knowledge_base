@@ -12,7 +12,7 @@ validation: not-lab-verified
 ## LLDP neighbors
 
 ```text
-show lldp neighbors
+show lldp neighbors | grep UPLINK
 ```
 
 - **Purpose:** Discover neighboring devices.
@@ -23,7 +23,7 @@ show lldp neighbors
 ## LAG summary
 
 ```text
-show port-channel summary
+show port-channel summary | grep Po
 ```
 
 - **Purpose:** Check link aggregation member state where available.
@@ -34,7 +34,7 @@ show port-channel summary
 ## BGP peer overview
 
 ```text
-show ip bgp summary
+show ip bgp summary | grep Idle
 ```
 
 - **Purpose:** Inspect BGP session states on L3 devices.
@@ -45,7 +45,7 @@ show ip bgp summary
 ## MAC address learning
 
 ```text
-show mac-address-table
+show mac-address-table | grep 0011
 ```
 
 - **Purpose:** View learned L2 MAC addresses on supported hardware.
@@ -56,7 +56,7 @@ show mac-address-table
 ## OSPF neighbors
 
 ```text
-show ip ospf neighbor
+show ip ospf neighbor | grep FULL
 ```
 
 - **Purpose:** Display active OSPF adjacencies.

@@ -12,7 +12,7 @@ validation: not-lab-verified
 ## Vecinos LLDP
 
 ```text
-show lldp neighbors
+show lldp neighbors | include UPLINK
 ```
 
 - **Sirve para:** Muestra equipos vecinos.
@@ -23,7 +23,7 @@ show lldp neighbors
 ## Tabla ARP IPv4
 
 ```text
-show ip arp
+show ip arp | include 192.0.2
 ```
 
 - **Sirve para:** Muestra entradas IP-MAC con L3.
@@ -34,7 +34,7 @@ show ip arp
 ## Estado MST
 
 ```text
-show spanning-tree mst
+show spanning-tree mst | include 10
 ```
 
 - **Sirve para:** Consulta información de MST.
@@ -56,7 +56,7 @@ show interfaces switchport gigabitethernet 1/0/1
 ## Tabla DHCP snooping
 
 ```text
-show ip dhcp snooping binding
+show ip dhcp snooping binding | include 192.0.2
 ```
 
 - **Sirve para:** Consulta bindings DHCP snooping si está activo.

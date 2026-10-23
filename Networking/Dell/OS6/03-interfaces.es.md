@@ -12,7 +12,7 @@ validation: not-lab-verified
 ## `show interfaces switchport`
 
 ```text
-show interfaces switchport
+show interfaces switchport | include 1/0/1
 ```
 
 - **Sirve para:** Consulta modos de puertos L2.

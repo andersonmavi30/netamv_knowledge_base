@@ -12,7 +12,7 @@ validation: not-lab-verified
 ## Vecinos LLDP
 
 ```text
-show lldp neighbors
+show lldp neighbors | grep UPLINK
 ```
 
 - **Sirve para:** Descubre dispositivos conectados.
@@ -23,7 +23,7 @@ show lldp neighbors
 ## Miembros de LAG
 
 ```text
-show port-channel summary
+show port-channel summary | grep Po
 ```
 
 - **Sirve para:** Consulta estado LAG donde aplique.
@@ -34,7 +34,7 @@ show port-channel summary
 ## Adyacencias OSPF
 
 ```text
-show ip ospf neighbor
+show ip ospf neighbor | grep FULL
 ```
 
 - **Sirve para:** Consulta estado de vecinos OSPF.
@@ -56,7 +56,7 @@ show interface ethernet 1/1/1 transceiver
 ## Resumen BGP
 
 ```text
-show ip bgp summary
+show ip bgp summary | grep Idle
 ```
 
 - **Sirve para:** Consulta sesiones BGP en equipos compatibles.

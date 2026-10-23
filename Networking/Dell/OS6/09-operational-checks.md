@@ -12,7 +12,7 @@ validation: not-lab-verified
 ## LLDP neighbors
 
 ```text
-show lldp neighbors
+show lldp neighbors | include UPLINK
 ```
 
 - **Purpose:** Show neighboring network devices.
@@ -23,7 +23,7 @@ show lldp neighbors
 ## IPv4 ARP mappings
 
 ```text
-show ip arp
+show ip arp | include 192.0.2
 ```
 
 - **Purpose:** Show IP-to-MAC entries when L3 is enabled.
@@ -34,7 +34,7 @@ show ip arp
 ## MST status
 
 ```text
-show spanning-tree mst
+show spanning-tree mst | include 10
 ```
 
 - **Purpose:** Inspect MST spanning-tree information.
@@ -56,7 +56,7 @@ show interfaces switchport gigabitethernet 1/0/1
 ## DHCP snooping binding table
 
 ```text
-show ip dhcp snooping binding
+show ip dhcp snooping binding | include 192.0.2
 ```
 
 - **Purpose:** Inspect DHCP snooping bindings where enabled.
