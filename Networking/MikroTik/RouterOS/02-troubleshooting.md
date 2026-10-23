@@ -55,7 +55,7 @@ validation: not-lab-verified
 ## `/tool sniffer quick ip-protocol=icmp`
 
 ```text
-/tool sniffer quick ip-protocol=icmp
+/tool sniffer quick filter-ip-protocol=icmp
 ```
 
 - **Purpose:** Watch ICMP packets live.

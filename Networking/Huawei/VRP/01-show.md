@@ -15,7 +15,7 @@ validation: not-lab-verified
 ## `display version`
 
 ```text
-display version
+display version | include VRP
 ```
 
 - **Purpose:** Show VRP version and uptime.
@@ -25,7 +25,7 @@ display version
 ## `display device`
 
 ```text
-display device
+display device | include Normal
 ```
 
 - **Purpose:** Show hardware and board status.
@@ -35,7 +35,7 @@ display device
 ## `display interface brief`
 
 ```text
-display interface brief
+display interface brief | include DOWN
 ```
 
 - **Purpose:** Summarize links and error counters.
@@ -45,7 +45,7 @@ display interface brief
 ## `display ip interface brief`
 
 ```text
-display ip interface brief
+display ip interface brief | include Vlanif
 ```
 
 - **Purpose:** List IPv4 interfaces and link state.
