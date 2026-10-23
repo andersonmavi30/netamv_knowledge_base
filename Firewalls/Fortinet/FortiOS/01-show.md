@@ -14,7 +14,7 @@ validation: not-lab-verified
 ## `get system status`
 
 ```text
-get system status
+get system status | grep -i hostname
 ```
 
 - **Purpose:** Show hostname, firmware and system identifiers.
@@ -26,7 +26,7 @@ get system status
 ## `get system performance status`
 
 ```text
-get system performance status
+get system performance status | grep -i cpu
 ```
 
 - **Purpose:** Check CPU, memory, uptime and session statistics.
@@ -38,7 +38,7 @@ get system performance status
 ## `get system interface`
 
 ```text
-get system interface
+get system interface | grep -i port3
 ```
 
 - **Purpose:** List interface status and addressing.
@@ -50,7 +50,7 @@ get system interface
 ## `get router info routing-table all`
 
 ```text
-get router info routing-table all
+get router info routing-table all | grep 198.51.100
 ```
 
 - **Purpose:** Display the routing table.

@@ -14,7 +14,7 @@ validation: not-lab-verified
 ## `get system status`
 
 ```text
-get system status
+get system status | grep -i hostname
 ```
 
 - **Sirve para:** Muestra hostname, firmware e identificadores del sistema.
@@ -26,7 +26,7 @@ get system status
 ## `get system performance status`
 
 ```text
-get system performance status
+get system performance status | grep -i cpu
 ```
 
 - **Sirve para:** Consulta CPU, memoria, uptime y estadísticas de sesiones.
@@ -38,7 +38,7 @@ get system performance status
 ## `get system interface`
 
 ```text
-get system interface
+get system interface | grep -i port3
 ```
 
 - **Sirve para:** Lista estado y direccionamiento de interfaces.
@@ -50,7 +50,7 @@ get system interface
 ## `get router info routing-table all`
 
 ```text
-get router info routing-table all
+get router info routing-table all | grep 198.51.100
 ```
 
 - **Sirve para:** Muestra la tabla de enrutamiento.

@@ -14,7 +14,7 @@ validation: not-lab-verified
 ## `show system interface`
 
 ```text
-show system interface
+show system interface | grep -f port3
 ```
 
 - **Purpose:** Display existing interface configuration.

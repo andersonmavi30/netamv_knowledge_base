@@ -51,7 +51,7 @@ diagnose sniffer packet any 'host 192.0.2.10 and tcp port 443' 4 20 l
 ## `diagnose vpn tunnel list`
 
 ```text
-diagnose vpn tunnel list
+diagnose vpn tunnel list | grep -i name=
 ```
 
 - **Sirve para:** Consulta información de diagnóstico de túneles IPsec.

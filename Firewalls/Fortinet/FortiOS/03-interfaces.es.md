@@ -14,7 +14,7 @@ validation: not-lab-verified
 ## `show system interface`
 
 ```text
-show system interface
+show system interface | grep -f port3
 ```
 
 - **Sirve para:** Consulta configuración actual de interfaces.
