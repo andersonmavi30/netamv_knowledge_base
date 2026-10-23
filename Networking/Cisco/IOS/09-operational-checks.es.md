@@ -23,7 +23,7 @@ show ip cef 198.51.100.10
 ## Vecinos EIGRP
 
 ```text
-show ip eigrp neighbors
+show ip eigrp neighbors | include 192.0.2
 ```
 
 - **Sirve para:** Consulta vecinos EIGRP, uptime y colas.
@@ -34,7 +34,7 @@ show ip eigrp neighbors
 ## Traducciones NAT
 
 ```text
-show ip nat translations
+show ip nat translations | include 192.0.2.10
 ```
 
 - **Sirve para:** Consulta traducciones NAT inside/outside.
@@ -45,7 +45,7 @@ show ip nat translations
 ## Procesos con alto CPU
 
 ```text
-show processes cpu sorted
+show processes cpu sorted | include CPU|IP Input
 ```
 
 - **Sirve para:** Lista procesos ordenados por CPU en IOS compatible.
@@ -56,7 +56,7 @@ show processes cpu sorted
 ## VLAN activas en trunks
 
 ```text
-show interfaces trunk
+show interfaces trunk | include 10
 ```
 
 - **Sirve para:** Muestra estado trunk, VLAN nativa y VLAN permitidas en switches.

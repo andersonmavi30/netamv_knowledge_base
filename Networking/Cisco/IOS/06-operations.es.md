@@ -12,7 +12,7 @@ validation: not-lab-verified
 ## `show ip ospf neighbor`
 
 ```text
-show ip ospf neighbor
+show ip ospf neighbor | include FULL
 ```
 
 - **Sirve para:** Muestra vecinos OSPF.
@@ -23,7 +23,7 @@ show ip ospf neighbor
 ## `show ip protocols`
 
 ```text
-show ip protocols
+show ip protocols | include Routing Protocol
 ```
 
 - **Sirve para:** Consulta protocolos de routing.
@@ -34,7 +34,7 @@ show ip protocols
 ## `show access-lists`
 
 ```text
-show access-lists
+show access-lists 101
 ```
 
 - **Sirve para:** Muestra ACL y contadores.
@@ -45,7 +45,7 @@ show access-lists
 ## `show cdp neighbors detail`
 
 ```text
-show cdp neighbors detail
+show cdp neighbors detail | include Device ID
 ```
 
 - **Sirve para:** Muestra detalles de vecinos Cisco.
@@ -56,7 +56,7 @@ show cdp neighbors detail
 ## `show ip arp`
 
 ```text
-show ip arp
+show ip arp | include 192.0.2.10
 ```
 
 - **Sirve para:** Muestra mapeo IPv4 a MAC.
@@ -67,7 +67,7 @@ show ip arp
 ## `show interfaces status`
 
 ```text
-show interfaces status
+show interfaces status | include notconnect
 ```
 
 - **Sirve para:** Muestra estado de puertos (switches compatibles).
@@ -78,7 +78,7 @@ show interfaces status
 ## `show spanning-tree`
 
 ```text
-show spanning-tree
+show spanning-tree | include BLK
 ```
 
 - **Sirve para:** Consulta STP en plataformas L2.
@@ -89,7 +89,7 @@ show spanning-tree
 ## `show vlan brief`
 
 ```text
-show vlan brief
+show vlan brief | include 10
 ```
 
 - **Sirve para:** Lista VLAN de switches compatibles.

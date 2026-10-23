@@ -12,7 +12,7 @@ validation: not-lab-verified
 ## Asociaciones NTP
 
 ```text
-show ntp associations
+show ntp associations | include 192.0.2
 ```
 
 - **Sirve para:** Consulta servidores NTP y selección de sincronización.
@@ -23,7 +23,7 @@ show ntp associations
 ## Contadores QoS por interfaz
 
 ```text
-show policy-map interface GigabitEthernet1/0/1
+show policy-map interface GigabitEthernet1/0/1 | include drop|packets
 ```
 
 - **Sirve para:** Revisa contadores por clase y descartes de políticas QoS.
@@ -34,7 +34,7 @@ show policy-map interface GigabitEthernet1/0/1
 ## Asignaciones DHCP
 
 ```text
-show ip dhcp binding
+show ip dhcp binding | include 192.0.2
 ```
 
 - **Sirve para:** Muestra asociaciones IP-cliente si el equipo funciona como servidor DHCP.
@@ -45,7 +45,7 @@ show ip dhcp binding
 ## Asociaciones VPN IKEv2
 
 ```text
-show crypto ikev2 sa
+show crypto ikev2 sa | include READY|IN-NEG
 ```
 
 - **Sirve para:** Consulta estado de asociaciones IKEv2 en routers compatibles.

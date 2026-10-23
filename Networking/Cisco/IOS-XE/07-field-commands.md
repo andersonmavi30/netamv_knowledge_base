@@ -12,7 +12,7 @@ validation: not-lab-verified
 ## `show ip ospf interface brief`
 
 ```text
-show ip ospf interface brief
+show ip ospf interface brief | include GigabitEthernet
 ```
 
 - **Purpose:** Show OSPF interfaces.
@@ -22,7 +22,7 @@ show ip ospf interface brief
 ## `show ip route ospf`
 
 ```text
-show ip route ospf
+show ip route ospf | include 198.51.100
 ```
 
 - **Purpose:** Show OSPF routes.
@@ -32,7 +32,7 @@ show ip route ospf
 ## `show access-lists 101`
 
 ```text
-show access-lists 101
+show access-lists 101 | include deny
 ```
 
 - **Purpose:** Inspect ACL 101.

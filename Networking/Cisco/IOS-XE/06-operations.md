@@ -12,7 +12,7 @@ validation: not-lab-verified
 ## `show ip ospf neighbor`
 
 ```text
-show ip ospf neighbor
+show ip ospf neighbor | include FULL
 ```
 
 - **Purpose:** Inspect OSPF adjacencies.
@@ -23,7 +23,7 @@ show ip ospf neighbor
 ## `show ip bgp summary`
 
 ```text
-show ip bgp summary
+show ip bgp summary | include Idle|Active
 ```
 
 - **Purpose:** Inspect BGP peer states when supported.
@@ -34,7 +34,7 @@ show ip bgp summary
 ## `show access-lists`
 
 ```text
-show access-lists
+show access-lists 101
 ```
 
 - **Purpose:** Display ACL entries and matches.
@@ -45,7 +45,7 @@ show access-lists
 ## `show ip arp`
 
 ```text
-show ip arp
+show ip arp | include 192.0.2.10
 ```
 
 - **Purpose:** Display ARP neighbors.
@@ -56,7 +56,7 @@ show ip arp
 ## `show interfaces status`
 
 ```text
-show interfaces status
+show interfaces status | include notconnect
 ```
 
 - **Purpose:** Show port summary on switching platforms.

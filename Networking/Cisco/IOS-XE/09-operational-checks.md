@@ -12,7 +12,7 @@ validation: not-lab-verified
 ## NTP synchronization peers
 
 ```text
-show ntp associations
+show ntp associations | include 192.0.2
 ```
 
 - **Purpose:** Inspect NTP peers and synchronization selection.
@@ -23,7 +23,7 @@ show ntp associations
 ## QoS counters by interface
 
 ```text
-show policy-map interface GigabitEthernet1/0/1
+show policy-map interface GigabitEthernet1/0/1 | include drop|packets
 ```
 
 - **Purpose:** Review service-policy class counters and packet drops.
@@ -34,7 +34,7 @@ show policy-map interface GigabitEthernet1/0/1
 ## DHCP lease allocation
 
 ```text
-show ip dhcp binding
+show ip dhcp binding | include 192.0.2
 ```
 
 - **Purpose:** Display IP-to-client lease bindings if this device runs a DHCP server.
@@ -45,7 +45,7 @@ show ip dhcp binding
 ## IKEv2 VPN security associations
 
 ```text
-show crypto ikev2 sa
+show crypto ikev2 sa | include READY|IN-NEG
 ```
 
 - **Purpose:** Inspect IKEv2 SA state for supported VPN routers.

@@ -23,7 +23,7 @@ show ip cef 198.51.100.10
 ## EIGRP adjacency check
 
 ```text
-show ip eigrp neighbors
+show ip eigrp neighbors | include 192.0.2
 ```
 
 - **Purpose:** View EIGRP neighbors, uptime and queue information.
@@ -34,7 +34,7 @@ show ip eigrp neighbors
 ## NAT translation lookup
 
 ```text
-show ip nat translations
+show ip nat translations | include 192.0.2.10
 ```
 
 - **Purpose:** Inspect current inside/outside NAT translation entries.
@@ -45,7 +45,7 @@ show ip nat translations
 ## CPU-heavy processes
 
 ```text
-show processes cpu sorted
+show processes cpu sorted | include CPU|IP Input
 ```
 
 - **Purpose:** List processes ordered by CPU use on supporting IOS platforms.
@@ -56,7 +56,7 @@ show processes cpu sorted
 ## Operational trunk VLANs
 
 ```text
-show interfaces trunk
+show interfaces trunk | include 10
 ```
 
 - **Purpose:** Show trunk state, native VLAN and allowed VLANs on switches.
