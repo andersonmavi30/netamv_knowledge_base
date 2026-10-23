@@ -14,7 +14,7 @@ validation: not-lab-verified
 ## `show version`
 
 ```text
-show version
+show version | include IOS|uptime
 ```
 
 - **Sirve para:** Muestra versión de IOS XE, uptime y datos de hardware.
@@ -26,7 +26,7 @@ show version
 ## `show ip interface brief`
 
 ```text
-show ip interface brief
+show ip interface brief | include GigabitEthernet
 ```
 
 - **Sirve para:** Resume IP y estado de interfaces IPv4.
@@ -38,7 +38,7 @@ show ip interface brief
 ## `show ip route`
 
 ```text
-show ip route
+show ip route 198.51.100.10
 ```
 
 - **Sirve para:** Muestra la tabla de enrutamiento IPv4.

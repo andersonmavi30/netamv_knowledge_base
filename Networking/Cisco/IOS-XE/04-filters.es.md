@@ -14,7 +14,7 @@ validation: not-lab-verified
 ## `show ip interface brief | include GigabitEthernet`
 
 ```text
-show ip interface brief | include GigabitEthernet
+show ip interface brief | include GigabitEthernet1/0/1
 ```
 
 - **Sirve para:** Muestra solamente interfaces coincidentes.

@@ -14,7 +14,7 @@ validation: not-lab-verified
 ## `show version`
 
 ```text
-show version
+show version | include IOS|uptime
 ```
 
 - **Sirve para:** Muestra versión de Cisco IOS, hardware y uptime.
@@ -26,7 +26,7 @@ show version
 ## `show ip interface brief`
 
 ```text
-show ip interface brief
+show ip interface brief | include GigabitEthernet
 ```
 
 - **Sirve para:** Resume direcciones IPv4 y estado de enlaces.
@@ -38,7 +38,7 @@ show ip interface brief
 ## `show ip route`
 
 ```text
-show ip route
+show ip route 198.51.100.10
 ```
 
 - **Sirve para:** Muestra rutas IPv4 instaladas.
@@ -50,7 +50,7 @@ show ip route
 ## `show running-config`
 
 ```text
-show running-config
+show running-config | include ^hostname
 ```
 
 - **Sirve para:** Consulta la configuración activa.

@@ -14,7 +14,7 @@ validation: not-lab-verified
 ## `show ip interface brief | include GigabitEthernet`
 
 ```text
-show ip interface brief | include GigabitEthernet
+show ip interface brief | include GigabitEthernet0/0
 ```
 
 - **Purpose:** Include only matching lines.

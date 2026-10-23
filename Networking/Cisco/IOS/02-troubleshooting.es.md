@@ -50,7 +50,7 @@ show interfaces GigabitEthernet0/0
 ## `show logging`
 
 ```text
-show logging
+show logging | include LINK|LINEPROTO
 ```
 
 - **Sirve para:** Muestra mensajes del registro.

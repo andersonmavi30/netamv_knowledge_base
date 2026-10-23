@@ -38,7 +38,7 @@ traceroute 192.0.2.10
 ## `show logging`
 
 ```text
-show logging
+show logging | include LINK|LINEPROTO
 ```
 
 - **Purpose:** Inspect buffered system messages.
@@ -50,7 +50,7 @@ show logging
 ## `show interfaces GigabitEthernet1/0/1`
 
 ```text
-show interfaces GigabitEthernet1/0/1
+show interfaces GigabitEthernet1/0/1 | include errors|drops|CRC
 ```
 
 - **Purpose:** Review link state, duplex, counters and errors.

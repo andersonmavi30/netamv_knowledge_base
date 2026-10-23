@@ -14,7 +14,7 @@ validation: not-lab-verified
 ## `show version`
 
 ```text
-show version
+show version | include IOS|uptime
 ```
 
 - **Purpose:** Show Cisco IOS release, hardware and uptime.
@@ -26,7 +26,7 @@ show version
 ## `show ip interface brief`
 
 ```text
-show ip interface brief
+show ip interface brief | include GigabitEthernet
 ```
 
 - **Purpose:** Summarize IPv4 addresses and link state.
@@ -38,7 +38,7 @@ show ip interface brief
 ## `show ip route`
 
 ```text
-show ip route
+show ip route 198.51.100.10
 ```
 
 - **Purpose:** Display the IPv4 routing table.
@@ -50,7 +50,7 @@ show ip route
 ## `show running-config`
 
 ```text
-show running-config
+show running-config | include ^hostname
 ```
 
 - **Purpose:** Inspect the active device configuration.
