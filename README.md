@@ -8,7 +8,7 @@
 
 - 🛡️ **[Firewalls](Firewalls/README.md)**
   - ↳ [Fortinet · FortiOS 7.x](Firewalls/Fortinet/README.md)
-  - ↳ Palo Alto · PAN-OS *(planned)*
+  - ↳ [Palo Alto Networks · PAN-OS](Firewalls/Palo-Alto/README.md)
   - ↳ Check Point · Gaia *(planned)*
 - 🌐 **[Networking](Networking/README.md)**
   - ↳ [Cisco · IOS / IOS XE](Networking/Cisco/README.md)
