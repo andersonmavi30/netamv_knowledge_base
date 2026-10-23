@@ -12,7 +12,7 @@ validation: not-lab-verified
 ## `get system ha status`
 
 ```text
-get system ha status
+get system ha status | grep -i mode
 ```
 
 - **Sirve para:** Consulta clúster HA.
@@ -25,7 +25,7 @@ get system ha status
 ## `show firewall address`
 
 ```text
-show firewall address
+show firewall address | grep -f LAB-NET
 ```
 
 - **Sirve para:** Consulta objetos address.

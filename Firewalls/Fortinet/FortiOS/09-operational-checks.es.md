@@ -12,7 +12,7 @@ validation: not-lab-verified
 ## Estado SLA SD-WAN
 
 ```text
-diagnose sys sdwan health-check
+diagnose sys sdwan health-check | grep -i state
 ```
 
 - **Sirve para:** Revisa latencia, pérdida y jitter de cada chequeo SD-WAN.
@@ -23,7 +23,7 @@ diagnose sys sdwan health-check
 ## Rutas por políticas en forwarding
 
 ```text
-diagnose firewall proute list
+diagnose firewall proute list | grep 198.51.100
 ```
 
 - **Sirve para:** Muestra rutas por política y decisiones SD-WAN en el plano de datos.
@@ -45,7 +45,7 @@ diagnose sys top 1 10
 ## Estado de vecinos OSPF
 
 ```text
-get router info ospf neighbor
+get router info ospf neighbor | grep 192.0.2
 ```
 
 - **Sirve para:** Lista vecinos OSPF y estado de adyacencia.
@@ -56,7 +56,7 @@ get router info ospf neighbor
 ## Estado de link-monitor
 
 ```text
-diagnose sys link-monitor status
+diagnose sys link-monitor status | grep -i status
 ```
 
 - **Sirve para:** Consulta estado de sondas link-monitor y failover.

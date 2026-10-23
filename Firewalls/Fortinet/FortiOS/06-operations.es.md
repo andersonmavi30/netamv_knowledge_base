@@ -12,7 +12,7 @@ validation: not-lab-verified
 ## `get firewall policy`
 
 ```text
-get firewall policy
+get firewall policy | grep -i name
 ```
 
 - **Sirve para:** Lista resumen de políticas (campos varían).
@@ -23,7 +23,7 @@ get firewall policy
 ## `diagnose sys session stat`
 
 ```text
-diagnose sys session stat
+diagnose sys session stat | grep -i session
 ```
 
 - **Sirve para:** Consulta sesiones y recursos.
@@ -45,7 +45,7 @@ get router info routing-table details 198.51.100.0
 ## `diagnose vpn ike gateway list`
 
 ```text
-diagnose vpn ike gateway list
+diagnose vpn ike gateway list | grep -i name=
 ```
 
 - **Sirve para:** Consulta gateways IKE y su estado.
