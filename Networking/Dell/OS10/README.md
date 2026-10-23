@@ -16,3 +16,5 @@
 - [Packet diagnostics](08-packet-debug.md)
 
 - [Five new operational checks](09-operational-checks.md)
+
+- [Five new targeted operational queries](10-targeted-queries.md)

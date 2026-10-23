@@ -16,3 +16,5 @@
 - [Diagnóstico de paquetes](08-packet-debug.es.md)
 
 - [Cinco verificaciones operativas nuevas](09-operational-checks.es.md)
+
+- [Cinco búsquedas operativas nuevas](10-targeted-queries.es.md)
