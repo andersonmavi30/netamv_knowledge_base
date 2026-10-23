@@ -19,6 +19,13 @@ config system global
 end
 ```
 
+**Verify with:**
+
+```text
+get system status | grep -i hostname
+```
+
+
 - **Purpose:** Change the firewall hostname.
 - **Arguments:** set hostname: new device name; end: apply and leave.
 - **Use case:** Name a lab FortiGate.
@@ -33,6 +40,13 @@ config system dns
     set secondary 9.9.9.9
 end
 ```
+
+**Verify with:**
+
+```text
+show system dns | grep -i primary
+```
+
 
 - **Purpose:** Set the device's DNS resolvers.
 - **Arguments:** primary: preferred DNS; secondary: backup DNS.
@@ -51,6 +65,13 @@ config firewall address
 end
 ```
 
+**Verify with:**
+
+```text
+show firewall address | grep -f LAB-NET
+```
+
+
 - **Purpose:** Create an IPv4 subnet address object.
 - **Arguments:** edit: object name; set subnet: network and mask; next: save.
 - **Use case:** Reference LAB-NET in a test policy.
@@ -66,6 +87,13 @@ config firewall addrgrp
     next
 end
 ```
+
+**Verify with:**
+
+```text
+show firewall addrgrp | grep -f LAB-SOURCES
+```
+
 
 - **Purpose:** Create an address group from an existing object.
 - **Arguments:** set member: list of existing address objects; replaces existing members.
@@ -86,6 +114,13 @@ config router static
 end
 ```
 
+**Verify with:**
+
+```text
+get router info routing-table all | grep 198.51.100
+```
+
+
 - **Purpose:** Add a static IPv4 route.
 - **Arguments:** edit 0: create a new entry; dst: destination/mask; gateway: next hop; device: egress interface.
 - **Use case:** Route a lab network through port3.
@@ -102,6 +137,13 @@ config firewall service custom
     next
 end
 ```
+
+**Verify with:**
+
+```text
+show firewall service custom | grep -f LAB-HTTPS-8443
+```
+
 
 - **Purpose:** Define a custom TCP service for policies.
 - **Arguments:** tcp-portrange: TCP destination port or range.

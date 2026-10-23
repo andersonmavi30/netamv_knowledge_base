@@ -19,6 +19,13 @@ hostname RTR-LAB
 end
 ```
 
+**Verify with:**
+
+```text
+show running-config | include ^hostname
+```
+
+
 - **Purpose:** Set the device hostname.
 - **Arguments:** configure terminal: enter config; hostname: device name; end: exit.
 - **Use case:** Identify a lab router.
@@ -34,6 +41,13 @@ interface Loopback0
 end
 ```
 
+**Verify with:**
+
+```text
+show ip interface brief | include Loopback0
+```
+
+
 - **Purpose:** Create a loopback with an IPv4 /32 address.
 - **Arguments:** interface Loopback0: virtual interface; ip address: IP and mask.
 - **Use case:** Use a stable router ID in a lab.
@@ -47,6 +61,13 @@ configure terminal
 ip route 198.51.100.0 255.255.255.0 192.0.2.254
 end
 ```
+
+**Verify with:**
+
+```text
+show ip route 198.51.100.10
+```
+
 
 - **Purpose:** Install an IPv4 static route.
 - **Arguments:** ip route: destination, mask, next-hop IP.
@@ -63,6 +84,13 @@ logging buffered 16384
 end
 ```
 
+**Verify with:**
+
+```text
+show running-config | include logging buffered
+```
+
+
 - **Purpose:** Enable a bounded in-memory logging buffer.
 - **Arguments:** 16384: desired buffer size in bytes (platform limits vary).
 - **Use case:** Review messages using show logging.
@@ -76,6 +104,13 @@ configure terminal
 service timestamps log datetime msec
 end
 ```
+
+**Verify with:**
+
+```text
+show running-config | include service timestamps
+```
+
 
 - **Purpose:** Add timestamps with milliseconds to log messages.
 - **Arguments:** log: syslog messages; datetime: date/time; msec: milliseconds.

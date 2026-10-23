@@ -19,6 +19,13 @@ config system global
 end
 ```
 
+**Validar con:**
+
+```text
+get system status | grep -i hostname
+```
+
+
 - **Sirve para:** Cambia el nombre del firewall.
 - **Parámetros:** set hostname: nuevo nombre; end: aplicar y salir.
 - **Ejemplo de uso:** Nombrar un FortiGate de laboratorio.
@@ -33,6 +40,13 @@ config system dns
     set secondary 9.9.9.9
 end
 ```
+
+**Validar con:**
+
+```text
+show system dns | grep -i primary
+```
+
 
 - **Sirve para:** Configura los servidores DNS del dispositivo.
 - **Parámetros:** primary: DNS preferido; secondary: DNS alterno.
@@ -51,6 +65,13 @@ config firewall address
 end
 ```
 
+**Validar con:**
+
+```text
+show firewall address | grep -f LAB-NET
+```
+
+
 - **Sirve para:** Crea un objeto de dirección IPv4 de una subred.
 - **Parámetros:** edit: nombre; set subnet: red y máscara; next: guardar.
 - **Ejemplo de uso:** Usar LAB-NET en una política de prueba.
@@ -66,6 +87,13 @@ config firewall addrgrp
     next
 end
 ```
+
+**Validar con:**
+
+```text
+show firewall addrgrp | grep -f LAB-SOURCES
+```
+
 
 - **Sirve para:** Crea un grupo con un objeto de direcciones existente.
 - **Parámetros:** set member: objetos existentes; reemplaza los miembros actuales.
@@ -86,6 +114,13 @@ config router static
 end
 ```
 
+**Validar con:**
+
+```text
+get router info routing-table all | grep 198.51.100
+```
+
+
 - **Sirve para:** Agrega una ruta estática IPv4.
 - **Parámetros:** edit 0: nueva entrada; dst: destino/máscara; gateway: siguiente salto; device: interfaz de salida.
 - **Ejemplo de uso:** Llegar a una red de laboratorio por port3.
@@ -102,6 +137,13 @@ config firewall service custom
     next
 end
 ```
+
+**Validar con:**
+
+```text
+show firewall service custom | grep -f LAB-HTTPS-8443
+```
+
 
 - **Sirve para:** Define un servicio TCP personalizado para políticas.
 - **Parámetros:** tcp-portrange: puerto o rango de destino TCP.

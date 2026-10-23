@@ -19,6 +19,13 @@ hostname RTR-LAB
 end
 ```
 
+**Validar con:**
+
+```text
+show running-config | include ^hostname
+```
+
+
 - **Sirve para:** Cambia el nombre del dispositivo.
 - **Parámetros:** configure terminal: entrar a configuración; hostname: nombre; end: salir.
 - **Ejemplo de uso:** Identificar un router de laboratorio.
@@ -34,6 +41,13 @@ interface Loopback0
 end
 ```
 
+**Validar con:**
+
+```text
+show ip interface brief | include Loopback0
+```
+
+
 - **Sirve para:** Crea una loopback con IPv4 /32.
 - **Parámetros:** interface Loopback0: interfaz virtual; ip address: IP y máscara.
 - **Ejemplo de uso:** Usar una IP estable en un laboratorio.
@@ -47,6 +61,13 @@ configure terminal
 ip route 198.51.100.0 255.255.255.0 192.0.2.254
 end
 ```
+
+**Validar con:**
+
+```text
+show ip route 198.51.100.10
+```
+
 
 - **Sirve para:** Instala una ruta estática IPv4.
 - **Parámetros:** ip route: destino, máscara, siguiente salto.
@@ -63,6 +84,13 @@ logging buffered 16384
 end
 ```
 
+**Validar con:**
+
+```text
+show running-config | include logging buffered
+```
+
+
 - **Sirve para:** Habilita un buffer de logs en memoria.
 - **Parámetros:** 16384: tamaño en bytes (los límites varían según equipo).
 - **Ejemplo de uso:** Revisar eventos con show logging.
@@ -76,6 +104,13 @@ configure terminal
 service timestamps log datetime msec
 end
 ```
+
+**Validar con:**
+
+```text
+show running-config | include service timestamps
+```
+
 
 - **Sirve para:** Agrega fecha/hora con milisegundos a los logs.
 - **Parámetros:** log: mensajes syslog; datetime: fecha/hora; msec: milisegundos.
