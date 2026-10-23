@@ -1,61 +1,61 @@
 ---
-tags: [cli, targeted-troubleshooting, operations]
+tags: [cli, dell, field-queries]
 validation: not-lab-verified
 ---
 
-# Targeted operational queries — Dell OS10
+# Five additional operational queries — Dell OS10
 
 [🇬🇧 English](10-targeted-queries.md) · [🇨🇴 Español](10-targeted-queries.es.md) · [↩ Index](README.md)
 
-> Illustrative examples: verify platform, release and CLI help before use.
+> Verify support on your exact model/release; examples pending lab tests.
 
-## Interfaces with link down
-
-```text
-show interface status | grep down
-```
-
-- **Purpose:** Interfaces with link down.
-- **Options and filters:** grep: matching lines
-- **Operational example:** Find relevant information while investigating an issue without reading all output.
-
-## Route prefix search
+## NTP peer status
 
 ```text
-show ip route | grep 203.0.113
+show ntp associations
 ```
 
-- **Purpose:** Route prefix search.
-- **Options and filters:** grep: text filter
-- **Operational example:** Find relevant information while investigating an issue without reading all output.
+- **Purpose:** NTP peer status.
+- **Flags:** associations: NTP peers.
+- **Practical use:** Focus on one operational symptom during investigation.
 
-## SNMP settings
-
-```text
-show running-configuration | grep snmp
-```
-
-- **Purpose:** SNMP settings.
-- **Options and filters:** grep: matching lines
-- **Operational example:** Find relevant information while investigating an issue without reading all output.
-
-## Specific port errors
+## Interface port health
 
 ```text
 show interface ethernet 1/1/5 | grep error
 ```
 
-- **Purpose:** Specific port errors.
-- **Options and filters:** grep: case-sensitive text
-- **Operational example:** Find relevant information while investigating an issue without reading all output.
+- **Purpose:** Interface port health.
+- **Flags:** ethernet 1/1/5: port identifier.
+- **Practical use:** Focus on one operational symptom during investigation.
 
-## VLAN 20 presence
+## Management VRF routes
 
 ```text
-show vlan | grep 20
+show ip route vrf management | grep 198.51.100
 ```
 
-- **Purpose:** VLAN 20 presence.
-- **Options and filters:** grep: text match
-- **Operational example:** Find relevant information while investigating an issue without reading all output.
+- **Purpose:** Management VRF routes.
+- **Flags:** vrf management: specific routing instance.
+- **Practical use:** Focus on one operational symptom during investigation.
+
+## Spanning-tree topology
+
+```text
+show spanning-tree | grep Root
+```
+
+- **Purpose:** Spanning-tree topology.
+- **Flags:** No flags; switching feature required.
+- **Practical use:** Focus on one operational symptom during investigation.
+
+## ARP neighbor inspection
+
+```text
+show arp | grep 192.0.2
+```
+
+- **Purpose:** ARP neighbor inspection.
+- **Flags:** ARP cache: L3 neighbors.
+- **Practical use:** Focus on one operational symptom during investigation.
 

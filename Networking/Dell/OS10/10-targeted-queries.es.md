@@ -1,61 +1,61 @@
 ---
-tags: [cli, targeted-troubleshooting, operations]
+tags: [cli, dell, field-queries]
 validation: not-lab-verified
 ---
 
-# Búsquedas de operación — Dell OS10
+# Cinco consultas operativas adicionales — Dell OS10
 
 [🇬🇧 English](10-targeted-queries.md) · [🇨🇴 Español](10-targeted-queries.es.md) · [↩ Índice](README.es.md)
 
-> Los ejemplos son orientativos: valida el modelo, release y ayuda de CLI antes de usarlos.
+> Verifica opciones en tu modelo y versión exactos; ejemplos pendientes de prueba.
 
-## Interfaces con enlace caído
-
-```text
-show interface status | grep down
-```
-
-- **Sirve para:** Interfaces con enlace caído.
-- **Opciones y filtros:** grep: coincidencias
-- **Caso práctico:** Consultar solo los datos relevantes de este equipo para investigar una falla sin recorrer toda la salida.
-
-## Búsqueda de prefijos
+## Estado de servidores NTP
 
 ```text
-show ip route | grep 203.0.113
+show ntp associations
 ```
 
-- **Sirve para:** Búsqueda de prefijos.
-- **Opciones y filtros:** grep: filtro texto
-- **Caso práctico:** Consultar solo los datos relevantes de este equipo para investigar una falla sin recorrer toda la salida.
+- **Sirve para:** Estado de servidores NTP.
+- **Flags:** associations: vecinos NTP.
+- **Caso práctico:** Localizar un dato preciso del estado de la red durante una investigación.
 
-## Configuración SNMP
-
-```text
-show running-configuration | grep snmp
-```
-
-- **Sirve para:** Configuración SNMP.
-- **Opciones y filtros:** grep: coincidencias
-- **Caso práctico:** Consultar solo los datos relevantes de este equipo para investigar una falla sin recorrer toda la salida.
-
-## Errores de puerto
+## Estado de un puerto
 
 ```text
 show interface ethernet 1/1/5 | grep error
 ```
 
-- **Sirve para:** Errores de puerto.
-- **Opciones y filtros:** grep: texto sensible a mayúsculas
-- **Caso práctico:** Consultar solo los datos relevantes de este equipo para investigar una falla sin recorrer toda la salida.
+- **Sirve para:** Estado de un puerto.
+- **Flags:** ethernet 1/1/5: identificador.
+- **Caso práctico:** Localizar un dato preciso del estado de la red durante una investigación.
 
-## Presencia de VLAN 20
+## Rutas VRF de gestión
 
 ```text
-show vlan | grep 20
+show ip route vrf management | grep 198.51.100
 ```
 
-- **Sirve para:** Presencia de VLAN 20.
-- **Opciones y filtros:** grep: coincidencia texto
-- **Caso práctico:** Consultar solo los datos relevantes de este equipo para investigar una falla sin recorrer toda la salida.
+- **Sirve para:** Rutas VRF de gestión.
+- **Flags:** vrf management: instancia de routing.
+- **Caso práctico:** Localizar un dato preciso del estado de la red durante una investigación.
+
+## Topología spanning-tree
+
+```text
+show spanning-tree | grep Root
+```
+
+- **Sirve para:** Topología spanning-tree.
+- **Flags:** Sin opciones; requiere STP.
+- **Caso práctico:** Localizar un dato preciso del estado de la red durante una investigación.
+
+## Consulta vecinos ARP
+
+```text
+show arp | grep 192.0.2
+```
+
+- **Sirve para:** Consulta vecinos ARP.
+- **Flags:** Caché ARP: vecinos L3.
+- **Caso práctico:** Localizar un dato preciso del estado de la red durante una investigación.
 

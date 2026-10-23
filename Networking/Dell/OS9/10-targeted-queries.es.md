@@ -1,61 +1,61 @@
 ---
-tags: [cli, targeted-troubleshooting, operations]
+tags: [cli, dell, field-queries]
 validation: not-lab-verified
 ---
 
-# Búsquedas de operación — Dell OS9
+# Cinco consultas operativas adicionales — Dell OS9
 
 [🇬🇧 English](10-targeted-queries.md) · [🇨🇴 Español](10-targeted-queries.es.md) · [↩ Índice](README.es.md)
 
-> Los ejemplos son orientativos: valida el modelo, release y ayuda de CLI antes de usarlos.
+> Verifica opciones en tu modelo y versión exactos; ejemplos pendientes de prueba.
 
-## Hostname configurado
-
-```text
-show running-config | grep hostname
-```
-
-- **Sirve para:** Hostname configurado.
-- **Opciones y filtros:** grep: coincidencias
-- **Caso práctico:** Consultar solo los datos relevantes de este equipo para investigar una falla sin recorrer toda la salida.
-
-## Errores CRC de puertos
+## Rutas aprendidas por BGP
 
 ```text
-show interfaces | grep CRC
+show ip route bgp | grep 198.51.100
 ```
 
-- **Sirve para:** Errores CRC de puertos.
-- **Opciones y filtros:** grep: selecciona líneas
-- **Caso práctico:** Consultar solo los datos relevantes de este equipo para investigar una falla sin recorrer toda la salida.
+- **Sirve para:** Rutas aprendidas por BGP.
+- **Flags:** bgp: rutas aprendidas por BGP.
+- **Caso práctico:** Localizar un dato preciso del estado de la red durante una investigación.
 
-## Alarmas de enlaces
+## Contadores de un puerto físico
 
 ```text
-show logging | grep DOWN
+show interfaces tengigabitethernet 0/2 | grep error
 ```
 
-- **Sirve para:** Alarmas de enlaces.
-- **Opciones y filtros:** grep: busca eventos
-- **Caso práctico:** Consultar solo los datos relevantes de este equipo para investigar una falla sin recorrer toda la salida.
+- **Sirve para:** Contadores de un puerto físico.
+- **Flags:** 0/2: puerto; depende del modelo.
+- **Caso práctico:** Localizar un dato preciso del estado de la red durante una investigación.
 
-## Búsqueda de rutas
+## Configuración de interfaz concreta
 
 ```text
-show ip route | grep 203.0.113
+show running-config interface tengigabitethernet 0/2
 ```
 
-- **Sirve para:** Búsqueda de rutas.
-- **Opciones y filtros:** grep: filtro texto
-- **Caso práctico:** Consultar solo los datos relevantes de este equipo para investigar una falla sin recorrer toda la salida.
+- **Sirve para:** Configuración de interfaz concreta.
+- **Flags:** interface: puerto específico.
+- **Caso práctico:** Localizar un dato preciso del estado de la red durante una investigación.
 
-## Configuración SNMP
+## Sincronización de reloj
 
 ```text
-show running-config | grep snmp
+show ntp status
 ```
 
-- **Sirve para:** Configuración SNMP.
-- **Opciones y filtros:** grep: coincidencias
-- **Caso práctico:** Consultar solo los datos relevantes de este equipo para investigar una falla sin recorrer toda la salida.
+- **Sirve para:** Sincronización de reloj.
+- **Flags:** status: estado NTP; depende del equipo.
+- **Caso práctico:** Localizar un dato preciso del estado de la red durante una investigación.
+
+## Búsqueda puntual de uptime
+
+```text
+show version | grep uptime
+```
+
+- **Sirve para:** Búsqueda puntual de uptime.
+- **Flags:** grep: coincidencia.
+- **Caso práctico:** Localizar un dato preciso del estado de la red durante una investigación.
 

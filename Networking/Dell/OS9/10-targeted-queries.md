@@ -1,61 +1,61 @@
 ---
-tags: [cli, targeted-troubleshooting, operations]
+tags: [cli, dell, field-queries]
 validation: not-lab-verified
 ---
 
-# Targeted operational queries — Dell OS9
+# Five additional operational queries — Dell OS9
 
 [🇬🇧 English](10-targeted-queries.md) · [🇨🇴 Español](10-targeted-queries.es.md) · [↩ Index](README.md)
 
-> Illustrative examples: verify platform, release and CLI help before use.
+> Verify support on your exact model/release; examples pending lab tests.
 
-## Configured hostname
-
-```text
-show running-config | grep hostname
-```
-
-- **Purpose:** Configured hostname.
-- **Options and filters:** grep: matching lines
-- **Operational example:** Find relevant information while investigating an issue without reading all output.
-
-## Interface CRC errors
+## BGP route inspection
 
 ```text
-show interfaces | grep CRC
+show ip route bgp | grep 198.51.100
 ```
 
-- **Purpose:** Interface CRC errors.
-- **Options and filters:** grep: select lines
-- **Operational example:** Find relevant information while investigating an issue without reading all output.
+- **Purpose:** BGP route inspection.
+- **Flags:** bgp: limit table to BGP routes.
+- **Practical use:** Focus on one operational symptom during investigation.
 
-## Link state alarms
+## Detailed physical port counters
 
 ```text
-show logging | grep DOWN
+show interfaces tengigabitethernet 0/2 | grep error
 ```
 
-- **Purpose:** Link state alarms.
-- **Options and filters:** grep: event search
-- **Operational example:** Find relevant information while investigating an issue without reading all output.
+- **Purpose:** Detailed physical port counters.
+- **Flags:** 0/2: target port; model-dependent.
+- **Practical use:** Focus on one operational symptom during investigation.
 
-## Route prefix search
+## Specific interface running settings
 
 ```text
-show ip route | grep 203.0.113
+show running-config interface tengigabitethernet 0/2
 ```
 
-- **Purpose:** Route prefix search.
-- **Options and filters:** grep: text filter
-- **Operational example:** Find relevant information while investigating an issue without reading all output.
+- **Purpose:** Specific interface running settings.
+- **Flags:** interface: specific port.
+- **Practical use:** Focus on one operational symptom during investigation.
 
-## SNMP configuration
+## Clock synchronization check
 
 ```text
-show running-config | grep snmp
+show ntp status
 ```
 
-- **Purpose:** SNMP configuration.
-- **Options and filters:** grep: matching lines
-- **Operational example:** Find relevant information while investigating an issue without reading all output.
+- **Purpose:** Clock synchronization check.
+- **Flags:** status: NTP state; platform-dependent.
+- **Practical use:** Focus on one operational symptom during investigation.
+
+## Focused uptime search
+
+```text
+show version | grep uptime
+```
+
+- **Purpose:** Focused uptime search.
+- **Flags:** grep: output match.
+- **Practical use:** Focus on one operational symptom during investigation.
 
