@@ -5,62 +5,62 @@ os: PAN-OS
 validation: not-lab-verified
 ---
 
-# 🧰 Additional field checks
+# Additional field checks
 
 [🇬🇧 English](07-field-commands.md) · [🇨🇴 Español](07-field-commands.es.md) · [↩ PAN-OS index](README.md)
 
-**Compatibility:** PAN-OS (revisar versión exacta con `show system info | match sw-version`). Commands vary by release, platform, vsys and routing mode.
+**Platform:** Palo Alto Networks / PAN-OS · **Compatibility:** Verify the installed version with `show system info | match sw-version`. Commands vary by release, platform, vsys and routing mode.
 
-## Find ARP entry by IP
+## `show arp all | match 198.51.100.1`
 
 ```text
 show arp all | match 198.51.100.1
 ```
 
 - **Purpose:** Filter ARP by neighbor IP.
-- **Parameters and filters:** match: text match.
-- **Operational use:** Validate next hop MAC on the WAN.
+- **Arguments:** match: text match.
+- **Use case:** Validate next hop MAC on the WAN.
 
-## Find HA monitored path failures
+## `show high-availability path-monitoring | match failure`
 
 ```text
 show high-availability path-monitoring | match failure
 ```
 
 - **Purpose:** Search HA path monitor output for failures.
-- **Parameters and filters:** match: output filter; label may vary.
-- **Operational use:** Investigate failover triggered by path monitoring.
+- **Arguments:** match: output filter; label may vary.
+- **Use case:** Investigate failover triggered by path monitoring.
 
-## Check NTP state
+## `show ntp`
 
 ```text
 show ntp
 ```
 
 - **Purpose:** Display synchronization status of the firewall clock.
-- **Parameters and filters:** No pipe needed: NTP command returns targeted state.
-- **Operational use:** Correlate event times and session logs.
+- **Arguments:** No pipe needed: NTP command returns targeted state.
+- **Use case:** Correlate event times and session logs.
 
-## Find management-related interface neighbors
+## `show lldp neighbors all | match ethernet1/2`
 
 ```text
 show lldp neighbors all | match ethernet1/2
 ```
 
 - **Purpose:** Filter LLDP neighbor output for the physical uplink.
-- **Parameters and filters:** match: text filter; requires LLDP enabled.
-- **Operational use:** Find an adjacent switch after cabling changes.
+- **Arguments:** match: text filter; requires LLDP enabled.
+- **Use case:** Find an adjacent switch after cabling changes.
 
-## Inspect one installed route in the FIB
+## `show routing fib virtual-router default | match 203.0.113`
 
 ```text
 show routing fib virtual-router default | match 203.0.113
 ```
 
 - **Purpose:** Search route to lab prefix without dumping FIB.
-- **Parameters and filters:** virtual-router: routing instance; match: prefix string.
-- **Operational use:** Verify expected outgoing next hop after a static route change.
+- **Arguments:** virtual-router: routing instance; match: prefix string.
+- **Use case:** Verify expected outgoing next hop after a static route change.
 
-> Illustrative examples pending lab testing. Use contextual `?` help and confirm operational (`>`) versus configuration (`#`) mode before use.
+> Quick reference, not lab-verified. Use contextual `?` help and confirm operational (`>`) versus configuration (`#`) mode before use.
 
-**Official references:** [Docs 1](https://docs.paloaltonetworks.com/ngfw/pan-os-cli-quick-start/cli-cheat-sheet-networking) · [Docs 2](https://docs.paloaltonetworks.com/ngfw/pan-os-cli-quick-start/cli-command-hierarchy/pan-os-11-2-cli-ops-command-hierarchy)
+**Official references:** [Official documentation 1](https://docs.paloaltonetworks.com/ngfw/pan-os-cli-quick-start/cli-cheat-sheet-networking) · [Official documentation 2](https://docs.paloaltonetworks.com/ngfw/pan-os-cli-quick-start/cli-command-hierarchy/pan-os-11-2-cli-ops-command-hierarchy)

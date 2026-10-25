@@ -5,64 +5,64 @@ os: PAN-OS
 validation: not-lab-verified
 ---
 
-# 🔎 Show & status
+# Show & status
 
 [🇬🇧 English](01-show.md) · [🇨🇴 Español](01-show.es.md) · [↩ PAN-OS index](README.md)
 
-**Compatibility:** PAN-OS (revisar versión exacta con `show system info | match sw-version`). Commands vary by release, platform, vsys and routing mode.
+**Platform:** Palo Alto Networks / PAN-OS · **Compatibility:** Verify the installed version with `show system info | match sw-version`. Commands vary by release, platform, vsys and routing mode.
 
-## Identify installed PAN-OS version
+## `show system info | match sw-version`
 
 ```text
 show system info | match sw-version
 ```
 
 - **Purpose:** Display the exact installed PAN-OS release.
-- **Parameters and filters:** match: show only lines containing `sw-version`.
-- **Operational use:** Check compatibility before applying a maintenance procedure.
+- **Arguments:** match: show only lines containing `sw-version`.
+- **Use case:** Check compatibility before applying a maintenance procedure.
 
-## Locate device hostname
+## `show system info | match hostname`
 
 ```text
 show system info | match hostname
 ```
 
 - **Purpose:** Find the firewall identity without reading the entire system output.
-- **Parameters and filters:** match hostname: filters the system-information field.
-- **Operational use:** Confirm which firewall you reached through SSH.
+- **Arguments:** match hostname: filters the system-information field.
+- **Use case:** Confirm which firewall you reached through SSH.
 
-## Inspect one physical interface
+## `show interface ethernet1/1`
 
 ```text
 show interface ethernet1/1
 ```
 
 - **Purpose:** Show status and interface statistics for the selected dataplane port.
-- **Parameters and filters:** ethernet1/1: device-dependent physical port name.
-- **Operational use:** Investigate the WAN port before making a change.
+- **Arguments:** ethernet1/1: device-dependent physical port name.
+- **Use case:** Investigate the WAN port before making a change.
 - **Caution:** The interface argument is already a targeted query; no extra pipe is needed.
 
-## Check HA operating state
+## `show high-availability state | match State`
 
 ```text
 show high-availability state | match State
 ```
 
 - **Purpose:** Focus on HA state lines.
-- **Parameters and filters:** match State: case-sensitive text matching.
-- **Operational use:** Check active/passive state during failover investigation.
+- **Arguments:** match State: case-sensitive text matching.
+- **Use case:** Check active/passive state during failover investigation.
 - **Caution:** Verify displayed field spelling with unfiltered command on your release.
 
-## Locate management routing information
+## `show system route-table | match 0.0.0.0`
 
 ```text
 show system route-table | match 0.0.0.0
 ```
 
 - **Purpose:** Search management-plane routing output for a default route.
-- **Parameters and filters:** match: output text filter; 0.0.0.0: example default prefix.
-- **Operational use:** Distinguish management reachability from dataplane routing.
+- **Arguments:** match: output text filter; 0.0.0.0: example default prefix.
+- **Use case:** Distinguish management reachability from dataplane routing.
 
-> Illustrative examples pending lab testing. Use contextual `?` help and confirm operational (`>`) versus configuration (`#`) mode before use.
+> Quick reference, not lab-verified. Use contextual `?` help and confirm operational (`>`) versus configuration (`#`) mode before use.
 
-**Official references:** [Docs 1](https://docs.paloaltonetworks.com/ngfw/pan-os-cli-quick-start/cli-command-hierarchy/pan-os-11-2-cli-ops-command-hierarchy) · [Docs 2](https://docs.paloaltonetworks.com/ngfw/pan-os-cli-quick-start/get-started-with-the-cli/get-help-on-command-syntax)
+**Official references:** [Official documentation 1](https://docs.paloaltonetworks.com/ngfw/pan-os-cli-quick-start/cli-command-hierarchy/pan-os-11-2-cli-ops-command-hierarchy) · [Official documentation 2](https://docs.paloaltonetworks.com/ngfw/pan-os-cli-quick-start/get-started-with-the-cli/get-help-on-command-syntax)
