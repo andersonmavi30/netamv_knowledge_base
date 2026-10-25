@@ -14,11 +14,13 @@
   - ↳ [Cisco · IOS / IOS XE](Networking/Cisco/README.es.md)
   - ↳ [MikroTik · RouterOS 7.x](Networking/MikroTik/README.es.md)
   - ↳ [Huawei · VRP](Networking/Huawei/README.es.md)
+  - ↳ [Aruba · AOS-CX](Networking/Aruba/README.es.md)
   - ↳ [Dell · OS6 / OS9 / OS10](Networking/Dell/README.es.md)
 - ⚖️ **Balanceadores** *(próximamente)*
 - 🖥️ **Servidores** *(próximamente)*
 - 📦 **Virtualización** *(próximamente)*
-- ⚙️ **NetDevOps & Network Automation - DevNet** *(próximamente)*
+- ⚙️ **[NetDevOps & Network Automation - DevNet](NetDevOps/README.es.md)**
+  - ↳ [Git](NetDevOps/Git/README.es.md)
 
 Navega por **pilar → fabricante → sistema operativo → categoría de comandos**. Cada fabricante contiene sus guías CLI resumidas.
 

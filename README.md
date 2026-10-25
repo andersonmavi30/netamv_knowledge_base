@@ -14,11 +14,13 @@
   - ↳ [Cisco · IOS / IOS XE](Networking/Cisco/README.md)
   - ↳ [MikroTik · RouterOS 7.x](Networking/MikroTik/README.md)
   - ↳ [Huawei · VRP](Networking/Huawei/README.md)
+  - ↳ [Aruba · AOS-CX](Networking/Aruba/README.md)
   - ↳ [Dell · OS6 / OS9 / OS10](Networking/Dell/README.md)
 - ⚖️ **Load Balancers** *(planned)*
 - 🖥️ **Servers** *(planned)*
 - 📦 **Virtualization** *(planned)*
-- ⚙️ **NetDevOps & Network Automation - DevNet** *(planned)*
+- ⚙️ **[NetDevOps & Network Automation - DevNet](NetDevOps/README.md)**
+  - ↳ [Git](NetDevOps/Git/README.md)
 
 Choose a **pillar → vendor → operating system → command topic**. Each vendor page links to its short CLI references.
 
