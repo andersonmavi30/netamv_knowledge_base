@@ -5,64 +5,64 @@ os: PAN-OS
 validation: not-lab-verified
 ---
 
-# 🔌 Interfaces y enrutamiento
+# Interfaces y enrutamiento
 
 [🇬🇧 English](03-interfaces.md) · [🇨🇴 Español](03-interfaces.es.md) · [↩ Índice PAN-OS](README.es.md)
 
-**Compatibilidad:** PAN-OS (revisar versión exacta con `show system info | match sw-version`). Los comandos pueden variar según versión, plataforma, vsys y modo de routing.
+**Plataforma:** Palo Alto Networks / PAN-OS · **Compatibilidad:** confirma la versión instalada con `show system info | match sw-version`. Los comandos pueden variar según versión, plataforma, vsys y modo de routing.
 
-## Buscar ARP de host
+## `show arp all | match 192.0.2.10`
 
 ```text
 show arp all | match 192.0.2.10
 ```
 
 - **Sirve para:** Busca un vecino específico en la tabla ARP.
-- **Parámetros y filtros:** all: entradas ARP; match: coincidencia.
-- **Caso real:** Comprobar si se aprendió la MAC del siguiente salto.
+- **Parámetros:** all: entradas ARP; match: coincidencia.
+- **Ejemplo de uso:** Comprobar si se aprendió la MAC del siguiente salto.
 
-## Consultar prefijo en la FIB
+## `show routing fib virtual-router default | match 198.51.100`
 
 ```text
 show routing fib virtual-router default | match 198.51.100
 ```
 
 - **Sirve para:** Busca un prefijo en la tabla de forwarding.
-- **Parámetros y filtros:** virtual-router default: nombre de VR ejemplo; match: texto del prefijo.
-- **Caso real:** Revisar ruta seleccionada hacia red remota.
+- **Parámetros:** virtual-router default: nombre de VR ejemplo; match: texto del prefijo.
+- **Ejemplo de uso:** Revisar ruta seleccionada hacia red remota.
 - **Precaución:** Con Advanced Routing / logical router puede variar; valida en el equipo.
 
-## Revisar estado de interfaz óptica
+## `show interface ethernet1/2`
 
 ```text
 show interface ethernet1/2
 ```
 
 - **Sirve para:** Consulta enlace y contadores de una interfaz.
-- **Parámetros y filtros:** ethernet1/2: puerto de dataplane.
-- **Caso real:** Revisar uplink SFP intermitente.
+- **Parámetros:** ethernet1/2: puerto de dataplane.
+- **Ejemplo de uso:** Revisar uplink SFP intermitente.
 
-## Revisar vecinos LLDP
+## `show lldp neighbors all | match ethernet1/1`
 
 ```text
 show lldp neighbors all | match ethernet1/1
 ```
 
 - **Sirve para:** Busca vecinos LLDP de un puerto en equipos compatibles.
-- **Parámetros y filtros:** all: todos los vecinos; match: interfaz elegida.
-- **Caso real:** Identificar switch conectado antes de mover cable.
+- **Parámetros:** all: todos los vecinos; match: interfaz elegida.
+- **Ejemplo de uso:** Identificar switch conectado antes de mover cable.
 - **Precaución:** Requiere LLDP habilitado/disponible.
 
-## Revisar contadores de interfaz
+## `show counter interface ethernet1/1`
 
 ```text
 show counter interface ethernet1/1
 ```
 
 - **Sirve para:** Consulta contadores de un puerto.
-- **Parámetros y filtros:** interface: selecciona puerto, sin pipe adicional.
-- **Caso real:** Investigar errores físicos o descartes WAN.
+- **Parámetros:** interface: selecciona puerto, sin pipe adicional.
+- **Ejemplo de uso:** Investigar errores físicos o descartes WAN.
 
-> Ejemplos orientativos pendientes de validación en laboratorio. Comprueba la ayuda contextual `?`, el contexto operational (`>`) y configuration (`#`) antes de ejecutarlos.
+> Referencia breve, pendiente de validación en laboratorio. Comprueba la ayuda contextual `?`, el contexto operational (`>`) y configuration (`#`) antes de ejecutarlos.
 
 **Referencias oficiales:** [Guía 1](https://docs.paloaltonetworks.com/ngfw/pan-os-cli-quick-start/cli-cheat-sheet-networking) · [Guía 2](https://docs.paloaltonetworks.com/ngfw/pan-os-cli-quick-start/cli-command-hierarchy/pan-os-11-2-cli-ops-command-hierarchy)
