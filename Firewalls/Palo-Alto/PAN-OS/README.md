@@ -26,3 +26,5 @@ show system info | match hostname
 > Do not assume Fortinet/Cisco `grep` or `include` syntax. PAN-OS uses `| match`, `| except` and command-specific filters.
 
 **Safety:** packet capture consumes resources and commits may apply pending changes.
+
+- [Ten focused operational commands](10-targeted-queries.md)

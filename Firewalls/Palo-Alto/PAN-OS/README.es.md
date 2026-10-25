@@ -26,3 +26,5 @@ show system info | match hostname
 > No supongas que `grep` o `include` funciona como en Fortinet/Cisco. PAN-OS utiliza `| match`, `| except` y filtros internos según comando.
 
 **Seguridad:** la captura consume recursos y el commit puede aplicar cambios pendientes.
+
+- [Diez consultas operativas específicas](10-targeted-queries.es.md)
