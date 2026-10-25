@@ -8,3 +8,5 @@ Comandos operativos PAN-OS con filtros, troubleshooting, interfaces, VPN, config
 - [Sniffer y debugging](PAN-OS/08-packet-debug.es.md)
 
 **Versiones:** confirmar con `show system info | match sw-version` y la ayuda `?`.
+
+- [Cinco comandos nuevos](PAN-OS/09-operational-checks.es.md)
