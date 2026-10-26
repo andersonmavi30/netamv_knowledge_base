@@ -21,6 +21,7 @@
 - 📦 **Virtualization** *(planned)*
 - ⚙️ **[NetDevOps & Network Automation - DevNet](NetDevOps/README.md)**
   - ↳ [Git](NetDevOps/Git/README.md)
+  - ↳ [Docker](NetDevOps/Docker/README.md)
 
 Choose a **pillar → vendor → operating system → command topic**. Each vendor page links to its short CLI references.
 
