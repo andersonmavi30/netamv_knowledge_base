@@ -45,10 +45,16 @@ docker commit apache andersonmavi30/apache:manual
 docker login
 ```
 
-- **Purpose:** Authenticate interactively to a container registry.
-- **Arguments:** No flags: Docker Hub by default; follow the secure device/login flow.
-- **Use case:** Authenticate before pushing to your namespace.
-- **Caution:** Never put passwords or tokens directly in README commands.
+- **Purpose:** Sign in to Docker Hub using the browser-based device flow.
+- **Arguments:** No flags: Docker Hub; `--username` specifies a username.
+- **Use case:** Authenticate before `docker push andersonmavi30/apache:php`.
+- **Caution:** Never place passwords or tokens in shell commands or repository files.
+
+**Alternative: specify an account (interactive login):**
+
+```bash
+docker login --username andersonmavi30
+```
 
 ## `docker tag apache:php andersonmavi30/apache:php`
 

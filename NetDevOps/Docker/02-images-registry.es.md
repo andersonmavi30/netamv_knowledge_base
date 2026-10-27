@@ -45,10 +45,16 @@ docker commit apache andersonmavi30/apache:manual
 docker login
 ```
 
-- **Sirve para:** Inicia sesión de forma interactiva en un registro.
-- **Parámetros:** Sin opciones: Docker Hub por defecto; sigue el flujo seguro.
-- **Ejemplo de uso:** Autenticarse antes de publicar imágenes.
-- **Precaución:** Nunca incluyas claves o tokens en comandos del README.
+- **Sirve para:** Inicia sesión en Docker Hub mediante el navegador.
+- **Parámetros:** Sin opciones: Docker Hub; `--username` permite indicar el usuario.
+- **Ejemplo de uso:** Autenticarse antes de `docker push andersonmavi30/apache:php`.
+- **Precaución:** No incluyas contraseñas ni tokens en la terminal ni en el repositorio.
+
+**Alternativa: especificar usuario (inicio de sesión interactivo):**
+
+```bash
+docker login --username andersonmavi30
+```
 
 ## `docker tag apache:php andersonmavi30/apache:php`
 

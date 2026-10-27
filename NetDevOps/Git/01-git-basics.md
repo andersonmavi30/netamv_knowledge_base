@@ -107,6 +107,124 @@ git fetch --prune origin
 - **Arguments:** --prune: delete stale remote-tracking refs.
 - **Use case:** Check remote changes without merging them.
 
+
+## `git add README.md`
+
+```bash
+git add README.md
+```
+
+- **Purpose:** Stage changes in a single file.
+- **Arguments:** README.md: specific path; use `git add .` only when all changes are intended.
+- **Use case:** Stage only the documentation you reviewed.
+
+## `git checkout -b docs/docker`
+
+```bash
+git checkout -b docs/docker
+```
+
+- **Purpose:** Create a branch and switch to it.
+- **Arguments:** -b: create and check out the new branch.
+- **Use case:** Edit Docker commands separately from main.
+
+## `git checkout main`
+
+```bash
+git checkout main
+```
+
+- **Purpose:** Switch to an existing local branch.
+- **Arguments:** main: target branch; local changes must not conflict.
+- **Use case:** Return to main before merging reviewed work.
+
+## `git checkout -d HEAD~1`
+
+```bash
+git checkout -d HEAD~1
+```
+
+- **Purpose:** Inspect the previous commit in detached HEAD mode; it does not delete a branch.
+- **Arguments:** -d / --detach: detach HEAD; HEAD~1: previous commit.
+- **Use case:** Temporarily investigate a prior revision, then run `git switch main`.
+- **Caution:** Do not start long-lived work without creating a branch.
+
+## `git branch`
+
+```bash
+git branch
+```
+
+- **Purpose:** List local branches, marking the current branch.
+- **Arguments:** Without arguments: list local branches.
+- **Use case:** Verify that docs/docker exists.
+
+## `git branch -d docs/docker`
+
+```bash
+git branch -d docs/docker
+```
+
+- **Purpose:** Delete a local branch that is fully merged.
+- **Arguments:** -d: safe delete; docs/docker: branch to remove.
+- **Use case:** Clean up a completed documentation branch.
+- **Caution:** Switch to another branch first and confirm the merge.
+
+## `git merge --no-ff docs/docker`
+
+```bash
+git merge --no-ff docs/docker
+```
+
+- **Purpose:** Merge the reviewed branch into the current branch.
+- **Arguments:** --no-ff: create a merge commit; docs/docker: source branch.
+- **Use case:** From main, merge the approved Docker changes.
+- **Caution:** Resolve conflicts and run tests before pushing.
+
+## `git push`
+
+```bash
+git push
+```
+
+- **Purpose:** Push the current branch to its configured upstream.
+- **Arguments:** No flags: requires an upstream or matching push configuration.
+- **Use case:** Publish later commits after `git push -u origin docs/docker`.
+
+## `gh auth login --web`
+
+```bash
+gh auth login --web
+```
+
+- **Purpose:** Sign in to GitHub through the GitHub CLI browser flow; Git has no native `git login` command.
+- **Arguments:** gh: separately installed GitHub CLI; --web: browser authentication.
+- **Use case:** Authenticate on a new workstation before your first GitHub push.
+- **Caution:** Choose HTTPS Git integration when prompted; never paste secrets into repository files.
+
+## `gh auth status`
+
+```bash
+gh auth status
+```
+
+- **Purpose:** Check which GitHub account is authenticated.
+- **Arguments:** status: display the current GitHub CLI authentication state.
+- **Use case:** Confirm login worked before pushing.
+
+## `gh auth setup-git`
+
+```bash
+gh auth setup-git
+```
+
+- **Purpose:** Configure Git to use GitHub CLI's credential helper.
+- **Arguments:** setup-git: register gh as a Git authentication helper.
+- **Use case:** Fix HTTPS Git prompts after `gh auth login` if integration is not set.
+- **Caution:** Run only on a trusted workstation; requires GitHub CLI installed.
+
+> **Git login:** there is no `git login` command; use `gh auth login --web` (GitHub CLI), SSH or a credential manager. `git checkout -d` detaches HEAD; `git branch -d` deletes a merged local branch.
+
 > Git uses native flags; pipes are optional, not mandatory. Avoid destructive operations before reviewing status.
 
 [Git reference](https://git-scm.com/docs)
