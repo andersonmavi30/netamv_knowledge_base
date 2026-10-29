@@ -11,13 +11,7 @@ validation: not-lab-verified
 
 ## Descripciones de uplinks
 
-```text
-show interfaces description | include UPLINK
-```
-
-- **Sirve para:** Descripciones de uplinks.
-- **Opciones y filtros:** description: resumen de etiquetas
-- **Caso práctico:** Consultar solo los datos relevantes de este equipo para investigar una falla sin recorrer toda la salida.
+Consulta el comando y su filtro en la [guía de interfaces](03-interfaces.es.md).
 
 ## LSAs Router de OSPF
 

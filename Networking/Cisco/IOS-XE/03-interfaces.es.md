@@ -40,7 +40,16 @@ end
 
 - **Filtro práctico:** `show ip interface brief | include GigabitEthernet1/0/1` — Filtra o verifica información relevante; consulta la salida completa cuando necesites contexto.
 
+## `show interfaces description | include UPLINK`
 
+```text
+show interfaces description | include UPLINK
+```
+
+- **Sirve para:** Busca descripciones y estado operativo de los uplinks.
+- **Parámetros:** description: resumen de interfaz, estado y etiqueta; include: búsqueda textual.
+- **Ejemplo de uso:** Identificar el enlace UPLINK antes de revisar errores físicos.
+- **Referencia:** [Documentación del fabricante](https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst4500/XE3-11-0E/command/reference/xe-311-cmd/show1.html)
 
 > **Nota:** Referencia rápida, no verificada en laboratorio; confirma sintaxis y permisos en tu modelo y versión.
 

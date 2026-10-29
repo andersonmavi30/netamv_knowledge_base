@@ -40,7 +40,16 @@ end
 
 - **Practical filter:** `show ip interface brief | include GigabitEthernet1/0/1` — Filter or verify relevant data; inspect full output when more context is needed.
 
+## `show interfaces description | include UPLINK`
 
+```text
+show interfaces description | include UPLINK
+```
+
+- **Purpose:** Search interface descriptions and operational link state for uplinks.
+- **Arguments:** description: summary of interface, status and label; include: text search.
+- **Use case:** Find an uplink labeled UPLINK before checking physical counters.
+- **Reference:** [Vendor documentation](https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst4500/XE3-11-0E/command/reference/xe-311-cmd/show1.html)
 
 > **Note:** Quick reference, not lab-verified; confirm syntax and permissions on your model and release.
 

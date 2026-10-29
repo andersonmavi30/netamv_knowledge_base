@@ -56,6 +56,17 @@ display ip interface brief | include Vlanif10
 - **Parameters/filters:** | include: show matching lines.
 - **Operational example:** Confirm 192.0.2.1/24.
 
+## `display interface description | include UPLINK`
+
+```text
+display interface description | include UPLINK
+```
+
+- **Purpose:** Display operational status and port descriptions matching UPLINK.
+- **Parameters/filters:** display interface description: ports, physical/protocol state and labels; | include: text filter.
+- **Operational example:** Identify which GigabitEthernet interface connects to the distribution layer.
+- **Reference:** [Vendor documentation](https://info.support.huawei.com/enterprise/en/doc/EDOC1100333403/cdd85713/basic-interface-configuration-commands)
+
 > Verify commands and options with on-device CLI help; examples are not yet lab-validated.
 
 **Vendor references:** [Documentation](https://info.support.huawei.com/enterprise/en/doc/EDOC1100333403/cdd85713/basic-interface-configuration-commands) · [Documentation](https://info.support.huawei.com/enterprise/en/doc/EDOC1100335692/c1ebaf03/basic-ip-routing-configuration)

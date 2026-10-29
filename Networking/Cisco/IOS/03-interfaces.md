@@ -42,6 +42,16 @@ show running-config interface GigabitEthernet0/0
 
 - **Practical filter:** `show ip interface brief | include GigabitEthernet0/0` — Filter or verify relevant output; inspect full output when additional context is needed.
 
+## `show interfaces description | include UPLINK`
+
+```text
+show interfaces description | include UPLINK
+```
+
+- **Purpose:** Find interface status and descriptions tagged UPLINK.
+- **Arguments:** description: interface labels and status; | include UPLINK: matching lines.
+- **Use case:** Locate the physical WAN or core uplink without scrolling through all ports.
+- **Reference:** [Vendor documentation](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/interface/command/ir-cr-book/ir-s4.html)
 
 > Short reference, not lab-verified. Validate using built-in CLI help and documentation for your model/release.
 

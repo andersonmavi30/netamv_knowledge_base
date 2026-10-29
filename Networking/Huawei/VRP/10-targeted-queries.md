@@ -11,13 +11,7 @@ validation: not-lab-verified
 
 ## Interface descriptions
 
-```text
-display interface description | include UPLINK
-```
-
-- **Purpose:** Interface descriptions.
-- **Options and filters:** description: port labels
-- **Operational example:** Find relevant information while investigating an issue without reading all output.
+See the filtered command in the [interface reference](03-interfaces.md).
 
 ## NTP clock state
 

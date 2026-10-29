@@ -53,6 +53,17 @@ validation: not-lab-verified
 - **Parameters/filters:** find: locate interface by name; set: update.
 - **Operational example:** Label a LAN port for future troubleshooting.
 
+## `/interface print detail where comment~"UPLINK"`
+
+```text
+/interface print detail where comment~"UPLINK"
+```
+
+- **Purpose:** Find interfaces whose comment contains UPLINK; RouterOS uses comments as interface labels.
+- **Parameters/filters:** print detail: show interface properties; where: property filter; ~: pattern match on comment.
+- **Operational example:** Locate the ether port labeled as the uplink, then inspect its running state.
+- **Reference:** [Vendor documentation](https://help.mikrotik.com/docs/spaces/ROS/pages/47579229/Scripting)
+
 > Verify commands and options with on-device CLI help; examples are not yet lab-validated.
 
 **Vendor references:** [Documentation](https://help.mikrotik.com/docs/spaces/ROS/pages/8978498/Console) · [Documentation](https://help.mikrotik.com/docs/spaces/ROS/pages/328084/IP+Routing) · [Documentation](https://help.mikrotik.com/docs/spaces/ROS/pages/8323088/Packet+Sniffer)

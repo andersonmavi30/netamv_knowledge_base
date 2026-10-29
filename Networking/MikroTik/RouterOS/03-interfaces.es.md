@@ -53,6 +53,17 @@ validation: not-lab-verified
 - **Parámetros/filtros:** find: localiza por nombre; set: actualiza.
 - **Caso real:** Identificar puerto LAN para diagnóstico.
 
+## `/interface print detail where comment~"UPLINK"`
+
+```text
+/interface print detail where comment~"UPLINK"
+```
+
+- **Sirve para:** Encuentra interfaces con UPLINK en el comentario; RouterOS usa comentarios como etiquetas.
+- **Parámetros/filtros:** print detail: propiedades; where: filtro; ~: coincidencia de patrón sobre comment.
+- **Caso real:** Encontrar el puerto ether etiquetado como uplink y revisar su estado.
+- **Referencia:** [Documentación del fabricante](https://help.mikrotik.com/docs/spaces/ROS/pages/47579229/Scripting)
+
 > Verifica los comandos y opciones mediante la ayuda CLI del equipo; ejemplos pendientes de validación en laboratorio.
 
 **Referencias del fabricante:** [Documentation](https://help.mikrotik.com/docs/spaces/ROS/pages/8978498/Console) · [Documentation](https://help.mikrotik.com/docs/spaces/ROS/pages/328084/IP+Routing) · [Documentation](https://help.mikrotik.com/docs/spaces/ROS/pages/8323088/Packet+Sniffer)

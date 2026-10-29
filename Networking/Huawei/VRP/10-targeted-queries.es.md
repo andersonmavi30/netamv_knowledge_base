@@ -11,13 +11,7 @@ validation: not-lab-verified
 
 ## Descripciones de interfaces
 
-```text
-display interface description | include UPLINK
-```
-
-- **Sirve para:** Descripciones de interfaces.
-- **Opciones y filtros:** description: etiquetas
-- **Caso práctico:** Consultar solo los datos relevantes de este equipo para investigar una falla sin recorrer toda la salida.
+Consulta el comando y su filtro en la [guía de interfaces](03-interfaces.es.md).
 
 ## Estado NTP
 

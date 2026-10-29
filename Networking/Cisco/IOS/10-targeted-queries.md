@@ -11,13 +11,7 @@ validation: not-lab-verified
 
 ## Uplink descriptions
 
-```text
-show interfaces description | include UPLINK
-```
-
-- **Purpose:** Uplink descriptions.
-- **Options and filters:** description: interface label summary
-- **Operational example:** Find relevant information while investigating an issue without reading all output.
+See the filtered command in the [interface reference](03-interfaces.md).
 
 ## OSPF router LSAs
 
