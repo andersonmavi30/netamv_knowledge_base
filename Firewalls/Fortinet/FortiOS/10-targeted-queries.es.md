@@ -51,11 +51,5 @@ diagnose hardware deviceinfo nic port1 | grep -i error
 
 ## ARP de un host
 
-```text
-get system arp | grep 192.0.2.10
-```
-
-- **Sirve para:** ARP de un host.
-- **Opciones y filtros:** ARP: vecinos IP-MAC
-- **Caso práctico:** Consultar solo los datos relevantes de este equipo para investigar una falla sin recorrer toda la salida.
+Consulta el comando `get system arp | grep 192.0.2.10` en la [guía de consultas](01-show.es.md).
 

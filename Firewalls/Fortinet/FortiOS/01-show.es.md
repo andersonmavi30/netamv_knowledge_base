@@ -59,6 +59,17 @@ get router info routing-table all | grep 198.51.100
 
 - **Filtro práctico:** `get router info routing-table all | grep 198.51.100` — Busca un prefijo; filtrar texto no equivale a consultar la ruta efectiva.
 
+## `get system arp`
+
+```text
+get system arp | grep 192.0.2.10
+```
+
+- **Sirve para:** Consultar la tabla ARP IPv4 y localizar la dirección MAC y la interfaz asociadas a una IP.
+- **Parámetros:** `grep 192.0.2.10`: muestra solo las líneas que contienen esa IP; el filtrado es textual.
+- **Ejemplo de uso:** Comprobar si el FortiGate aprendió la MAC de un gateway o servidor antes de investigar una falla de conectividad.
+- **Precaución:** Si no aparece la IP, podría no existir una entrada ARP activa; comprueba la interfaz y el VDOM correspondiente.
+
 
 > **Nota:** Referencia rápida, no verificada en laboratorio; confirma sintaxis y permisos en tu modelo y versión.
 

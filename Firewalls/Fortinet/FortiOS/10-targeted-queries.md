@@ -51,11 +51,5 @@ diagnose hardware deviceinfo nic port1 | grep -i error
 
 ## ARP entries for a host
 
-```text
-get system arp | grep 192.0.2.10
-```
-
-- **Purpose:** ARP entries for a host.
-- **Options and filters:** ARP: IP-to-MAC neighbors
-- **Operational example:** Find relevant information while investigating an issue without reading all output.
+See `get system arp | grep 192.0.2.10` in the [Show and status guide](01-show.md).
 
