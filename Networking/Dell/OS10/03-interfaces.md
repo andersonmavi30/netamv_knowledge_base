@@ -43,6 +43,18 @@ end
 - **Options:** interface: physical port; description: label.
 - **Real use:** Identify correct cable.
 
+## `show interface description | grep UPLINK`
+
+```text
+show interface description | grep UPLINK
+```
+
+- **Purpose:** Find labeled uplinks in the OS10 interface status and description table.
+- **Options:** show interface description: ports, link state and labels; | grep: output text match.
+- **Real use:** Identify the Ethernet interface assigned to the distribution uplink.
+- **Compatibility:** Supported on OS10 10.5.2.3+; check platform and CLI help.
+- **Reference:** [Vendor documentation](https://www.dell.com/support/manuals/en-us/smartfabric-os10-emp-partner/smartfabric-os-user-guide-10-6-1-x/show-interface-description?guid=guid-e3b56a69-81a3-48b7-99ba-9dea91d50933&lang=en-us)
+
 > Validate commands on the installed model and release; not lab-tested.
 
 [Dell documentation](https://www.dell.com/support/manuals/en-us/dell-emc-smartfabric-os10/smartfabric-os-user-guide-10-5-0/Filter-show-commands?guid=guid-758c857a-eba2-477a-a8f5-f0738c185e54&lang=en-us)

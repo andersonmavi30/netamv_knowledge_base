@@ -49,4 +49,22 @@ show interface brief | include down
 - **Parámetros:** include: líneas coincidentes.
 - **Ejemplo de uso:** Encontrar enlaces inactivos.
 
+## `show interface brief | include UPLINK`
+
+```text
+show interface brief | include UPLINK
+```
+
+**Alternativa para un puerto:**
+
+```text
+show interface 1/1/1 | include Description
+```
+
+- **Sirve para:** Busca puertos con UPLINK en la columna Description; revisa un puerto si el resumen omite etiquetas.
+- **Parámetros:** brief: estado resumido (y descripciones si son compatibles); | include: líneas coincidentes.
+- **Ejemplo de uso:** Encontrar el uplink y comprobar su descripción y estado.
+- **Compatibilidad:** AOS-CX; que `brief` muestre descripciones depende de versión/plataforma.
+- **Referencia:** [Documentación del fabricante](https://arubanetworking.hpe.com/techdocs/AOS-CX/10.16/HTML/fundamentals_8100-83xx-93xx-100xx/Content/Chp_IfaceCfg/Iface_cmds/sho-int-10.htm)
+
 > Ejemplos pendientes de validación en laboratorio; comandos y filtros pueden variar según versión y equipo.

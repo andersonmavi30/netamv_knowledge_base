@@ -43,6 +43,18 @@ end
 - **Options:** interface: physical port; description: label.
 - **Real use:** Label a lab port.
 
+## `show interfaces description | grep UPLINK`
+
+```text
+show interfaces description | grep UPLINK
+```
+
+- **Purpose:** Filter Force10/OS9 interface descriptions by the uplink label.
+- **Options:** show interfaces description: port description table; | grep: matching lines.
+- **Real use:** Locate the port connecting a core switch to a firewall.
+- **Compatibility:** Dell OS9 / FTOS; validate filtering syntax with `?` for the release.
+- **Reference:** [Vendor documentation](https://www.dell.com/support/manuals/en-us/smartfabric-os10-emp-partner/techsheet-os10-5-x-os9-pub/interfaces?guid=guid-9097a31b-e5b3-4702-909e-b8587224aa1f&lang=en-us)
+
 > Validate commands on the installed model and release; not lab-tested.
 
 [Dell documentation](https://i.dell.com/sites/doccontent/shared-content/data-sheets/en/Documents/ESG-Dell-Force10-FTOS-CLI-Spec-Sheet.pdf)

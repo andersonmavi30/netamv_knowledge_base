@@ -43,6 +43,18 @@ end
 - **Parámetros:** interface: puerto físico; description: etiqueta.
 - **Caso real:** Etiquetar puerto de prueba.
 
+## `show interfaces description | grep UPLINK`
+
+```text
+show interfaces description | grep UPLINK
+```
+
+- **Sirve para:** Filtra descripciones Force10/OS9 por la etiqueta del uplink.
+- **Opciones:** show interfaces description: tabla de descripciones; | grep: líneas coincidentes.
+- **Caso práctico:** Ubicar el puerto que conecta el core con el firewall.
+- **Compatibilidad:** Dell OS9 / FTOS; valida la sintaxis de filtros con `?`.
+- **Referencia:** [Documentación del fabricante](https://www.dell.com/support/manuals/en-us/smartfabric-os10-emp-partner/techsheet-os10-5-x-os9-pub/interfaces?guid=guid-9097a31b-e5b3-4702-909e-b8587224aa1f&lang=en-us)
+
 > Los comandos se deben validar en la versión y modelo instalados; no se han probado en laboratorio.
 
 [Guía de Dell](https://i.dell.com/sites/doccontent/shared-content/data-sheets/en/Documents/ESG-Dell-Force10-FTOS-CLI-Spec-Sheet.pdf)

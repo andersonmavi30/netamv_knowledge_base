@@ -43,6 +43,18 @@ exit
 - **Parámetros:** interface: puerto; description: etiqueta.
 - **Caso real:** Identificar uplink de laboratorio.
 
+## `show interfaces description | include UPLINK`
+
+```text
+show interfaces description | include UPLINK
+```
+
+- **Sirve para:** Busca puertos cuya descripción configurada contiene UPLINK.
+- **Opciones:** description: puertos y etiquetas; | include: filtra texto en versiones OS6 compatibles.
+- **Caso práctico:** Identificar el uplink entre switches serie N durante una auditoría.
+- **Compatibilidad:** OS6 serie N; confirma soporte de pipe en la versión instalada.
+- **Referencia:** [Documentación del fabricante](https://dl.dell.com/manuals/common/n-series-v663_cli_en-us.pdf)
+
 > Los comandos se deben validar en la versión y modelo instalados; no se han probado en laboratorio.
 
 [Guía de Dell](https://dl.dell.com/manuals/common/n-series-v663_cli_en-us.pdf)

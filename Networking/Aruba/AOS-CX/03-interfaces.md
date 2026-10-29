@@ -49,4 +49,22 @@ show interface brief | include down
 - **Arguments:** include: matching lines.
 - **Use case:** Find inactive links.
 
+## `show interface brief | include UPLINK`
+
+```text
+show interface brief | include UPLINK
+```
+
+**Single-port alternative:**
+
+```text
+show interface 1/1/1 | include Description
+```
+
+- **Purpose:** Locate switch ports whose Description column contains UPLINK; inspect a single port if the summary omits labels.
+- **Arguments:** brief: condensed interface status (and descriptions where supported); | include: matching lines.
+- **Use case:** Find the upstream switch port, then check its configured description and link state.
+- **Compatibility:** AOS-CX; whether descriptions appear in `brief` depends on release/platform.
+- **Reference:** [Vendor documentation](https://arubanetworking.hpe.com/techdocs/AOS-CX/10.16/HTML/fundamentals_8100-83xx-93xx-100xx/Content/Chp_IfaceCfg/Iface_cmds/sho-int-10.htm)
+
 > Examples pending lab validation; availability varies by release and hardware.

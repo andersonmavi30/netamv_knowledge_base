@@ -11,13 +11,7 @@ validation: not-lab-verified
 
 ## Port descriptions
 
-```text
-show interfaces description | include UPLINK
-```
-
-- **Purpose:** Port descriptions.
-- **Options and filters:** description: short labels
-- **Operational example:** Find relevant information while investigating an issue without reading all output.
+See the command in the [interface guide](03-interfaces.md).
 
 ## LACP port status
 

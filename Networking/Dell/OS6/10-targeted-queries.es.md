@@ -11,13 +11,7 @@ validation: not-lab-verified
 
 ## Descripción de puertos
 
-```text
-show interfaces description | include UPLINK
-```
-
-- **Sirve para:** Descripción de puertos.
-- **Opciones y filtros:** description: etiquetas
-- **Caso práctico:** Consultar solo los datos relevantes de este equipo para investigar una falla sin recorrer toda la salida.
+Consulta el comando en la [guía de interfaces](03-interfaces.es.md).
 
 ## Estado de puertos LACP
 

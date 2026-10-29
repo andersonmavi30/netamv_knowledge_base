@@ -43,6 +43,18 @@ exit
 - **Options:** interface: port; description: label.
 - **Real use:** Identify a lab uplink.
 
+## `show interfaces description | include UPLINK`
+
+```text
+show interfaces description | include UPLINK
+```
+
+- **Purpose:** Find ports whose configured description contains UPLINK.
+- **Options:** description: port names and labels; | include: matching text on supporting OS6 releases.
+- **Real use:** Identify the uplink between two N-series switches during a cabling audit.
+- **Compatibility:** OS6 N-series; confirm pipe support in the installed release.
+- **Reference:** [Vendor documentation](https://dl.dell.com/manuals/common/n-series-v663_cli_en-us.pdf)
+
 > Validate commands on the installed model and release; not lab-tested.
 
 [Dell documentation](https://dl.dell.com/manuals/common/n-series-v663_cli_en-us.pdf)
