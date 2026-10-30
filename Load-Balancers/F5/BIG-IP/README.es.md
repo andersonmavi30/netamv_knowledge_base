@@ -15,6 +15,6 @@ Referencia de comandos de F5 BIG-IP con enfoque en virtual servers, pools, conex
 - [Verificaciones adicionales](07-field-commands.es.md)
 - [Captura y debug](08-packet-debug.es.md)
 
-**Filtro:** `tmsh list ltm virtual | grep -i lab` o por Bash `tmsh list ltm virtual | grep -i lab`.
+**Filtro:** `list ltm virtual | grep -i lab` dentro de `tmsh`; desde Bash, `tmsh list ltm virtual | grep -i lab`.
 
 > Valida versión, partición (`/Common`) y permisos antes de aplicar cambios.

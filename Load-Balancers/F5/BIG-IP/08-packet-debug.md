@@ -43,14 +43,14 @@ tcpdump -nni 0.0:nnn -c 20 'arp or icmp'
 - **Arguments:** -c 20: bounded capture; BPF: arp or icmp.
 - **Use case:** Investigate a gateway connectivity issue.
 
-## `tmsh show sys connection cs-server-addr 192.0.2.20`
+## `tmsh show sys connection ss-server-addr 192.0.2.20`
 
 ```text
-tmsh show sys connection cs-server-addr 192.0.2.20
+tmsh show sys connection ss-server-addr 192.0.2.20
 ```
 
 - **Purpose:** Inspect connections sent to a backend.
-- **Arguments:** cs-server-addr: server-side IP match, if supported.
+- **Arguments:** ss-server-addr: server-side IP match, if supported.
 - **Use case:** Compare connections against the packet capture.
 - **Caution:** Confirm syntax with tmsh help for installed version.
 

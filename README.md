@@ -9,14 +9,15 @@
 - 🛡️ **[Firewalls](Firewalls/README.md)**
   - ↳ [Fortinet · FortiOS 7.x](Firewalls/Fortinet/README.md)
   - ↳ [Palo Alto Networks · PAN-OS](Firewalls/Palo-Alto/README.md)
-  - ↳ Check Point · Gaia *(planned)*
+  - ↳ [Check Point · Gaia / Security Gateway](Firewalls/Check-Point/README.md)
 - 🌐 **[Networking](Networking/README.md)**
   - ↳ [Cisco · IOS / IOS XE](Networking/Cisco/README.md)
   - ↳ [MikroTik · RouterOS 7.x](Networking/MikroTik/README.md)
   - ↳ [Huawei · VRP](Networking/Huawei/README.md)
   - ↳ [Aruba · AOS-CX](Networking/Aruba/README.md)
   - ↳ [Dell · OS6 / OS9 / OS10](Networking/Dell/README.md)
-- ⚖️ **Load Balancers** *(planned)*
+- ⚖️ **[Load Balancers](Load-Balancers/README.md)**
+  - ↳ [F5 · BIG-IP TMOS / LTM](Load-Balancers/F5/README.md)
 - 🖥️ **Servers** *(planned)*
 - 📦 **Virtualization** *(planned)*
 - ⚙️ **[NetDevOps & Network Automation - DevNet](NetDevOps/README.md)**

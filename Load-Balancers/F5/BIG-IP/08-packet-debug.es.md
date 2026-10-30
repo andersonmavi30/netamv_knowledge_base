@@ -43,14 +43,14 @@ tcpdump -nni 0.0:nnn -c 20 'arp or icmp'
 - **Parámetros:** -c 20: captura limitada; BPF: arp/icmp.
 - **Ejemplo de uso:** Investigar conectividad con gateway.
 
-## `tmsh show sys connection cs-server-addr 192.0.2.20`
+## `tmsh show sys connection ss-server-addr 192.0.2.20`
 
 ```text
-tmsh show sys connection cs-server-addr 192.0.2.20
+tmsh show sys connection ss-server-addr 192.0.2.20
 ```
 
 - **Sirve para:** Consulta conexiones hacia backend.
-- **Parámetros:** cs-server-addr: IP servidor, si está soportado.
+- **Parámetros:** ss-server-addr: IP servidor, si está soportado.
 - **Ejemplo de uso:** Comparar conexiones y captura.
 - **Precaución:** Verificar sintaxis con ayuda tmsh.
 

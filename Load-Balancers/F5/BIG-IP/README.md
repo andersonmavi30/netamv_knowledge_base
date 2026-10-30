@@ -15,6 +15,6 @@ F5 BIG-IP command reference covering virtual servers, pools, connections, networ
 - [Additional operational checks](07-field-commands.md)
 - [Packet capture & diagnostics](08-packet-debug.md)
 
-**Filtering:** `tmsh list ltm virtual | grep -i lab` works with tmsh output filtering.
+**Filtering:** `list ltm virtual | grep -i lab` within `tmsh`, or `tmsh list ltm virtual | grep -i lab` from Bash.
 
 > Verify release, partition (`/Common`) and privileges before modifying services.
