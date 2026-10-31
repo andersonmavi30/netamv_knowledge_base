@@ -49,5 +49,15 @@ display stp brief | include DISCARDING
 - **Parameters:** brief: short output
 - **Filter / lookup:** `display stp brief | include DISCARDING`
 
+## `display lldp local interface GigabitEthernet 0/0/1`
+
+```text
+display lldp local interface GigabitEthernet 0/0/1
+```
+
+- **Purpose:** Inspect the local LLDP information being advertised on an individual interface.
+- **Parameters / flags:** local: local device LLDP information; interface: target port; GigabitEthernet 0/0/1: example interface.
+- **Operational use:** Check LLDP operation and advertisements when a neighboring switch cannot discover this uplink.
+- **Official reference:** https://info.support.huawei.com/network/ptmngsys/Web/tsrev_s/en/content/s/38_edesk_lldp_neighbors_failing/edesk_lldp_neighbors_failing_edesk002.html
 
 > Examples pending lab validation. Confirm the release and syntax with CLI help.
