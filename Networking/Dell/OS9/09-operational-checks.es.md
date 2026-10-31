@@ -64,6 +64,17 @@ show ip ospf neighbor | grep FULL
 - **Caso real:** Comprobar vecinos.
 - **Filtro / verificación:** `show ip ospf neighbor`
 
+## `show processes cpu summary`
+
+```text
+show processes cpu summary
+```
+
+- **Sirve para:** Muestra un resumen del consumo de CPU de procesos del plano de control en OS9 compatible.
+- **Parámetros:** processes cpu: monitoreo de CPU; summary: estadísticas resumidas (según plataforma).
+- **Ejemplo de uso:** Comprobar consumo del plano de control antes de habilitar debugging intensivo.
+- **Referencia oficial:** https://www.dell.com/support/manuals/en-us/dell-emc-os-9/s6010-on-9.14.2.4-cli/show-processes-cpu?guid=guid-9e687ea4-6b17-485c-aded-809d15df998f&lang=en-us
+
 > ⚠️ Referencia de laboratorio aún no probada; distintas plataformas Dell y Huawei pueden usar variantes de comandos.
 
 [Referencia del fabricante](https://www.dell.com/support/home/en-us/products/networking)

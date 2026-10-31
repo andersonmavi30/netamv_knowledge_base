@@ -64,6 +64,17 @@ show ip ospf neighbor | grep FULL
 - **Operational use:** Check neighbor health.
 - **Filter / verification:** `show ip ospf neighbor`
 
+## `show processes cpu summary`
+
+```text
+show processes cpu summary
+```
+
+- **Purpose:** Display a summary of CPU use by control-plane processes on supporting Force10 OS9 hardware.
+- **Parameters / flags:** processes cpu: CPU monitoring; summary: compact process/stack-unit statistics (platform-dependent).
+- **Operational use:** Confirm control-plane load before enabling an expensive debug session.
+- **Official reference:** https://www.dell.com/support/manuals/en-us/dell-emc-os-9/s6010-on-9.14.2.4-cli/show-processes-cpu?guid=guid-9e687ea4-6b17-485c-aded-809d15df998f&lang=en-us
+
 > ⚠️ Not lab-tested; different Dell and Huawei platforms may use alternative commands.
 
 [Vendor reference](https://www.dell.com/support/home/en-us/products/networking)
