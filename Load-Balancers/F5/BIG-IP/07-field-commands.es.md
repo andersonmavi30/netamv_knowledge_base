@@ -51,6 +51,17 @@ tmsh list ltm monitor http | grep -i lab
 - **Parámetros:** list: configuración; grep -i: nombre.
 - **Ejemplo de uso:** Auditar nombres de monitores.
 
+## `tmsh show ltm persistence persist-records | grep 192.0.2.10`
+
+```text
+tmsh show ltm persistence persist-records | grep 192.0.2.10
+```
+
+- **Sirve para:** Busca registros de persistencia LTM correspondientes a una IP cliente.
+- **Parámetros:** show ltm persistence persist-records: afinidades de persistencia; | grep: muestra coincidencias de IP.
+- **Ejemplo de uso:** Investigar por qué un cliente sigue llegando al mismo backend después de cambios de balanceo.
+- **Referencia oficial:** https://clouddocs.f5.com/training/community/adc/html/class7/modules/module02.html
+
 > Referencia sin validación de laboratorio. Algunos comandos requieren módulos LTM, HA o privilegios Bash; no todas las versiones son iguales.
 
 **Documentación oficial:** [1](https://clouddocs.f5.com/cli/tmsh-reference/v16/general/tmsh.html)

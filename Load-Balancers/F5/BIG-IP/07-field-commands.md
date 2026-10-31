@@ -51,6 +51,17 @@ tmsh list ltm monitor http | grep -i lab
 - **Arguments:** list: monitor config; grep -i: name match.
 - **Use case:** Audit app health-check names.
 
+## `tmsh show ltm persistence persist-records | grep 192.0.2.10`
+
+```text
+tmsh show ltm persistence persist-records | grep 192.0.2.10
+```
+
+- **Purpose:** Search LTM persistence records for a specific client IP.
+- **Arguments:** show ltm persistence persist-records: active persistence bindings; | grep: select the client's matching lines.
+- **Use case:** Investigate why a client keeps returning to the same backend even after load-balancing changes.
+- **Official reference:** https://clouddocs.f5.com/training/community/adc/html/class7/modules/module02.html
+
 > Not lab-verified. Some commands require LTM, HA or Bash privileges; release capabilities differ.
 
 **Official documentation:** [1](https://clouddocs.f5.com/cli/tmsh-reference/v16/general/tmsh.html)
