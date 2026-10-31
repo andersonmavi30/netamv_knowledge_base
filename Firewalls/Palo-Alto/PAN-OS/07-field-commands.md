@@ -61,6 +61,17 @@ show routing fib virtual-router default | match 203.0.113
 - **Arguments:** virtual-router: routing instance; match: prefix string.
 - **Use case:** Verify expected outgoing next hop after a static route change.
 
+## `show admins | match 192.0.2.10`
+
+```text
+show admins | match 192.0.2.10
+```
+
+- **Purpose:** Find active administrator sessions associated with a management source IP.
+- **Arguments:** show admins: logged-in administrators; | match: filter output by the example IP.
+- **Use case:** Confirm whether a colleague is connected from 192.0.2.10 before a configuration change.
+- **Official reference:** https://docs.paloaltonetworks.com/ngfw/pan-os-cli-quick-start/cli-cheat-sheet-device-management
+
 > Quick reference, not lab-verified. Use contextual `?` help and confirm operational (`>`) versus configuration (`#`) mode before use.
 
 **Official references:** [Official documentation 1](https://docs.paloaltonetworks.com/ngfw/pan-os-cli-quick-start/cli-cheat-sheet-networking) · [Official documentation 2](https://docs.paloaltonetworks.com/ngfw/pan-os-cli-quick-start/cli-command-hierarchy/pan-os-11-2-cli-ops-command-hierarchy)

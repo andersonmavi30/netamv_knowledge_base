@@ -61,6 +61,17 @@ show routing fib virtual-router default | match 203.0.113
 - **Parámetros:** virtual-router: instancia de rutas; match: texto de prefijo.
 - **Ejemplo de uso:** Verificar siguiente salto tras ruta estática.
 
+## `show admins | match 192.0.2.10`
+
+```text
+show admins | match 192.0.2.10
+```
+
+- **Sirve para:** Busca sesiones administrativas activas asociadas con una IP de origen.
+- **Parámetros:** show admins: administradores conectados; | match: filtra la salida por la IP de ejemplo.
+- **Ejemplo de uso:** Comprobar si otro administrador está conectado desde 192.0.2.10 antes de modificar configuración.
+- **Referencia oficial:** https://docs.paloaltonetworks.com/ngfw/pan-os-cli-quick-start/cli-cheat-sheet-device-management
+
 > Referencia breve, pendiente de validación en laboratorio. Comprueba la ayuda contextual `?`, el contexto operational (`>`) y configuration (`#`) antes de ejecutarlos.
 
 **Referencias oficiales:** [Guía 1](https://docs.paloaltonetworks.com/ngfw/pan-os-cli-quick-start/cli-cheat-sheet-networking) · [Guía 2](https://docs.paloaltonetworks.com/ngfw/pan-os-cli-quick-start/cli-command-hierarchy/pan-os-11-2-cli-ops-command-hierarchy)
