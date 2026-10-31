@@ -64,6 +64,17 @@ show ip dhcp snooping binding | include 192.0.2
 - **Operational use:** Investigate a blocked DHCP client.
 - **Filter / verification:** `show ip dhcp snooping binding`
 
+## `show mac address-table | include 0011`
+
+```text
+show mac address-table | include 0011
+```
+
+- **Purpose:** Search dynamically learned MAC table entries for a particular MAC prefix.
+- **Parameters / flags:** show mac address-table: bridging table; | include 0011: show matching lines on releases supporting output filters.
+- **Operational use:** Locate a connected endpoint by the first hexadecimal digits of its MAC address.
+- **Official reference:** https://dl.dell.com/manuals/common/n-series-v663_cli_en-us.pdf
+
 > ⚠️ Not lab-tested; different Dell and Huawei platforms may use alternative commands.
 
 [Vendor reference](https://dl.dell.com/manuals/common/n-series-v663_cli_en-us.pdf)
