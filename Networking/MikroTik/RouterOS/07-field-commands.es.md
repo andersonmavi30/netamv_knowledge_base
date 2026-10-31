@@ -69,4 +69,15 @@ validation: not-lab-verified
 - **Parámetros:** where: prefijo exacto
 - **Filtro / consulta:** `/ip route print where dst-address="0.0.0.0/0"`
 
+## `/interface ethernet monitor ether1 once`
+
+```text
+/interface ethernet monitor ether1 once
+```
+
+- **Sirve para:** Consulta velocidad, dúplex y propiedades operativas Ethernet de un puerto.
+- **Parámetros:** ether1: puerto específico; monitor: información operativa; once: una muestra en vez de monitoreo continuo.
+- **Ejemplo de uso:** Comprobar si un uplink negoció la velocidad esperada después de cambiar el cable.
+- **Referencia oficial:** https://help.mikrotik.com/docs/spaces/ROS/pages/132350014/SSH
+
 > Ejemplos pendientes de validación práctica. Confirma versión y sintaxis con la ayuda de CLI.

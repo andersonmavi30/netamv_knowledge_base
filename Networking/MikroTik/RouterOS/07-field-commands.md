@@ -69,4 +69,15 @@ validation: not-lab-verified
 - **Parameters:** where: exact prefix
 - **Filter / lookup:** `/ip route print where dst-address="0.0.0.0/0"`
 
+## `/interface ethernet monitor ether1 once`
+
+```text
+/interface ethernet monitor ether1 once
+```
+
+- **Purpose:** Read link speed, duplex and operational Ethernet properties for one port.
+- **Parameters:** ether1: specific physical interface; monitor: live operational data; once: one sample instead of a continuously running monitor.
+- **Use case:** Check whether a switch uplink negotiated the expected speed after changing the cable.
+- **Official reference:** https://help.mikrotik.com/docs/spaces/ROS/pages/132350014/SSH
+
 > Examples pending lab validation. Confirm the release and syntax with CLI help.
