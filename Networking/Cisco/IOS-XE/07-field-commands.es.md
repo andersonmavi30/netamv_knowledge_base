@@ -39,6 +39,15 @@ show access-lists 101 | include deny
 - **Parámetros:** 101: ID ACL
 - **Filtro / consulta:** `show access-lists 101 | include deny`
 
+## `show interfaces GigabitEthernet1/0/1 counters errors`
 
+```text
+show interfaces GigabitEthernet1/0/1 counters errors
+```
+
+- **Sirve para:** Muestra contadores de errores de un puerto sin listar todas las interfaces.
+- **Parámetros:** GigabitEthernet1/0/1: identificador de interfaz; counters errors: vista de contadores de error.
+- **Ejemplo de uso:** Buscar incrementos de FCS/errores de recepción en un uplink; requiere Catalyst IOS XE compatible.
+- **Referencia oficial:** https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9300/software/release/17-15/command_reference/b_1715_9300_cr/interface_and_hardware_commands.html
 
 > Ejemplos pendientes de validación práctica. Confirma versión y sintaxis con la ayuda de CLI.
