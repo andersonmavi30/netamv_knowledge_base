@@ -64,6 +64,17 @@ show ip bgp summary | grep Idle
 - **Caso real:** Buscar vecino en Active.
 - **Filtro / verificación:** `show ip bgp summary | grep Active`
 
+## `show lldp neighbors interface ethernet 1/1/1 detail`
+
+```text
+show lldp neighbors interface ethernet 1/1/1 detail
+```
+
+- **Sirve para:** Consulta los TLV LLDP anunciados por el vecino del puerto Ethernet 1/1/1.
+- **Parámetros:** interface ethernet 1/1/1: selecciona interfaz local; detail: información ampliada del vecino.
+- **Ejemplo de uso:** Identificar switch vecino, puerto remoto, IP de administración y capacidades al revisar cableado.
+- **Referencia oficial:** https://www.dell.com/support/manuals/en-us/smartfabric-os10-emp-partner/smartfabric-os-user-guide-10-6-1-x/show-lldp-neighbors?guid=guid-cf4a7765-02fd-4278-9bcb-c49088ba61e5&lang=en-us
+
 > ⚠️ Referencia de laboratorio aún no probada; distintas plataformas Dell y Huawei pueden usar variantes de comandos.
 
 [Referencia del fabricante](https://www.dell.com/support/home/en-us/products/networking)

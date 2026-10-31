@@ -64,6 +64,17 @@ show ip bgp summary | grep Idle
 - **Operational use:** Find peer stuck in Active.
 - **Filter / verification:** `show ip bgp summary | grep Active`
 
+## `show lldp neighbors interface ethernet 1/1/1 detail`
+
+```text
+show lldp neighbors interface ethernet 1/1/1 detail
+```
+
+- **Purpose:** Read all LLDP TLVs advertised by the neighbor on Ethernet 1/1/1.
+- **Arguments:** interface ethernet 1/1/1: filter to a local interface; detail: expanded neighbor information.
+- **Use case:** Identify the peer switch, remote port, management IP and capabilities during cabling troubleshooting.
+- **Official reference:** https://www.dell.com/support/manuals/en-us/smartfabric-os10-emp-partner/smartfabric-os-user-guide-10-6-1-x/show-lldp-neighbors?guid=guid-cf4a7765-02fd-4278-9bcb-c49088ba61e5&lang=en-us
+
 > ⚠️ Not lab-tested; different Dell and Huawei platforms may use alternative commands.
 
 [Vendor reference](https://www.dell.com/support/home/en-us/products/networking)
