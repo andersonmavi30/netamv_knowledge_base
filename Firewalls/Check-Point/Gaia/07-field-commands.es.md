@@ -52,6 +52,17 @@ clish -c "show ntp"
 - **Parámetros:** -c: comando Gaia Clish.
 - **Ejemplo de uso:** Verificar configuración horaria.
 
+## `fw ctl affinity -l -i eth1`
+
+```text
+fw ctl affinity -l -i eth1
+```
+
+- **Sirve para:** Consulta afinidad de CPU CoreXL específicamente para la interfaz eth1.
+- **Parámetros:** -l: lista afinidades; -i eth1: selecciona la interfaz eth1.
+- **Ejemplo de uso:** Comprobar asignación de CPU del uplink durante un incidente de rendimiento.
+- **Referencia oficial:** https://sc1.checkpoint.com/documents/R81/WebAdminGuides/EN/CP_R81_PerformanceTuning_AdminGuide/Topics-PTG/CLI/fw-ctl-affinity-l-Gateway-Mode.htm
+
 > Comandos de referencia pendientes de validación práctica. Verifica permisos, modo Clish/Expert y versión.
 
 **Documentación:** [1](https://sc1.checkpoint.com/documents/R82/WebAdminGuides/EN/CP_R82_Gaia_AdminGuide/Content/Topics-GAG/Gaia-Clish-Expert-Mode.htm)

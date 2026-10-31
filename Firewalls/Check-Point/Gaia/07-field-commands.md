@@ -52,6 +52,17 @@ clish -c "show ntp"
 - **Arguments:** -c: execute Gaia Clish read-only.
 - **Use case:** Check synchronization configuration.
 
+## `fw ctl affinity -l -i eth1`
+
+```text
+fw ctl affinity -l -i eth1
+```
+
+- **Purpose:** Inspect CoreXL CPU affinity specifically for interface eth1.
+- **Arguments:** -l: list current affinities; -i eth1: select interface eth1.
+- **Use case:** Check whether an uplink is assigned to the expected CPU during a performance incident.
+- **Official reference:** https://sc1.checkpoint.com/documents/R81/WebAdminGuides/EN/CP_R81_PerformanceTuning_AdminGuide/Topics-PTG/CLI/fw-ctl-affinity-l-Gateway-Mode.htm
+
 > Reference commands pending lab testing. Verify privileges, Clish/Expert context and release.
 
 **Documentation:** [1](https://sc1.checkpoint.com/documents/R82/WebAdminGuides/EN/CP_R82_Gaia_AdminGuide/Content/Topics-GAG/Gaia-Clish-Expert-Mode.htm)
