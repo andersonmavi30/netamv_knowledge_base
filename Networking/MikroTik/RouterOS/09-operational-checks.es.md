@@ -67,3 +67,14 @@ validation: not-lab-verified
 > ⚠️ Comandos de diagnóstico sobre funciones opcionales no devuelven información cuando esas funciones no están configuradas. Detén los monitores interactivos al terminar.
 
 **Referencia**: [MikroTik RouterOS](https://help.mikrotik.com/docs/spaces/ROS/pages/328134/Command+Line+Interface)
+
+## Selección de rutas activas
+
+```text
+/routing route print where active
+```
+
+- **Propósito:** Mostrar solo las rutas activas en RouterOS.
+- **Parámetros / flags:** where active: restringe a rutas con bandera activa; RouterOS v7.
+- **Uso operativo:** Investigar por qué una ruta esperada no está activa.
+- **Referencia:** https://help.mikrotik.com/docs/
