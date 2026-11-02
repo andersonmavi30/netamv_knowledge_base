@@ -67,3 +67,14 @@ diagnose sys link-monitor status | grep -i status
 > ⚠️ Comandos de diagnóstico sobre funciones opcionales no devuelven información cuando esas funciones no están configuradas. Detén los monitores interactivos al terminar.
 
 **Referencia**: [Fortinet FortiOS](https://docs.fortinet.com/document/fortigate/7.4.0/administration-guide/818746/sd-wan-related-diagnose-commands)
+
+## Estadísticas de sesiones
+
+```text
+diagnose sys session stat
+```
+
+- **Propósito:** Inspeccionar utilización de la tabla de sesiones y contadores de creación y expiración.
+- **Parámetros / flags:** stat: contadores agregados, sin listar cada flujo.
+- **Uso operativo:** Diagnosticar crecimiento repentino de sesiones.
+- **Referencia:** https://docs.fortinet.com/

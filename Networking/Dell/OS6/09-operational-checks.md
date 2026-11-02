@@ -89,3 +89,14 @@ show lldp local-device detail Gi1/0/1
 > ⚠️ Not lab-tested; different Dell and Huawei platforms may use alternative commands.
 
 [Vendor reference](https://dl.dell.com/manuals/common/n-series-v663_cli_en-us.pdf)
+
+## Switchport operational status
+
+```text
+show interfaces status
+```
+
+- **Purpose:** Display switchport link status and related port attributes.
+- **Parameters / flags:** status: concise port table; supported interfaces depend on N-series model.
+- **Operational use:** Find disconnected or unexpected port speeds on an OS6 switch.
+- **Reference:** https://dl.dell.com/manuals/common/n-series-v663_cli_en-us.pdf

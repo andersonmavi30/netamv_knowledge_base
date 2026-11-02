@@ -67,3 +67,14 @@ show interfaces trunk | include 10
 > ⚠️ Comandos de diagnóstico sobre funciones opcionales no devuelven información cuando esas funciones no están configuradas. Detén los monitores interactivos al terminar.
 
 **Referencia**: [Cisco IOS](https://www.cisco.com/c/en/us/support/ios-nx-os-software/ios-software/products-command-reference-list.html)
+
+## Configuración de protocolos de enrutamiento
+
+```text
+show ip protocols
+```
+
+- **Propósito:** Resumir los protocolos de enrutamiento IPv4 habilitados.
+- **Parámetros / flags:** ip protocols: procesos, redistribución y temporizadores.
+- **Uso operativo:** Validar el proceso de routing antes de investigar rutas faltantes.
+- **Referencia:** https://www.cisco.com/

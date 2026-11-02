@@ -77,3 +77,14 @@ cpstat -f cpu os | grep 'CPU Usage'
 > Reference commands pending lab testing. Verify privileges, Clish/Expert context and release.
 
 **Documentation:** [1](https://sc1.checkpoint.com/documents/R82/WebAdminGuides/EN/CP_R82_Gaia_AdminGuide/Content/Topics-GAG/Gaia-Clish-Expert-Mode.htm)
+
+## Installed security policy status
+
+```text
+fw stat
+```
+
+- **Purpose:** Display the policy installed on a gateway in Expert mode.
+- **Parameters / flags:** fw: firewall utility; stat: installed policy information.
+- **Operational use:** Confirm that a security policy is loaded after deployment.
+- **Reference:** https://sc1.checkpoint.com/

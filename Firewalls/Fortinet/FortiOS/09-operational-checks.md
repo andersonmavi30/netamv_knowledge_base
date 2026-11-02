@@ -67,3 +67,14 @@ diagnose sys link-monitor status | grep -i status
 > ⚠️ Feature-specific commands may return no information if the feature is not configured. Stop interactive monitors when finished.
 
 **Reference**: [Fortinet FortiOS](https://docs.fortinet.com/document/fortigate/7.4.0/administration-guide/818746/sd-wan-related-diagnose-commands)
+
+## Session table statistics
+
+```text
+diagnose sys session stat
+```
+
+- **Purpose:** Inspect session table utilization and setup/expiry counters.
+- **Parameters / flags:** stat: aggregate session counters, not a per-flow dump.
+- **Operational use:** Diagnose sudden session growth or session-table pressure.
+- **Reference:** https://docs.fortinet.com/

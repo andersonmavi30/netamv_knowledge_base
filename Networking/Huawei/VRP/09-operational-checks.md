@@ -67,3 +67,14 @@ display cpu-usage
 > ⚠️ Not lab-tested; different Dell and Huawei platforms may use alternative commands.
 
 [Vendor reference](https://info.support.huawei.com/enterprise/en/doc/EDOC1100333403/cdd85713/basic-interface-configuration-commands)
+
+## Interface operational summary
+
+```text
+display interface brief
+```
+
+- **Purpose:** Summarize link and protocol status of device interfaces.
+- **Parameters / flags:** brief: condensed interface table.
+- **Operational use:** Locate down interfaces before inspecting transceiver details.
+- **Reference:** https://info.support.huawei.com/enterprise/

@@ -67,3 +67,14 @@ show interfaces trunk | include 10
 > ⚠️ Feature-specific commands may return no information if the feature is not configured. Stop interactive monitors when finished.
 
 **Reference**: [Cisco IOS](https://www.cisco.com/c/en/us/support/ios-nx-os-software/ios-software/products-command-reference-list.html)
+
+## Routing protocol configuration
+
+```text
+show ip protocols
+```
+
+- **Purpose:** Summarize enabled IPv4 routing protocols and their settings.
+- **Parameters / flags:** ip protocols: active routing protocols, redistribution and timers.
+- **Operational use:** Confirm routing process configuration before diagnosing missing routes.
+- **Reference:** https://www.cisco.com/

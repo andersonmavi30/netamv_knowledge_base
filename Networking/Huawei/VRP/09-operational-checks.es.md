@@ -67,3 +67,14 @@ display cpu-usage
 > ⚠️ Referencia de laboratorio aún no probada; distintas plataformas Dell y Huawei pueden usar variantes de comandos.
 
 [Referencia del fabricante](https://info.support.huawei.com/enterprise/en/doc/EDOC1100333403/cdd85713/basic-interface-configuration-commands)
+
+## Resumen operativo de interfaces
+
+```text
+display interface brief
+```
+
+- **Propósito:** Resumir el estado físico y del protocolo de las interfaces.
+- **Parámetros / flags:** brief: tabla resumida de interfaces.
+- **Uso operativo:** Localizar interfaces caídas antes de revisar sus transceptores.
+- **Referencia:** https://info.support.huawei.com/

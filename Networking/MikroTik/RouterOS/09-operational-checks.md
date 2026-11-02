@@ -67,3 +67,14 @@ validation: not-lab-verified
 > ⚠️ Feature-specific commands may return no information if the feature is not configured. Stop interactive monitors when finished.
 
 **Reference**: [MikroTik RouterOS](https://help.mikrotik.com/docs/spaces/ROS/pages/328134/Command+Line+Interface)
+
+## Active route selection
+
+```text
+/routing route print where active
+```
+
+- **Purpose:** Display only active routes selected in the RouterOS routing information base.
+- **Parameters / flags:** where active: restrict output to routes with active flag; RouterOS v7.
+- **Operational use:** Diagnose why an expected route is not active.
+- **Reference:** https://help.mikrotik.com/docs/

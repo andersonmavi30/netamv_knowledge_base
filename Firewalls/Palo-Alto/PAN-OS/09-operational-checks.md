@@ -64,3 +64,14 @@ show high-availability all | match peer
 > Not lab-verified. Some features require configuration, license or privileges.
 
 **Official docs:** https://docs.paloaltonetworks.com/ngfw/pan-os-cli-quick-start/cli-command-hierarchy
+
+## Global drop counters
+
+```text
+show counter global filter severity drop delta yes
+```
+
+- **Purpose:** Display recent packet-drop counters rather than lifetime totals.
+- **Parameters / flags:** severity drop: drop category; delta yes: interval deltas, if supported by release.
+- **Operational use:** Identify whether packet drops increase while reproducing a connectivity failure.
+- **Reference:** https://docs.paloaltonetworks.com/
