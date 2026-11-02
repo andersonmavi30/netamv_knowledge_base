@@ -50,4 +50,15 @@ show interfaces GigabitEthernet1/0/1 counters errors
 - **Ejemplo de uso:** Buscar incrementos de FCS/errores de recepción en un uplink; requiere Catalyst IOS XE compatible.
 - **Referencia oficial:** https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9300/software/release/17-15/command_reference/b_1715_9300_cr/interface_and_hardware_commands.html
 
+## `show ip sla statistics 1 | include Latest RTT|return code`
+
+```text
+show ip sla statistics 1 | include Latest RTT|return code
+```
+
+- **Sirve para:** Consulta el RTT y código de respuesta de IP SLA operación 1.
+- **Parámetros:** statistics 1: operación SLA específica; | include: filtra RTT y código.
+- **Ejemplo de uso:** Verificar latencia o errores en una sonda de conectividad.
+- **Referencia:** https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/ipsla/command/sla-cr-book/sla_s1.html
+
 > Ejemplos pendientes de validación práctica. Confirma versión y sintaxis con la ayuda de CLI.
