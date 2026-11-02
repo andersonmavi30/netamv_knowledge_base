@@ -89,3 +89,14 @@ show ip bgp neighbors 192.0.2.1 | grep "BGP state"
 > ⚠️ Not lab-tested; different Dell and Huawei platforms may use alternative commands.
 
 [Vendor reference](https://www.dell.com/support/home/en-us/products/networking)
+
+## System event log
+
+```text
+show logging
+```
+
+- **Purpose:** Display log messages maintained by a Force10 OS9 device.
+- **Parameters / flags:** logging: local event buffer; output length and severity depend on configuration.
+- **Operational use:** Correlate link flaps and routing adjacency resets.
+- **Reference:** https://www.dell.com/support/home/en-us/products/networking
