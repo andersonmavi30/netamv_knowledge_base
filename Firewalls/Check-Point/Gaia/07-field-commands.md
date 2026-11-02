@@ -63,6 +63,17 @@ fw ctl affinity -l -i eth1
 - **Use case:** Check whether an uplink is assigned to the expected CPU during a performance incident.
 - **Official reference:** https://sc1.checkpoint.com/documents/R81/WebAdminGuides/EN/CP_R81_PerformanceTuning_AdminGuide/Topics-PTG/CLI/fw-ctl-affinity-l-Gateway-Mode.htm
 
+## `cpstat -f cpu os | grep 'CPU Usage'`
+
+```text
+cpstat -f cpu os | grep 'CPU Usage'
+```
+
+- **Purpose:** Extract CPU utilization from Gaia statistics in Expert mode.
+- **Arguments:** -f cpu: CPU statistics; os: operating system; grep: output filter.
+- **Use case:** Validate CPU load before collecting more intrusive diagnostics.
+- **Reference:** https://sc1.checkpoint.com/documents/R82/WebAdminGuides/EN/CP_R82_CLI_ReferenceGuide/CP_R82_CLI_ReferenceGuide.pdf
+
 > Reference commands pending lab testing. Verify privileges, Clish/Expert context and release.
 
 **Documentation:** [1](https://sc1.checkpoint.com/documents/R82/WebAdminGuides/EN/CP_R82_Gaia_AdminGuide/Content/Topics-GAG/Gaia-Clish-Expert-Mode.htm)

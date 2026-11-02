@@ -63,6 +63,17 @@ fw ctl affinity -l -i eth1
 - **Ejemplo de uso:** Comprobar asignación de CPU del uplink durante un incidente de rendimiento.
 - **Referencia oficial:** https://sc1.checkpoint.com/documents/R81/WebAdminGuides/EN/CP_R81_PerformanceTuning_AdminGuide/Topics-PTG/CLI/fw-ctl-affinity-l-Gateway-Mode.htm
 
+## `cpstat -f cpu os | grep 'CPU Usage'`
+
+```text
+cpstat -f cpu os | grep 'CPU Usage'
+```
+
+- **Sirve para:** Extrae el consumo de CPU de Gaia desde modo Expert.
+- **Parámetros:** -f cpu: estadísticas CPU; os: sistema operativo; grep: filtro de salida.
+- **Ejemplo de uso:** Comprobar carga de CPU antes de realizar diagnósticos más intensivos.
+- **Referencia:** https://sc1.checkpoint.com/documents/R82/WebAdminGuides/EN/CP_R82_CLI_ReferenceGuide/CP_R82_CLI_ReferenceGuide.pdf
+
 > Comandos de referencia pendientes de validación práctica. Verifica permisos, modo Clish/Expert y versión.
 
 **Documentación:** [1](https://sc1.checkpoint.com/documents/R82/WebAdminGuides/EN/CP_R82_Gaia_AdminGuide/Content/Topics-GAG/Gaia-Clish-Expert-Mode.htm)
