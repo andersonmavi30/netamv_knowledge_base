@@ -75,6 +75,17 @@ show processes cpu summary
 - **Ejemplo de uso:** Comprobar consumo del plano de control antes de habilitar debugging intensivo.
 - **Referencia oficial:** https://www.dell.com/support/manuals/en-us/dell-emc-os-9/s6010-on-9.14.2.4-cli/show-processes-cpu?guid=guid-9e687ea4-6b17-485c-aded-809d15df998f&lang=en-us
 
+## `show ip bgp neighbors 192.0.2.1 | grep "BGP state"`
+
+```text
+show ip bgp neighbors 192.0.2.1 | grep "BGP state"
+```
+
+- **Sirve para:** Consulta el estado de la máquina BGP de un vecino específico.
+- **Parámetros:** 192.0.2.1: IP de vecino; | grep: muestra su campo de estado BGP.
+- **Ejemplo de uso:** Investigar por qué un peer BGP no alcanza Established.
+- **Referencia:** https://www.dell.com/support/manuals/en-za/dell-emc-smartfabric-os10/techsheet-os10-5-3-0-os9-pub/border-gateway-protocol?guid=guid-8520ae6f-95e0-411e-986f-978c419f8d0f&lang=en-us
+
 > ⚠️ Referencia de laboratorio aún no probada; distintas plataformas Dell y Huawei pueden usar variantes de comandos.
 
 [Referencia del fabricante](https://www.dell.com/support/home/en-us/products/networking)
