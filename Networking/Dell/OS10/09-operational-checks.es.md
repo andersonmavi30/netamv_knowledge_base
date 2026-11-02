@@ -75,6 +75,17 @@ show lldp neighbors interface ethernet 1/1/1 detail
 - **Ejemplo de uso:** Identificar switch vecino, puerto remoto, IP de administración y capacidades al revisar cableado.
 - **Referencia oficial:** https://www.dell.com/support/manuals/en-us/smartfabric-os10-emp-partner/smartfabric-os-user-guide-10-6-1-x/show-lldp-neighbors?guid=guid-cf4a7765-02fd-4278-9bcb-c49088ba61e5&lang=en-us
 
+## `show inventory | grep -i Serial`
+
+```text
+show inventory | grep -i Serial
+```
+
+- **Sirve para:** Busca campos de número de serie en el inventario de hardware OS10.
+- **Parámetros:** show inventory: chasis/módulos; | grep -i Serial: filtro sin distinguir mayúsculas.
+- **Ejemplo de uso:** Identificar seriales antes de abrir un caso de soporte de hardware Dell.
+- **Referencia:** https://www.dell.com/support/manuals/en-us/dell-emc-smartfabric-os10/smartfabric-os-user-guide-10-5-3/show-inventory?guid=guid-08e4f141-ddea-4d66-999b-c84edd73eff4&lang=en-us
+
 > ⚠️ Referencia de laboratorio aún no probada; distintas plataformas Dell y Huawei pueden usar variantes de comandos.
 
 [Referencia del fabricante](https://www.dell.com/support/home/en-us/products/networking)

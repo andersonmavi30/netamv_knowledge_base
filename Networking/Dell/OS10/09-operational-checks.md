@@ -75,6 +75,17 @@ show lldp neighbors interface ethernet 1/1/1 detail
 - **Use case:** Identify the peer switch, remote port, management IP and capabilities during cabling troubleshooting.
 - **Official reference:** https://www.dell.com/support/manuals/en-us/smartfabric-os10-emp-partner/smartfabric-os-user-guide-10-6-1-x/show-lldp-neighbors?guid=guid-cf4a7765-02fd-4278-9bcb-c49088ba61e5&lang=en-us
 
+## `show inventory | grep -i Serial`
+
+```text
+show inventory | grep -i Serial
+```
+
+- **Purpose:** Find serial-number fields in the OS10 hardware inventory.
+- **Arguments:** show inventory: chassis/modules; | grep -i Serial: case-insensitive output filter.
+- **Use case:** Collect inventory identifiers before opening a Dell hardware support case.
+- **Reference:** https://www.dell.com/support/manuals/en-us/dell-emc-smartfabric-os10/smartfabric-os-user-guide-10-5-3/show-inventory?guid=guid-08e4f141-ddea-4d66-999b-c84edd73eff4&lang=en-us
+
 > ⚠️ Not lab-tested; different Dell and Huawei platforms may use alternative commands.
 
 [Vendor reference](https://www.dell.com/support/home/en-us/products/networking)
