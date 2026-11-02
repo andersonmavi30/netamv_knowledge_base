@@ -76,3 +76,14 @@ tmsh list ltm virtual-address | grep 198.51.100.10
 > Referencia sin validación de laboratorio. Algunos comandos requieren módulos LTM, HA o privilegios Bash; no todas las versiones son iguales.
 
 **Documentación oficial:** [1](https://clouddocs.f5.com/cli/tmsh-reference/v16/general/tmsh.html)
+
+## Salud de miembros de pools
+
+```text
+tmsh show ltm pool
+```
+
+- **Propósito:** Mostrar estadísticas y estado de pools y miembros LTM.
+- **Parámetros / flags:** show: estado operativo; ltm pool: pools; requiere módulo LTM.
+- **Uso operativo:** Encontrar miembros fuera de servicio antes de modificar balanceo.
+- **Referencia:** https://clouddocs.f5.com/cli/tmsh-reference/v16/
