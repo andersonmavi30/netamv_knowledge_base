@@ -78,3 +78,13 @@ diagnose sys session stat
 - **Parámetros / flags:** stat: contadores agregados, sin listar cada flujo.
 - **Uso operativo:** Diagnosticar crecimiento repentino de sesiones.
 - **Referencia:** https://docs.fortinet.com/
+
+## Resumen de túneles IPsec
+
+```text
+get vpn ipsec tunnel summary
+```
+
+- **Propósito:** Consultar túneles IPsec establecidos y sus contadores.
+- **Parámetros / flags:** summary: estado resumido; requiere IPsec configurado.
+- **Uso operativo:** Verificar la VPN antes de habilitar depuración IKE.
