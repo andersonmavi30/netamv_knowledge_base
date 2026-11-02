@@ -60,4 +60,15 @@ display lldp local interface GigabitEthernet 0/0/1
 - **Ejemplo de uso:** Verificar LLDP en el uplink cuando otro switch no logra descubrirlo.
 - **Referencia oficial:** https://info.support.huawei.com/network/ptmngsys/Web/tsrev_s/en/content/s/38_edesk_lldp_neighbors_failing/edesk_lldp_neighbors_failing_edesk002.html
 
+## `display bgp peer | include Established`
+
+```text
+display bgp peer | include Established
+```
+
+- **Sirve para:** Muestra vecinos BGP cuyo estado aparezca como Established.
+- **Parámetros:** display bgp peer: estado de peers; | include Established: mantiene líneas coincidentes.
+- **Ejemplo de uso:** Comprobar adyacencias BGP establecidas tras un cambio de routing.
+- **Referencia:** https://info.support.huawei.com/network/ptmngsys/Web/tsrev_ce/es/content/ce/18_edesk_dc_failed_to_forward_evpn_unicast_traffic/edesk_dc_failed_to_forward_evpn_unicast_traffic_edesk001.html
+
 > Ejemplos pendientes de validación práctica. Confirma versión y sintaxis con la ayuda de CLI.
