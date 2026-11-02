@@ -67,3 +67,14 @@ show platform software status control-processor brief
 > ⚠️ Comandos de diagnóstico sobre funciones opcionales no devuelven información cuando esas funciones no están configuradas. Detén los monitores interactivos al terminar.
 
 **Referencia**: [Cisco IOS XE](https://www.cisco.com/c/en/us/support/ios-nx-os-software/ios-xe/products-command-reference-list.html)
+
+## Descartes de reenvío QFP
+
+```text
+show platform hardware qfp active statistics drop
+```
+
+- **Propósito:** Mostrar contadores de descartes en el plano de datos de plataformas QFP compatibles.
+- **Parámetros / flags:** qfp active: procesador activo; statistics drop: razones de descarte.
+- **Uso operativo:** Investigar pérdida de tráfico sin errores físicos; depende de la plataforma.
+- **Referencia:** https://www.cisco.com/
