@@ -62,6 +62,17 @@ tmsh show ltm persistence persist-records | grep 192.0.2.10
 - **Use case:** Investigate why a client keeps returning to the same backend even after load-balancing changes.
 - **Official reference:** https://clouddocs.f5.com/training/community/adc/html/class7/modules/module02.html
 
+## `tmsh list ltm virtual-address | grep 198.51.100.10`
+
+```text
+tmsh list ltm virtual-address | grep 198.51.100.10
+```
+
+- **Purpose:** Locate the virtual-address configuration matching one VIP address.
+- **Arguments:** list ltm virtual-address: virtual IP configuration; | grep: match the desired VIP.
+- **Use case:** Confirm whether a VIP address exists before investigating its virtual server.
+- **Reference:** https://clouddocs.f5.com/cli/tmsh-reference/v15/modules/ltm/ltm_virtual-address.html
+
 > Not lab-verified. Some commands require LTM, HA or Bash privileges; release capabilities differ.
 
 **Official documentation:** [1](https://clouddocs.f5.com/cli/tmsh-reference/v16/general/tmsh.html)
