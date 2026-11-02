@@ -76,3 +76,14 @@ tmsh list ltm virtual-address | grep 198.51.100.10
 > Not lab-verified. Some commands require LTM, HA or Bash privileges; release capabilities differ.
 
 **Official documentation:** [1](https://clouddocs.f5.com/cli/tmsh-reference/v16/general/tmsh.html)
+
+## Pool member health
+
+```text
+tmsh show ltm pool
+```
+
+- **Purpose:** Display LTM pool and member health statistics.
+- **Arguments:** show: runtime state; ltm pool: load-balancer pool objects; requires LTM.
+- **Use case:** Identify offline members before changing load-balancing policy.
+- **Reference:** https://clouddocs.f5.com/cli/tmsh-reference/v16/
