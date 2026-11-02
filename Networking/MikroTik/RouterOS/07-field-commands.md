@@ -80,4 +80,15 @@ validation: not-lab-verified
 - **Use case:** Check whether a switch uplink negotiated the expected speed after changing the cable.
 - **Official reference:** https://help.mikrotik.com/docs/spaces/ROS/pages/132350014/SSH
 
+## `/interface bridge port print where bridge="bridge1"`
+
+```text
+/interface bridge port print where bridge="bridge1"
+```
+
+- **Purpose:** List only ports belonging to bridge1, including hardware-offload indicators.
+- **Parameters:** where: property-based filter; bridge: exact bridge name.
+- **Use case:** Verify that an uplink is in the expected bridge and can offload.
+- **Reference:** https://help.mikrotik.com/docs/spaces/ROS/pages/328068/Bridging+and+Switching
+
 > Examples pending lab validation. Confirm the release and syntax with CLI help.
