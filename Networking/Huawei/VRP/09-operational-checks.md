@@ -78,3 +78,13 @@ display interface brief
 - **Parameters / flags:** brief: condensed interface table.
 - **Operational use:** Locate down interfaces before inspecting transceiver details.
 - **Reference:** https://info.support.huawei.com/enterprise/
+
+## BGP peer overview
+
+```text
+display bgp peer
+```
+
+- **Purpose:** List configured BGP peers and their session states.
+- **Parameters / flags:** peer: BGP neighbor overview; requires configured BGP.
+- **Operational use:** Locate peers that fail to establish a BGP session.

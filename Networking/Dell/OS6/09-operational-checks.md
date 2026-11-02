@@ -100,3 +100,13 @@ show interfaces status
 - **Parameters / flags:** status: concise port table; supported interfaces depend on N-series model.
 - **Operational use:** Find disconnected or unexpected port speeds on an OS6 switch.
 - **Reference:** https://dl.dell.com/manuals/common/n-series-v663_cli_en-us.pdf
+
+## Switch firmware version
+
+```text
+show version
+```
+
+- **Purpose:** Read OS6 software release and hardware identification.
+- **Parameters / flags:** version: software and platform summary; output depends on model.
+- **Operational use:** Record the version before checking a model-specific command.

@@ -100,3 +100,13 @@ show interfaces status
 - **Parámetros / flags:** status: resumen de puertos; soporte según modelo N-series.
 - **Uso operativo:** Detectar enlaces desconectados o velocidades inesperadas.
 - **Referencia:** https://dl.dell.com/manuals/common/n-series-v663_cli_en-us.pdf
+
+## Versión de firmware del switch
+
+```text
+show version
+```
+
+- **Propósito:** Consultar la versión del software OS6 y datos del hardware.
+- **Parámetros / flags:** version: resumen de software y plataforma; varía según modelo.
+- **Uso operativo:** Registrar la versión antes de ejecutar comandos específicos.
