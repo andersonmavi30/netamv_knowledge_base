@@ -89,3 +89,14 @@ show inventory | grep -i Serial
 > ⚠️ Referencia de laboratorio aún no probada; distintas plataformas Dell y Huawei pueden usar variantes de comandos.
 
 [Referencia del fabricante](https://www.dell.com/support/home/en-us/products/networking)
+
+## Resumen de port-channels
+
+```text
+show port-channel summary
+```
+
+- **Propósito:** Mostrar miembros y estado operativo de agregaciones de enlaces.
+- **Parámetros / flags:** summary: resumen LAG; requiere port-channels configurados.
+- **Uso operativo:** Comprobar enlaces agregados antes de diagnosticar LACP.
+- **Referencia:** https://www.dell.com/support/home/en-us/products/networking
