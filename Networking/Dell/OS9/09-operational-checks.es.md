@@ -100,3 +100,13 @@ show logging
 - **Parámetros / flags:** logging: buffer local; volumen y severidad según configuración.
 - **Uso operativo:** Relacionar flaps de enlace y reinicios de vecinos de routing.
 - **Referencia:** https://www.dell.com/support/home/en-us/products/networking
+
+## Contadores de interfaces
+
+```text
+show interfaces counters
+```
+
+- **Propósito:** Consultar contadores y errores de interfaces.
+- **Parámetros / flags:** counters: estadísticas de paquetes; depende del modelo.
+- **Uso operativo:** Buscar incrementos anormales durante un incidente.

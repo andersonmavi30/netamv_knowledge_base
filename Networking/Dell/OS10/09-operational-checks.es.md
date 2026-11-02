@@ -100,3 +100,13 @@ show port-channel summary
 - **Parámetros / flags:** summary: resumen LAG; requiere port-channels configurados.
 - **Uso operativo:** Comprobar enlaces agregados antes de diagnosticar LACP.
 - **Referencia:** https://www.dell.com/support/home/en-us/products/networking
+
+## Versión del software OS10
+
+```text
+show version
+```
+
+- **Propósito:** Mostrar la versión del sistema y detalles de plataforma.
+- **Parámetros / flags:** version: resumen de software y hardware.
+- **Uso operativo:** Confirmar versión antes de diagnosticar funciones específicas.

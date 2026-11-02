@@ -100,3 +100,13 @@ show logging
 - **Parameters / flags:** logging: local event buffer; output length and severity depend on configuration.
 - **Operational use:** Correlate link flaps and routing adjacency resets.
 - **Reference:** https://www.dell.com/support/home/en-us/products/networking
+
+## Interface counters
+
+```text
+show interfaces counters
+```
+
+- **Purpose:** Inspect packet counters and errors across interfaces.
+- **Parameters / flags:** counters: interface packet statistics; support varies by platform.
+- **Operational use:** Look for abnormal packet increments during a fault.

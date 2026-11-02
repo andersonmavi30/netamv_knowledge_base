@@ -87,3 +87,13 @@ tmsh show ltm pool
 - **Arguments:** show: runtime state; ltm pool: load-balancer pool objects; requires LTM.
 - **Use case:** Identify offline members before changing load-balancing policy.
 - **Reference:** https://clouddocs.f5.com/cli/tmsh-reference/v16/
+
+## Virtual server statistics
+
+```text
+tmsh show ltm virtual
+```
+
+- **Purpose:** Inspect LTM virtual servers and current traffic statistics.
+- **Parameters / flags:** show: runtime statistics; ltm virtual: virtual servers; requires LTM.
+- **Operational use:** Find virtual servers with unexpected traffic or availability.
