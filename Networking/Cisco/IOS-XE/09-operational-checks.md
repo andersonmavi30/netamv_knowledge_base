@@ -67,3 +67,14 @@ show platform software status control-processor brief
 > ⚠️ Feature-specific commands may return no information if the feature is not configured. Stop interactive monitors when finished.
 
 **Reference**: [Cisco IOS XE](https://www.cisco.com/c/en/us/support/ios-nx-os-software/ios-xe/products-command-reference-list.html)
+
+## QFP forwarding drops
+
+```text
+show platform hardware qfp active statistics drop
+```
+
+- **Purpose:** Display hardware forwarding drop counters on supported QFP platforms.
+- **Parameters / flags:** qfp active: active forwarding processor; statistics drop: packet-drop reasons.
+- **Operational use:** Investigate data-plane drops not evident from interface errors; platform-specific.
+- **Reference:** https://www.cisco.com/
