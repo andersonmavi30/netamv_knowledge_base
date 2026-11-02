@@ -77,3 +77,14 @@ cpstat -f cpu os | grep 'CPU Usage'
 > Comandos de referencia pendientes de validación práctica. Verifica permisos, modo Clish/Expert y versión.
 
 **Documentación:** [1](https://sc1.checkpoint.com/documents/R82/WebAdminGuides/EN/CP_R82_Gaia_AdminGuide/Content/Topics-GAG/Gaia-Clish-Expert-Mode.htm)
+
+## Estado de la política instalada
+
+```text
+fw stat
+```
+
+- **Propósito:** Mostrar la política instalada en el gateway desde Expert.
+- **Parámetros / flags:** fw: utilidad del firewall; stat: estado de política instalada.
+- **Uso operativo:** Verificar que la política se cargó después de un despliegue.
+- **Referencia:** https://sc1.checkpoint.com/
