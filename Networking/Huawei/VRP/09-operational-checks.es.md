@@ -78,3 +78,13 @@ display interface brief
 - **Parámetros / flags:** brief: tabla resumida de interfaces.
 - **Uso operativo:** Localizar interfaces caídas antes de revisar sus transceptores.
 - **Referencia:** https://info.support.huawei.com/
+
+## Resumen de vecinos BGP
+
+```text
+display bgp peer
+```
+
+- **Propósito:** Listar vecinos BGP configurados y el estado de sus sesiones.
+- **Parámetros / flags:** peer: resumen de vecinos; requiere BGP configurado.
+- **Uso operativo:** Identificar vecinos que no establecen sesión BGP.

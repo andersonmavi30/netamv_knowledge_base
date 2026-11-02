@@ -87,3 +87,13 @@ tmsh show ltm pool
 - **Parámetros / flags:** show: estado operativo; ltm pool: pools; requiere módulo LTM.
 - **Uso operativo:** Encontrar miembros fuera de servicio antes de modificar balanceo.
 - **Referencia:** https://clouddocs.f5.com/cli/tmsh-reference/v16/
+
+## Estadísticas de servidores virtuales
+
+```text
+tmsh show ltm virtual
+```
+
+- **Propósito:** Consultar servidores virtuales LTM y estadísticas de tráfico.
+- **Parámetros / flags:** show: estado operativo; ltm virtual: servidores virtuales; requiere LTM.
+- **Uso operativo:** Identificar servidores virtuales con tráfico o disponibilidad inesperados.

@@ -75,3 +75,13 @@ show counter global filter severity drop delta yes
 - **Parameters / flags:** severity drop: drop category; delta yes: interval deltas, if supported by release.
 - **Operational use:** Identify whether packet drops increase while reproducing a connectivity failure.
 - **Reference:** https://docs.paloaltonetworks.com/
+
+## Data-plane CPU monitoring
+
+```text
+show running resource-monitor
+```
+
+- **Purpose:** Display resource utilization for the firewall dataplane.
+- **Parameters / flags:** resource-monitor: dataplane utilization information; syntax varies by release.
+- **Operational use:** Investigate high dataplane utilization during traffic loss.

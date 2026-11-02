@@ -78,3 +78,13 @@ show ip protocols
 - **Parámetros / flags:** ip protocols: procesos, redistribución y temporizadores.
 - **Uso operativo:** Validar el proceso de routing antes de investigar rutas faltantes.
 - **Referencia:** https://www.cisco.com/
+
+## Resumen de interfaces OSPF
+
+```text
+show ip ospf interface brief
+```
+
+- **Propósito:** Resumir las interfaces que participan en OSPF.
+- **Parámetros / flags:** brief: resumen de interfaces y áreas; requiere OSPF.
+- **Uso operativo:** Detectar interfaces ausentes del área OSPF prevista.

@@ -100,3 +100,13 @@ show port-channel summary
 - **Parameters / flags:** summary: condensed LAG view; relevant when port channels are configured.
 - **Operational use:** Verify bundled links before troubleshooting LACP forwarding.
 - **Reference:** https://www.dell.com/support/home/en-us/products/networking
+
+## OS10 software release
+
+```text
+show version
+```
+
+- **Purpose:** Read system software version and platform details.
+- **Parameters / flags:** version: software release and hardware summary.
+- **Operational use:** Confirm release before troubleshooting a release-dependent feature.

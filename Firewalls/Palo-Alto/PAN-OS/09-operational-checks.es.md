@@ -75,3 +75,13 @@ show counter global filter severity drop delta yes
 - **Parámetros / flags:** severity drop: descartar; delta yes: cambios desde la consulta anterior según versión.
 - **Uso operativo:** Identificar descartes durante una prueba de conectividad.
 - **Referencia:** https://docs.paloaltonetworks.com/
+
+## Monitoreo de CPU del plano de datos
+
+```text
+show running resource-monitor
+```
+
+- **Propósito:** Mostrar consumo de recursos del plano de datos.
+- **Parámetros / flags:** resource-monitor: utilización del plano de datos; depende de la versión.
+- **Uso operativo:** Investigar saturación del plano de datos durante pérdida de tráfico.

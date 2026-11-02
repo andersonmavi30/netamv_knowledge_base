@@ -78,3 +78,13 @@ show platform hardware qfp active statistics drop
 - **Parameters / flags:** qfp active: active forwarding processor; statistics drop: packet-drop reasons.
 - **Operational use:** Investigate data-plane drops not evident from interface errors; platform-specific.
 - **Reference:** https://www.cisco.com/
+
+## BGP IPv4 neighbor summary
+
+```text
+show bgp ipv4 unicast summary
+```
+
+- **Purpose:** Display neighbor FSM and accepted prefix counts for IPv4 unicast.
+- **Parameters / flags:** ipv4 unicast: address family; summary: compact peer states; BGP required.
+- **Operational use:** Locate peers stuck in Active or Idle.

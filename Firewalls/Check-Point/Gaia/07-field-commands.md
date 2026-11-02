@@ -88,3 +88,13 @@ fw stat
 - **Parameters / flags:** fw: firewall utility; stat: installed policy information.
 - **Operational use:** Confirm that a security policy is loaded after deployment.
 - **Reference:** https://sc1.checkpoint.com/
+
+## Cluster status
+
+```text
+cphaprob stat
+```
+
+- **Purpose:** Show ClusterXL member states from Expert mode.
+- **Parameters / flags:** stat: cluster state and member information; requires ClusterXL.
+- **Operational use:** Confirm the active/standby state after an HA incident.

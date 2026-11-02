@@ -78,3 +78,13 @@ show platform hardware qfp active statistics drop
 - **Parámetros / flags:** qfp active: procesador activo; statistics drop: razones de descarte.
 - **Uso operativo:** Investigar pérdida de tráfico sin errores físicos; depende de la plataforma.
 - **Referencia:** https://www.cisco.com/
+
+## Resumen de vecinos BGP IPv4
+
+```text
+show bgp ipv4 unicast summary
+```
+
+- **Propósito:** Mostrar el estado FSM de vecinos y prefijos IPv4 recibidos.
+- **Parámetros / flags:** ipv4 unicast: familia de direcciones; summary: estados; requiere BGP.
+- **Uso operativo:** Encontrar vecinos en estado Active o Idle.

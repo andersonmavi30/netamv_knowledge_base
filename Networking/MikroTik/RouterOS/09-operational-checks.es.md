@@ -78,3 +78,13 @@ validation: not-lab-verified
 - **Parámetros / flags:** where active: restringe a rutas con bandera activa; RouterOS v7.
 - **Uso operativo:** Investigar por qué una ruta esperada no está activa.
 - **Referencia:** https://help.mikrotik.com/docs/
+
+## Caché del resolvedor DNS
+
+```text
+/ip dns cache print where name~"example"
+```
+
+- **Propósito:** Mostrar registros DNS en caché cuyo nombre coincide con un patrón.
+- **Parámetros / flags:** where: filtra entradas; ~: coincidencia regex sobre name.
+- **Uso operativo:** Revisar respuestas almacenadas sin vaciar la caché DNS.

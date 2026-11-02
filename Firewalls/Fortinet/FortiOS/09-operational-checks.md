@@ -78,3 +78,13 @@ diagnose sys session stat
 - **Parameters / flags:** stat: aggregate session counters, not a per-flow dump.
 - **Operational use:** Diagnose sudden session growth or session-table pressure.
 - **Reference:** https://docs.fortinet.com/
+
+## IPsec tunnel summary
+
+```text
+get vpn ipsec tunnel summary
+```
+
+- **Purpose:** Review currently established IPsec tunnels and tunnel counters.
+- **Parameters / flags:** summary: condensed tunnel status; available when IPsec is configured.
+- **Operational use:** Check VPN health before enabling detailed IKE debug.
