@@ -75,6 +75,17 @@ show mac address-table | include 0011
 - **Operational use:** Locate a connected endpoint by the first hexadecimal digits of its MAC address.
 - **Official reference:** https://dl.dell.com/manuals/common/n-series-v663_cli_en-us.pdf
 
+## `show lldp local-device detail Gi1/0/1`
+
+```text
+show lldp local-device detail Gi1/0/1
+```
+
+- **Purpose:** Inspect LLDP information advertised locally on a specific OS6 switchport.
+- **Parameters:** detail: expanded LLDP data; Gi1/0/1: selected physical port.
+- **Use case:** Check what chassis/port identification the switch advertises to neighbors.
+- **Reference:** https://dl.dell.com/manuals/common/n-series-v663_cli_en-us.pdf
+
 > ⚠️ Not lab-tested; different Dell and Huawei platforms may use alternative commands.
 
 [Vendor reference](https://dl.dell.com/manuals/common/n-series-v663_cli_en-us.pdf)

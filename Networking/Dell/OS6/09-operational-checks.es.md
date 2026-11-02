@@ -75,6 +75,17 @@ show mac address-table | include 0011
 - **Ejemplo de uso:** Ubicar un equipo conectado a partir de los primeros dígitos de su MAC.
 - **Referencia oficial:** https://dl.dell.com/manuals/common/n-series-v663_cli_en-us.pdf
 
+## `show lldp local-device detail Gi1/0/1`
+
+```text
+show lldp local-device detail Gi1/0/1
+```
+
+- **Sirve para:** Consulta información LLDP local anunciada por un puerto específico de OS6.
+- **Parámetros:** detail: información LLDP ampliada; Gi1/0/1: puerto físico seleccionado.
+- **Ejemplo de uso:** Verificar qué identidad y puerto anuncia el switch a sus vecinos.
+- **Referencia:** https://dl.dell.com/manuals/common/n-series-v663_cli_en-us.pdf
+
 > ⚠️ Referencia de laboratorio aún no probada; distintas plataformas Dell y Huawei pueden usar variantes de comandos.
 
 [Referencia del fabricante](https://dl.dell.com/manuals/common/n-series-v663_cli_en-us.pdf)
