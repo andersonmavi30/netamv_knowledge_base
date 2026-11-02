@@ -44,4 +44,15 @@ diagnose sys sdwan member 1
 - **Filter / lookup:** The member ID is the built-in lookup; no pipe is required.
 - **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.7/cli-reference/235530229/diagnose-sys
 
+## `diagnose hardware sysinfo conserve`
+
+```text
+diagnose hardware sysinfo conserve
+```
+
+- **Purpose:** Inspect the current memory conserve-mode state.
+- **Parameters:** diagnose hardware sysinfo: system diagnostics; conserve: memory protection details.
+- **Use case:** Check whether memory pressure explains resource alerts or new connection issues.
+- **Reference:** https://docs.fortinet.com/document/fortigate/7.2.13/cli-reference/473204947/diagnose-hardware
+
 > Examples pending lab validation. Confirm the release and syntax with CLI help.
