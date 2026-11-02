@@ -72,6 +72,17 @@ show admins | match 192.0.2.10
 - **Ejemplo de uso:** Comprobar si otro administrador está conectado desde 192.0.2.10 antes de modificar configuración.
 - **Referencia oficial:** https://docs.paloaltonetworks.com/ngfw/pan-os-cli-quick-start/cli-cheat-sheet-device-management
 
+## `show log system severity equal critical`
+
+```text
+show log system severity equal critical
+```
+
+- **Sirve para:** Consulta solo los eventos críticos de PAN-OS.
+- **Parámetros:** show log system: registro del sistema; severity equal critical: filtro integrado de severidad.
+- **Ejemplo de uso:** Investigar fallas graves después de una interrupción.
+- **Referencia:** https://docs.paloaltonetworks.com/ngfw/pan-os-cli-quick-start/cli-command-hierarchy/pan-os-11-2-cli-ops-command-hierarchy
+
 > Referencia breve, pendiente de validación en laboratorio. Comprueba la ayuda contextual `?`, el contexto operational (`>`) y configuration (`#`) antes de ejecutarlos.
 
 **Referencias oficiales:** [Guía 1](https://docs.paloaltonetworks.com/ngfw/pan-os-cli-quick-start/cli-cheat-sheet-networking) · [Guía 2](https://docs.paloaltonetworks.com/ngfw/pan-os-cli-quick-start/cli-command-hierarchy/pan-os-11-2-cli-ops-command-hierarchy)
