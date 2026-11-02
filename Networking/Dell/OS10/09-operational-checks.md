@@ -89,3 +89,14 @@ show inventory | grep -i Serial
 > ⚠️ Not lab-tested; different Dell and Huawei platforms may use alternative commands.
 
 [Vendor reference](https://www.dell.com/support/home/en-us/products/networking)
+
+## Port channel overview
+
+```text
+show port-channel summary
+```
+
+- **Purpose:** Show port-channel membership and operational aggregation state.
+- **Parameters / flags:** summary: condensed LAG view; relevant when port channels are configured.
+- **Operational use:** Verify bundled links before troubleshooting LACP forwarding.
+- **Reference:** https://www.dell.com/support/home/en-us/products/networking
