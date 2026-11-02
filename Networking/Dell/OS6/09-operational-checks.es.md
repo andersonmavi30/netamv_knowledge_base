@@ -89,3 +89,14 @@ show lldp local-device detail Gi1/0/1
 > ⚠️ Referencia de laboratorio aún no probada; distintas plataformas Dell y Huawei pueden usar variantes de comandos.
 
 [Referencia del fabricante](https://dl.dell.com/manuals/common/n-series-v663_cli_en-us.pdf)
+
+## Estado operativo de puertos
+
+```text
+show interfaces status
+```
+
+- **Propósito:** Mostrar el estado del enlace y atributos de puertos del switch.
+- **Parámetros / flags:** status: resumen de puertos; soporte según modelo N-series.
+- **Uso operativo:** Detectar enlaces desconectados o velocidades inesperadas.
+- **Referencia:** https://dl.dell.com/manuals/common/n-series-v663_cli_en-us.pdf
