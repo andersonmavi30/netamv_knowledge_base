@@ -64,3 +64,14 @@ show high-availability all | match peer
 > Ejemplos sin validar en laboratorio. Algunas funciones requieren licencia, configuración o privilegios.
 
 **Documentación oficial:** https://docs.paloaltonetworks.com/ngfw/pan-os-cli-quick-start/cli-command-hierarchy
+
+## Contadores de paquetes descartados
+
+```text
+show counter global filter severity drop delta yes
+```
+
+- **Propósito:** Consultar contadores recientes de descartes, no solamente los acumulados.
+- **Parámetros / flags:** severity drop: descartar; delta yes: cambios desde la consulta anterior según versión.
+- **Uso operativo:** Identificar descartes durante una prueba de conectividad.
+- **Referencia:** https://docs.paloaltonetworks.com/
