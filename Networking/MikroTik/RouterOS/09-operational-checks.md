@@ -78,3 +78,13 @@ validation: not-lab-verified
 - **Parameters / flags:** where active: restrict output to routes with active flag; RouterOS v7.
 - **Operational use:** Diagnose why an expected route is not active.
 - **Reference:** https://help.mikrotik.com/docs/
+
+## DNS resolver cache
+
+```text
+/ip dns cache print where name~"example"
+```
+
+- **Purpose:** Show cached DNS entries whose names match a text pattern.
+- **Parameters / flags:** where: filter entries; ~: RouterOS regex match on name.
+- **Operational use:** Troubleshoot cached answers without flushing production DNS cache.
