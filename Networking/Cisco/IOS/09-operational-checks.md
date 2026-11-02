@@ -78,3 +78,13 @@ show ip protocols
 - **Parameters / flags:** ip protocols: active routing protocols, redistribution and timers.
 - **Operational use:** Confirm routing process configuration before diagnosing missing routes.
 - **Reference:** https://www.cisco.com/
+
+## OSPF interface brief
+
+```text
+show ip ospf interface brief
+```
+
+- **Purpose:** Summarize interfaces participating in OSPF.
+- **Parameters / flags:** brief: condensed interface, area and adjacency information; requires OSPF.
+- **Operational use:** Detect interfaces missing from the expected OSPF area.

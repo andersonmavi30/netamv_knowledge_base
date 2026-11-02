@@ -88,3 +88,13 @@ fw stat
 - **Parámetros / flags:** fw: utilidad del firewall; stat: estado de política instalada.
 - **Uso operativo:** Verificar que la política se cargó después de un despliegue.
 - **Referencia:** https://sc1.checkpoint.com/
+
+## Estado del clúster
+
+```text
+cphaprob stat
+```
+
+- **Propósito:** Mostrar el estado de los miembros ClusterXL desde Expert.
+- **Parámetros / flags:** stat: estado y miembros; requiere ClusterXL.
+- **Uso operativo:** Confirmar el estado activo/pasivo después de un incidente HA.
