@@ -88,3 +88,14 @@ get vpn ipsec tunnel summary
 - **Propósito:** Consultar túneles IPsec establecidos y sus contadores.
 - **Parámetros / flags:** summary: estado resumido; requiere IPsec configurado.
 - **Uso operativo:** Verificar la VPN antes de habilitar depuración IKE.
+
+## Estado de rendimiento del sistema
+
+```text
+get system performance status
+```
+
+- **Propósito:** Consultar CPU, memoria, sesiones y tiempo de actividad.
+- **Parámetros / flags:** performance status: métricas generales; los campos dependen de la versión.
+- **Uso operativo:** Revisar saturación de recursos antes de activar depuración.
+- **Validación:** Pendiente de prueba en laboratorio; verificar versión y permisos.

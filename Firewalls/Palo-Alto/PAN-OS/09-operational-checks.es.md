@@ -85,3 +85,14 @@ show running resource-monitor
 - **Propósito:** Mostrar consumo de recursos del plano de datos.
 - **Parámetros / flags:** resource-monitor: utilización del plano de datos; depende de la versión.
 - **Uso operativo:** Investigar saturación del plano de datos durante pérdida de tráfico.
+
+## Recursos del plano de administración
+
+```text
+show system resources
+```
+
+- **Propósito:** Mostrar uso de CPU, memoria y procesos del plano de administración.
+- **Parámetros / flags:** system resources: vista interactiva de procesos; q para salir.
+- **Uso operativo:** Investigar lentitud en la administración del firewall.
+- **Validación:** Pendiente de prueba en laboratorio; verificar versión y permisos.
