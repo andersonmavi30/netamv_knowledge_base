@@ -88,3 +88,14 @@ display bgp peer
 - **Purpose:** List configured BGP peers and their session states.
 - **Parameters / flags:** peer: BGP neighbor overview; requires configured BGP.
 - **Operational use:** Locate peers that fail to establish a BGP session.
+
+## Device software and uptime
+
+```text
+display version
+```
+
+- **Purpose:** Read VRP version, platform identity, and uptime.
+- **Parameters / flags:** version: software/hardware inventory; output varies by product.
+- **Operational use:** Confirm platform and release before applying device-specific diagnostics.
+- **Validation:** Not lab-verified; check version and privileges.

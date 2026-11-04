@@ -110,3 +110,14 @@ show version
 - **Propósito:** Consultar la versión del software OS6 y datos del hardware.
 - **Parámetros / flags:** version: resumen de software y plataforma; varía según modelo.
 - **Uso operativo:** Registrar la versión antes de ejecutar comandos específicos.
+
+## Modo de puerto y VLAN
+
+```text
+show interfaces switchport
+```
+
+- **Propósito:** Consultar modo de puertos y pertenencia a VLAN en OS6.
+- **Parámetros / flags:** switchport: datos L2; sintaxis puede variar según firmware.
+- **Uso operativo:** Detectar asignaciones inesperadas de VLAN access/trunk.
+- **Validación:** Pendiente de prueba en laboratorio; verificar versión y permisos.

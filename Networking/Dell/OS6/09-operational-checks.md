@@ -110,3 +110,14 @@ show version
 - **Purpose:** Read OS6 software release and hardware identification.
 - **Parameters / flags:** version: software and platform summary; output depends on model.
 - **Operational use:** Record the version before checking a model-specific command.
+
+## Switchport mode and VLANs
+
+```text
+show interfaces switchport
+```
+
+- **Purpose:** Inspect switchport mode and VLAN membership on OS6.
+- **Parameters / flags:** switchport: L2 switchport details; syntax may vary by firmware.
+- **Operational use:** Check unexpected access/trunk VLAN assignment.
+- **Validation:** Not lab-verified; check version and privileges.

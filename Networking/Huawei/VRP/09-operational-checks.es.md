@@ -88,3 +88,14 @@ display bgp peer
 - **Propósito:** Listar vecinos BGP configurados y el estado de sus sesiones.
 - **Parámetros / flags:** peer: resumen de vecinos; requiere BGP configurado.
 - **Uso operativo:** Identificar vecinos que no establecen sesión BGP.
+
+## Versión del software y tiempo de actividad
+
+```text
+display version
+```
+
+- **Propósito:** Consultar versión VRP, modelo y tiempo de actividad.
+- **Parámetros / flags:** version: datos del sistema; salida según modelo.
+- **Uso operativo:** Confirmar modelo y versión antes de diagnósticos específicos.
+- **Validación:** Pendiente de prueba en laboratorio; verificar versión y permisos.
