@@ -85,3 +85,14 @@ show running resource-monitor
 - **Purpose:** Display resource utilization for the firewall dataplane.
 - **Parameters / flags:** resource-monitor: dataplane utilization information; syntax varies by release.
 - **Operational use:** Investigate high dataplane utilization during traffic loss.
+
+## Management-plane resources
+
+```text
+show system resources
+```
+
+- **Purpose:** Display management-plane CPU, memory and process usage.
+- **Parameters / flags:** system resources: interactive process resource view; press q to exit.
+- **Operational use:** Investigate a sluggish firewall management plane.
+- **Validation:** Not lab-verified; check version and privileges.

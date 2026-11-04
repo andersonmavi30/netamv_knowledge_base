@@ -98,3 +98,14 @@ cphaprob stat
 - **Propósito:** Mostrar el estado de los miembros ClusterXL desde Expert.
 - **Parámetros / flags:** stat: estado y miembros; requiere ClusterXL.
 - **Uso operativo:** Confirmar el estado activo/pasivo después de un incidente HA.
+
+## Estadísticas del kernel de firewall
+
+```text
+fw ctl pstat
+```
+
+- **Propósito:** Consultar estadísticas de rendimiento y memoria del kernel en modo Expert.
+- **Parámetros / flags:** fw ctl: control del kernel; pstat: estadísticas de rendimiento.
+- **Uso operativo:** Investigar presión de memoria del kernel o procesamiento de paquetes.
+- **Validación:** Pendiente de prueba en laboratorio; verificar versión y permisos.

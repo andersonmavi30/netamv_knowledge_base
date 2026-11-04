@@ -88,3 +88,14 @@ get vpn ipsec tunnel summary
 - **Purpose:** Review currently established IPsec tunnels and tunnel counters.
 - **Parameters / flags:** summary: condensed tunnel status; available when IPsec is configured.
 - **Operational use:** Check VPN health before enabling detailed IKE debug.
+
+## System performance status
+
+```text
+get system performance status
+```
+
+- **Purpose:** Review CPU, memory, session and uptime indicators.
+- **Parameters / flags:** performance status: aggregate FortiOS system metrics; fields depend on release.
+- **Operational use:** Check resource pressure before enabling an intrusive debug.
+- **Validation:** Not lab-verified; check version and privileges.

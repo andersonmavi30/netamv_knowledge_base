@@ -98,3 +98,14 @@ cphaprob stat
 - **Purpose:** Show ClusterXL member states from Expert mode.
 - **Parameters / flags:** stat: cluster state and member information; requires ClusterXL.
 - **Operational use:** Confirm the active/standby state after an HA incident.
+
+## Firewall kernel statistics
+
+```text
+fw ctl pstat
+```
+
+- **Purpose:** Read firewall kernel performance and allocation statistics in Expert mode.
+- **Parameters / flags:** fw ctl: firewall kernel control; pstat: performance statistics.
+- **Operational use:** Investigate kernel memory or packet-processing pressure.
+- **Validation:** Not lab-verified; check version and privileges.

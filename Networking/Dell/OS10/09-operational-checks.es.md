@@ -110,3 +110,14 @@ show version
 - **Propósito:** Mostrar la versión del sistema y detalles de plataforma.
 - **Parámetros / flags:** version: resumen de software y hardware.
 - **Uso operativo:** Confirmar versión antes de diagnosticar funciones específicas.
+
+## Tabla de enrutamiento IPv4
+
+```text
+show ip route
+```
+
+- **Propósito:** Mostrar rutas IPv4 instaladas y sus siguientes saltos.
+- **Parámetros / flags:** ip route: rutas IPv4; códigos indican su origen.
+- **Uso operativo:** Confirmar la ruta y siguiente salto antes de probar conectividad.
+- **Validación:** Pendiente de prueba en laboratorio; verificar versión y permisos.

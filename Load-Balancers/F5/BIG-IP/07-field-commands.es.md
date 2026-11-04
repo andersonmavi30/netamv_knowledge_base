@@ -97,3 +97,14 @@ tmsh show ltm virtual
 - **Propósito:** Consultar servidores virtuales LTM y estadísticas de tráfico.
 - **Parámetros / flags:** show: estado operativo; ltm virtual: servidores virtuales; requiere LTM.
 - **Uso operativo:** Identificar servidores virtuales con tráfico o disponibilidad inesperados.
+
+## Estadísticas de memoria del sistema
+
+```text
+tmsh show sys memory
+```
+
+- **Propósito:** Consultar consumo de memoria de BIG-IP mediante tmsh.
+- **Parámetros / flags:** show: estado operativo; sys memory: estadísticas; salida según versión TMOS.
+- **Uso operativo:** Comprobar saturación de memoria antes de analizar el tráfico.
+- **Validación:** Pendiente de prueba en laboratorio; verificar versión y permisos.

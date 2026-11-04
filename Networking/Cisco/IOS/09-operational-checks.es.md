@@ -88,3 +88,14 @@ show ip ospf interface brief
 - **Propósito:** Resumir las interfaces que participan en OSPF.
 - **Parámetros / flags:** brief: resumen de interfaces y áreas; requiere OSPF.
 - **Uso operativo:** Detectar interfaces ausentes del área OSPF prevista.
+
+## Resumen de la tabla de rutas
+
+```text
+show ip route summary
+```
+
+- **Propósito:** Resumir las rutas IPv4 según su origen.
+- **Parámetros / flags:** summary: conteos y estadísticas de la tabla IPv4.
+- **Uso operativo:** Revisar crecimiento de rutas antes de analizar prefijos específicos.
+- **Validación:** Pendiente de prueba en laboratorio; verificar versión y permisos.
