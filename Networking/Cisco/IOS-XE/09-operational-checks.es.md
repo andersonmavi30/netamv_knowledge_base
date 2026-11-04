@@ -88,3 +88,14 @@ show bgp ipv4 unicast summary
 - **Propósito:** Mostrar el estado FSM de vecinos y prefijos IPv4 recibidos.
 - **Parámetros / flags:** ipv4 unicast: familia de direcciones; summary: estados; requiere BGP.
 - **Uso operativo:** Encontrar vecinos en estado Active o Idle.
+
+## Contadores de errores de interfaces
+
+```text
+show interfaces counters errors
+```
+
+- **Propósito:** Mostrar contadores de errores de recepción y transmisión en switches compatibles.
+- **Parámetros / flags:** counters errors: solo errores; depende del equipo IOS-XE.
+- **Uso operativo:** Identificar errores de interfaz durante pérdida de paquetes.
+- **Validación:** Pendiente de prueba en laboratorio; verificar versión y permisos.

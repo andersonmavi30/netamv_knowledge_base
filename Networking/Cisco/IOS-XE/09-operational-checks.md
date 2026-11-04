@@ -88,3 +88,14 @@ show bgp ipv4 unicast summary
 - **Purpose:** Display neighbor FSM and accepted prefix counts for IPv4 unicast.
 - **Parameters / flags:** ipv4 unicast: address family; summary: compact peer states; BGP required.
 - **Operational use:** Locate peers stuck in Active or Idle.
+
+## Interface error counters
+
+```text
+show interfaces counters errors
+```
+
+- **Purpose:** Display receive/transmit interface error counters on supported switches.
+- **Parameters / flags:** counters errors: error-only counters; availability depends on IOS-XE platform.
+- **Operational use:** Identify CRC or other interface errors during packet loss.
+- **Validation:** Not lab-verified; check version and privileges.

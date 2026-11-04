@@ -88,3 +88,14 @@ validation: not-lab-verified
 - **Purpose:** Show cached DNS entries whose names match a text pattern.
 - **Parameters / flags:** where: filter entries; ~: RouterOS regex match on name.
 - **Operational use:** Troubleshoot cached answers without flushing production DNS cache.
+
+## Connection tracking count
+
+```text
+/ip firewall connection print count-only
+```
+
+- **Purpose:** Count tracked connections without dumping individual sessions.
+- **Parameters / flags:** print: display entries; count-only: return only the count.
+- **Operational use:** Check connection-tracking table growth without heavy output.
+- **Validation:** Not lab-verified; check version and privileges.

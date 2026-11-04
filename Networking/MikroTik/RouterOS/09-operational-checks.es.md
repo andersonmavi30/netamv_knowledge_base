@@ -88,3 +88,14 @@ validation: not-lab-verified
 - **Propósito:** Mostrar registros DNS en caché cuyo nombre coincide con un patrón.
 - **Parámetros / flags:** where: filtra entradas; ~: coincidencia regex sobre name.
 - **Uso operativo:** Revisar respuestas almacenadas sin vaciar la caché DNS.
+
+## Cantidad de conexiones rastreadas
+
+```text
+/ip firewall connection print count-only
+```
+
+- **Propósito:** Contar las conexiones rastreadas sin listar cada sesión.
+- **Parámetros / flags:** print: consultar entradas; count-only: devuelve únicamente el total.
+- **Uso operativo:** Revisar el crecimiento de conntrack sin producir demasiada salida.
+- **Validación:** Pendiente de prueba en laboratorio; verificar versión y permisos.
