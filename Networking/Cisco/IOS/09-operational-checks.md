@@ -88,3 +88,14 @@ show ip ospf interface brief
 - **Purpose:** Summarize interfaces participating in OSPF.
 - **Parameters / flags:** brief: condensed interface, area and adjacency information; requires OSPF.
 - **Operational use:** Detect interfaces missing from the expected OSPF area.
+
+## Routing table summary
+
+```text
+show ip route summary
+```
+
+- **Purpose:** Summarize IPv4 routing table entries by routing source.
+- **Parameters / flags:** summary: route counts and table statistics; IPv4 unicast.
+- **Operational use:** Check routing table growth before investigating specific prefixes.
+- **Validation:** Not lab-verified; check version and privileges.
