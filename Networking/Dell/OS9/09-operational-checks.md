@@ -110,3 +110,14 @@ show interfaces counters
 - **Purpose:** Inspect packet counters and errors across interfaces.
 - **Parameters / flags:** counters: interface packet statistics; support varies by platform.
 - **Operational use:** Look for abnormal packet increments during a fault.
+
+## Operational port status
+
+```text
+show interfaces status
+```
+
+- **Purpose:** Summarize interface link and operational state on supported OS9 switches.
+- **Parameters / flags:** status: abbreviated port state; availability depends on platform.
+- **Operational use:** Find unexpected down links before investigating optic details.
+- **Validation:** Not lab-verified; check version and privileges.

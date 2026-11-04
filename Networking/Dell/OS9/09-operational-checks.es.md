@@ -110,3 +110,14 @@ show interfaces counters
 - **Propósito:** Consultar contadores y errores de interfaces.
 - **Parámetros / flags:** counters: estadísticas de paquetes; depende del modelo.
 - **Uso operativo:** Buscar incrementos anormales durante un incidente.
+
+## Estado operativo de puertos
+
+```text
+show interfaces status
+```
+
+- **Propósito:** Resumir estado de enlace y de operación en switches OS9 compatibles.
+- **Parámetros / flags:** status: resumen de estado; disponibilidad según plataforma.
+- **Uso operativo:** Encontrar enlaces caídos antes de revisar transceptores.
+- **Validación:** Pendiente de prueba en laboratorio; verificar versión y permisos.

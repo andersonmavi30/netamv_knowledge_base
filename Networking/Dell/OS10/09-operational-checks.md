@@ -110,3 +110,14 @@ show version
 - **Purpose:** Read system software version and platform details.
 - **Parameters / flags:** version: software release and hardware summary.
 - **Operational use:** Confirm release before troubleshooting a release-dependent feature.
+
+## IPv4 routing table
+
+```text
+show ip route
+```
+
+- **Purpose:** Display installed IPv4 routes and next hops.
+- **Parameters / flags:** ip route: IPv4 unicast routes; route codes identify source.
+- **Operational use:** Confirm that a next-hop route exists before testing forwarding.
+- **Validation:** Not lab-verified; check version and privileges.

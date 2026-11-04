@@ -97,3 +97,14 @@ tmsh show ltm virtual
 - **Purpose:** Inspect LTM virtual servers and current traffic statistics.
 - **Parameters / flags:** show: runtime statistics; ltm virtual: virtual servers; requires LTM.
 - **Operational use:** Find virtual servers with unexpected traffic or availability.
+
+## System memory statistics
+
+```text
+tmsh show sys memory
+```
+
+- **Purpose:** Inspect BIG-IP memory consumption from tmsh.
+- **Parameters / flags:** show: runtime stats; sys memory: memory statistics; output depends on TMOS release.
+- **Operational use:** Check memory pressure before deeper traffic diagnostics.
+- **Validation:** Not lab-verified; check version and privileges.
