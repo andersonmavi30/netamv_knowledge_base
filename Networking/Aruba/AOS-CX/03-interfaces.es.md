@@ -94,3 +94,29 @@ show interface transceiver
 > Pendiente de validación en laboratorio. AOS-CX 10.x; model/release support varies.
 
 **Referencia:** https://arubanetworking.hpe.com/techdocs/AOS-CX/10.16/PDF/cli_6300-6400.pdf
+
+## Diagnóstico óptico y utilización
+
+### `show interface dom`
+
+```text
+show interface dom
+```
+
+- **Sirve para:** Consultar mediciones digitales de transceptores ópticos.
+- **Parámetros:** dom: diagnóstico óptico; requiere transceptores compatibles.
+- **Ejemplo de uso:** Diagnosticar enlaces sin cambiar la configuración.
+
+### `show interface utilization`
+
+```text
+show interface utilization
+```
+
+- **Sirve para:** Consultar indicadores de utilización de interfaces.
+- **Parámetros:** utilization: utilización de interfaces; depende del equipo.
+- **Ejemplo de uso:** Diagnosticar enlaces sin cambiar la configuración.
+
+> Pendiente de validación en laboratorio. AOS-CX 10.x; model/release support varies.
+
+**Referencia:** https://arubanetworking.hpe.com/techdocs/AOS-CX/10.16/PDF/cli_6300-6400.pdf

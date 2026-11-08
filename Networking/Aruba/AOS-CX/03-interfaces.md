@@ -94,3 +94,29 @@ show interface transceiver
 > Not lab-verified. AOS-CX 10.x; model/release support varies.
 
 **Reference:** https://arubanetworking.hpe.com/techdocs/AOS-CX/10.16/PDF/cli_6300-6400.pdf
+
+## Optical diagnostics and utilization
+
+### `show interface dom`
+
+```text
+show interface dom
+```
+
+- **Purpose:** Inspect digital optical monitoring sensor values.
+- **Arguments:** dom: optical diagnostics; requires DOM-capable transceivers.
+- **Use case:** Diagnose links without changing configuration.
+
+### `show interface utilization`
+
+```text
+show interface utilization
+```
+
+- **Purpose:** Inspect current interface utilization indicators.
+- **Arguments:** utilization: interface traffic utilization, platform-dependent.
+- **Use case:** Diagnose links without changing configuration.
+
+> Not lab-verified. AOS-CX 10.x; model/release support varies.
+
+**Reference:** https://arubanetworking.hpe.com/techdocs/AOS-CX/10.16/PDF/cli_6300-6400.pdf
