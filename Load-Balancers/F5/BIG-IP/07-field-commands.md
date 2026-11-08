@@ -108,3 +108,14 @@ tmsh show sys memory
 - **Parameters / flags:** show: runtime stats; sys memory: memory statistics; output depends on TMOS release.
 - **Operational use:** Check memory pressure before deeper traffic diagnostics.
 - **Validation:** Not lab-verified; check version and privileges.
+
+## BIG-IP CPU performance
+
+```text
+tmsh show sys cpu
+```
+
+- **Purpose:** Display runtime CPU usage reported by BIG-IP TMOS.
+- **Parameters / flags:** show: runtime counters; sys cpu: system CPU utilization; release-dependent.
+- **Operational use:** Check CPU pressure during application traffic latency.
+- **Validation:** Not lab verified; confirm release and CLI context.

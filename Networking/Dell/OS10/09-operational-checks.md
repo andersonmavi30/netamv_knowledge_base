@@ -121,3 +121,14 @@ show ip route
 - **Parameters / flags:** ip route: IPv4 unicast routes; route codes identify source.
 - **Operational use:** Confirm that a next-hop route exists before testing forwarding.
 - **Validation:** Not lab-verified; check version and privileges.
+
+## Detailed Ethernet interface state
+
+```text
+show interface ethernet 1/1/1
+```
+
+- **Purpose:** Inspect the operational state and counters of Ethernet 1/1/1.
+- **Parameters / flags:** ethernet 1/1/1: selected front-panel port; replace with installed port number.
+- **Operational use:** Investigate a single failing uplink without dumping all ports.
+- **Validation:** Not lab verified; confirm release and CLI context.

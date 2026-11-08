@@ -121,3 +121,14 @@ show ip route
 - **Parámetros / flags:** ip route: rutas IPv4; códigos indican su origen.
 - **Uso operativo:** Confirmar la ruta y siguiente salto antes de probar conectividad.
 - **Validación:** Pendiente de prueba en laboratorio; verificar versión y permisos.
+
+## Estado detallado de interfaz Ethernet
+
+```text
+show interface ethernet 1/1/1
+```
+
+- **Propósito:** Consultar estado operativo y contadores de Ethernet 1/1/1.
+- **Parámetros / flags:** ethernet 1/1/1: puerto elegido; sustituir por uno existente.
+- **Uso operativo:** Investigar un enlace específico sin listar todos los puertos.
+- **Validación:** Pendiente de laboratorio; confirmar versión y contexto CLI.
