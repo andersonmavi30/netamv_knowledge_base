@@ -68,3 +68,29 @@ show interface 1/1/1 | include Description
 - **Reference:** [Vendor documentation](https://arubanetworking.hpe.com/techdocs/AOS-CX/10.16/HTML/fundamentals_8100-83xx-93xx-100xx/Content/Chp_IfaceCfg/Iface_cmds/sho-int-10.htm)
 
 > Examples pending lab validation; availability varies by release and hardware.
+
+## Port counters and transceivers
+
+### `show interface 1/1/1 statistics`
+
+```text
+show interface 1/1/1 statistics
+```
+
+- **Purpose:** Display traffic counters for a specified port.
+- **Arguments:** 1/1/1: selected interface; statistics: packets and bytes.
+- **Use case:** Diagnose links without changing configuration.
+
+### `show interface transceiver`
+
+```text
+show interface transceiver
+```
+
+- **Purpose:** List optical transceiver identity and status.
+- **Arguments:** transceiver: installed optics information; supported modules only.
+- **Use case:** Diagnose links without changing configuration.
+
+> Not lab-verified. AOS-CX 10.x; model/release support varies.
+
+**Reference:** https://arubanetworking.hpe.com/techdocs/AOS-CX/10.16/PDF/cli_6300-6400.pdf
