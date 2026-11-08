@@ -99,3 +99,14 @@ show interfaces counters errors
 - **Parámetros / flags:** counters errors: solo errores; depende del equipo IOS-XE.
 - **Uso operativo:** Identificar errores de interfaz durante pérdida de paquetes.
 - **Validación:** Pendiente de prueba en laboratorio; verificar versión y permisos.
+
+## Resumen de reenvío CEF
+
+```text
+show ip cef summary
+```
+
+- **Propósito:** Consultar estadísticas globales de la tabla CEF IPv4 en plataformas compatibles.
+- **Parámetros / flags:** summary: estadísticas y entradas CEF resumidas; depende del equipo.
+- **Uso operativo:** Relacionar programación de rutas con problemas del plano de datos.
+- **Validación:** Pendiente de laboratorio; confirmar versión y contexto CLI.

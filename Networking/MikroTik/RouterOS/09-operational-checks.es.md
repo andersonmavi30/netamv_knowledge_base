@@ -99,3 +99,14 @@ validation: not-lab-verified
 - **Parámetros / flags:** print: consultar entradas; count-only: devuelve únicamente el total.
 - **Uso operativo:** Revisar el crecimiento de conntrack sin producir demasiada salida.
 - **Validación:** Pendiente de prueba en laboratorio; verificar versión y permisos.
+
+## Métricas de CPU por núcleo
+
+```text
+/system resource cpu print
+```
+
+- **Propósito:** Mostrar utilización de CPU por núcleo en versiones RouterOS compatibles.
+- **Parámetros / flags:** cpu print: información de CPU por núcleo sin monitor continuo.
+- **Uso operativo:** Detectar cuellos de botella de CPU antes de ejecutar perfilado.
+- **Validación:** Pendiente de laboratorio; confirmar versión y contexto CLI.
