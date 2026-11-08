@@ -121,3 +121,14 @@ show interfaces switchport
 - **Parameters / flags:** switchport: L2 switchport details; syntax may vary by firmware.
 - **Operational use:** Check unexpected access/trunk VLAN assignment.
 - **Validation:** Not lab-verified; check version and privileges.
+
+## Physical interface counters
+
+```text
+show interfaces counters
+```
+
+- **Purpose:** Review port traffic counters for all switch interfaces.
+- **Parameters / flags:** counters: interface traffic statistics; supported port types vary by model.
+- **Operational use:** Spot a link with unexpected traffic or discards.
+- **Validation:** Not lab verified; confirm release and CLI context.

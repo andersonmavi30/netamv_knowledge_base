@@ -99,3 +99,14 @@ display version
 - **Parameters / flags:** version: software/hardware inventory; output varies by product.
 - **Operational use:** Confirm platform and release before applying device-specific diagnostics.
 - **Validation:** Not lab-verified; check version and privileges.
+
+## Routing table statistics
+
+```text
+display ip routing-table statistics
+```
+
+- **Purpose:** Show IPv4 route totals grouped by route origin.
+- **Parameters / flags:** statistics: summary by route protocol; may vary among VRP releases.
+- **Operational use:** Investigate unexpected routing table growth.
+- **Validation:** Not lab verified; confirm release and CLI context.

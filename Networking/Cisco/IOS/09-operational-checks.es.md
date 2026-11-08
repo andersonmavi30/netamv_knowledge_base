@@ -99,3 +99,14 @@ show ip route summary
 - **Parámetros / flags:** summary: conteos y estadísticas de la tabla IPv4.
 - **Uso operativo:** Revisar crecimiento de rutas antes de analizar prefijos específicos.
 - **Validación:** Pendiente de prueba en laboratorio; verificar versión y permisos.
+
+## Descripciones de interfaces caídas
+
+```text
+show interfaces description | include down
+```
+
+- **Propósito:** Filtrar descripciones de interfaces por estados down.
+- **Parámetros / flags:** include down: devuelve líneas coincidentes; distingue mayúsculas.
+- **Uso operativo:** Localizar rápidamente interfaces caídas inesperadamente.
+- **Validación:** Pendiente de laboratorio; confirmar versión y contexto CLI.

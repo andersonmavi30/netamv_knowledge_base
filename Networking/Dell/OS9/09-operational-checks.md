@@ -121,3 +121,14 @@ show interfaces status
 - **Parameters / flags:** status: abbreviated port state; availability depends on platform.
 - **Operational use:** Find unexpected down links before investigating optic details.
 - **Validation:** Not lab-verified; check version and privileges.
+
+## OS9 software and hardware summary
+
+```text
+show version
+```
+
+- **Purpose:** Read Force10 OS9 release and device platform information.
+- **Parameters / flags:** version: system release and hardware inventory; may vary by model.
+- **Operational use:** Record version before checking release-specific diagnostics.
+- **Validation:** Not lab verified; confirm release and CLI context.

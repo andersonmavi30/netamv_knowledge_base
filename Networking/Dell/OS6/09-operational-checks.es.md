@@ -121,3 +121,14 @@ show interfaces switchport
 - **Parámetros / flags:** switchport: datos L2; sintaxis puede variar según firmware.
 - **Uso operativo:** Detectar asignaciones inesperadas de VLAN access/trunk.
 - **Validación:** Pendiente de prueba en laboratorio; verificar versión y permisos.
+
+## Contadores físicos de interfaces
+
+```text
+show interfaces counters
+```
+
+- **Propósito:** Consultar contadores de tráfico de los puertos del switch.
+- **Parámetros / flags:** counters: estadísticas de tráfico; soporte según modelo.
+- **Uso operativo:** Detectar enlaces con tráfico o descartes inesperados.
+- **Validación:** Pendiente de laboratorio; confirmar versión y contexto CLI.

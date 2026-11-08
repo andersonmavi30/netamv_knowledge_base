@@ -121,3 +121,14 @@ show interfaces status
 - **Parámetros / flags:** status: resumen de estado; disponibilidad según plataforma.
 - **Uso operativo:** Encontrar enlaces caídos antes de revisar transceptores.
 - **Validación:** Pendiente de prueba en laboratorio; verificar versión y permisos.
+
+## Resumen de software y hardware OS9
+
+```text
+show version
+```
+
+- **Propósito:** Consultar versión Force10 OS9 e información de la plataforma.
+- **Parámetros / flags:** version: versión y datos de hardware; varía según modelo.
+- **Uso operativo:** Registrar versión antes de diagnósticos específicos.
+- **Validación:** Pendiente de laboratorio; confirmar versión y contexto CLI.

@@ -109,3 +109,14 @@ fw ctl pstat
 - **Parameters / flags:** fw ctl: firewall kernel control; pstat: performance statistics.
 - **Operational use:** Investigate kernel memory or packet-processing pressure.
 - **Validation:** Not lab-verified; check version and privileges.
+
+## CoreXL instance status
+
+```text
+fw ctl multik stat
+```
+
+- **Purpose:** List firewall kernel instances and CoreXL allocation in Expert mode.
+- **Parameters / flags:** multik stat: show CoreXL firewall instance status; applicable to CoreXL gateways.
+- **Operational use:** Verify expected instance counts when diagnosing CPU imbalance.
+- **Validation:** Not lab verified; confirm release and CLI context.

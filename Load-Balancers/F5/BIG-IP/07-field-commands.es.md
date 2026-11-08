@@ -108,3 +108,14 @@ tmsh show sys memory
 - **Parámetros / flags:** show: estado operativo; sys memory: estadísticas; salida según versión TMOS.
 - **Uso operativo:** Comprobar saturación de memoria antes de analizar el tráfico.
 - **Validación:** Pendiente de prueba en laboratorio; verificar versión y permisos.
+
+## Rendimiento de CPU de BIG-IP
+
+```text
+tmsh show sys cpu
+```
+
+- **Propósito:** Mostrar utilización de CPU reportada por BIG-IP TMOS.
+- **Parámetros / flags:** show: contadores operativos; sys cpu: uso del procesador; según versión.
+- **Uso operativo:** Revisar presión de CPU cuando aumenta la latencia de aplicaciones.
+- **Validación:** Pendiente de laboratorio; confirmar versión y contexto CLI.

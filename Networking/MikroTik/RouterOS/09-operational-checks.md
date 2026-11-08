@@ -99,3 +99,14 @@ validation: not-lab-verified
 - **Parameters / flags:** print: display entries; count-only: return only the count.
 - **Operational use:** Check connection-tracking table growth without heavy output.
 - **Validation:** Not lab-verified; check version and privileges.
+
+## Per-core CPU metrics
+
+```text
+/system resource cpu print
+```
+
+- **Purpose:** Show CPU utilization by core on supported RouterOS versions.
+- **Parameters / flags:** cpu print: per-core CPU usage without a streaming monitor.
+- **Operational use:** Locate CPU bottlenecks before selecting a deeper profile tool.
+- **Validation:** Not lab verified; confirm release and CLI context.

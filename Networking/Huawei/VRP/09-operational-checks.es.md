@@ -99,3 +99,14 @@ display version
 - **Parámetros / flags:** version: datos del sistema; salida según modelo.
 - **Uso operativo:** Confirmar modelo y versión antes de diagnósticos específicos.
 - **Validación:** Pendiente de prueba en laboratorio; verificar versión y permisos.
+
+## Estadísticas de tabla de rutas
+
+```text
+display ip routing-table statistics
+```
+
+- **Propósito:** Mostrar totales de rutas IPv4 agrupados por origen.
+- **Parámetros / flags:** statistics: resumen por protocolo de ruta; depende de versión VRP.
+- **Uso operativo:** Investigar crecimiento inesperado de la tabla de rutas.
+- **Validación:** Pendiente de laboratorio; confirmar versión y contexto CLI.

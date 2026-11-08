@@ -99,3 +99,14 @@ get system performance status
 - **Parámetros / flags:** performance status: métricas generales; los campos dependen de la versión.
 - **Uso operativo:** Revisar saturación de recursos antes de activar depuración.
 - **Validación:** Pendiente de prueba en laboratorio; verificar versión y permisos.
+
+## Estado del clúster HA
+
+```text
+get system ha status
+```
+
+- **Propósito:** Revisar modo HA, miembros del clúster y estado de conmutación.
+- **Parámetros / flags:** ha status: resumen de alta disponibilidad; requiere HA configurado.
+- **Uso operativo:** Confirmar la unidad primaria y la sincronización al analizar failover.
+- **Validación:** Pendiente de laboratorio; confirmar versión y contexto CLI.

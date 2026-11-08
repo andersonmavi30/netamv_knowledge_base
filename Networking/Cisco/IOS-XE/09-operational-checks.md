@@ -99,3 +99,14 @@ show interfaces counters errors
 - **Parameters / flags:** counters errors: error-only counters; availability depends on IOS-XE platform.
 - **Operational use:** Identify CRC or other interface errors during packet loss.
 - **Validation:** Not lab-verified; check version and privileges.
+
+## CEF forwarding summary
+
+```text
+show ip cef summary
+```
+
+- **Purpose:** Inspect IPv4 CEF forwarding table totals and resource use where supported.
+- **Parameters / flags:** summary: condensed CEF counters and entries; output depends on device.
+- **Operational use:** Correlate route programming and data-plane forwarding issues.
+- **Validation:** Not lab verified; confirm release and CLI context.

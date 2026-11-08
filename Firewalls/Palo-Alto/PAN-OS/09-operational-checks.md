@@ -96,3 +96,14 @@ show system resources
 - **Parameters / flags:** system resources: interactive process resource view; press q to exit.
 - **Operational use:** Investigate a sluggish firewall management plane.
 - **Validation:** Not lab-verified; check version and privileges.
+
+## Forwarding route lookup
+
+```text
+show routing route
+```
+
+- **Purpose:** Inspect active routing information on supported PAN-OS releases.
+- **Parameters / flags:** routing route: operational route view; virtual router/advanced routing syntax varies by release.
+- **Operational use:** Check whether the expected route is present before testing traffic.
+- **Validation:** Not lab verified; confirm release and CLI context.
