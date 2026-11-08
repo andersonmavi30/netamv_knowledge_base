@@ -50,3 +50,29 @@ show ip route | include 198.51.100
 - **Ejemplo de uso:** Revisar red remota.
 
 > Ejemplos pendientes de validación en laboratorio; comandos y filtros pueden variar según versión y equipo.
+
+## Estado del hardware y sistema
+
+### `show system`
+
+```text
+show system
+```
+
+- **Sirve para:** Consultar modelo, estado del sistema y tiempo activo.
+- **Parámetros:** system: resumen de plataforma, solo lectura.
+- **Ejemplo de uso:** Verificar el estado antes de intervenir el equipo.
+
+### `show environment temperature`
+
+```text
+show environment temperature
+```
+
+- **Sirve para:** Consultar temperaturas de chasis y módulos.
+- **Parámetros:** environment temperature: sensores; depende del modelo.
+- **Ejemplo de uso:** Verificar el estado antes de intervenir el equipo.
+
+> Pendiente de validación en laboratorio. AOS-CX 10.x; model/release support varies.
+
+**Referencia:** https://arubanetworking.hpe.com/techdocs/AOS-CX/10.16/PDF/cli_6300-6400.pdf
