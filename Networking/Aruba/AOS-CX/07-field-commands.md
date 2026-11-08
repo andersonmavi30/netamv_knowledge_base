@@ -76,3 +76,29 @@ show ip ospf neighbors all-vrfs
 > Not lab-verified. AOS-CX 10.x; model/release support varies.
 
 **Reference:** https://arubanetworking.hpe.com/techdocs/AOS-CX/10.16/PDF/cli_6300-6400.pdf
+
+## EVPN peers and VXLAN tunnels
+
+### `show bgp l2vpn evpn summary`
+
+```text
+show bgp l2vpn evpn summary
+```
+
+- **Purpose:** Display EVPN BGP neighbor states.
+- **Arguments:** l2vpn evpn: EVPN address family; summary: neighbor states; requires EVPN.
+- **Use case:** Verify status before a network change.
+
+### `show interface vxlan vteps`
+
+```text
+show interface vxlan vteps
+```
+
+- **Purpose:** Inspect remote VTEP peers and VXLAN tunnel reachability.
+- **Arguments:** vteps: VXLAN peer endpoint view; supported EVPN/VXLAN platforms only.
+- **Use case:** Verify status before a network change.
+
+> Not lab-verified. AOS-CX 10.x; model/release support varies.
+
+**Reference:** https://arubanetworking.hpe.com/techdocs/AOS-CX/10.16/PDF/cli_6300-6400.pdf
