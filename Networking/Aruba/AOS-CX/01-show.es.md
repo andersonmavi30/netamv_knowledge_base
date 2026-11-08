@@ -76,3 +76,29 @@ show environment temperature
 > Pendiente de validación en laboratorio. AOS-CX 10.x; model/release support varies.
 
 **Referencia:** https://arubanetworking.hpe.com/techdocs/AOS-CX/10.16/PDF/cli_6300-6400.pdf
+
+## Refrigeración y fuentes de alimentación
+
+### `show environment fan`
+
+```text
+show environment fan
+```
+
+- **Sirve para:** Consultar presencia, estado y salud de ventiladores.
+- **Parámetros:** environment fan: inventario y estado de ventiladores.
+- **Ejemplo de uso:** Verificar el estado antes de intervenir el equipo.
+
+### `show environment power-supply`
+
+```text
+show environment power-supply
+```
+
+- **Sirve para:** Consultar fuentes instaladas y su estado operativo.
+- **Parámetros:** power-supply: salud de fuentes; depende del hardware.
+- **Ejemplo de uso:** Verificar el estado antes de intervenir el equipo.
+
+> Pendiente de validación en laboratorio. AOS-CX 10.x; model/release support varies.
+
+**Referencia:** https://arubanetworking.hpe.com/techdocs/AOS-CX/10.16/PDF/cli_6300-6400.pdf
