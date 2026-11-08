@@ -68,3 +68,55 @@ show interface 1/1/1 | include Description
 - **Referencia:** [Documentación del fabricante](https://arubanetworking.hpe.com/techdocs/AOS-CX/10.16/HTML/fundamentals_8100-83xx-93xx-100xx/Content/Chp_IfaceCfg/Iface_cmds/sho-int-10.htm)
 
 > Ejemplos pendientes de validación en laboratorio; comandos y filtros pueden variar según versión y equipo.
+
+## Contadores y transceptores
+
+### `show interface 1/1/1 statistics`
+
+```text
+show interface 1/1/1 statistics
+```
+
+- **Sirve para:** Mostrar contadores de tráfico de un puerto.
+- **Parámetros:** 1/1/1: puerto elegido; statistics: paquetes y bytes.
+- **Ejemplo de uso:** Diagnosticar enlaces sin cambiar la configuración.
+
+### `show interface transceiver`
+
+```text
+show interface transceiver
+```
+
+- **Sirve para:** Listar identificación y estado de transceptores ópticos.
+- **Parámetros:** transceiver: información de ópticos compatibles.
+- **Ejemplo de uso:** Diagnosticar enlaces sin cambiar la configuración.
+
+> Pendiente de validación en laboratorio. AOS-CX 10.x; model/release support varies.
+
+**Referencia:** https://arubanetworking.hpe.com/techdocs/AOS-CX/10.16/PDF/cli_6300-6400.pdf
+
+## Diagnóstico óptico y utilización
+
+### `show interface dom`
+
+```text
+show interface dom
+```
+
+- **Sirve para:** Consultar mediciones digitales de transceptores ópticos.
+- **Parámetros:** dom: diagnóstico óptico; requiere transceptores compatibles.
+- **Ejemplo de uso:** Diagnosticar enlaces sin cambiar la configuración.
+
+### `show interface utilization`
+
+```text
+show interface utilization
+```
+
+- **Sirve para:** Consultar indicadores de utilización de interfaces.
+- **Parámetros:** utilization: utilización de interfaces; depende del equipo.
+- **Ejemplo de uso:** Diagnosticar enlaces sin cambiar la configuración.
+
+> Pendiente de validación en laboratorio. AOS-CX 10.x; model/release support varies.
+
+**Referencia:** https://arubanetworking.hpe.com/techdocs/AOS-CX/10.16/PDF/cli_6300-6400.pdf

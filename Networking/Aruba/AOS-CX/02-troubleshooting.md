@@ -50,3 +50,29 @@ show arp | include 192.0.2.10
 - **Use case:** Confirm gateway MAC.
 
 > Examples pending lab validation; availability varies by release and hardware.
+
+## Event and system resource diagnostics
+
+### `show events`
+
+```text
+show events
+```
+
+- **Purpose:** Read operating system event notifications.
+- **Arguments:** events: system-generated event history; timestamps depend on clock settings.
+- **Use case:** Investigate incidents without changing configuration.
+
+### `show system resource-utilization`
+
+```text
+show system resource-utilization
+```
+
+- **Purpose:** Inspect switch CPU and memory utilization.
+- **Arguments:** system resource-utilization: platform process resource summary.
+- **Use case:** Investigate incidents without changing configuration.
+
+> Not lab-verified. AOS-CX 10.x; model/release support varies.
+
+**Reference:** https://arubanetworking.hpe.com/techdocs/AOS-CX/10.16/PDF/cli_6300-6400.pdf

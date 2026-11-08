@@ -50,3 +50,55 @@ show spanning-tree | include Root
 - **Ejemplo de uso:** Investigar topología.
 
 > Validar en laboratorio. Mirror/tshark requieren soporte y autorización; deshabilita al finalizar.
+
+## Vecinos y aprendizaje VLAN
+
+### `show lldp neighbor-info detail`
+
+```text
+show lldp neighbor-info detail
+```
+
+- **Sirve para:** Mostrar detalles de identificación y capacidades de vecinos LLDP.
+- **Parámetros:** detail: TLV detallados; requiere LLDP.
+- **Ejemplo de uso:** Validar el estado sin modificar la configuración.
+
+### `show mac-address-table vlan 10`
+
+```text
+show mac-address-table vlan 10
+```
+
+- **Sirve para:** Listar MAC aprendidas en la VLAN 10.
+- **Parámetros:** vlan 10: limita la consulta a la VLAN 10.
+- **Ejemplo de uso:** Validar el estado sin modificar la configuración.
+
+> Pendiente de validación en laboratorio. AOS-CX 10.x; model/release support varies.
+
+**Referencia:** https://arubanetworking.hpe.com/techdocs/AOS-CX/10.16/PDF/cli_6300-6400.pdf
+
+## Verificación de multicast y spanning-tree
+
+### `show ip igmp snooping`
+
+```text
+show ip igmp snooping
+```
+
+- **Sirve para:** Consultar el estado de IGMP snooping.
+- **Parámetros:** igmp snooping: gestión de grupos multicast; requiere función disponible.
+- **Ejemplo de uso:** Investigar incidencias sin cambiar configuración.
+
+### `show spanning-tree detail`
+
+```text
+show spanning-tree detail
+```
+
+- **Sirve para:** Consultar detalle de puertos y del puente spanning-tree.
+- **Parámetros:** detail: vista STP ampliada; requiere STP activo; según versión.
+- **Ejemplo de uso:** Investigar incidencias sin cambiar configuración.
+
+> Pendiente de validación en laboratorio. AOS-CX 10.x; model/release support varies.
+
+**Referencia:** https://arubanetworking.hpe.com/techdocs/AOS-CX/10.16/PDF/cli_6300-6400.pdf

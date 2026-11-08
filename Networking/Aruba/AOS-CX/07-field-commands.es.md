@@ -50,3 +50,81 @@ show ip route | include 203.0.113
 - **Ejemplo de uso:** Revisar ruta.
 
 > Validar en laboratorio. Mirror/tshark requieren soporte y autorización; deshabilita al finalizar.
+
+## Vecinos LACP y OSPF
+
+### `show lacp interfaces`
+
+```text
+show lacp interfaces
+```
+
+- **Sirve para:** Revisar estado de miembros LACP.
+- **Parámetros:** interfaces: miembros LACP; requiere agregación configurada.
+- **Ejemplo de uso:** Validar el estado sin modificar la configuración.
+
+### `show ip ospf neighbors all-vrfs`
+
+```text
+show ip ospf neighbors all-vrfs
+```
+
+- **Sirve para:** Consultar adyacencias OSPF en todas las VRF.
+- **Parámetros:** all-vrfs: incluye todas las VRF; requiere OSPF.
+- **Ejemplo de uso:** Validar el estado sin modificar la configuración.
+
+> Pendiente de validación en laboratorio. AOS-CX 10.x; model/release support varies.
+
+**Referencia:** https://arubanetworking.hpe.com/techdocs/AOS-CX/10.16/PDF/cli_6300-6400.pdf
+
+## Vecinos EVPN y túneles VXLAN
+
+### `show bgp l2vpn evpn summary`
+
+```text
+show bgp l2vpn evpn summary
+```
+
+- **Sirve para:** Mostrar estados de vecinos BGP EVPN.
+- **Parámetros:** l2vpn evpn: familia EVPN; summary: vecinos; requiere EVPN.
+- **Ejemplo de uso:** Verificar estado antes de cambios.
+
+### `show interface vxlan vteps`
+
+```text
+show interface vxlan vteps
+```
+
+- **Sirve para:** Consultar VTEP remotos y alcance de túneles VXLAN.
+- **Parámetros:** vteps: vista de pares VXLAN; plataformas compatibles.
+- **Ejemplo de uso:** Verificar estado antes de cambios.
+
+> Pendiente de validación en laboratorio. AOS-CX 10.x; model/release support varies.
+
+**Referencia:** https://arubanetworking.hpe.com/techdocs/AOS-CX/10.16/PDF/cli_6300-6400.pdf
+
+## Topología VSX y VSF
+
+### `show vsx status`
+
+```text
+show vsx status
+```
+
+- **Sirve para:** Consultar rol VSX y estado entre los switches.
+- **Parámetros:** vsx status: vecino y rol; solo en switches VSX.
+- **Ejemplo de uso:** Verificar estado antes de cambios.
+
+### `show vsf`
+
+```text
+show vsf
+```
+
+- **Sirve para:** Consultar miembros y estado de la pila VSF.
+- **Parámetros:** vsf: estado de la pila; requiere familia compatible.
+- **Ejemplo de uso:** Verificar estado antes de cambios.
+
+> Pendiente de validación en laboratorio. AOS-CX 10.x; model/release support varies.
+
+**Referencia:** https://arubanetworking.hpe.com/techdocs/AOS-CX/10.16/PDF/cli_6300-6400.pdf

@@ -50,3 +50,55 @@ show ip route | include 198.51.100
 - **Use case:** Inspect reachability to remote site.
 
 > Examples pending lab validation; availability varies by release and hardware.
+
+## Hardware and operating status
+
+### `show system`
+
+```text
+show system
+```
+
+- **Purpose:** Inspect model, system status, and uptime.
+- **Arguments:** system: read-only platform summary.
+- **Use case:** Check status before troubleshooting or maintenance.
+
+### `show environment temperature`
+
+```text
+show environment temperature
+```
+
+- **Purpose:** Inspect chassis and module temperature sensors.
+- **Arguments:** environment temperature: sensor measurements; availability varies by model.
+- **Use case:** Check status before troubleshooting or maintenance.
+
+> Not lab-verified. AOS-CX 10.x; model/release support varies.
+
+**Reference:** https://arubanetworking.hpe.com/techdocs/AOS-CX/10.16/PDF/cli_6300-6400.pdf
+
+## Cooling and power supplies
+
+### `show environment fan`
+
+```text
+show environment fan
+```
+
+- **Purpose:** Inspect chassis fan presence, status, and health.
+- **Arguments:** environment fan: cooling hardware inventory and status.
+- **Use case:** Check status before troubleshooting or maintenance.
+
+### `show environment power-supply`
+
+```text
+show environment power-supply
+```
+
+- **Purpose:** Inspect installed power supplies and their operating state.
+- **Arguments:** power-supply: PSU health; hardware-specific.
+- **Use case:** Check status before troubleshooting or maintenance.
+
+> Not lab-verified. AOS-CX 10.x; model/release support varies.
+
+**Reference:** https://arubanetworking.hpe.com/techdocs/AOS-CX/10.16/PDF/cli_6300-6400.pdf
