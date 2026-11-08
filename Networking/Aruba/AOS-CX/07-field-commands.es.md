@@ -102,3 +102,29 @@ show interface vxlan vteps
 > Pendiente de validación en laboratorio. AOS-CX 10.x; model/release support varies.
 
 **Referencia:** https://arubanetworking.hpe.com/techdocs/AOS-CX/10.16/PDF/cli_6300-6400.pdf
+
+## Topología VSX y VSF
+
+### `show vsx status`
+
+```text
+show vsx status
+```
+
+- **Sirve para:** Consultar rol VSX y estado entre los switches.
+- **Parámetros:** vsx status: vecino y rol; solo en switches VSX.
+- **Ejemplo de uso:** Verificar estado antes de cambios.
+
+### `show vsf`
+
+```text
+show vsf
+```
+
+- **Sirve para:** Consultar miembros y estado de la pila VSF.
+- **Parámetros:** vsf: estado de la pila; requiere familia compatible.
+- **Ejemplo de uso:** Verificar estado antes de cambios.
+
+> Pendiente de validación en laboratorio. AOS-CX 10.x; model/release support varies.
+
+**Referencia:** https://arubanetworking.hpe.com/techdocs/AOS-CX/10.16/PDF/cli_6300-6400.pdf

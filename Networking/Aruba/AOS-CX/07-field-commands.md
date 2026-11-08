@@ -102,3 +102,29 @@ show interface vxlan vteps
 > Not lab-verified. AOS-CX 10.x; model/release support varies.
 
 **Reference:** https://arubanetworking.hpe.com/techdocs/AOS-CX/10.16/PDF/cli_6300-6400.pdf
+
+## VSX and VSF topology
+
+### `show vsx status`
+
+```text
+show vsx status
+```
+
+- **Purpose:** Inspect multi-chassis VSX role and inter-switch state.
+- **Arguments:** vsx status: VSX peer and role data; only on VSX-capable switches.
+- **Use case:** Verify status before a network change.
+
+### `show vsf`
+
+```text
+show vsf
+```
+
+- **Purpose:** Inspect VSF stack membership and status.
+- **Arguments:** vsf: Virtual Switching Framework status; only on supported switch families.
+- **Use case:** Verify status before a network change.
+
+> Not lab-verified. AOS-CX 10.x; model/release support varies.
+
+**Reference:** https://arubanetworking.hpe.com/techdocs/AOS-CX/10.16/PDF/cli_6300-6400.pdf
