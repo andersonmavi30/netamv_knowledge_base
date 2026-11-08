@@ -99,3 +99,14 @@ show ip route summary
 - **Parameters / flags:** summary: route counts and table statistics; IPv4 unicast.
 - **Operational use:** Check routing table growth before investigating specific prefixes.
 - **Validation:** Not lab-verified; check version and privileges.
+
+## Down interface descriptions
+
+```text
+show interfaces description | include down
+```
+
+- **Purpose:** Filter interface descriptions to lines containing down states.
+- **Parameters / flags:** include down: return matching interface rows; match is case-sensitive.
+- **Operational use:** Find unexpected down interfaces quickly from an operations console.
+- **Validation:** Not lab verified; confirm release and CLI context.

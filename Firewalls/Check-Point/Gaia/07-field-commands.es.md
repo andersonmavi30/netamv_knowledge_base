@@ -109,3 +109,14 @@ fw ctl pstat
 - **Parámetros / flags:** fw ctl: control del kernel; pstat: estadísticas de rendimiento.
 - **Uso operativo:** Investigar presión de memoria del kernel o procesamiento de paquetes.
 - **Validación:** Pendiente de prueba en laboratorio; verificar versión y permisos.
+
+## Estado de instancias CoreXL
+
+```text
+fw ctl multik stat
+```
+
+- **Propósito:** Listar instancias del kernel de firewall y su distribución CoreXL en modo Expert.
+- **Parámetros / flags:** multik stat: muestra instancias CoreXL; requiere gateway compatible.
+- **Uso operativo:** Verificar cantidad de instancias ante desequilibrios de CPU.
+- **Validación:** Pendiente de laboratorio; confirmar versión y contexto CLI.
