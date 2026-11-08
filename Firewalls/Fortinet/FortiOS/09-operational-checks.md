@@ -99,3 +99,14 @@ get system performance status
 - **Parameters / flags:** performance status: aggregate FortiOS system metrics; fields depend on release.
 - **Operational use:** Check resource pressure before enabling an intrusive debug.
 - **Validation:** Not lab-verified; check version and privileges.
+
+## HA cluster status
+
+```text
+get system ha status
+```
+
+- **Purpose:** Inspect HA operating mode, cluster membership and failover state.
+- **Parameters / flags:** ha status: high-availability summary; relevant only on HA-configured FortiGates.
+- **Operational use:** Confirm the primary unit and synchronization during a failover investigation.
+- **Validation:** Not lab verified; confirm release and CLI context.

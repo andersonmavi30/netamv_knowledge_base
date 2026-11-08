@@ -96,3 +96,14 @@ show system resources
 - **Parámetros / flags:** system resources: vista interactiva de procesos; q para salir.
 - **Uso operativo:** Investigar lentitud en la administración del firewall.
 - **Validación:** Pendiente de prueba en laboratorio; verificar versión y permisos.
+
+## Consulta de rutas de reenvío
+
+```text
+show routing route
+```
+
+- **Propósito:** Consultar información de rutas activas en versiones compatibles de PAN-OS.
+- **Parámetros / flags:** routing route: vista de rutas; sintaxis varía según virtual router y versión.
+- **Uso operativo:** Comprobar la ruta esperada antes de probar tráfico.
+- **Validación:** Pendiente de laboratorio; confirmar versión y contexto CLI.
