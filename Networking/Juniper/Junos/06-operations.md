@@ -34,3 +34,16 @@ show lldp neighbors
 - **Official reference:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/ref/command/show-lldp-neighbors.html
 
 > Not lab-verified.
+
+## `show ethernet-switching table`
+
+```text
+show ethernet-switching table
+```
+
+- **Purpose:** Display dynamically learned Layer 2 MAC address entries.
+- **Arguments:** ethernet-switching table: MAC learning database; switching platforms only.
+- **Use case:** Find an endpoint MAC and associated VLAN/interface.
+- **Official reference:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/ref/command/show-ethernet-switching-table.html
+
+> Not lab-verified.

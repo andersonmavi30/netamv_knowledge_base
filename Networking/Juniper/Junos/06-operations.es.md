@@ -34,3 +34,16 @@ show lldp neighbors
 - **Referencia oficial:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/ref/command/show-lldp-neighbors.html
 
 > Pendiente de validación en laboratorio.
+
+## `show ethernet-switching table`
+
+```text
+show ethernet-switching table
+```
+
+- **Sirve para:** Mostrar direcciones MAC aprendidas en capa 2.
+- **Parámetros:** ethernet-switching table: tabla de MAC; solo plataformas con switching.
+- **Ejemplo de uso:** Localizar una MAC y su VLAN o interfaz.
+- **Referencia oficial:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/ref/command/show-ethernet-switching-table.html
+
+> Pendiente de validación en laboratorio.
