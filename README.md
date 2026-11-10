@@ -15,6 +15,7 @@
   - ↳ [MikroTik · RouterOS 7.x](Networking/MikroTik/README.md)
   - ↳ [Huawei · VRP](Networking/Huawei/README.md)
   - ↳ [Aruba · AOS-CX](Networking/Aruba/README.md)
+  - ↳ [Juniper · Junos OS](Networking/Juniper/README.md)
   - ↳ [Dell · OS6 / OS9 / OS10](Networking/Dell/README.md)
 - ⚖️ **[Load Balancers](Load-Balancers/README.md)**
   - ↳ [F5 · BIG-IP TMOS / LTM](Load-Balancers/F5/README.md)
