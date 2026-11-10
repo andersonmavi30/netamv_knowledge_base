@@ -21,3 +21,16 @@ show route summary
 - **Referencia oficial:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/ref/command/show-route.html
 
 > Pendiente de validación en laboratorio.
+
+## `show lldp neighbors`
+
+```text
+show lldp neighbors
+```
+
+- **Sirve para:** Listar vecinos LLDP y las interfaces locales conectadas.
+- **Parámetros:** lldp neighbors: tabla de vecinos descubiertos; requiere LLDP activo.
+- **Ejemplo de uso:** Identificar equipo conectado a un uplink.
+- **Referencia oficial:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/ref/command/show-lldp-neighbors.html
+
+> Pendiente de validación en laboratorio.

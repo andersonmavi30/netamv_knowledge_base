@@ -21,3 +21,16 @@ show route summary
 - **Official reference:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/ref/command/show-route.html
 
 > Not lab-verified.
+
+## `show lldp neighbors`
+
+```text
+show lldp neighbors
+```
+
+- **Purpose:** List LLDP neighbors and their connected local interfaces.
+- **Arguments:** lldp neighbors: discovered neighbor table; requires LLDP enabled.
+- **Use case:** Identify the device connected to an uplink.
+- **Official reference:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/ref/command/show-lldp-neighbors.html
+
+> Not lab-verified.
