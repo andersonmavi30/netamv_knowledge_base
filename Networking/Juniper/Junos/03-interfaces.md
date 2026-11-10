@@ -21,3 +21,16 @@ show interfaces terse
 - **Official reference:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/ref/command/show-interfaces-gigabit-ethernet.html
 
 > Not lab-verified.
+
+## `show interfaces diagnostics optics ge-0/0/0`
+
+```text
+show interfaces diagnostics optics ge-0/0/0
+```
+
+- **Purpose:** Inspect optical receive/transmit power and transceiver sensor alarms.
+- **Arguments:** diagnostics optics: DOM metrics; ge-0/0/0: target port; optics must support DOM.
+- **Use case:** Diagnose low optical receive power on an uplink.
+- **Official reference:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/ref/command/show-interfaces-security.html
+
+> Not lab-verified.

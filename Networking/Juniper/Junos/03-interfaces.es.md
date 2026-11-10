@@ -21,3 +21,16 @@ show interfaces terse
 - **Referencia oficial:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/ref/command/show-interfaces-gigabit-ethernet.html
 
 > Pendiente de validación en laboratorio.
+
+## `show interfaces diagnostics optics ge-0/0/0`
+
+```text
+show interfaces diagnostics optics ge-0/0/0
+```
+
+- **Sirve para:** Consultar potencia óptica RX/TX y alarmas del transceptor.
+- **Parámetros:** diagnostics optics: métricas DOM; ge-0/0/0: puerto; requiere óptico compatible.
+- **Ejemplo de uso:** Diagnosticar baja potencia óptica RX en un uplink.
+- **Referencia oficial:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/ref/command/show-interfaces-security.html
+
+> Pendiente de validación en laboratorio.
