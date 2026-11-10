@@ -21,3 +21,16 @@ show ospf neighbor
 - **Official reference:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/ref/command/show-ospf-neighbor.html
 
 > Not lab-verified.
+
+## `show bgp summary`
+
+```text
+show bgp summary
+```
+
+- **Purpose:** Display BGP peer states and received prefix summaries.
+- **Arguments:** bgp summary: condensed BGP peer table; requires configured BGP.
+- **Use case:** Find Idle or Active sessions before checking policy.
+- **Official reference:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/ref/command/show-bgp-summary.html
+
+> Not lab-verified.

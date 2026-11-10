@@ -21,3 +21,16 @@ show ospf neighbor
 - **Referencia oficial:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/ref/command/show-ospf-neighbor.html
 
 > Pendiente de validación en laboratorio.
+
+## `show bgp summary`
+
+```text
+show bgp summary
+```
+
+- **Sirve para:** Mostrar estados de vecinos BGP y resumen de prefijos recibidos.
+- **Parámetros:** bgp summary: tabla resumida de vecinos; requiere BGP.
+- **Ejemplo de uso:** Detectar sesiones Idle o Active antes de revisar políticas.
+- **Referencia oficial:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/ref/command/show-bgp-summary.html
+
+> Pendiente de validación en laboratorio.
