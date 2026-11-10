@@ -21,3 +21,16 @@ show version
 - **Referencia oficial:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/ref/command/show-version.html
 
 > Pendiente de validación en laboratorio.
+
+## `show chassis alarms`
+
+```text
+show chassis alarms
+```
+
+- **Sirve para:** Mostrar alarmas activas del chasis y su gravedad.
+- **Parámetros:** chassis: subsistema de hardware; alarms: lista de alarmas activas.
+- **Ejemplo de uso:** Identificar problemas de hardware antes del mantenimiento.
+- **Referencia oficial:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/ref/command/show-chassis-alarms.html
+
+> Pendiente de validación en laboratorio.

@@ -21,3 +21,16 @@ show version
 - **Official reference:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/ref/command/show-version.html
 
 > Not lab-verified.
+
+## `show chassis alarms`
+
+```text
+show chassis alarms
+```
+
+- **Purpose:** Display active chassis alarms and severity.
+- **Arguments:** chassis: hardware subsystem; alarms: active alarm list.
+- **Use case:** Identify hardware issues before planned maintenance.
+- **Official reference:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/ref/command/show-chassis-alarms.html
+
+> Not lab-verified.
