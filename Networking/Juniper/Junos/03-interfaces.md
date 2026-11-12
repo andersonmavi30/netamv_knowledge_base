@@ -34,3 +34,16 @@ show interfaces diagnostics optics ge-0/0/0
 - **Official reference:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/ref/command/show-interfaces-security.html
 
 > Not lab-verified.
+
+## `show interfaces descriptions`
+
+```text
+show interfaces descriptions
+```
+
+- **Purpose:** List interface names, configured descriptions and operational states.
+- **Arguments:** descriptions: summarized interfaces with their configured labels.
+- **Use case:** Find the uplink to a named neighbor without reviewing full configuration.
+- **Official reference:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/topic-map/operational-commands.html
+
+> Not lab-verified.

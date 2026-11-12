@@ -34,3 +34,16 @@ show interfaces diagnostics optics ge-0/0/0
 - **Referencia oficial:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/ref/command/show-interfaces-security.html
 
 > Pendiente de validación en laboratorio.
+
+## `show interfaces descriptions`
+
+```text
+show interfaces descriptions
+```
+
+- **Sirve para:** Listar interfaces, descripciones configuradas y estados operativos.
+- **Parámetros:** descriptions: resumen de interfaces con etiquetas configuradas.
+- **Ejemplo de uso:** Encontrar el uplink de un vecino sin revisar toda la configuración.
+- **Referencia oficial:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/topic-map/operational-commands.html
+
+> Pendiente de validación en laboratorio.
