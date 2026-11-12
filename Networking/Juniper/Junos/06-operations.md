@@ -60,3 +60,16 @@ show system core-dumps
 - **Official reference:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/topic-map/operational-commands.html
 
 > Not lab-verified.
+
+## `show system license`
+
+```text
+show system license
+```
+
+- **Purpose:** Display installed system licenses and their validity information.
+- **Arguments:** system license: licensing status; fields depend on platform.
+- **Use case:** Verify licensing before investigating a feature that is unavailable.
+- **Official reference:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/topic-map/operational-commands.html
+
+> Not lab-verified.

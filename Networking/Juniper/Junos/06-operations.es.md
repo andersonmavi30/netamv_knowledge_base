@@ -73,3 +73,16 @@ show system core-dumps
 - **Referencia oficial:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/topic-map/operational-commands.html
 
 > Pendiente de validación en laboratorio.
+
+## `show system license`
+
+```text
+show system license
+```
+
+- **Sirve para:** Mostrar licencias instaladas e información sobre su validez.
+- **Parámetros:** system license: estado de licencias; campos según plataforma.
+- **Ejemplo de uso:** Comprobar licencias ante una función que no está disponible.
+- **Referencia oficial:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/topic-map/operational-commands.html
+
+> Pendiente de validación en laboratorio.
