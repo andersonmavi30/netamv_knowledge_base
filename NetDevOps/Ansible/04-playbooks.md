@@ -34,3 +34,16 @@ ansible-playbook -i inventory.ini site.yml --check --diff
 - **Official reference:** https://docs.ansible.com/ansible/latest/cli/ansible-playbook.html
 
 > Not lab-verified.
+
+## `ansible-playbook -i inventory.ini site.yml --list-hosts`
+
+```bash
+ansible-playbook -i inventory.ini site.yml --list-hosts
+```
+
+- **Purpose:** Display the hosts targeted by a playbook without executing its tasks.
+- **Arguments:** `-i`: inventory; `site.yml`: playbook; `--list-hosts`: show selected target hosts.
+- **Use case:** Confirm exactly which routers or switches the playbook would target.
+- **Official reference:** https://docs.ansible.com/ansible/latest/cli/ansible-playbook.html
+
+> Not lab-verified.

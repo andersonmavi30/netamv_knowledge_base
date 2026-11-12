@@ -34,3 +34,16 @@ ansible-playbook -i inventory.ini site.yml --check --diff
 - **Referencia oficial:** https://docs.ansible.com/ansible/latest/cli/ansible-playbook.html
 
 > Pendiente de validación en laboratorio.
+
+## `ansible-playbook -i inventory.ini site.yml --list-hosts`
+
+```bash
+ansible-playbook -i inventory.ini site.yml --list-hosts
+```
+
+- **Sirve para:** Mostrar los hosts objetivos del playbook sin ejecutar las tareas.
+- **Parámetros:** `-i`: inventario; `site.yml`: playbook; `--list-hosts`: muestra hosts objetivos.
+- **Ejemplo de uso:** Confirmar qué routers o switches serían seleccionados por el playbook.
+- **Referencia oficial:** https://docs.ansible.com/ansible/latest/cli/ansible-playbook.html
+
+> Pendiente de validación en laboratorio.
