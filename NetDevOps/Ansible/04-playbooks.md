@@ -21,3 +21,16 @@ ansible-playbook -i inventory.ini site.yml --syntax-check
 - **Official reference:** https://docs.ansible.com/ansible/latest/cli/ansible-playbook.html
 
 > Not lab-verified.
+
+## `ansible-playbook -i inventory.ini site.yml --check --diff`
+
+```bash
+ansible-playbook -i inventory.ini site.yml --check --diff
+```
+
+- **Purpose:** Request a dry run and display predicted changes for modules that support it.
+- **Arguments:** `--check`: check mode (not all modules support it); `--diff`: show supported before/after differences; `-i`: inventory.
+- **Use case:** Review an intended configuration deployment before execution; never assume zero side effects from unsupported tasks.
+- **Official reference:** https://docs.ansible.com/ansible/latest/cli/ansible-playbook.html
+
+> Not lab-verified.

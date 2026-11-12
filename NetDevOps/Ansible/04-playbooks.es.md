@@ -21,3 +21,16 @@ ansible-playbook -i inventory.ini site.yml --syntax-check
 - **Referencia oficial:** https://docs.ansible.com/ansible/latest/cli/ansible-playbook.html
 
 > Pendiente de validación en laboratorio.
+
+## `ansible-playbook -i inventory.ini site.yml --check --diff`
+
+```bash
+ansible-playbook -i inventory.ini site.yml --check --diff
+```
+
+- **Sirve para:** Solicitar simulación y visualizar cambios previstos en módulos compatibles.
+- **Parámetros:** `--check`: simulación (no todos los módulos la soportan); `--diff`: diferencias cuando es compatible; `-i`: inventario.
+- **Ejemplo de uso:** Revisar despliegues antes de ejecutarlos; algunos módulos no simulan y pueden comportarse distinto.
+- **Referencia oficial:** https://docs.ansible.com/ansible/latest/cli/ansible-playbook.html
+
+> Pendiente de validación en laboratorio.
