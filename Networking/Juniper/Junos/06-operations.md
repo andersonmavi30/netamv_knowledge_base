@@ -47,3 +47,29 @@ show ethernet-switching table
 - **Official reference:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/ref/command/show-ethernet-switching-table.html
 
 > Not lab-verified.
+
+## `show system core-dumps`
+
+```text
+show system core-dumps
+```
+
+- **Purpose:** Display available system core dump files for process crash investigation.
+- **Arguments:** system core-dumps: list crash dumps; does not create new dumps.
+- **Use case:** Check whether a daemon crash produced diagnostic evidence.
+- **Official reference:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/topic-map/operational-commands.html
+
+> Not lab-verified.
+
+## `show system license`
+
+```text
+show system license
+```
+
+- **Purpose:** Display installed system licenses and their validity information.
+- **Arguments:** system license: licensing status; fields depend on platform.
+- **Use case:** Verify licensing before investigating a feature that is unavailable.
+- **Official reference:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/topic-map/operational-commands.html
+
+> Not lab-verified.

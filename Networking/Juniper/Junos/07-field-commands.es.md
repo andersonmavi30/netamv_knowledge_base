@@ -34,3 +34,42 @@ show bgp summary
 - **Referencia oficial:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/ref/command/show-bgp-summary.html
 
 > Pendiente de validación en laboratorio.
+
+## `show isis adjacency`
+
+```text
+show isis adjacency
+```
+
+- **Sirve para:** Mostrar adyacencias IS-IS y sus estados operativos.
+- **Parámetros:** isis adjacency: vecinos y niveles; requiere IS-IS.
+- **Ejemplo de uso:** Identificar un vecino IS-IS sin adyacencia establecida.
+- **Referencia oficial:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/topic-map/operational-commands.html
+
+> Pendiente de validación en laboratorio.
+
+## `show vrrp detail`
+
+```text
+show vrrp detail
+```
+
+- **Sirve para:** Consultar grupos VRRP, IP virtual y estado del maestro.
+- **Parámetros:** vrrp detail: información ampliada; requiere VRRP configurado.
+- **Ejemplo de uso:** Confirmar roles master y backup ante un failover.
+- **Referencia oficial:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/topic-map/operational-commands.html
+
+> Pendiente de validación en laboratorio.
+
+## `show rsvp neighbor`
+
+```text
+show rsvp neighbor
+```
+
+- **Sirve para:** Listar vecinos RSVP y el estado de sus relaciones.
+- **Parámetros:** rsvp neighbor: datos de vecinos RSVP; requiere configuración RSVP.
+- **Ejemplo de uso:** Verificar vecinos de señalización ante un problema MPLS TE.
+- **Referencia oficial:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/topic-map/operational-commands.html
+
+> Pendiente de validación en laboratorio.

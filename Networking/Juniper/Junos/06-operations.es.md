@@ -47,3 +47,42 @@ show ethernet-switching table
 - **Referencia oficial:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/ref/command/show-ethernet-switching-table.html
 
 > Pendiente de validación en laboratorio.
+
+## `show system commit`
+
+```text
+show system commit
+```
+
+- **Sirve para:** Listar commits de configuración, autores y fechas.
+- **Parámetros:** system commit: historial de confirmaciones de configuración, solo consulta.
+- **Ejemplo de uso:** Relacionar una incidencia con un cambio reciente de configuración.
+- **Referencia oficial:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/topic-map/operational-commands.html
+
+> Pendiente de validación en laboratorio.
+
+## `show system core-dumps`
+
+```text
+show system core-dumps
+```
+
+- **Sirve para:** Mostrar archivos de core dump para investigar fallos de procesos.
+- **Parámetros:** system core-dumps: lista volcados; no genera nuevos archivos.
+- **Ejemplo de uso:** Verificar si un fallo de un daemon generó evidencia diagnóstica.
+- **Referencia oficial:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/topic-map/operational-commands.html
+
+> Pendiente de validación en laboratorio.
+
+## `show system license`
+
+```text
+show system license
+```
+
+- **Sirve para:** Mostrar licencias instaladas e información sobre su validez.
+- **Parámetros:** system license: estado de licencias; campos según plataforma.
+- **Ejemplo de uso:** Comprobar licencias ante una función que no está disponible.
+- **Referencia oficial:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/topic-map/operational-commands.html
+
+> Pendiente de validación en laboratorio.
