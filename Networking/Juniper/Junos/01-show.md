@@ -47,3 +47,16 @@ show system uptime
 - **Official reference:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/topic-map/operational-commands.html
 
 > Not lab-verified.
+
+## `show chassis hardware extensive`
+
+```text
+show chassis hardware extensive
+```
+
+- **Purpose:** Display detailed chassis, FRU and hardware identification information.
+- **Arguments:** chassis hardware: inventory; extensive: expanded hardware details.
+- **Use case:** Inspect component identifiers before replacing faulty hardware.
+- **Official reference:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/topic-map/operational-commands.html
+
+> Not lab-verified.

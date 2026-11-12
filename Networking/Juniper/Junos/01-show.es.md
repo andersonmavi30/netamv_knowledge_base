@@ -47,3 +47,16 @@ show system uptime
 - **Referencia oficial:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/topic-map/operational-commands.html
 
 > Pendiente de validación en laboratorio.
+
+## `show chassis hardware extensive`
+
+```text
+show chassis hardware extensive
+```
+
+- **Sirve para:** Mostrar detalles de chasis, componentes FRU e identificación de hardware.
+- **Parámetros:** chassis hardware: inventario; extensive: información ampliada.
+- **Ejemplo de uso:** Consultar componentes antes de reemplazar hardware.
+- **Referencia oficial:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/topic-map/operational-commands.html
+
+> Pendiente de validación en laboratorio.
