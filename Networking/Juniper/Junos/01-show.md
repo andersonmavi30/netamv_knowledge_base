@@ -60,3 +60,16 @@ show chassis hardware extensive
 - **Official reference:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/topic-map/operational-commands.html
 
 > Not lab-verified.
+
+## `show chassis routing-engine`
+
+```text
+show chassis routing-engine
+```
+
+- **Purpose:** Display Routing Engine health, memory and CPU utilization.
+- **Arguments:** chassis routing-engine: RE metrics; fields depend on platform.
+- **Use case:** Check control-plane load when routing protocols respond slowly.
+- **Official reference:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/topic-map/operational-commands.html
+
+> Not lab-verified.

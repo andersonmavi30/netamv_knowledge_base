@@ -60,3 +60,16 @@ show chassis hardware extensive
 - **Referencia oficial:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/topic-map/operational-commands.html
 
 > Pendiente de validación en laboratorio.
+
+## `show chassis routing-engine`
+
+```text
+show chassis routing-engine
+```
+
+- **Sirve para:** Mostrar estado del Routing Engine, memoria y utilización CPU.
+- **Parámetros:** chassis routing-engine: métricas de RE; varían por plataforma.
+- **Ejemplo de uso:** Revisar carga del plano de control ante lentitud de protocolos.
+- **Referencia oficial:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/topic-map/operational-commands.html
+
+> Pendiente de validación en laboratorio.
