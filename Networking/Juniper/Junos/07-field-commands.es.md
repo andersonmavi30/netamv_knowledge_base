@@ -47,3 +47,16 @@ show isis adjacency
 - **Referencia oficial:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/topic-map/operational-commands.html
 
 > Pendiente de validación en laboratorio.
+
+## `show vrrp detail`
+
+```text
+show vrrp detail
+```
+
+- **Sirve para:** Consultar grupos VRRP, IP virtual y estado del maestro.
+- **Parámetros:** vrrp detail: información ampliada; requiere VRRP configurado.
+- **Ejemplo de uso:** Confirmar roles master y backup ante un failover.
+- **Referencia oficial:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/topic-map/operational-commands.html
+
+> Pendiente de validación en laboratorio.

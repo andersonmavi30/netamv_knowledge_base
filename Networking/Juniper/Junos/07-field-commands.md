@@ -47,3 +47,16 @@ show isis adjacency
 - **Official reference:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/topic-map/operational-commands.html
 
 > Not lab-verified.
+
+## `show vrrp detail`
+
+```text
+show vrrp detail
+```
+
+- **Purpose:** Inspect detailed VRRP group state, virtual IP and master information.
+- **Arguments:** vrrp detail: expanded VRRP data; requires VRRP configured.
+- **Use case:** Confirm VRRP master and backup roles during failover.
+- **Official reference:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/topic-map/operational-commands.html
+
+> Not lab-verified.
