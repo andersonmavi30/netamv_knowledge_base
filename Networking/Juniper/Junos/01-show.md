@@ -34,3 +34,16 @@ show chassis alarms
 - **Official reference:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/ref/command/show-chassis-alarms.html
 
 > Not lab-verified.
+
+## `show system uptime`
+
+```text
+show system uptime
+```
+
+- **Purpose:** Display current time, boot uptime and protocol start times where provided.
+- **Arguments:** system uptime: operational clock and uptime; fields vary with Junos release.
+- **Use case:** Correlate a reported outage with the most recent reboot.
+- **Official reference:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/topic-map/operational-commands.html
+
+> Not lab-verified.
