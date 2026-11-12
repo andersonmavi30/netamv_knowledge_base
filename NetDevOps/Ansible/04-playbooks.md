@@ -47,3 +47,16 @@ ansible-playbook -i inventory.ini site.yml --list-hosts
 - **Official reference:** https://docs.ansible.com/ansible/latest/cli/ansible-playbook.html
 
 > Not lab-verified.
+
+## `ansible-playbook -i inventory.ini site.yml --limit lab-switches --tags backup`
+
+```bash
+ansible-playbook -i inventory.ini site.yml --limit lab-switches --tags backup
+```
+
+- **Purpose:** Run only backup-tagged tasks for the selected lab group.
+- **Arguments:** `-i`: inventory; `--limit lab-switches`: restrict targets; `--tags backup`: select tagged tasks; tasks execute.
+- **Use case:** Back up only lab switches after checking playbook target selection.
+- **Official reference:** https://docs.ansible.com/ansible/latest/cli/ansible-playbook.html
+
+> Not lab-verified.

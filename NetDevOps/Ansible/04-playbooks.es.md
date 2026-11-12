@@ -47,3 +47,16 @@ ansible-playbook -i inventory.ini site.yml --list-hosts
 - **Referencia oficial:** https://docs.ansible.com/ansible/latest/cli/ansible-playbook.html
 
 > Pendiente de validación en laboratorio.
+
+## `ansible-playbook -i inventory.ini site.yml --limit lab-switches --tags backup`
+
+```bash
+ansible-playbook -i inventory.ini site.yml --limit lab-switches --tags backup
+```
+
+- **Sirve para:** Ejecutar únicamente tareas etiquetadas backup para el grupo de laboratorio indicado.
+- **Parámetros:** `-i`: inventario; `--limit lab-switches`: limita hosts; `--tags backup`: filtra tareas; las tareas sí se ejecutan.
+- **Ejemplo de uso:** Respaldar solo switches de laboratorio tras comprobar inventario y tareas.
+- **Referencia oficial:** https://docs.ansible.com/ansible/latest/cli/ansible-playbook.html
+
+> Pendiente de validación en laboratorio.
