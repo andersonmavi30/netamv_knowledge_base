@@ -47,3 +47,16 @@ show ethernet-switching table
 - **Official reference:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/ref/command/show-ethernet-switching-table.html
 
 > Not lab-verified.
+
+## `show system commit`
+
+```text
+show system commit
+```
+
+- **Purpose:** List configuration commits, authors and commit timestamps.
+- **Arguments:** system commit: committed configuration history, read-only.
+- **Use case:** Correlate a network incident with a recent configuration change.
+- **Official reference:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/topic-map/operational-commands.html
+
+> Not lab-verified.

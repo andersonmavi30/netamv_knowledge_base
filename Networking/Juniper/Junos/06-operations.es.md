@@ -47,3 +47,16 @@ show ethernet-switching table
 - **Referencia oficial:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/ref/command/show-ethernet-switching-table.html
 
 > Pendiente de validación en laboratorio.
+
+## `show system commit`
+
+```text
+show system commit
+```
+
+- **Sirve para:** Listar commits de configuración, autores y fechas.
+- **Parámetros:** system commit: historial de confirmaciones de configuración, solo consulta.
+- **Ejemplo de uso:** Relacionar una incidencia con un cambio reciente de configuración.
+- **Referencia oficial:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/topic-map/operational-commands.html
+
+> Pendiente de validación en laboratorio.
