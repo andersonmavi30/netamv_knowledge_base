@@ -34,3 +34,16 @@ show bgp summary
 - **Referencia oficial:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/ref/command/show-bgp-summary.html
 
 > Pendiente de validación en laboratorio.
+
+## `show isis adjacency`
+
+```text
+show isis adjacency
+```
+
+- **Sirve para:** Mostrar adyacencias IS-IS y sus estados operativos.
+- **Parámetros:** isis adjacency: vecinos y niveles; requiere IS-IS.
+- **Ejemplo de uso:** Identificar un vecino IS-IS sin adyacencia establecida.
+- **Referencia oficial:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/topic-map/operational-commands.html
+
+> Pendiente de validación en laboratorio.

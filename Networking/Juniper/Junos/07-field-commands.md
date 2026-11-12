@@ -34,3 +34,16 @@ show bgp summary
 - **Official reference:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/ref/command/show-bgp-summary.html
 
 > Not lab-verified.
+
+## `show isis adjacency`
+
+```text
+show isis adjacency
+```
+
+- **Purpose:** Display IS-IS adjacencies and their operational states.
+- **Arguments:** isis adjacency: neighbor and level information; requires IS-IS.
+- **Use case:** Identify an IS-IS neighbor that has not established adjacency.
+- **Official reference:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/topic-map/operational-commands.html
+
+> Not lab-verified.
