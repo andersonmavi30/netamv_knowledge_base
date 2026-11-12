@@ -60,3 +60,16 @@ show system commit
 - **Referencia oficial:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/topic-map/operational-commands.html
 
 > Pendiente de validación en laboratorio.
+
+## `show system core-dumps`
+
+```text
+show system core-dumps
+```
+
+- **Sirve para:** Mostrar archivos de core dump para investigar fallos de procesos.
+- **Parámetros:** system core-dumps: lista volcados; no genera nuevos archivos.
+- **Ejemplo de uso:** Verificar si un fallo de un daemon generó evidencia diagnóstica.
+- **Referencia oficial:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/topic-map/operational-commands.html
+
+> Pendiente de validación en laboratorio.

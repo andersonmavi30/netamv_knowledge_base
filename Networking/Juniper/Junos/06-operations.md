@@ -48,15 +48,15 @@ show ethernet-switching table
 
 > Not lab-verified.
 
-## `show system commit`
+## `show system core-dumps`
 
 ```text
-show system commit
+show system core-dumps
 ```
 
-- **Purpose:** List configuration commits, authors and commit timestamps.
-- **Arguments:** system commit: committed configuration history, read-only.
-- **Use case:** Correlate a network incident with a recent configuration change.
+- **Purpose:** Display available system core dump files for process crash investigation.
+- **Arguments:** system core-dumps: list crash dumps; does not create new dumps.
+- **Use case:** Check whether a daemon crash produced diagnostic evidence.
 - **Official reference:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/topic-map/operational-commands.html
 
 > Not lab-verified.
