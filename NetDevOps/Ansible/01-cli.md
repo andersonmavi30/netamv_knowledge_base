@@ -21,3 +21,16 @@ ansible --version
 - **Official reference:** https://docs.ansible.com/ansible/latest/cli/ansible.html
 
 > Not lab-verified.
+
+## `ansible-doc ansible.builtin.copy`
+
+```bash
+ansible-doc ansible.builtin.copy
+```
+
+- **Purpose:** Display the built-in copy module documentation and examples.
+- **Arguments:** `ansible-doc`: module documentation; `ansible.builtin.copy`: fully qualified module name.
+- **Use case:** Inspect expected parameters before writing a file deployment task.
+- **Official reference:** https://docs.ansible.com/ansible/latest/cli/ansible-doc.html
+
+> Not lab-verified.

@@ -21,3 +21,16 @@ ansible --version
 - **Referencia oficial:** https://docs.ansible.com/ansible/latest/cli/ansible.html
 
 > Pendiente de validación en laboratorio.
+
+## `ansible-doc ansible.builtin.copy`
+
+```bash
+ansible-doc ansible.builtin.copy
+```
+
+- **Sirve para:** Mostrar documentación y ejemplos del módulo copy.
+- **Parámetros:** `ansible-doc`: documentación; `ansible.builtin.copy`: nombre completo del módulo.
+- **Ejemplo de uso:** Consultar parámetros antes de crear una tarea para copiar archivos.
+- **Referencia oficial:** https://docs.ansible.com/ansible/latest/cli/ansible-doc.html
+
+> Pendiente de validación en laboratorio.
