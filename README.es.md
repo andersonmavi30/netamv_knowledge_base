@@ -24,6 +24,7 @@
 - ⚙️ **[NetDevOps & Network Automation - DevNet](NetDevOps/README.es.md)**
   - ↳ [Git](NetDevOps/Git/README.es.md)
   - ↳ [Docker](NetDevOps/Docker/README.es.md)
+  - ↳ [Ansible](NetDevOps/Ansible/README.es.md)
 
 Navega por **pilar → fabricante → sistema operativo → categoría de comandos**. Cada fabricante contiene sus guías CLI resumidas.
 
