@@ -21,3 +21,16 @@ ansible-galaxy collection list
 - **Official reference:** https://docs.ansible.com/ansible/latest/cli/ansible-galaxy.html
 
 > Not lab-verified.
+
+## `ansible-config dump --only-changed`
+
+```bash
+ansible-config dump --only-changed
+```
+
+- **Purpose:** Show only Ansible configuration settings that differ from defaults.
+- **Arguments:** `dump`: show effective configuration; `--only-changed`: omit defaults.
+- **Use case:** Troubleshoot unexpected inventory, connection or callback settings.
+- **Official reference:** https://docs.ansible.com/ansible/latest/cli/ansible-config.html
+
+> Not lab-verified.

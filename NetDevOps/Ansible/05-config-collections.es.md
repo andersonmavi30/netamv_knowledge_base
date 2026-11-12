@@ -21,3 +21,16 @@ ansible-galaxy collection list
 - **Referencia oficial:** https://docs.ansible.com/ansible/latest/cli/ansible-galaxy.html
 
 > Pendiente de validación en laboratorio.
+
+## `ansible-config dump --only-changed`
+
+```bash
+ansible-config dump --only-changed
+```
+
+- **Sirve para:** Mostrar únicamente opciones de Ansible modificadas respecto a los valores predeterminados.
+- **Parámetros:** `dump`: muestra configuración efectiva; `--only-changed`: omite valores predeterminados.
+- **Ejemplo de uso:** Diagnosticar opciones inesperadas de inventario, conexión o callbacks.
+- **Referencia oficial:** https://docs.ansible.com/ansible/latest/cli/ansible-config.html
+
+> Pendiente de validación en laboratorio.
