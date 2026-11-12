@@ -60,3 +60,16 @@ show vrrp detail
 - **Official reference:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/topic-map/operational-commands.html
 
 > Not lab-verified.
+
+## `show rsvp neighbor`
+
+```text
+show rsvp neighbor
+```
+
+- **Purpose:** List RSVP neighbor relationships and connection status.
+- **Arguments:** rsvp neighbor: RSVP neighbor data; requires RSVP configuration.
+- **Use case:** Check signaling neighbors during an MPLS traffic engineering issue.
+- **Official reference:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/topic-map/operational-commands.html
+
+> Not lab-verified.

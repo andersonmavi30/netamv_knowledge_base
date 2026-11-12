@@ -60,3 +60,16 @@ show vrrp detail
 - **Referencia oficial:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/topic-map/operational-commands.html
 
 > Pendiente de validación en laboratorio.
+
+## `show rsvp neighbor`
+
+```text
+show rsvp neighbor
+```
+
+- **Sirve para:** Listar vecinos RSVP y el estado de sus relaciones.
+- **Parámetros:** rsvp neighbor: datos de vecinos RSVP; requiere configuración RSVP.
+- **Ejemplo de uso:** Verificar vecinos de señalización ante un problema MPLS TE.
+- **Referencia oficial:** https://www.juniper.net/documentation/us/en/software/junos/cli-reference/topics/topic-map/operational-commands.html
+
+> Pendiente de validación en laboratorio.
