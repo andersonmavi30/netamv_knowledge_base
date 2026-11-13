@@ -21,3 +21,16 @@ terraform version
 - **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/version
 
 > Pendiente de validación en laboratorio.
+
+## `terraform init -backend=false`
+
+```bash
+terraform init -backend=false
+```
+
+- **Sirve para:** Inicializar proveedores y módulos sin conectar el backend configurado.
+- **Parámetros:** `init`: prepara directorio; `-backend=false`: omite inicialización del backend remoto.
+- **Ejemplo de uso:** Preparar un módulo reutilizable para CI sin acceder al estado remoto.
+- **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/init
+
+> Pendiente de validación en laboratorio.

@@ -21,3 +21,16 @@ terraform version
 - **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/version
 
 > Not lab-verified.
+
+## `terraform init -backend=false`
+
+```bash
+terraform init -backend=false
+```
+
+- **Purpose:** Initialize provider plugins and modules without initializing the configured backend.
+- **Arguments:** `init`: prepare working directory; `-backend=false`: skip backend initialization (no remote state connection).
+- **Use case:** Prepare a reusable module for validation in CI without accessing remote state.
+- **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/init
+
+> Not lab-verified.
