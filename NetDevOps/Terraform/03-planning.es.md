@@ -21,3 +21,16 @@ terraform plan -var-file=lab.tfvars -out=tfplan
 - **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/plan
 
 > Pendiente de validación en laboratorio. No publicar planes o archivos de variables con secretos.
+
+## `terraform show -no-color tfplan`
+
+```bash
+terraform show -no-color tfplan
+```
+
+- **Sirve para:** Leer el plan guardado con salida legible sin códigos de color.
+- **Parámetros:** `-no-color`: elimina colores ANSI; `tfplan`: plan guardado con posibles secretos.
+- **Ejemplo de uso:** Inspeccionar el plan guardado antes de desplegar.
+- **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/show
+
+> Pendiente de validación en laboratorio. 

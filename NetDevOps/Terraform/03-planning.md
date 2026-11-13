@@ -21,3 +21,16 @@ terraform plan -var-file=lab.tfvars -out=tfplan
 - **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/plan
 
 > Not lab-verified. Do not publish plans or variable files containing secrets.
+
+## `terraform show -no-color tfplan`
+
+```bash
+terraform show -no-color tfplan
+```
+
+- **Purpose:** Read a saved Terraform execution plan using plain terminal output.
+- **Arguments:** `-no-color`: omit ANSI colors; `tfplan`: path to saved plan containing potentially sensitive data.
+- **Use case:** Inspect the exact saved plan before an approved deployment.
+- **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/show
+
+> Not lab-verified. 
