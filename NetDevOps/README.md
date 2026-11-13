@@ -5,5 +5,6 @@
 - [Git](Git/README.md) — version control and workflow
 - [Docker](Docker/README.md) — containers, images and Dockerfile
 - [Ansible](Ansible/README.md) — inventories, ad-hoc commands, playbooks and validation
+- [Terraform](Terraform/README.md) — IaC initialization, plans, state and validation
 
 More network automation tools will follow.
