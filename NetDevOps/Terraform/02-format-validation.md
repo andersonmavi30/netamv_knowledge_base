@@ -21,3 +21,16 @@ terraform fmt -check -recursive -diff
 - **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/fmt
 
 > Not lab-verified.
+
+## `terraform validate -no-color`
+
+```bash
+terraform validate -no-color
+```
+
+- **Purpose:** Validate configuration syntax and internal consistency after initialization.
+- **Arguments:** `validate`: checks configuration, not live cloud/API resources; `-no-color`: plain output for CI logs.
+- **Use case:** Catch invalid arguments or module references before planning.
+- **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/validate
+
+> Not lab-verified.

@@ -21,3 +21,16 @@ terraform fmt -check -recursive -diff
 - **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/fmt
 
 > Pendiente de validación en laboratorio.
+
+## `terraform validate -no-color`
+
+```bash
+terraform validate -no-color
+```
+
+- **Sirve para:** Validar sintaxis y consistencia interna tras inicializar el directorio.
+- **Parámetros:** `validate`: valida configuración, no recursos remotos; `-no-color`: salida de texto para logs CI.
+- **Ejemplo de uso:** Detectar argumentos o referencias de módulos inválidos antes de planificar.
+- **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/validate
+
+> Pendiente de validación en laboratorio.
