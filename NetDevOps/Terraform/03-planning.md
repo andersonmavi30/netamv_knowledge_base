@@ -33,4 +33,17 @@ terraform show -no-color tfplan
 - **Use case:** Inspect the exact saved plan before an approved deployment.
 - **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/show
 
+> Not lab-verified.
+
+## `terraform providers`
+
+```bash
+terraform providers
+```
+
+- **Purpose:** List provider requirements from the current Terraform configuration and state.
+- **Arguments:** `providers`: list required providers; no flags; displays dependency and provider information.
+- **Use case:** Check which network or cloud providers the module needs before init.
+- **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/providers
+
 > Not lab-verified. 

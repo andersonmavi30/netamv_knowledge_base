@@ -33,4 +33,17 @@ terraform show -no-color tfplan
 - **Ejemplo de uso:** Inspeccionar el plan guardado antes de desplegar.
 - **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/show
 
+> Pendiente de validación en laboratorio.
+
+## `terraform providers`
+
+```bash
+terraform providers
+```
+
+- **Sirve para:** Listar requisitos de proveedores de la configuración y del estado actual.
+- **Parámetros:** `providers`: lista proveedores requeridos, sin flags; muestra dependencias.
+- **Ejemplo de uso:** Revisar proveedores de red o nube requeridos por el módulo antes de init.
+- **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/providers
+
 > Pendiente de validación en laboratorio. 
