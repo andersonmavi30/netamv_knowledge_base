@@ -20,4 +20,17 @@ terraform state list
 - **Use case:** Confirm managed resources before an import or state maintenance task.
 - **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/state/list
 
-> Not lab-verified. 
+> Not lab-verified.
+
+## `terraform output -json`
+
+```bash
+terraform output -json
+```
+
+- **Purpose:** Render root module output values in machine-readable JSON.
+- **Arguments:** `output`: read root outputs; `-json`: structured JSON, which can expose sensitive values in plaintext.
+- **Use case:** Pass approved non-secret resource identifiers into a CI/CD workflow.
+- **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/output
+
+> Not lab-verified. Never publish JSON outputs containing secrets.

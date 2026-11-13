@@ -20,4 +20,17 @@ terraform state list
 - **Ejemplo de uso:** Comprobar recursos administrados antes de importar o mantener el estado.
 - **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/state/list
 
-> Pendiente de validación en laboratorio. 
+> Pendiente de validación en laboratorio.
+
+## `terraform output -json`
+
+```bash
+terraform output -json
+```
+
+- **Sirve para:** Mostrar salidas del módulo raíz en formato JSON para automatización.
+- **Parámetros:** `output`: lee salidas raíz; `-json`: JSON estructurado que puede revelar valores sensibles en texto plano.
+- **Ejemplo de uso:** Usar identificadores no secretos autorizados dentro de un flujo CI/CD.
+- **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/output
+
+> Pendiente de validación en laboratorio. No publiques salidas JSON con secretos.
