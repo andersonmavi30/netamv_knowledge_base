@@ -21,3 +21,16 @@ kubectl get pods -n automation -o wide
 - **Referencia oficial:** https://kubernetes.io/docs/reference/kubectl/generated/kubectl_get/
 
 > Pendiente de validación en laboratorio.
+
+## `kubectl describe pod awx-web -n automation`
+
+```bash
+kubectl describe pod awx-web -n automation
+```
+
+- **Sirve para:** Mostrar estado detallado del pod, condiciones y eventos de planificación.
+- **Parámetros:** `describe pod awx-web`: inspecciona el pod; `-n automation`: elige namespace.
+- **Ejemplo de uso:** Diagnosticar por qué un pod web AWX está Pending o no Ready; adaptar nombres.
+- **Referencia oficial:** https://kubernetes.io/docs/reference/kubectl/generated/kubectl_describe/
+
+> Pendiente de validación en laboratorio. Los logs pueden contener datos sensibles.

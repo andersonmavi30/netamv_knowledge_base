@@ -21,3 +21,16 @@ kubectl get pods -n automation -o wide
 - **Official reference:** https://kubernetes.io/docs/reference/kubectl/generated/kubectl_get/
 
 > Not lab-verified.
+
+## `kubectl describe pod awx-web -n automation`
+
+```bash
+kubectl describe pod awx-web -n automation
+```
+
+- **Purpose:** Show detailed pod state, conditions and scheduling events.
+- **Arguments:** `describe pod awx-web`: inspect named pod; `-n automation`: select namespace.
+- **Use case:** Diagnose why an AWX web pod is Pending or not Ready; replace example names.
+- **Official reference:** https://kubernetes.io/docs/reference/kubectl/generated/kubectl_describe/
+
+> Not lab-verified. Logs may contain sensitive data.
