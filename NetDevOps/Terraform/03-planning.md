@@ -86,3 +86,16 @@ terraform plan -destroy
 - **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/plan
 
 > Not lab-verified.
+
+## `terraform graph -type=plan`
+
+```bash
+terraform graph -type=plan
+```
+
+- **Purpose:** Emit the planned dependency graph in DOT format for analysis or Graphviz rendering.
+- **Arguments:** `graph`: produce DOT output; `-type=plan`: represent planning operations; no infrastructure changes.
+- **Use case:** Inspect module/resource dependencies before network infrastructure changes.
+- **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/graph
+
+> Not lab-verified.

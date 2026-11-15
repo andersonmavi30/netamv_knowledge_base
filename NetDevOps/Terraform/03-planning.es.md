@@ -86,3 +86,16 @@ terraform plan -destroy
 - **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/plan
 
 > Pendiente de validación en laboratorio.
+
+## `terraform graph -type=plan`
+
+```bash
+terraform graph -type=plan
+```
+
+- **Sirve para:** Generar el grafo de dependencias de planificación en formato DOT para analizarlo.
+- **Parámetros:** `graph`: genera DOT; `-type=plan`: incluye operaciones de planificación; sin cambios remotos.
+- **Ejemplo de uso:** Analizar dependencias entre módulos y recursos antes de cambios.
+- **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/graph
+
+> Pendiente de validación en laboratorio.
