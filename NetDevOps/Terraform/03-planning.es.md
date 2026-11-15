@@ -46,4 +46,17 @@ terraform providers
 - **Ejemplo de uso:** Revisar proveedores de red o nube requeridos por el módulo antes de init.
 - **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/providers
 
-> Pendiente de validación en laboratorio. 
+> Pendiente de validación en laboratorio.
+
+## `terraform plan -detailed-exitcode -no-color`
+
+```bash
+terraform plan -detailed-exitcode -no-color
+```
+
+- **Sirve para:** Generar un plan con códigos de salida que distinguen sin cambios, cambios previstos y errores.
+- **Parámetros:** `-detailed-exitcode`: 0 sin cambios, 2 cambios, 1 error; `-no-color`: elimina códigos ANSI.
+- **Ejemplo de uso:** Utilizar el código de salida para evaluar un pipeline CI antes del despliegue.
+- **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/plan
+
+> Pendiente de validación en laboratorio.

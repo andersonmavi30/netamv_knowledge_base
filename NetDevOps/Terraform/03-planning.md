@@ -46,4 +46,17 @@ terraform providers
 - **Use case:** Check which network or cloud providers the module needs before init.
 - **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/providers
 
-> Not lab-verified. 
+> Not lab-verified.
+
+## `terraform plan -detailed-exitcode -no-color`
+
+```bash
+terraform plan -detailed-exitcode -no-color
+```
+
+- **Purpose:** Generate a plan with exit codes to distinguish no changes, planned changes, and errors.
+- **Arguments:** `-detailed-exitcode`: 0 no changes, 2 changes, 1 error; `-no-color`: remove ANSI codes.
+- **Use case:** Use the exit code as a CI gate before proposing infrastructure deployment.
+- **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/plan
+
+> Not lab-verified.
