@@ -34,3 +34,55 @@ terraform init -backend=false
 - **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/init
 
 > Pendiente de validación en laboratorio.
+
+## `terraform init -upgrade`
+
+```bash
+terraform init -upgrade
+```
+
+- **Sirve para:** Reinicializar y actualizar proveedores/módulos según las restricciones de versión.
+- **Parámetros:** `init`: inicializa; `-upgrade`: selecciona versiones compatibles y puede modificar `.terraform.lock.hcl`.
+- **Ejemplo de uso:** Actualizar dependencias de laboratorio en una rama y revisar cambios del lockfile.
+- **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/init
+
+> Pendiente de validación en laboratorio.
+
+## `terraform workspace list`
+
+```bash
+terraform workspace list
+```
+
+- **Sirve para:** Listar los workspaces CLI disponibles e identificar el seleccionado.
+- **Parámetros:** `workspace list`: lista workspaces; `*` indica el activo; no modifica selección.
+- **Ejemplo de uso:** Comprobar el entorno seleccionado antes de planificar cambios de red.
+- **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/workspace/list
+
+> Pendiente de validación en laboratorio.
+
+## `terraform workspace show`
+
+```bash
+terraform workspace show
+```
+
+- **Sirve para:** Mostrar el nombre del workspace CLI de Terraform seleccionado.
+- **Parámetros:** `workspace show`: muestra el nombre del workspace activo; sin flags.
+- **Ejemplo de uso:** Verificar que el workspace activo corresponda al laboratorio desde un script.
+- **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/workspace/show
+
+> Pendiente de validación en laboratorio.
+
+## `terraform console`
+
+```bash
+terraform console
+```
+
+- **Sirve para:** Abrir una consola interactiva para evaluar expresiones, valores y funciones de Terraform.
+- **Parámetros:** `console`: consola interactiva de expresiones; salir con `exit` o Ctrl-D; puede leer valores sensibles.
+- **Ejemplo de uso:** Probar `cidrsubnet` u otras expresiones antes de definir subredes de red.
+- **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/console
+
+> Pendiente de validación en laboratorio.

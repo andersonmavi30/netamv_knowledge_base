@@ -46,4 +46,69 @@ terraform providers
 - **Use case:** Check which network or cloud providers the module needs before init.
 - **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/providers
 
-> Not lab-verified. 
+> Not lab-verified.
+
+## `terraform plan -detailed-exitcode -no-color`
+
+```bash
+terraform plan -detailed-exitcode -no-color
+```
+
+- **Purpose:** Generate a plan with exit codes to distinguish no changes, planned changes, and errors.
+- **Arguments:** `-detailed-exitcode`: 0 no changes, 2 changes, 1 error; `-no-color`: remove ANSI codes.
+- **Use case:** Use the exit code as a CI gate before proposing infrastructure deployment.
+- **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/plan
+
+> Not lab-verified.
+
+## `terraform plan -refresh-only`
+
+```bash
+terraform plan -refresh-only
+```
+
+- **Purpose:** Propose updates to state and outputs to reflect remote changes without planning infrastructure modifications.
+- **Arguments:** `-refresh-only`: refresh state/output values without suggesting remote object changes; planning may contact APIs.
+- **Use case:** Detect drift between tracked state and live network resources.
+- **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/plan
+
+> Not lab-verified.
+
+## `terraform plan -destroy`
+
+```bash
+terraform plan -destroy
+```
+
+- **Purpose:** Preview which managed resources would be destroyed, without executing the destruction.
+- **Arguments:** `plan`: preview; `-destroy`: plan removal of all managed objects in this configuration; no apply.
+- **Use case:** Assess the impact of tearing down a disposable lab environment.
+- **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/plan
+
+> Not lab-verified.
+
+## `terraform graph -type=plan`
+
+```bash
+terraform graph -type=plan
+```
+
+- **Purpose:** Emit the planned dependency graph in DOT format for analysis or Graphviz rendering.
+- **Arguments:** `graph`: produce DOT output; `-type=plan`: represent planning operations; no infrastructure changes.
+- **Use case:** Inspect module/resource dependencies before network infrastructure changes.
+- **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/graph
+
+> Not lab-verified.
+
+## `terraform providers lock -platform=linux_amd64`
+
+```bash
+terraform providers lock -platform=linux_amd64
+```
+
+- **Purpose:** Add Linux AMD64 provider package checksums to the Terraform dependency lock file.
+- **Arguments:** `providers lock`: fetch and record provider package checksums; `-platform=linux_amd64`: target Linux x86_64; updates `.terraform.lock.hcl`.
+- **Use case:** Prepare a reviewed cross-platform lockfile for a Linux CI automation runner.
+- **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/providers/lock
+
+> Not lab-verified.

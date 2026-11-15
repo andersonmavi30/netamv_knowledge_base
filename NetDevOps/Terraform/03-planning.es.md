@@ -46,4 +46,69 @@ terraform providers
 - **Ejemplo de uso:** Revisar proveedores de red o nube requeridos por el módulo antes de init.
 - **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/providers
 
-> Pendiente de validación en laboratorio. 
+> Pendiente de validación en laboratorio.
+
+## `terraform plan -detailed-exitcode -no-color`
+
+```bash
+terraform plan -detailed-exitcode -no-color
+```
+
+- **Sirve para:** Generar un plan con códigos de salida que distinguen sin cambios, cambios previstos y errores.
+- **Parámetros:** `-detailed-exitcode`: 0 sin cambios, 2 cambios, 1 error; `-no-color`: elimina códigos ANSI.
+- **Ejemplo de uso:** Utilizar el código de salida para evaluar un pipeline CI antes del despliegue.
+- **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/plan
+
+> Pendiente de validación en laboratorio.
+
+## `terraform plan -refresh-only`
+
+```bash
+terraform plan -refresh-only
+```
+
+- **Sirve para:** Proponer actualizaciones del estado y salidas según cambios remotos, sin planear modificaciones de infraestructura.
+- **Parámetros:** `-refresh-only`: actualiza datos del estado y salidas sin proponer cambios remotos; puede consultar APIs.
+- **Ejemplo de uso:** Detectar diferencias entre estado Terraform y recursos reales.
+- **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/plan
+
+> Pendiente de validación en laboratorio.
+
+## `terraform plan -destroy`
+
+```bash
+terraform plan -destroy
+```
+
+- **Sirve para:** Previsualizar qué recursos administrados serían destruidos, sin ejecutar la eliminación.
+- **Parámetros:** `plan`: previsualiza; `-destroy`: planifica eliminar todos los recursos administrados; no ejecuta.
+- **Ejemplo de uso:** Evaluar el impacto de desmantelar un laboratorio desechable.
+- **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/plan
+
+> Pendiente de validación en laboratorio.
+
+## `terraform graph -type=plan`
+
+```bash
+terraform graph -type=plan
+```
+
+- **Sirve para:** Generar el grafo de dependencias de planificación en formato DOT para analizarlo.
+- **Parámetros:** `graph`: genera DOT; `-type=plan`: incluye operaciones de planificación; sin cambios remotos.
+- **Ejemplo de uso:** Analizar dependencias entre módulos y recursos antes de cambios.
+- **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/graph
+
+> Pendiente de validación en laboratorio.
+
+## `terraform providers lock -platform=linux_amd64`
+
+```bash
+terraform providers lock -platform=linux_amd64
+```
+
+- **Sirve para:** Agregar checksums de proveedores para Linux AMD64 al archivo de dependencias.
+- **Parámetros:** `providers lock`: consulta y registra checksums; `-platform=linux_amd64`: Linux x86_64; modifica `.terraform.lock.hcl`.
+- **Ejemplo de uso:** Preparar el archivo lock revisado para un runner Linux de automatización CI.
+- **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/providers/lock
+
+> Pendiente de validación en laboratorio.
