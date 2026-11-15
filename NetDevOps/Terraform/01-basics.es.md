@@ -34,3 +34,16 @@ terraform init -backend=false
 - **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/init
 
 > Pendiente de validación en laboratorio.
+
+## `terraform init -upgrade`
+
+```bash
+terraform init -upgrade
+```
+
+- **Sirve para:** Reinicializar y actualizar proveedores/módulos según las restricciones de versión.
+- **Parámetros:** `init`: inicializa; `-upgrade`: selecciona versiones compatibles y puede modificar `.terraform.lock.hcl`.
+- **Ejemplo de uso:** Actualizar dependencias de laboratorio en una rama y revisar cambios del lockfile.
+- **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/init
+
+> Pendiente de validación en laboratorio.

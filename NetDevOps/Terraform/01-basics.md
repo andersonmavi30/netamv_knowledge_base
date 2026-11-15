@@ -34,3 +34,16 @@ terraform init -backend=false
 - **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/init
 
 > Not lab-verified.
+
+## `terraform init -upgrade`
+
+```bash
+terraform init -upgrade
+```
+
+- **Purpose:** Reinitialize and upgrade providers/modules within configured version constraints.
+- **Arguments:** `init`: initialize working directory; `-upgrade`: reselect eligible provider/module versions and may change `.terraform.lock.hcl`.
+- **Use case:** Update lab dependencies on a reviewed change branch; inspect the lockfile diff.
+- **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/init
+
+> Not lab-verified.
