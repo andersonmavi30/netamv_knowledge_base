@@ -21,3 +21,16 @@ kubectl logs -n automation deployment/awx-web --tail=100
 - **Official reference:** https://kubernetes.io/docs/reference/kubectl/generated/kubectl_logs/
 
 > Not lab-verified. Logs may contain sensitive data.
+
+## `kubectl get events -n automation --sort-by=.metadata.creationTimestamp`
+
+```bash
+kubectl get events -n automation --sort-by=.metadata.creationTimestamp
+```
+
+- **Purpose:** List namespace events ordered by their creation timestamp.
+- **Arguments:** `get events`: list Event objects; `-n`: namespace; `--sort-by`: sort client-side by JSONPath field.
+- **Use case:** Correlate pod scheduling failures and image-pull errors.
+- **Official reference:** https://kubernetes.io/docs/reference/kubectl/generated/kubectl_get/
+
+> Not lab-verified. Logs may contain sensitive data.
