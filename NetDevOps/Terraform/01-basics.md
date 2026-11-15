@@ -47,3 +47,16 @@ terraform init -upgrade
 - **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/init
 
 > Not lab-verified.
+
+## `terraform workspace list`
+
+```bash
+terraform workspace list
+```
+
+- **Purpose:** List available Terraform CLI workspaces and mark the currently selected one.
+- **Arguments:** `workspace list`: list workspaces; `*` indicates active workspace; does not change selection.
+- **Use case:** Verify the selected environment before executing a network lab plan.
+- **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/workspace/list
+
+> Not lab-verified.

@@ -47,3 +47,16 @@ terraform init -upgrade
 - **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/init
 
 > Pendiente de validación en laboratorio.
+
+## `terraform workspace list`
+
+```bash
+terraform workspace list
+```
+
+- **Sirve para:** Listar los workspaces CLI disponibles e identificar el seleccionado.
+- **Parámetros:** `workspace list`: lista workspaces; `*` indica el activo; no modifica selección.
+- **Ejemplo de uso:** Comprobar el entorno seleccionado antes de planificar cambios de red.
+- **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/workspace/list
+
+> Pendiente de validación en laboratorio.
