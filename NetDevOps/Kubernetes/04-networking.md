@@ -21,3 +21,16 @@ kubectl get svc -n automation -o wide
 - **Official reference:** https://kubernetes.io/docs/reference/kubectl/generated/kubectl_get/
 
 > Not lab-verified.
+
+## `kubectl get endpointslices -n automation`
+
+```bash
+kubectl get endpointslices -n automation
+```
+
+- **Purpose:** Inspect EndpointSlice resources that identify backend pod endpoints for Services.
+- **Arguments:** `get endpointslices`: list EndpointSlice objects; `-n automation`: namespace; requires RBAC permissions.
+- **Use case:** Confirm a Service has backend endpoints before investigating cluster connectivity.
+- **Official reference:** https://kubernetes.io/docs/reference/kubectl/generated/kubectl_get/
+
+> Not lab-verified.
