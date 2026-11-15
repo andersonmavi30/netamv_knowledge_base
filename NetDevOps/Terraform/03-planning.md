@@ -99,3 +99,16 @@ terraform graph -type=plan
 - **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/graph
 
 > Not lab-verified.
+
+## `terraform providers lock -platform=linux_amd64`
+
+```bash
+terraform providers lock -platform=linux_amd64
+```
+
+- **Purpose:** Add Linux AMD64 provider package checksums to the Terraform dependency lock file.
+- **Arguments:** `providers lock`: fetch and record provider package checksums; `-platform=linux_amd64`: target Linux x86_64; updates `.terraform.lock.hcl`.
+- **Use case:** Prepare a reviewed cross-platform lockfile for a Linux CI automation runner.
+- **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/providers/lock
+
+> Not lab-verified.

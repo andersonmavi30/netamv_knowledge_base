@@ -99,3 +99,16 @@ terraform graph -type=plan
 - **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/graph
 
 > Pendiente de validación en laboratorio.
+
+## `terraform providers lock -platform=linux_amd64`
+
+```bash
+terraform providers lock -platform=linux_amd64
+```
+
+- **Sirve para:** Agregar checksums de proveedores para Linux AMD64 al archivo de dependencias.
+- **Parámetros:** `providers lock`: consulta y registra checksums; `-platform=linux_amd64`: Linux x86_64; modifica `.terraform.lock.hcl`.
+- **Ejemplo de uso:** Preparar el archivo lock revisado para un runner Linux de automatización CI.
+- **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/providers/lock
+
+> Pendiente de validación en laboratorio.
