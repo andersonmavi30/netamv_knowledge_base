@@ -60,3 +60,16 @@ terraform workspace list
 - **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/workspace/list
 
 > Not lab-verified.
+
+## `terraform workspace show`
+
+```bash
+terraform workspace show
+```
+
+- **Purpose:** Print the name of the selected Terraform CLI workspace.
+- **Arguments:** `workspace show`: print only active workspace name; no flags.
+- **Use case:** Assert the active workspace matches the expected lab in a shell script.
+- **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/workspace/show
+
+> Not lab-verified.

@@ -60,3 +60,16 @@ terraform workspace list
 - **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/workspace/list
 
 > Pendiente de validación en laboratorio.
+
+## `terraform workspace show`
+
+```bash
+terraform workspace show
+```
+
+- **Sirve para:** Mostrar el nombre del workspace CLI de Terraform seleccionado.
+- **Parámetros:** `workspace show`: muestra el nombre del workspace activo; sin flags.
+- **Ejemplo de uso:** Verificar que el workspace activo corresponda al laboratorio desde un script.
+- **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/workspace/show
+
+> Pendiente de validación en laboratorio.
