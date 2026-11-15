@@ -34,3 +34,16 @@ terraform output -json
 - **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/output
 
 > Not lab-verified. Never publish JSON outputs containing secrets.
+
+## `terraform state show 'module.network.null_resource.lab'`
+
+```bash
+terraform state show 'module.network.null_resource.lab'
+```
+
+- **Purpose:** Inspect one resource instance recorded in Terraform state.
+- **Arguments:** `state show`: read resource details; quoted address: illustrative resource address to replace with one from `terraform state list`.
+- **Use case:** Inspect the recorded attributes of a disposable network lab resource; output may contain sensitive information.
+- **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/state/show
+
+> Not lab-verified.

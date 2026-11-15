@@ -34,3 +34,16 @@ terraform output -json
 - **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/output
 
 > Pendiente de validación en laboratorio. No publiques salidas JSON con secretos.
+
+## `terraform state show 'module.network.null_resource.lab'`
+
+```bash
+terraform state show 'module.network.null_resource.lab'
+```
+
+- **Sirve para:** Inspeccionar una instancia de recurso guardada en el estado Terraform.
+- **Parámetros:** `state show`: consulta datos; dirección entre comillas: ejemplo que debe sustituirse por una de `terraform state list`.
+- **Ejemplo de uso:** Revisar los atributos registrados de un recurso de laboratorio; la salida puede contener secretos.
+- **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/state/show
+
+> Pendiente de validación en laboratorio.
