@@ -73,3 +73,16 @@ terraform plan -refresh-only
 - **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/plan
 
 > Not lab-verified.
+
+## `terraform plan -destroy`
+
+```bash
+terraform plan -destroy
+```
+
+- **Purpose:** Preview which managed resources would be destroyed, without executing the destruction.
+- **Arguments:** `plan`: preview; `-destroy`: plan removal of all managed objects in this configuration; no apply.
+- **Use case:** Assess the impact of tearing down a disposable lab environment.
+- **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/plan
+
+> Not lab-verified.

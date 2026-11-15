@@ -73,3 +73,16 @@ terraform plan -refresh-only
 - **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/plan
 
 > Pendiente de validación en laboratorio.
+
+## `terraform plan -destroy`
+
+```bash
+terraform plan -destroy
+```
+
+- **Sirve para:** Previsualizar qué recursos administrados serían destruidos, sin ejecutar la eliminación.
+- **Parámetros:** `plan`: previsualiza; `-destroy`: planifica eliminar todos los recursos administrados; no ejecuta.
+- **Ejemplo de uso:** Evaluar el impacto de desmantelar un laboratorio desechable.
+- **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/plan
+
+> Pendiente de validación en laboratorio.
