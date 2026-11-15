@@ -34,3 +34,16 @@ kubectl config current-context
 - **Official reference:** https://kubernetes.io/docs/reference/kubectl/generated/kubectl_config/kubectl_config_current-context/
 
 > Not lab-verified.
+
+## `kubectl get nodes -o wide`
+
+```bash
+kubectl get nodes -o wide
+```
+
+- **Purpose:** List cluster nodes with readiness and additional node/network columns.
+- **Arguments:** `get nodes`: list Node objects; `-o wide`: extra columns including internal IP when available.
+- **Use case:** Check K3s node readiness before deploying AWX workloads.
+- **Official reference:** https://kubernetes.io/docs/reference/kubectl/generated/kubectl_get/
+
+> Not lab-verified.

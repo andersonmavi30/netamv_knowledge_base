@@ -34,3 +34,16 @@ kubectl config current-context
 - **Referencia oficial:** https://kubernetes.io/docs/reference/kubectl/generated/kubectl_config/kubectl_config_current-context/
 
 > Pendiente de validación en laboratorio.
+
+## `kubectl get nodes -o wide`
+
+```bash
+kubectl get nodes -o wide
+```
+
+- **Sirve para:** Listar nodos del clúster con estado y columnas adicionales de red.
+- **Parámetros:** `get nodes`: lista nodos; `-o wide`: agrega columnas como IP interna.
+- **Ejemplo de uso:** Verificar los nodos K3s antes de desplegar cargas AWX.
+- **Referencia oficial:** https://kubernetes.io/docs/reference/kubectl/generated/kubectl_get/
+
+> Pendiente de validación en laboratorio.
