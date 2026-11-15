@@ -73,3 +73,16 @@ terraform workspace show
 - **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/workspace/show
 
 > Pendiente de validación en laboratorio.
+
+## `terraform console`
+
+```bash
+terraform console
+```
+
+- **Sirve para:** Abrir una consola interactiva para evaluar expresiones, valores y funciones de Terraform.
+- **Parámetros:** `console`: consola interactiva de expresiones; salir con `exit` o Ctrl-D; puede leer valores sensibles.
+- **Ejemplo de uso:** Probar `cidrsubnet` u otras expresiones antes de definir subredes de red.
+- **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/console
+
+> Pendiente de validación en laboratorio.

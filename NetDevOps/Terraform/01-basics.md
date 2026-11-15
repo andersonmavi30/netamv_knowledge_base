@@ -73,3 +73,16 @@ terraform workspace show
 - **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/workspace/show
 
 > Not lab-verified.
+
+## `terraform console`
+
+```bash
+terraform console
+```
+
+- **Purpose:** Start an interactive Terraform expression console for inspecting values and functions.
+- **Arguments:** `console`: interactive expression REPL; type `exit` or Ctrl-D to leave; can read state and sensitive data.
+- **Use case:** Test `cidrsubnet` or other expressions before writing network CIDR assignments.
+- **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/console
+
+> Not lab-verified.
