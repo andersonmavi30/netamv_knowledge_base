@@ -21,3 +21,16 @@ kubectl version --client
 - **Official reference:** https://kubernetes.io/docs/reference/kubectl/generated/kubectl_version/
 
 > Not lab-verified.
+
+## `kubectl config current-context`
+
+```bash
+kubectl config current-context
+```
+
+- **Purpose:** Display the active kubeconfig context, which identifies the selected cluster/user configuration.
+- **Arguments:** `config current-context`: read active context; no modifications.
+- **Use case:** Avoid operating on production while intending to access a K3s lab.
+- **Official reference:** https://kubernetes.io/docs/reference/kubectl/generated/kubectl_config/kubectl_config_current-context/
+
+> Not lab-verified.
