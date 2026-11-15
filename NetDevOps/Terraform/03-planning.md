@@ -60,3 +60,16 @@ terraform plan -detailed-exitcode -no-color
 - **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/plan
 
 > Not lab-verified.
+
+## `terraform plan -refresh-only`
+
+```bash
+terraform plan -refresh-only
+```
+
+- **Purpose:** Propose updates to state and outputs to reflect remote changes without planning infrastructure modifications.
+- **Arguments:** `-refresh-only`: refresh state/output values without suggesting remote object changes; planning may contact APIs.
+- **Use case:** Detect drift between tracked state and live network resources.
+- **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/plan
+
+> Not lab-verified.

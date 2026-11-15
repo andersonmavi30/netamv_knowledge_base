@@ -60,3 +60,16 @@ terraform plan -detailed-exitcode -no-color
 - **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/plan
 
 > Pendiente de validación en laboratorio.
+
+## `terraform plan -refresh-only`
+
+```bash
+terraform plan -refresh-only
+```
+
+- **Sirve para:** Proponer actualizaciones del estado y salidas según cambios remotos, sin planear modificaciones de infraestructura.
+- **Parámetros:** `-refresh-only`: actualiza datos del estado y salidas sin proponer cambios remotos; puede consultar APIs.
+- **Ejemplo de uso:** Detectar diferencias entre estado Terraform y recursos reales.
+- **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/plan
+
+> Pendiente de validación en laboratorio.
