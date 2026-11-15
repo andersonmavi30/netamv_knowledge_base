@@ -6,5 +6,6 @@
 - [Docker](Docker/README.md) — containers, images and Dockerfile
 - [Ansible](Ansible/README.md) — inventories, ad-hoc commands, playbooks and validation
 - [Terraform](Terraform/README.md) — IaC initialization, plans, state and validation
+- [Kubernetes](Kubernetes/README.md) — kubectl, workloads, networking and troubleshooting
 
 More network automation tools will follow.
