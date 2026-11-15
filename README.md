@@ -26,6 +26,7 @@
   - ↳ [Docker](NetDevOps/Docker/README.md)
   - ↳ [Ansible](NetDevOps/Ansible/README.md)
   - ↳ [Terraform](NetDevOps/Terraform/README.md)
+  - ↳ [Kubernetes](NetDevOps/Kubernetes/README.md)
 
 Choose a **pillar → vendor → operating system → command topic**. Each vendor page links to its short CLI references.
 
