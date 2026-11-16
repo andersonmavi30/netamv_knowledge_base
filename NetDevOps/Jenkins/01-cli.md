@@ -34,3 +34,16 @@ java -jar jenkins-cli.jar -s "$JENKINS_URL" -webSocket -auth @jenkins-auth who-a
 - **Official reference:** https://www.jenkins.io/doc/book/managing/cli/
 
 > Not lab-verified; protect credentials.
+
+## `help build`
+
+```bash
+java -jar jenkins-cli.jar -s "$JENKINS_URL" -webSocket -auth @jenkins-auth help build
+```
+
+- **Purpose:** Display the syntax and arguments supported by the build CLI command.
+- **Arguments:** `help build`: help for build command; available flags depend on Jenkins CLI version. `-auth @jenkins-auth`: credentials from a protected file.
+- **Use case:** Confirm supported flags before launching an approved pipeline.
+- **Official reference:** https://www.jenkins.io/doc/book/managing/cli/
+
+> Not lab-verified.

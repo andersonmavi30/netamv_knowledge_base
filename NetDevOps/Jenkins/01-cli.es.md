@@ -34,3 +34,16 @@ java -jar jenkins-cli.jar -s "$JENKINS_URL" -webSocket -auth @jenkins-auth who-a
 - **Referencia oficial:** https://www.jenkins.io/doc/book/managing/cli/
 
 > Pendiente de validación en laboratorio; proteger credenciales.
+
+## `help build`
+
+```bash
+java -jar jenkins-cli.jar -s "$JENKINS_URL" -webSocket -auth @jenkins-auth help build
+```
+
+- **Sirve para:** Mostrar sintaxis y parámetros admitidos para el comando CLI build.
+- **Parámetros:** `help build`: ayuda del comando build; los flags dependen de la versión. `-auth @jenkins-auth`: credenciales desde archivo protegido.
+- **Ejemplo de uso:** Confirmar flags compatibles antes de iniciar un pipeline aprobado.
+- **Referencia oficial:** https://www.jenkins.io/doc/book/managing/cli/
+
+> Pendiente de validación en laboratorio.
