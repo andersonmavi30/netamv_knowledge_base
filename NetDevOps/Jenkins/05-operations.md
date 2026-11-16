@@ -21,3 +21,16 @@ java -jar jenkins-cli.jar -s "$JENKINS_URL" -webSocket -auth @jenkins-auth versi
 - **Official reference:** https://www.jenkins.io/doc/book/managing/cli/
 
 > Not lab-verified.
+
+## `list-plugins`
+
+```bash
+java -jar jenkins-cli.jar -s "$JENKINS_URL" -webSocket -auth @jenkins-auth list-plugins
+```
+
+- **Purpose:** List installed Jenkins plugins and their versions, subject to authorization.
+- **Arguments:** `list-plugins`: installed plugin list; no other command arguments. `-auth @jenkins-auth`: credentials from a protected file.
+- **Use case:** Check whether pipeline and Git integrations are installed.
+- **Official reference:** https://www.jenkins.io/doc/book/managing/cli/
+
+> Not lab-verified.

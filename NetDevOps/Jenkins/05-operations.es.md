@@ -21,3 +21,16 @@ java -jar jenkins-cli.jar -s "$JENKINS_URL" -webSocket -auth @jenkins-auth versi
 - **Referencia oficial:** https://www.jenkins.io/doc/book/managing/cli/
 
 > Pendiente de validación en laboratorio.
+
+## `list-plugins`
+
+```bash
+java -jar jenkins-cli.jar -s "$JENKINS_URL" -webSocket -auth @jenkins-auth list-plugins
+```
+
+- **Sirve para:** Listar plugins instalados de Jenkins y sus versiones, según permisos.
+- **Parámetros:** `list-plugins`: lista plugins; sin argumentos adicionales. `-auth @jenkins-auth`: credenciales desde archivo protegido.
+- **Ejemplo de uso:** Verificar si están instalados plugins de Pipeline y Git.
+- **Referencia oficial:** https://www.jenkins.io/doc/book/managing/cli/
+
+> Pendiente de validación en laboratorio.
