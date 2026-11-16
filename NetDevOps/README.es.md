@@ -7,5 +7,6 @@
 - [Ansible](Ansible/README.es.md) — inventarios, comandos ad-hoc, playbooks y validación
 - [Terraform](Terraform/README.es.md) — inicialización IaC, planes, estado y validación
 - [Kubernetes](Kubernetes/README.es.md) — kubectl, cargas de trabajo, redes y diagnóstico
+- [Jenkins](Jenkins/README.es.md) — Jenkins CLI, jobs, builds y diagnóstico CI/CD
 
 Próximamente: más herramientas de automatización de red.

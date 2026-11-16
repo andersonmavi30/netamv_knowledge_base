@@ -7,5 +7,6 @@
 - [Ansible](Ansible/README.md) — inventories, ad-hoc commands, playbooks and validation
 - [Terraform](Terraform/README.md) — IaC initialization, plans, state and validation
 - [Kubernetes](Kubernetes/README.md) — kubectl, workloads, networking and troubleshooting
+- [Jenkins](Jenkins/README.md) — Jenkins CLI, jobs, builds and CI/CD diagnostics
 
 More network automation tools will follow.
