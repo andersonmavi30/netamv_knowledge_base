@@ -21,3 +21,16 @@ java -jar jenkins-cli.jar -s "$JENKINS_URL" -webSocket -auth @jenkins-auth list-
 - **Referencia oficial:** https://www.jenkins.io/doc/book/managing/cli/
 
 > Pendiente de validación en laboratorio; proteger credenciales.
+
+## `get-job network-backup`
+
+```bash
+java -jar jenkins-cli.jar -s "$JENKINS_URL" -webSocket -auth @jenkins-auth get-job network-backup
+```
+
+- **Sirve para:** Mostrar la configuración XML de un job Jenkins autorizado.
+- **Parámetros:** `get-job`: obtiene XML del job; `network-backup`: nombre de ejemplo; puede contener datos sensibles. `-s`: URL Jenkins; `-webSocket`: transporte.
+- **Ejemplo de uso:** Revisar definición del job de backup antes de cambios, sin publicar el XML.
+- **Referencia oficial:** https://www.jenkins.io/doc/book/managing/cli/
+
+> Pendiente de validación en laboratorio; proteger credenciales.
