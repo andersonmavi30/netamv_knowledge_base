@@ -21,3 +21,16 @@ java -jar jenkins-cli.jar -s "$JENKINS_URL" -webSocket -auth @jenkins-auth build
 - **Official reference:** https://www.jenkins.io/doc/book/managing/cli/
 
 > Not lab-verified; avoid sharing logs with secrets.
+
+## `list-builds network-backup`
+
+```bash
+java -jar jenkins-cli.jar -s "$JENKINS_URL" -webSocket -auth @jenkins-auth list-builds network-backup
+```
+
+- **Purpose:** List recorded builds of the given Jenkins job, subject to server CLI support.
+- **Arguments:** `list-builds`: list job build history; `network-backup`: example job name; needs read permission. `-s` (global): Jenkins URL; `-webSocket`: transport.
+- **Use case:** Find past backup executions to identify a regression or failed run.
+- **Official reference:** https://www.jenkins.io/doc/book/managing/cli/
+
+> Not lab-verified; avoid sharing logs with secrets.
