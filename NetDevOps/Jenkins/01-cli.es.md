@@ -21,3 +21,16 @@ java -jar jenkins-cli.jar -s "$JENKINS_URL" -webSocket help
 - **Referencia oficial:** https://www.jenkins.io/doc/book/managing/cli/
 
 > Pendiente de validación en laboratorio.
+
+## `who-am-i`
+
+```bash
+java -jar jenkins-cli.jar -s "$JENKINS_URL" -webSocket -auth @jenkins-auth who-am-i
+```
+
+- **Sirve para:** Mostrar identidad y permisos reconocidos para la conexión CLI.
+- **Parámetros:** `-auth @jenkins-auth`: carga usuario:token API desde archivo privado; `who-am-i`: identidad actual. `-s`: URL Jenkins; `-webSocket`: transporte.
+- **Ejemplo de uso:** Comprobar credenciales y permisos mínimos antes de consultar los jobs.
+- **Referencia oficial:** https://www.jenkins.io/doc/book/managing/cli/
+
+> Pendiente de validación en laboratorio; proteger credenciales.

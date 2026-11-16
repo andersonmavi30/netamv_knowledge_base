@@ -21,3 +21,16 @@ java -jar jenkins-cli.jar -s "$JENKINS_URL" -webSocket help
 - **Official reference:** https://www.jenkins.io/doc/book/managing/cli/
 
 > Not lab-verified.
+
+## `who-am-i`
+
+```bash
+java -jar jenkins-cli.jar -s "$JENKINS_URL" -webSocket -auth @jenkins-auth who-am-i
+```
+
+- **Purpose:** Show which Jenkins identity and authorities the CLI connection uses.
+- **Arguments:** `-auth @jenkins-auth`: read username:API token from private file; `who-am-i`: current Jenkins identity. `-s`: Jenkins URL; `-webSocket`: transport.
+- **Use case:** Verify least-privilege API credentials before accessing CI/CD jobs.
+- **Official reference:** https://www.jenkins.io/doc/book/managing/cli/
+
+> Not lab-verified; protect credentials.
