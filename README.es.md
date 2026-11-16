@@ -27,6 +27,7 @@
   - ↳ [Ansible](NetDevOps/Ansible/README.es.md)
   - ↳ [Terraform](NetDevOps/Terraform/README.es.md)
   - ↳ [Kubernetes](NetDevOps/Kubernetes/README.es.md)
+  - ↳ [Jenkins](NetDevOps/Jenkins/README.es.md)
 
 Navega por **pilar → fabricante → sistema operativo → categoría de comandos**. Cada fabricante contiene sus guías CLI resumidas.
 
