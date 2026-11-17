@@ -21,3 +21,16 @@ ansible-inventory -i inventory.ini --graph
 - **Official reference:** https://docs.ansible.com/ansible/latest/cli/ansible-inventory.html
 
 > Not lab-verified.
+
+## `ansible-inventory -i inventory.ini --list`
+
+```bash
+ansible-inventory -i inventory.ini --list
+```
+
+- **Purpose:** Render the inventory as structured JSON, including host and group information.
+- **Arguments:** `-i inventory.ini`: inventory source; `--list`: show complete inventory as JSON; may include sensitive variables.
+- **Use case:** Diagnose dynamic inventory parsing before running playbooks.
+- **Official reference:** https://docs.ansible.com/ansible/latest/cli/ansible-inventory.html
+
+> Not lab-verified.

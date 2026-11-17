@@ -21,3 +21,16 @@ ansible-inventory -i inventory.ini --graph
 - **Referencia oficial:** https://docs.ansible.com/ansible/latest/cli/ansible-inventory.html
 
 > Pendiente de validación en laboratorio.
+
+## `ansible-inventory -i inventory.ini --list`
+
+```bash
+ansible-inventory -i inventory.ini --list
+```
+
+- **Sirve para:** Presentar el inventario como JSON estructurado, con hosts y grupos.
+- **Parámetros:** `-i inventory.ini`: origen del inventario; `--list`: lista inventario completo en JSON; puede incluir variables sensibles.
+- **Ejemplo de uso:** Diagnosticar lectura del inventario dinámico antes de ejecutar playbooks.
+- **Referencia oficial:** https://docs.ansible.com/ansible/latest/cli/ansible-inventory.html
+
+> Pendiente de validación en laboratorio.
