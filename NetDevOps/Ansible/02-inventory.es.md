@@ -34,3 +34,16 @@ ansible-inventory -i inventory.ini --list
 - **Referencia oficial:** https://docs.ansible.com/ansible/latest/cli/ansible-inventory.html
 
 > Pendiente de validación en laboratorio.
+
+## `ansible-inventory -i inventory.ini --host router1`
+
+```bash
+ansible-inventory -i inventory.ini --host router1
+```
+
+- **Sirve para:** Mostrar todas las variables de inventario del host indicado en JSON.
+- **Parámetros:** `-i inventory.ini`: inventario; `--host router1`: consulta host de ejemplo; la salida podría revelar secretos.
+- **Ejemplo de uso:** Comprobar cómo se resuelven variables de host provenientes de NetBox antes de conectar al router.
+- **Referencia oficial:** https://docs.ansible.com/ansible/latest/cli/ansible-inventory.html
+
+> Pendiente de validación en laboratorio.

@@ -34,3 +34,16 @@ ansible-inventory -i inventory.ini --list
 - **Official reference:** https://docs.ansible.com/ansible/latest/cli/ansible-inventory.html
 
 > Not lab-verified.
+
+## `ansible-inventory -i inventory.ini --host router1`
+
+```bash
+ansible-inventory -i inventory.ini --host router1
+```
+
+- **Purpose:** Show all inventory variables for the selected host as JSON.
+- **Arguments:** `-i inventory.ini`: inventory; `--host router1`: inspect the named inventory host; output may contain secrets.
+- **Use case:** Check how NetBox-derived host variables resolve before connecting to a router.
+- **Official reference:** https://docs.ansible.com/ansible/latest/cli/ansible-inventory.html
+
+> Not lab-verified.
