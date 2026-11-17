@@ -60,3 +60,16 @@ ansible-playbook -i inventory.ini site.yml --limit lab-switches --tags backup
 - **Official reference:** https://docs.ansible.com/ansible/latest/cli/ansible-playbook.html
 
 > Not lab-verified.
+
+## `ansible-playbook -i inventory.ini site.yml --list-tasks`
+
+```bash
+ansible-playbook -i inventory.ini site.yml --list-tasks
+```
+
+- **Purpose:** List the tasks selected by a playbook without executing them.
+- **Arguments:** `-i inventory.ini`: inventory; `site.yml`: playbook path; `--list-tasks`: preview statically visible tasks; dynamic includes can be incomplete.
+- **Use case:** Review deployment stages ahead of a network change window.
+- **Official reference:** https://docs.ansible.com/ansible/latest/cli/ansible-playbook.html
+
+> Not lab-verified.
