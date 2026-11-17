@@ -34,3 +34,29 @@ terraform validate -no-color
 - **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/validate
 
 > Not lab-verified.
+
+## `terraform validate -json`
+
+```bash
+terraform validate -json
+```
+
+- **Purpose:** Validate configuration and emit machine-readable diagnostics for CI tools.
+- **Arguments:** `validate`: static validation after init; `-json`: machine-readable diagnostics, not a remote infrastructure test.
+- **Use case:** Parse validation errors in a GitLab or Jenkins pipeline.
+- **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/validate
+
+> Not lab-verified.
+
+## `terraform fmt -recursive`
+
+```bash
+terraform fmt -recursive
+```
+
+- **Purpose:** Rewrite Terraform source files in the current directory tree to canonical formatting.
+- **Arguments:** `fmt`: formats and writes to files; `-recursive`: include subdirectories; inspect `git diff` afterwards.
+- **Use case:** Normalize IaC files in a feature branch before opening a merge request.
+- **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/fmt
+
+> Not lab-verified.

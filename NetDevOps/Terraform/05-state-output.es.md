@@ -47,3 +47,29 @@ terraform state show 'module.network.null_resource.lab'
 - **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/state/show
 
 > Pendiente de validación en laboratorio.
+
+## `terraform output -raw gateway_ip`
+
+```bash
+terraform output -raw gateway_ip
+```
+
+- **Sirve para:** Mostrar una salida específica del módulo raíz como texto sin comillas para scripts.
+- **Parámetros:** `output`: consulta salida; `-raw`: valor escalar sin formato; `gateway_ip`: nombre de ejemplo; puede exponer secretos.
+- **Ejemplo de uso:** Leer una dirección de gateway autorizada desde un script de automatización.
+- **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/output
+
+> Pendiente de validación en laboratorio.
+
+## `terraform state pull`
+
+```bash
+terraform state pull
+```
+
+- **Sirve para:** Descargar a la salida estándar el estado Terraform actual sin modificarlo.
+- **Parámetros:** `state pull`: lee todo el estado del backend; puede revelar credenciales y datos privados; no copiar ni guardar en logs.
+- **Ejemplo de uso:** Inspeccionar metadatos del estado en un entorno privado autorizado.
+- **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/state/pull
+
+> Pendiente de validación en laboratorio.

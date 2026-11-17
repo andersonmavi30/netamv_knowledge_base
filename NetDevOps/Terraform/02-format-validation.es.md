@@ -34,3 +34,29 @@ terraform validate -no-color
 - **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/validate
 
 > Pendiente de validación en laboratorio.
+
+## `terraform validate -json`
+
+```bash
+terraform validate -json
+```
+
+- **Sirve para:** Validar la configuración y emitir diagnósticos JSON para herramientas CI.
+- **Parámetros:** `validate`: validación estática tras init; `-json`: diagnósticos legibles por máquinas, no prueba recursos remotos.
+- **Ejemplo de uso:** Procesar errores de validación en un pipeline GitLab o Jenkins.
+- **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/validate
+
+> Pendiente de validación en laboratorio.
+
+## `terraform fmt -recursive`
+
+```bash
+terraform fmt -recursive
+```
+
+- **Sirve para:** Reformatear archivos de Terraform dentro del árbol de directorios al estilo oficial.
+- **Parámetros:** `fmt`: modifica archivos; `-recursive`: incluye subdirectorios; revisar `git diff` después.
+- **Ejemplo de uso:** Normalizar archivos IaC en una rama feature antes del merge request.
+- **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/fmt
+
+> Pendiente de validación en laboratorio.

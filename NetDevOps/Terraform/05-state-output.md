@@ -47,3 +47,29 @@ terraform state show 'module.network.null_resource.lab'
 - **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/state/show
 
 > Not lab-verified.
+
+## `terraform output -raw gateway_ip`
+
+```bash
+terraform output -raw gateway_ip
+```
+
+- **Purpose:** Print a single root-module output as an unquoted string for scripting.
+- **Arguments:** `output`: read output; `-raw`: plain scalar value; `gateway_ip`: sample output name; sensitive values may be exposed.
+- **Use case:** Read an approved gateway address in a network automation script.
+- **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/output
+
+> Not lab-verified.
+
+## `terraform state pull`
+
+```bash
+terraform state pull
+```
+
+- **Purpose:** Download the currently stored Terraform state to standard output without changing it.
+- **Arguments:** `state pull`: read entire current state from backend; can expose credentials and confidential data; do not paste or log output.
+- **Use case:** Inspect state metadata in an approved, private diagnostic environment.
+- **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/state/pull
+
+> Not lab-verified.

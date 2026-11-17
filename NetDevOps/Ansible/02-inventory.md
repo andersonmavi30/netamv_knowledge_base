@@ -21,3 +21,29 @@ ansible-inventory -i inventory.ini --graph
 - **Official reference:** https://docs.ansible.com/ansible/latest/cli/ansible-inventory.html
 
 > Not lab-verified.
+
+## `ansible-inventory -i inventory.ini --list`
+
+```bash
+ansible-inventory -i inventory.ini --list
+```
+
+- **Purpose:** Render the inventory as structured JSON, including host and group information.
+- **Arguments:** `-i inventory.ini`: inventory source; `--list`: show complete inventory as JSON; may include sensitive variables.
+- **Use case:** Diagnose dynamic inventory parsing before running playbooks.
+- **Official reference:** https://docs.ansible.com/ansible/latest/cli/ansible-inventory.html
+
+> Not lab-verified.
+
+## `ansible-inventory -i inventory.ini --host router1`
+
+```bash
+ansible-inventory -i inventory.ini --host router1
+```
+
+- **Purpose:** Show all inventory variables for the selected host as JSON.
+- **Arguments:** `-i inventory.ini`: inventory; `--host router1`: inspect the named inventory host; output may contain secrets.
+- **Use case:** Check how NetBox-derived host variables resolve before connecting to a router.
+- **Official reference:** https://docs.ansible.com/ansible/latest/cli/ansible-inventory.html
+
+> Not lab-verified.

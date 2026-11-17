@@ -34,3 +34,16 @@ ansible-doc ansible.builtin.copy
 - **Official reference:** https://docs.ansible.com/ansible/latest/cli/ansible-doc.html
 
 > Not lab-verified.
+
+## `ansible-doc -l`
+
+```bash
+ansible-doc -l
+```
+
+- **Purpose:** List installed Ansible module documentation entries.
+- **Arguments:** `ansible-doc`: documentation viewer; `-l` / `--list`: list available plugins/modules; output depends on installed collections.
+- **Use case:** Discover network automation modules available in the execution environment.
+- **Official reference:** https://docs.ansible.com/ansible/latest/cli/ansible-doc.html
+
+> Not lab-verified.
