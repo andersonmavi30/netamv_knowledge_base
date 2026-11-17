@@ -47,3 +47,16 @@ terraform validate -json
 - **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/validate
 
 > Not lab-verified.
+
+## `terraform fmt -recursive`
+
+```bash
+terraform fmt -recursive
+```
+
+- **Purpose:** Rewrite Terraform source files in the current directory tree to canonical formatting.
+- **Arguments:** `fmt`: formats and writes to files; `-recursive`: include subdirectories; inspect `git diff` afterwards.
+- **Use case:** Normalize IaC files in a feature branch before opening a merge request.
+- **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/fmt
+
+> Not lab-verified.

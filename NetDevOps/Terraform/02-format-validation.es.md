@@ -47,3 +47,16 @@ terraform validate -json
 - **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/validate
 
 > Pendiente de validación en laboratorio.
+
+## `terraform fmt -recursive`
+
+```bash
+terraform fmt -recursive
+```
+
+- **Sirve para:** Reformatear archivos de Terraform dentro del árbol de directorios al estilo oficial.
+- **Parámetros:** `fmt`: modifica archivos; `-recursive`: incluye subdirectorios; revisar `git diff` después.
+- **Ejemplo de uso:** Normalizar archivos IaC en una rama feature antes del merge request.
+- **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/fmt
+
+> Pendiente de validación en laboratorio.
