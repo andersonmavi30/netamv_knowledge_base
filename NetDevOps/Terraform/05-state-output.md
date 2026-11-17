@@ -60,3 +60,16 @@ terraform output -raw gateway_ip
 - **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/output
 
 > Not lab-verified.
+
+## `terraform state pull`
+
+```bash
+terraform state pull
+```
+
+- **Purpose:** Download the currently stored Terraform state to standard output without changing it.
+- **Arguments:** `state pull`: read entire current state from backend; can expose credentials and confidential data; do not paste or log output.
+- **Use case:** Inspect state metadata in an approved, private diagnostic environment.
+- **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/state/pull
+
+> Not lab-verified.

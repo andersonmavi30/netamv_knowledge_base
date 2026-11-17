@@ -60,3 +60,16 @@ terraform output -raw gateway_ip
 - **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/output
 
 > Pendiente de validación en laboratorio.
+
+## `terraform state pull`
+
+```bash
+terraform state pull
+```
+
+- **Sirve para:** Descargar a la salida estándar el estado Terraform actual sin modificarlo.
+- **Parámetros:** `state pull`: lee todo el estado del backend; puede revelar credenciales y datos privados; no copiar ni guardar en logs.
+- **Ejemplo de uso:** Inspeccionar metadatos del estado en un entorno privado autorizado.
+- **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/state/pull
+
+> Pendiente de validación en laboratorio.
