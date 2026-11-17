@@ -34,3 +34,16 @@ ansible-doc ansible.builtin.copy
 - **Referencia oficial:** https://docs.ansible.com/ansible/latest/cli/ansible-doc.html
 
 > Pendiente de validación en laboratorio.
+
+## `ansible-doc -l`
+
+```bash
+ansible-doc -l
+```
+
+- **Sirve para:** Listar las entradas de documentación de los módulos Ansible instalados.
+- **Parámetros:** `ansible-doc`: visor de documentación; `-l` / `--list`: lista plugins/módulos disponibles; depende de colecciones.
+- **Ejemplo de uso:** Descubrir módulos de automatización de red disponibles en el execution environment.
+- **Referencia oficial:** https://docs.ansible.com/ansible/latest/cli/ansible-doc.html
+
+> Pendiente de validación en laboratorio.
