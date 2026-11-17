@@ -34,3 +34,16 @@ terraform validate -no-color
 - **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/validate
 
 > Pendiente de validación en laboratorio.
+
+## `terraform validate -json`
+
+```bash
+terraform validate -json
+```
+
+- **Sirve para:** Validar la configuración y emitir diagnósticos JSON para herramientas CI.
+- **Parámetros:** `validate`: validación estática tras init; `-json`: diagnósticos legibles por máquinas, no prueba recursos remotos.
+- **Ejemplo de uso:** Procesar errores de validación en un pipeline GitLab o Jenkins.
+- **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/validate
+
+> Pendiente de validación en laboratorio.
