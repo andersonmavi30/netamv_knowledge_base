@@ -47,3 +47,16 @@ terraform state show 'module.network.null_resource.lab'
 - **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/state/show
 
 > Not lab-verified.
+
+## `terraform output -raw gateway_ip`
+
+```bash
+terraform output -raw gateway_ip
+```
+
+- **Purpose:** Print a single root-module output as an unquoted string for scripting.
+- **Arguments:** `output`: read output; `-raw`: plain scalar value; `gateway_ip`: sample output name; sensitive values may be exposed.
+- **Use case:** Read an approved gateway address in a network automation script.
+- **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/output
+
+> Not lab-verified.
