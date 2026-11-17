@@ -73,3 +73,16 @@ ansible-playbook -i inventory.ini site.yml --list-tasks
 - **Official reference:** https://docs.ansible.com/ansible/latest/cli/ansible-playbook.html
 
 > Not lab-verified.
+
+## `ansible-playbook -i inventory.ini site.yml --list-tags`
+
+```bash
+ansible-playbook -i inventory.ini site.yml --list-tags
+```
+
+- **Purpose:** List playbook tags without running tasks.
+- **Arguments:** `-i inventory.ini`: inventory; `site.yml`: playbook; `--list-tags`: show statically discoverable tags.
+- **Use case:** Identify backup, precheck and postcheck task tags before execution.
+- **Official reference:** https://docs.ansible.com/ansible/latest/cli/ansible-playbook.html
+
+> Not lab-verified.

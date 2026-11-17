@@ -73,3 +73,16 @@ ansible-playbook -i inventory.ini site.yml --list-tasks
 - **Referencia oficial:** https://docs.ansible.com/ansible/latest/cli/ansible-playbook.html
 
 > Pendiente de validación en laboratorio.
+
+## `ansible-playbook -i inventory.ini site.yml --list-tags`
+
+```bash
+ansible-playbook -i inventory.ini site.yml --list-tags
+```
+
+- **Sirve para:** Listar las etiquetas de un playbook sin ejecutar tareas.
+- **Parámetros:** `-i inventory.ini`: inventario; `site.yml`: playbook; `--list-tags`: muestra etiquetas detectables estáticamente.
+- **Ejemplo de uso:** Identificar etiquetas de backup, precheck y postcheck antes de ejecutar.
+- **Referencia oficial:** https://docs.ansible.com/ansible/latest/cli/ansible-playbook.html
+
+> Pendiente de validación en laboratorio.
