@@ -86,3 +86,16 @@ terraform console
 - **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/console
 
 > Not lab-verified.
+
+## `terraform workspace select lab`
+
+```bash
+terraform workspace select lab
+```
+
+- **Purpose:** Select an existing CLI workspace for subsequent Terraform operations.
+- **Arguments:** `workspace select`: switch active state workspace; `lab`: example existing workspace; changes local selection, not remote resources.
+- **Use case:** Set the intended lab workspace and verify with `terraform workspace show` before planning.
+- **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/workspace/select
+
+> Not lab-verified.

@@ -86,3 +86,16 @@ terraform console
 - **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/console
 
 > Pendiente de validación en laboratorio.
+
+## `terraform workspace select lab`
+
+```bash
+terraform workspace select lab
+```
+
+- **Sirve para:** Seleccionar un workspace CLI existente para las siguientes operaciones de Terraform.
+- **Parámetros:** `workspace select`: cambia el workspace activo; `lab`: workspace de ejemplo que debe existir; cambia selección local, no recursos remotos.
+- **Ejemplo de uso:** Seleccionar el entorno de laboratorio y verificarlo con `terraform workspace show` antes de planificar.
+- **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/workspace/select
+
+> Pendiente de validación en laboratorio.
