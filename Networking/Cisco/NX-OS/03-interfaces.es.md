@@ -10,3 +10,16 @@ validation: not-lab-verified
 [🇬🇧 English](03-interfaces.md) · [🇨🇴 Español](03-interfaces.es.md) · [↩ NX-OS](README.es.md)
 
 **Plataforma:** Cisco Nexus NX-OS (Nexus 9000 / 10.x); confirmar sintaxis por modelo y versión.
+
+## `show interface status`
+
+```text
+show interface status
+```
+
+- **Sirve para:** Resumir estado de interfaces, VLAN asignada, dúplex, velocidad y medio.
+- **Parámetros:** `interface status`: resumen de puertos sin modificar interfaces.
+- **Ejemplo de uso:** Detectar uplinks caídos o puertos con velocidad inesperada.
+- **Referencia oficial:** https://www.cisco.com/c/en/us/support/switches/nexus-9000-series-switches/products-command-reference-list.html
+
+> Pendiente de validación en laboratorio.
