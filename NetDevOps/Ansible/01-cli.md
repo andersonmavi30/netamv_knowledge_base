@@ -47,3 +47,16 @@ ansible-doc -l
 - **Official reference:** https://docs.ansible.com/ansible/latest/cli/ansible-doc.html
 
 > Not lab-verified.
+
+## `ansible-doc -t inventory -l`
+
+```bash
+ansible-doc -t inventory -l
+```
+
+- **Purpose:** List inventory plugins available from installed collections.
+- **Arguments:** `-t inventory`: choose inventory plugin type; `-l`: list plugin entries.
+- **Use case:** Check whether a NetBox dynamic inventory plugin is installed.
+- **Official reference:** https://docs.ansible.com/ansible/latest/cli/ansible-doc.html
+
+> Not lab-verified.
