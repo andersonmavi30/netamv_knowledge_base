@@ -23,3 +23,16 @@ show version
 - **Referencia oficial:** https://www.cisco.com/c/en/us/support/switches/nexus-9000-series-switches/products-command-reference-list.html
 
 > Pendiente de validación en laboratorio.
+
+## `show module`
+
+```text
+show module
+```
+
+- **Sirve para:** Mostrar módulos del switch Nexus y sus estados operativos.
+- **Parámetros:** `module`: inventario y estado de módulos; información según modelo.
+- **Ejemplo de uso:** Confirmar estado de tarjeta de línea o supervisora.
+- **Referencia oficial:** https://www.cisco.com/c/en/us/support/switches/nexus-9000-series-switches/products-command-reference-list.html
+
+> Pendiente de validación en laboratorio.

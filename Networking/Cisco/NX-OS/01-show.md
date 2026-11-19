@@ -23,3 +23,16 @@ show version
 - **Official reference:** https://www.cisco.com/c/en/us/support/switches/nexus-9000-series-switches/products-command-reference-list.html
 
 > Not lab-verified.
+
+## `show module`
+
+```text
+show module
+```
+
+- **Purpose:** Display Nexus hardware modules and their operational states.
+- **Arguments:** `module`: chassis module inventory and status; information varies by model.
+- **Use case:** Confirm whether a line card or supervisor is healthy.
+- **Official reference:** https://www.cisco.com/c/en/us/support/switches/nexus-9000-series-switches/products-command-reference-list.html
+
+> Not lab-verified.
