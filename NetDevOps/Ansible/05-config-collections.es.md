@@ -47,3 +47,16 @@ ansible-config view
 - **Referencia oficial:** https://docs.ansible.com/ansible/latest/cli/ansible-config.html
 
 > Pendiente de validación en laboratorio.
+
+## `ansible-config list`
+
+```bash
+ansible-config list
+```
+
+- **Sirve para:** Listar las opciones de configuración Ansible, valores predeterminados y variables de entorno.
+- **Parámetros:** `list`: muestra opciones reconocidas y su documentación; solo lectura.
+- **Ejemplo de uso:** Encontrar el parámetro que controla el timeout SSH en entornos de automatización.
+- **Referencia oficial:** https://docs.ansible.com/ansible/latest/cli/ansible-config.html
+
+> Pendiente de validación en laboratorio.

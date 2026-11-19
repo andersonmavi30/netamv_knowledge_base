@@ -47,3 +47,16 @@ ansible-config view
 - **Official reference:** https://docs.ansible.com/ansible/latest/cli/ansible-config.html
 
 > Not lab-verified.
+
+## `ansible-config list`
+
+```bash
+ansible-config list
+```
+
+- **Purpose:** List Ansible configuration options, defaults and environment variable mappings.
+- **Arguments:** `list`: display all recognized configuration settings and their documentation; read-only.
+- **Use case:** Find the option controlling SSH connection timeout in automation environments.
+- **Official reference:** https://docs.ansible.com/ansible/latest/cli/ansible-config.html
+
+> Not lab-verified.
