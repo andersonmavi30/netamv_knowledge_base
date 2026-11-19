@@ -138,3 +138,16 @@ terraform show -json tfplan
 - **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/show
 
 > Pendiente de validación en laboratorio.
+
+## `terraform providers schema -json`
+
+```bash
+terraform providers schema -json
+```
+
+- **Sirve para:** Mostrar los esquemas de proveedores instalados en JSON para automatización y análisis.
+- **Parámetros:** `providers schema`: consulta esquemas de proveedores; `-json`: salida estructurada; requiere proveedores inicializados.
+- **Ejemplo de uso:** Consultar atributos disponibles al desarrollar módulos IaC de redes.
+- **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/providers/schema
+
+> Pendiente de validación en laboratorio.

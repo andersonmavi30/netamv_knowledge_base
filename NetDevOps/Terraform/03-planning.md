@@ -138,3 +138,16 @@ terraform show -json tfplan
 - **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/show
 
 > Not lab-verified.
+
+## `terraform providers schema -json`
+
+```bash
+terraform providers schema -json
+```
+
+- **Purpose:** Print installed provider schemas as JSON for automation and analysis.
+- **Arguments:** `providers schema`: inspect selected provider schemas; `-json`: structured output; requires initialized providers.
+- **Use case:** Discover resource attributes while building network IaC modules.
+- **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/providers/schema
+
+> Not lab-verified.
