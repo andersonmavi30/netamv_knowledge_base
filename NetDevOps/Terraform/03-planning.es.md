@@ -112,3 +112,16 @@ terraform providers lock -platform=linux_amd64
 - **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/providers/lock
 
 > Pendiente de validación en laboratorio.
+
+## `terraform plan -lock-timeout=60s`
+
+```bash
+terraform plan -lock-timeout=60s
+```
+
+- **Sirve para:** Generar un plan reintentando obtener el bloqueo del estado durante un minuto.
+- **Parámetros:** `plan`: previsualiza cambios; `-lock-timeout=60s`: espera hasta 60 segundos por el bloqueo del estado; no aplica el plan.
+- **Ejemplo de uso:** Evitar fallos inmediatos de CI cuando otro proceso autorizado bloquea el estado.
+- **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/plan
+
+> Pendiente de validación en laboratorio.

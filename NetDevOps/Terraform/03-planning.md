@@ -112,3 +112,16 @@ terraform providers lock -platform=linux_amd64
 - **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/providers/lock
 
 > Not lab-verified.
+
+## `terraform plan -lock-timeout=60s`
+
+```bash
+terraform plan -lock-timeout=60s
+```
+
+- **Purpose:** Generate a plan while retrying state-lock acquisition for up to one minute.
+- **Arguments:** `plan`: preview changes; `-lock-timeout=60s`: wait up to 60 seconds for state lock; does not apply the plan.
+- **Use case:** Avoid immediate CI failure while another approved run holds the state lock.
+- **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/plan
+
+> Not lab-verified.
