@@ -23,3 +23,16 @@ show vlan brief
 - **Official reference:** https://www.cisco.com/c/en/us/support/switches/nexus-9000-series-switches/products-command-reference-list.html
 
 > Not lab-verified.
+
+## `show port-channel summary`
+
+```text
+show port-channel summary
+```
+
+- **Purpose:** Summarize port-channel bundles, protocol and member interface status.
+- **Arguments:** `port-channel summary`: aggregated links and member status; port-channel must be configured.
+- **Use case:** Identify an LACP member that is not bundled.
+- **Official reference:** https://www.cisco.com/c/en/us/support/switches/nexus-9000-series-switches/products-command-reference-list.html
+
+> Not lab-verified.

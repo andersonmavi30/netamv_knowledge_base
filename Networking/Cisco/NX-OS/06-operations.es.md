@@ -23,3 +23,16 @@ show vlan brief
 - **Referencia oficial:** https://www.cisco.com/c/en/us/support/switches/nexus-9000-series-switches/products-command-reference-list.html
 
 > Pendiente de validación en laboratorio.
+
+## `show port-channel summary`
+
+```text
+show port-channel summary
+```
+
+- **Sirve para:** Resumir grupos port-channel, protocolo y estado de miembros.
+- **Parámetros:** `port-channel summary`: enlaces agregados y estado de miembros; requiere port-channel.
+- **Ejemplo de uso:** Detectar un miembro LACP que no participa en el agregado.
+- **Referencia oficial:** https://www.cisco.com/c/en/us/support/switches/nexus-9000-series-switches/products-command-reference-list.html
+
+> Pendiente de validación en laboratorio.
