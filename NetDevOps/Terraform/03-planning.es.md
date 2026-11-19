@@ -125,3 +125,16 @@ terraform plan -lock-timeout=60s
 - **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/plan
 
 > Pendiente de validación en laboratorio.
+
+## `terraform show -json tfplan`
+
+```bash
+terraform show -json tfplan
+```
+
+- **Sirve para:** Mostrar un plan Terraform guardado como JSON estructurado.
+- **Parámetros:** `show`: inspecciona plan; `-json`: salida estructurada; `tfplan`: archivo binario sensible; el JSON puede revelar secretos.
+- **Ejemplo de uso:** Analizar acciones de cambio en una etapa privada de validación CI.
+- **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/show
+
+> Pendiente de validación en laboratorio.

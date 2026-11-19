@@ -125,3 +125,16 @@ terraform plan -lock-timeout=60s
 - **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/plan
 
 > Not lab-verified.
+
+## `terraform show -json tfplan`
+
+```bash
+terraform show -json tfplan
+```
+
+- **Purpose:** Render a saved Terraform plan as structured JSON.
+- **Arguments:** `show`: inspect saved plan; `-json`: machine-readable output; `tfplan`: sensitive binary plan file; JSON may reveal secrets.
+- **Use case:** Inspect change actions programmatically in a private CI validation step.
+- **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/show
+
+> Not lab-verified.
