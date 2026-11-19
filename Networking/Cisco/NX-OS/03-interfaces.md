@@ -23,3 +23,16 @@ show interface status
 - **Official reference:** https://www.cisco.com/c/en/us/support/switches/nexus-9000-series-switches/products-command-reference-list.html
 
 > Not lab-verified.
+
+## `show interface ethernet1/1`
+
+```text
+show interface ethernet1/1
+```
+
+- **Purpose:** Inspect the detailed operational state and counters of Ethernet1/1.
+- **Arguments:** `ethernet1/1`: example Nexus Ethernet interface; replace with actual port.
+- **Use case:** Check drops or errors affecting a server-facing uplink.
+- **Official reference:** https://www.cisco.com/c/en/us/support/switches/nexus-9000-series-switches/products-command-reference-list.html
+
+> Not lab-verified.
