@@ -4,7 +4,7 @@
 
 ## Fabricantes
 
-- **[Cisco](Cisco/README.es.md)** → IOS clásico / IOS XE
+- **[Cisco](Cisco/README.es.md)** → IOS clásico / IOS XE / NX-OS
 - **[MikroTik](MikroTik/README.es.md)** → RouterOS 7.x
 - **[Huawei](Huawei/README.es.md)** → VRP (confirmar versión instalada)
 - **[Aruba Networking](Aruba/README.es.md)** → AOS-CX
