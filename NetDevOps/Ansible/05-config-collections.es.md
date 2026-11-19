@@ -60,3 +60,16 @@ ansible-config list
 - **Referencia oficial:** https://docs.ansible.com/ansible/latest/cli/ansible-config.html
 
 > Pendiente de validación en laboratorio.
+
+## `ansible-galaxy collection verify ansible.netcommon`
+
+```bash
+ansible-galaxy collection verify ansible.netcommon
+```
+
+- **Sirve para:** Verificar la colección ansible.netcommon instalada respecto a su distribución cuando esté disponible.
+- **Parámetros:** `collection verify`: compara la colección instalada con el paquete publicado; `ansible.netcommon`: nombre FQCN; puede consultar Galaxy.
+- **Ejemplo de uso:** Comprobar integridad de la colección antes de utilizar plugins de conexión en el laboratorio.
+- **Referencia oficial:** https://docs.ansible.com/ansible/latest/cli/ansible-galaxy.html
+
+> Pendiente de validación en laboratorio.

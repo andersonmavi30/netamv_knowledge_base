@@ -60,3 +60,16 @@ ansible-config list
 - **Official reference:** https://docs.ansible.com/ansible/latest/cli/ansible-config.html
 
 > Not lab-verified.
+
+## `ansible-galaxy collection verify ansible.netcommon`
+
+```bash
+ansible-galaxy collection verify ansible.netcommon
+```
+
+- **Purpose:** Verify the installed ansible.netcommon collection against its distribution metadata when available.
+- **Arguments:** `collection verify`: compare installed collection to its published artifact; `ansible.netcommon`: collection FQCN; may contact configured Galaxy servers.
+- **Use case:** Check collection integrity before using network connection plugins in a lab.
+- **Official reference:** https://docs.ansible.com/ansible/latest/cli/ansible-galaxy.html
+
+> Not lab-verified.
