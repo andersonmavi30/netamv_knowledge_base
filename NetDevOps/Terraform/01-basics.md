@@ -99,3 +99,16 @@ terraform workspace select lab
 - **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/workspace/select
 
 > Not lab-verified.
+
+## `terraform init -reconfigure`
+
+```bash
+terraform init -reconfigure
+```
+
+- **Purpose:** Reinitialize Terraform backend configuration without migrating existing state.
+- **Arguments:** `init`: initialize directory; `-reconfigure`: disregard saved backend settings and configure anew; review backend target.
+- **Use case:** Reconnect a lab checkout to its intended backend before planning.
+- **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/init
+
+> Not lab-verified.
