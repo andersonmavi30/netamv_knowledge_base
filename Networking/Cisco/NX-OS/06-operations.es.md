@@ -36,3 +36,16 @@ show port-channel summary
 - **Referencia oficial:** https://www.cisco.com/c/en/us/support/switches/nexus-9000-series-switches/products-command-reference-list.html
 
 > Pendiente de validación en laboratorio.
+
+## `show vpc brief`
+
+```text
+show vpc brief
+```
+
+- **Sirve para:** Mostrar estado del dominio vPC, peer-link y consistencia de miembros.
+- **Parámetros:** `vpc brief`: estado de peer y miembros; requiere vPC configurado y compatible.
+- **Ejemplo de uso:** Comprobar el peer-link vPC antes del mantenimiento de un par Nexus.
+- **Referencia oficial:** https://www.cisco.com/c/en/us/support/switches/nexus-9000-series-switches/products-command-reference-list.html
+
+> Pendiente de validación en laboratorio.

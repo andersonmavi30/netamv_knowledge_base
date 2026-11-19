@@ -36,3 +36,16 @@ show port-channel summary
 - **Official reference:** https://www.cisco.com/c/en/us/support/switches/nexus-9000-series-switches/products-command-reference-list.html
 
 > Not lab-verified.
+
+## `show vpc brief`
+
+```text
+show vpc brief
+```
+
+- **Purpose:** Display vPC domain status, peer-link and member consistency summary.
+- **Arguments:** `vpc brief`: vPC peer and member status; requires vPC to be configured and supported.
+- **Use case:** Verify vPC peer-link before maintenance on a Nexus pair.
+- **Official reference:** https://www.cisco.com/c/en/us/support/switches/nexus-9000-series-switches/products-command-reference-list.html
+
+> Not lab-verified.
