@@ -49,3 +49,16 @@ show vpc brief
 - **Official reference:** https://www.cisco.com/c/en/us/support/switches/nexus-9000-series-switches/products-command-reference-list.html
 
 > Not lab-verified.
+
+## `show spanning-tree summary`
+
+```text
+show spanning-tree summary
+```
+
+- **Purpose:** Summarize spanning-tree mode and the operational status of VLAN instances.
+- **Arguments:** `spanning-tree summary`: condensed STP overview; actual output depends on running mode.
+- **Use case:** Check STP status when investigating an unexpected Layer 2 block.
+- **Official reference:** https://www.cisco.com/c/en/us/support/switches/nexus-9000-series-switches/products-command-reference-list.html
+
+> Not lab-verified; verify options on your release.

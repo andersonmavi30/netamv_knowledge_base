@@ -49,3 +49,16 @@ show vpc brief
 - **Referencia oficial:** https://www.cisco.com/c/en/us/support/switches/nexus-9000-series-switches/products-command-reference-list.html
 
 > Pendiente de validación en laboratorio.
+
+## `show spanning-tree summary`
+
+```text
+show spanning-tree summary
+```
+
+- **Sirve para:** Resumir el modo spanning-tree y el estado operativo de las instancias VLAN.
+- **Parámetros:** `spanning-tree summary`: resumen STP; la salida depende del modo utilizado.
+- **Ejemplo de uso:** Revisar STP cuando un enlace de capa 2 aparece bloqueado.
+- **Referencia oficial:** https://www.cisco.com/c/en/us/support/switches/nexus-9000-series-switches/products-command-reference-list.html
+
+> Pendiente de validación en laboratorio; confirma disponibilidad de opciones en tu versión.
