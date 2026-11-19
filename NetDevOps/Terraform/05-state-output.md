@@ -73,3 +73,16 @@ terraform state pull
 - **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/state/pull
 
 > Not lab-verified.
+
+## `terraform state list 'module.network'`
+
+```bash
+terraform state list 'module.network'
+```
+
+- **Purpose:** List state resource addresses matching a module address prefix.
+- **Arguments:** `state list`: read tracked addresses; `'module.network'`: example module filter; backend access required.
+- **Use case:** Find managed network resources before reviewing a module change.
+- **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/state/list
+
+> Not lab-verified.

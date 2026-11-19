@@ -47,3 +47,16 @@ ansible-inventory -i inventory.ini --host router1
 - **Official reference:** https://docs.ansible.com/ansible/latest/cli/ansible-inventory.html
 
 > Not lab-verified.
+
+## `ansible-inventory -i inventory.ini --yaml --list`
+
+```bash
+ansible-inventory -i inventory.ini --yaml --list
+```
+
+- **Purpose:** Print full inventory as YAML with resolved host and group variables.
+- **Arguments:** `-i inventory.ini`: source; `--yaml`: YAML format; `--list`: full inventory. May expose secrets.
+- **Use case:** Review inventory host variables before network automation execution.
+- **Official reference:** https://docs.ansible.com/ansible/latest/cli/ansible-inventory.html
+
+> Not lab-verified.

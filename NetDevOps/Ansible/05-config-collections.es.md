@@ -34,3 +34,42 @@ ansible-config dump --only-changed
 - **Referencia oficial:** https://docs.ansible.com/ansible/latest/cli/ansible-config.html
 
 > Pendiente de validación en laboratorio.
+
+## `ansible-config view`
+
+```bash
+ansible-config view
+```
+
+- **Sirve para:** Mostrar el contenido del archivo de configuración Ansible activo.
+- **Parámetros:** `view`: imprime configuración activa; cuidado con posibles credenciales almacenadas.
+- **Ejemplo de uso:** Revisar opciones inesperadas de inventario o conexión en una terminal privada.
+- **Referencia oficial:** https://docs.ansible.com/ansible/latest/cli/ansible-config.html
+
+> Pendiente de validación en laboratorio.
+
+## `ansible-config list`
+
+```bash
+ansible-config list
+```
+
+- **Sirve para:** Listar las opciones de configuración Ansible, valores predeterminados y variables de entorno.
+- **Parámetros:** `list`: muestra opciones reconocidas y su documentación; solo lectura.
+- **Ejemplo de uso:** Encontrar el parámetro que controla el timeout SSH en entornos de automatización.
+- **Referencia oficial:** https://docs.ansible.com/ansible/latest/cli/ansible-config.html
+
+> Pendiente de validación en laboratorio.
+
+## `ansible-galaxy collection verify ansible.netcommon`
+
+```bash
+ansible-galaxy collection verify ansible.netcommon
+```
+
+- **Sirve para:** Verificar la colección ansible.netcommon instalada respecto a su distribución cuando esté disponible.
+- **Parámetros:** `collection verify`: compara la colección instalada con el paquete publicado; `ansible.netcommon`: nombre FQCN; puede consultar Galaxy.
+- **Ejemplo de uso:** Comprobar integridad de la colección antes de utilizar plugins de conexión en el laboratorio.
+- **Referencia oficial:** https://docs.ansible.com/ansible/latest/cli/ansible-galaxy.html
+
+> Pendiente de validación en laboratorio.

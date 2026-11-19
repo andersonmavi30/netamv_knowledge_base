@@ -73,3 +73,16 @@ terraform state pull
 - **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/state/pull
 
 > Pendiente de validación en laboratorio.
+
+## `terraform state list 'module.network'`
+
+```bash
+terraform state list 'module.network'
+```
+
+- **Sirve para:** Listar direcciones de recursos del estado que coincidan con un módulo.
+- **Parámetros:** `state list`: consulta direcciones administradas; `'module.network'`: filtro de módulo de ejemplo; requiere backend.
+- **Ejemplo de uso:** Identificar recursos de red gestionados antes de revisar cambios del módulo.
+- **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/state/list
+
+> Pendiente de validación en laboratorio.

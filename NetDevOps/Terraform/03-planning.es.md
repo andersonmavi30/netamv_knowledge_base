@@ -112,3 +112,42 @@ terraform providers lock -platform=linux_amd64
 - **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/providers/lock
 
 > Pendiente de validación en laboratorio.
+
+## `terraform plan -lock-timeout=60s`
+
+```bash
+terraform plan -lock-timeout=60s
+```
+
+- **Sirve para:** Generar un plan reintentando obtener el bloqueo del estado durante un minuto.
+- **Parámetros:** `plan`: previsualiza cambios; `-lock-timeout=60s`: espera hasta 60 segundos por el bloqueo del estado; no aplica el plan.
+- **Ejemplo de uso:** Evitar fallos inmediatos de CI cuando otro proceso autorizado bloquea el estado.
+- **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/plan
+
+> Pendiente de validación en laboratorio.
+
+## `terraform show -json tfplan`
+
+```bash
+terraform show -json tfplan
+```
+
+- **Sirve para:** Mostrar un plan Terraform guardado como JSON estructurado.
+- **Parámetros:** `show`: inspecciona plan; `-json`: salida estructurada; `tfplan`: archivo binario sensible; el JSON puede revelar secretos.
+- **Ejemplo de uso:** Analizar acciones de cambio en una etapa privada de validación CI.
+- **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/show
+
+> Pendiente de validación en laboratorio.
+
+## `terraform providers schema -json`
+
+```bash
+terraform providers schema -json
+```
+
+- **Sirve para:** Mostrar los esquemas de proveedores instalados en JSON para automatización y análisis.
+- **Parámetros:** `providers schema`: consulta esquemas de proveedores; `-json`: salida estructurada; requiere proveedores inicializados.
+- **Ejemplo de uso:** Consultar atributos disponibles al desarrollar módulos IaC de redes.
+- **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/providers/schema
+
+> Pendiente de validación en laboratorio.

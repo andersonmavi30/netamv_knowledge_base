@@ -47,3 +47,16 @@ ansible-inventory -i inventory.ini --host router1
 - **Referencia oficial:** https://docs.ansible.com/ansible/latest/cli/ansible-inventory.html
 
 > Pendiente de validación en laboratorio.
+
+## `ansible-inventory -i inventory.ini --yaml --list`
+
+```bash
+ansible-inventory -i inventory.ini --yaml --list
+```
+
+- **Sirve para:** Mostrar inventario completo en YAML con variables resueltas de grupos y hosts.
+- **Parámetros:** `-i inventory.ini`: fuente; `--yaml`: formato YAML; `--list`: inventario completo. Puede revelar secretos.
+- **Ejemplo de uso:** Revisar variables de hosts antes de automatizar dispositivos.
+- **Referencia oficial:** https://docs.ansible.com/ansible/latest/cli/ansible-inventory.html
+
+> Pendiente de validación en laboratorio.

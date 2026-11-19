@@ -99,3 +99,16 @@ terraform workspace select lab
 - **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/workspace/select
 
 > Pendiente de validación en laboratorio.
+
+## `terraform init -reconfigure`
+
+```bash
+terraform init -reconfigure
+```
+
+- **Sirve para:** Reinicializar la configuración del backend sin migrar el estado existente.
+- **Parámetros:** `init`: inicializa el directorio; `-reconfigure`: descarta opciones del backend guardadas y configura nuevamente; confirmar destino.
+- **Ejemplo de uso:** Conectar el proyecto del laboratorio al backend correcto antes de planificar.
+- **Referencia oficial:** https://developer.hashicorp.com/terraform/cli/commands/init
+
+> Pendiente de validación en laboratorio.

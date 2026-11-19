@@ -34,3 +34,42 @@ ansible-config dump --only-changed
 - **Official reference:** https://docs.ansible.com/ansible/latest/cli/ansible-config.html
 
 > Not lab-verified.
+
+## `ansible-config view`
+
+```bash
+ansible-config view
+```
+
+- **Purpose:** Show the currently selected Ansible configuration file contents.
+- **Arguments:** `view`: print active configuration; be careful of credentials stored insecurely.
+- **Use case:** Inspect unexpected inventory or connection settings in a private terminal.
+- **Official reference:** https://docs.ansible.com/ansible/latest/cli/ansible-config.html
+
+> Not lab-verified.
+
+## `ansible-config list`
+
+```bash
+ansible-config list
+```
+
+- **Purpose:** List Ansible configuration options, defaults and environment variable mappings.
+- **Arguments:** `list`: display all recognized configuration settings and their documentation; read-only.
+- **Use case:** Find the option controlling SSH connection timeout in automation environments.
+- **Official reference:** https://docs.ansible.com/ansible/latest/cli/ansible-config.html
+
+> Not lab-verified.
+
+## `ansible-galaxy collection verify ansible.netcommon`
+
+```bash
+ansible-galaxy collection verify ansible.netcommon
+```
+
+- **Purpose:** Verify the installed ansible.netcommon collection against its distribution metadata when available.
+- **Arguments:** `collection verify`: compare installed collection to its published artifact; `ansible.netcommon`: collection FQCN; may contact configured Galaxy servers.
+- **Use case:** Check collection integrity before using network connection plugins in a lab.
+- **Official reference:** https://docs.ansible.com/ansible/latest/cli/ansible-galaxy.html
+
+> Not lab-verified.

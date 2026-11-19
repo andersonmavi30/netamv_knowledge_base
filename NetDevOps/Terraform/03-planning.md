@@ -112,3 +112,42 @@ terraform providers lock -platform=linux_amd64
 - **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/providers/lock
 
 > Not lab-verified.
+
+## `terraform plan -lock-timeout=60s`
+
+```bash
+terraform plan -lock-timeout=60s
+```
+
+- **Purpose:** Generate a plan while retrying state-lock acquisition for up to one minute.
+- **Arguments:** `plan`: preview changes; `-lock-timeout=60s`: wait up to 60 seconds for state lock; does not apply the plan.
+- **Use case:** Avoid immediate CI failure while another approved run holds the state lock.
+- **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/plan
+
+> Not lab-verified.
+
+## `terraform show -json tfplan`
+
+```bash
+terraform show -json tfplan
+```
+
+- **Purpose:** Render a saved Terraform plan as structured JSON.
+- **Arguments:** `show`: inspect saved plan; `-json`: machine-readable output; `tfplan`: sensitive binary plan file; JSON may reveal secrets.
+- **Use case:** Inspect change actions programmatically in a private CI validation step.
+- **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/show
+
+> Not lab-verified.
+
+## `terraform providers schema -json`
+
+```bash
+terraform providers schema -json
+```
+
+- **Purpose:** Print installed provider schemas as JSON for automation and analysis.
+- **Arguments:** `providers schema`: inspect selected provider schemas; `-json`: structured output; requires initialized providers.
+- **Use case:** Discover resource attributes while building network IaC modules.
+- **Official reference:** https://developer.hashicorp.com/terraform/cli/commands/providers/schema
+
+> Not lab-verified.

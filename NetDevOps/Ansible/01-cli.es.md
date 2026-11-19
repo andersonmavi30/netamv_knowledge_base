@@ -47,3 +47,16 @@ ansible-doc -l
 - **Referencia oficial:** https://docs.ansible.com/ansible/latest/cli/ansible-doc.html
 
 > Pendiente de validación en laboratorio.
+
+## `ansible-doc -t inventory -l`
+
+```bash
+ansible-doc -t inventory -l
+```
+
+- **Sirve para:** Listar plugins de inventario disponibles en las colecciones instaladas.
+- **Parámetros:** `-t inventory`: selecciona plugins de inventario; `-l`: enumera plugins.
+- **Ejemplo de uso:** Comprobar que está instalado el plugin de inventario dinámico NetBox.
+- **Referencia oficial:** https://docs.ansible.com/ansible/latest/cli/ansible-doc.html
+
+> Pendiente de validación en laboratorio.
