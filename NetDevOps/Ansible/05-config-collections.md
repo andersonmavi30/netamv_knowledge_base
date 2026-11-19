@@ -34,3 +34,16 @@ ansible-config dump --only-changed
 - **Official reference:** https://docs.ansible.com/ansible/latest/cli/ansible-config.html
 
 > Not lab-verified.
+
+## `ansible-config view`
+
+```bash
+ansible-config view
+```
+
+- **Purpose:** Show the currently selected Ansible configuration file contents.
+- **Arguments:** `view`: print active configuration; be careful of credentials stored insecurely.
+- **Use case:** Inspect unexpected inventory or connection settings in a private terminal.
+- **Official reference:** https://docs.ansible.com/ansible/latest/cli/ansible-config.html
+
+> Not lab-verified.

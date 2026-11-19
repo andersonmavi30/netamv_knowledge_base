@@ -34,3 +34,16 @@ ansible-config dump --only-changed
 - **Referencia oficial:** https://docs.ansible.com/ansible/latest/cli/ansible-config.html
 
 > Pendiente de validación en laboratorio.
+
+## `ansible-config view`
+
+```bash
+ansible-config view
+```
+
+- **Sirve para:** Mostrar el contenido del archivo de configuración Ansible activo.
+- **Parámetros:** `view`: imprime configuración activa; cuidado con posibles credenciales almacenadas.
+- **Ejemplo de uso:** Revisar opciones inesperadas de inventario o conexión en una terminal privada.
+- **Referencia oficial:** https://docs.ansible.com/ansible/latest/cli/ansible-config.html
+
+> Pendiente de validación en laboratorio.
