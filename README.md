@@ -11,7 +11,7 @@
   - ↳ [Palo Alto Networks · PAN-OS](Firewalls/Palo-Alto/README.md)
   - ↳ [Check Point · Gaia / Security Gateway](Firewalls/Check-Point/README.md)
 - 🌐 **[Networking](Networking/README.md)**
-  - ↳ [Cisco · IOS / IOS XE](Networking/Cisco/README.md)
+  - ↳ [Cisco · IOS / IOS XE / NX-OS](Networking/Cisco/README.md)
   - ↳ [MikroTik · RouterOS 7.x](Networking/MikroTik/README.md)
   - ↳ [Huawei · VRP](Networking/Huawei/README.md)
   - ↳ [Aruba · AOS-CX](Networking/Aruba/README.md)
