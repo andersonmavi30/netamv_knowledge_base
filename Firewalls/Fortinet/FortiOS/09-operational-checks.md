@@ -123,3 +123,16 @@ diagnose sys top-summary
 - **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966
 
 > Not lab-verified; verify release.
+
+## `diagnose autoupdate versions`
+
+```text
+diagnose autoupdate versions
+```
+
+- **Purpose:** Display installed FortiGuard signature and component versions.
+- **Arguments:** `autoupdate versions`: list current security package versions; read-only.
+- **Use case:** Confirm latest installed IPS/AV packages after updates.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966
+
+> Not lab-verified; verify release.

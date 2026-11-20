@@ -123,3 +123,16 @@ diagnose sys top-summary
 - **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966
 
 > Pendiente de validación en laboratorio; confirma versión.
+
+## `diagnose autoupdate versions`
+
+```text
+diagnose autoupdate versions
+```
+
+- **Sirve para:** Mostrar versiones instaladas de firmas y componentes FortiGuard.
+- **Parámetros:** `autoupdate versions`: lista versiones de paquetes; solo consulta.
+- **Ejemplo de uso:** Confirmar paquetes IPS/AV instalados tras actualizar.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966
+
+> Pendiente de validación en laboratorio; confirma versión.
