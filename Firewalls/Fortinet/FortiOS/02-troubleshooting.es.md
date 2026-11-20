@@ -77,3 +77,16 @@ sudo root execute ping 1.1.1.1
 - **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.0/administration-guide/597696/vdom-overview
 
 > Pendiente de validación en laboratorio; confirma versión y contexto.
+
+## `execute ping-options view-settings`
+
+```text
+execute ping-options view-settings
+```
+
+- **Sirve para:** Consultar opciones actuales de ping en FortiOS sin modificarlas.
+- **Parámetros:** `ping-options`: opciones ICMP; `view-settings`: muestra valores actuales.
+- **Ejemplo de uso:** Confirmar IP origen y repeticiones antes de probar.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-reference/93620/execute-ping-options
+
+> Pendiente de validación en laboratorio; confirma versión y contexto.
