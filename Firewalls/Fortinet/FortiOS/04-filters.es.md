@@ -89,3 +89,16 @@ get system performance status | grep Uptime
 - **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966
 
 > Pendiente de validación en laboratorio; confirma versión.
+
+## `show | grep -f FW_SITE_A`
+
+```text
+show | grep -f FW_SITE_A
+```
+
+- **Sirve para:** Encontrar un objeto o ajuste dentro del contexto de configuración actual incluyendo líneas relacionadas.
+- **Parámetros:** `show`: contexto actual; `grep -f FW_SITE_A`: filtro FortiOS con contexto; verificar salida.
+- **Ejemplo de uso:** Encontrar referencias a un objeto de dirección o política.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-reference
+
+> Pendiente de validación en laboratorio; no publiques configuraciones, logs ni secretos.

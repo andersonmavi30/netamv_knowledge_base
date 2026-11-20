@@ -89,3 +89,16 @@ get system performance status | grep Uptime
 - **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966
 
 > Not lab-verified; verify release.
+
+## `show | grep -f FW_SITE_A`
+
+```text
+show | grep -f FW_SITE_A
+```
+
+- **Purpose:** Locate an object or setting within the current configuration context with related matching lines.
+- **Arguments:** `show`: current context; `grep -f FW_SITE_A`: FortiOS filter with context; verify output and quoting.
+- **Use case:** Find references to a named address or policy object.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-reference
+
+> Not lab-verified; never publish configurations, logs or secrets.
