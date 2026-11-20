@@ -117,3 +117,16 @@ execute log fortianalyzer test-connectivity
 - **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966
 
 > Not lab-verified; never publish configurations, logs or secrets.
+
+## `execute factoryreset`
+
+```text
+execute factoryreset
+```
+
+- **Purpose:** Reset a FortiGate to factory defaults and reboot, deleting most configuration.
+- **Arguments:** `factoryreset`: destructive reset and reboot; export a backup and ensure console/recovery access.
+- **Use case:** Use only for an approved decommissioning or isolated lab reset.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.7/administration-guide/702257/configuration-backups-and-reset
+
+> Not lab-verified. Caution: review the impact before execution.

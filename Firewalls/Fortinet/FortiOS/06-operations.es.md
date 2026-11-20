@@ -117,3 +117,16 @@ execute log fortianalyzer test-connectivity
 - **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966
 
 > Pendiente de validación en laboratorio; no publiques configuraciones, logs ni secretos.
+
+## `execute factoryreset`
+
+```text
+execute factoryreset
+```
+
+- **Sirve para:** Restablecer el FortiGate a valores de fábrica y reiniciar, borrando la mayor parte de la configuración.
+- **Parámetros:** `factoryreset`: reseteo destructivo y reinicio; exigir backup y acceso de recuperación.
+- **Ejemplo de uso:** Usar solo en baja de equipo autorizada o laboratorio aislado.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.7/administration-guide/702257/configuration-backups-and-reset
+
+> Pendiente de validación en laboratorio. Atención: ver impacto antes de ejecutarlo.
