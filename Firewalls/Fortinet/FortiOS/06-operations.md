@@ -104,3 +104,16 @@ diagnose log test
 - **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966
 
 > Not lab-verified; never publish configurations, logs or secrets.
+
+## `execute log fortianalyzer test-connectivity`
+
+```text
+execute log fortianalyzer test-connectivity
+```
+
+- **Purpose:** Test the FortiGate connection to configured FortiAnalyzer servers.
+- **Arguments:** `log fortianalyzer test-connectivity`: active communication test; requires configured FAZ.
+- **Use case:** Confirm connectivity before troubleshooting missing forwarded logs.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966
+
+> Not lab-verified; never publish configurations, logs or secrets.

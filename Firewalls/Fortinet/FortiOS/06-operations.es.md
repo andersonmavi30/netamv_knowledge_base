@@ -104,3 +104,16 @@ diagnose log test
 - **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966
 
 > Pendiente de validación en laboratorio; no publiques configuraciones, logs ni secretos.
+
+## `execute log fortianalyzer test-connectivity`
+
+```text
+execute log fortianalyzer test-connectivity
+```
+
+- **Sirve para:** Probar la conexión del FortiGate con los servidores FortiAnalyzer configurados.
+- **Parámetros:** `log fortianalyzer test-connectivity`: prueba activa de comunicación; requiere FAZ configurado.
+- **Ejemplo de uso:** Confirmar conectividad antes de investigar logs no enviados.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966
+
+> Pendiente de validación en laboratorio; no publiques configuraciones, logs ni secretos.
