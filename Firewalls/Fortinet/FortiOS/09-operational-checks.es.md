@@ -110,3 +110,16 @@ get system ha status
 - **Parámetros / flags:** ha status: resumen de alta disponibilidad; requiere HA configurado.
 - **Uso operativo:** Confirmar la unidad primaria y la sincronización al analizar failover.
 - **Validación:** Pendiente de laboratorio; confirmar versión y contexto CLI.
+
+## `diagnose sys top-summary`
+
+```text
+diagnose sys top-summary
+```
+
+- **Sirve para:** Mostrar resumen de consumo de recursos por procesos cuando esté disponible.
+- **Parámetros:** `top-summary`: resumen de procesos y recursos; disponibilidad depende de versión.
+- **Ejemplo de uso:** Detectar consumo alto de CPU antes de diagnósticos intensivos.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966
+
+> Pendiente de validación en laboratorio; confirma versión.

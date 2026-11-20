@@ -110,3 +110,16 @@ get system ha status
 - **Parameters / flags:** ha status: high-availability summary; relevant only on HA-configured FortiGates.
 - **Operational use:** Confirm the primary unit and synchronization during a failover investigation.
 - **Validation:** Not lab verified; confirm release and CLI context.
+
+## `diagnose sys top-summary`
+
+```text
+diagnose sys top-summary
+```
+
+- **Purpose:** Show summarized process resource consumption where supported.
+- **Arguments:** `top-summary`: summary of CPU/memory-intensive processes; command availability varies by release.
+- **Use case:** Look for high CPU utilization before starting intensive packet diagnostics.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966
+
+> Not lab-verified; verify release.
