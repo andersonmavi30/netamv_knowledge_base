@@ -90,3 +90,16 @@ execute ping-options view-settings
 - **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-reference/93620/execute-ping-options
 
 > Pendiente de validación en laboratorio; confirma versión y contexto.
+
+## `execute ping-options source 192.0.2.1`
+
+```text
+execute ping-options source 192.0.2.1
+```
+
+- **Sirve para:** Elegir IPv4 origen para los siguientes pings del FortiGate.
+- **Parámetros:** `source 192.0.2.1`: dirección local de ejemplo; afecta pruebas posteriores.
+- **Ejemplo de uso:** Probar conectividad desde una interfaz interna concreta.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-reference/93620/execute-ping-options
+
+> Pendiente de validación en laboratorio; confirma versión y contexto.

@@ -90,3 +90,16 @@ execute ping-options view-settings
 - **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-reference/93620/execute-ping-options
 
 > Not lab-verified; check release and context.
+
+## `execute ping-options source 192.0.2.1`
+
+```text
+execute ping-options source 192.0.2.1
+```
+
+- **Purpose:** Choose source IPv4 address for subsequent FortiGate pings.
+- **Arguments:** `source 192.0.2.1`: example local interface address; affects subsequent tests.
+- **Use case:** Test reachability from a specific internal interface.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-reference/93620/execute-ping-options
+
+> Not lab-verified; check release and context.
