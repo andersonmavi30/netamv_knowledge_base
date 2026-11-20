@@ -130,3 +130,16 @@ execute factoryreset
 - **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.7/administration-guide/702257/configuration-backups-and-reset
 
 > Not lab-verified. Caution: review the impact before execution.
+
+## `execute factoryreset2`
+
+```text
+execute factoryreset2
+```
+
+- **Purpose:** Reset most configuration while retaining specified system/network elements, unlike a full factory reset.
+- **Arguments:** `factoryreset2`: retains system settings, interfaces, VDOMs, static routes and virtual switches where supported; still destructive.
+- **Use case:** Use only with verified restoration plan and local/console access.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.7/administration-guide/702257/configuration-backups-and-reset
+
+> Not lab-verified. Caution: review the impact before execution.
