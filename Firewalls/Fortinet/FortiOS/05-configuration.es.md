@@ -155,3 +155,18 @@ show firewall service custom | grep -f LAB-HTTPS-8443
 > Referencia breve, no validada en laboratorio. Valida con la ayuda de la CLI y documentación del modelo/release.
 
 **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.2/administration-guide/777334/basic-configuration · https://docs.fortinet.com/document/fortigate/7.6.6/cli-reference/200835411/config-router-static
+
+## `config system global`
+
+```text
+config system global
+    set vdom-mode multi-vdom
+end
+```
+
+- **Sirve para:** Activar multi-VDOM globalmente; el cambio puede afectar acceso y redes existentes.
+- **Parámetros:** `set vdom-mode multi-vdom`: habilita VDOM independientes; `end`: guarda y sale.
+- **Ejemplo de uso:** Solo durante mantenimiento autorizado tras respaldar configuración.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.0/administration-guide/317358
+
+> Pendiente de validación en laboratorio; confirmar contexto y respaldos.
