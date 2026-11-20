@@ -110,3 +110,16 @@ diagnose debug flow filter addr 192.0.2.10
 - **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
 
 > Not lab-verified; stop and reset debugging after use.
+
+## `diagnose debug flow filter saddr 192.0.2.10`
+
+```text
+diagnose debug flow filter saddr 192.0.2.10
+```
+
+- **Purpose:** Match packets sourced from a particular IPv4 address.
+- **Arguments:** `saddr`: IPv4 source filter.
+- **Use case:** Trace traffic leaving a workstation.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
+
+> Not lab-verified; stop and reset debugging after use.
