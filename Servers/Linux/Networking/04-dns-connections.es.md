@@ -21,3 +21,16 @@ resolvectl status
 - **Referencia oficial:** https://www.freedesktop.org/software/systemd/man/latest/resolvectl.html
 
 > Pendiente de validación en laboratorio.
+
+## `nmcli device status`
+
+```bash
+nmcli device status
+```
+
+- **Sirve para:** Mostrar dispositivos gestionados por NetworkManager y sus conexiones activas.
+- **Parámetros:** `device`: dispositivos de red; `status`: estado actual; requiere NetworkManager.
+- **Ejemplo de uso:** Comprobar si una NIC de Rocky/RHEL está conectada o no administrada.
+- **Referencia oficial:** https://networkmanager.dev/docs/api/latest/nmcli.html
+
+> Pendiente de validación en laboratorio.

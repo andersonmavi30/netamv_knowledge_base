@@ -21,3 +21,16 @@ resolvectl status
 - **Official reference:** https://www.freedesktop.org/software/systemd/man/latest/resolvectl.html
 
 > Not lab-verified.
+
+## `nmcli device status`
+
+```bash
+nmcli device status
+```
+
+- **Purpose:** Show NetworkManager-managed devices and connection state in a concise list.
+- **Arguments:** `device`: manage/query network devices; `status`: current device states; requires NetworkManager.
+- **Use case:** Check whether a Rocky/RHEL NIC is connected or unmanaged.
+- **Official reference:** https://networkmanager.dev/docs/api/latest/nmcli.html
+
+> Not lab-verified.
