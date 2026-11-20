@@ -136,3 +136,16 @@ diagnose debug flow filter daddr 198.51.100.20
 - **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
 
 > Pendiente de validación en laboratorio; recuerda detener y resetear el debug.
+
+## `diagnose debug flow trace start 20`
+
+```text
+diagnose debug flow trace start 20
+```
+
+- **Sirve para:** Iniciar hasta 20 registros de traza del flujo filtrado.
+- **Parámetros:** `trace start 20`: inicia una traza limitada; configurar filtros primero.
+- **Ejemplo de uso:** Revisar decisiones de política y routing de una sesión.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
+
+> Pendiente de validación en laboratorio; detener con `diagnose debug disable`, `diagnose debug flow trace stop` y `diagnose debug reset`.

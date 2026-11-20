@@ -136,3 +136,16 @@ diagnose debug flow filter daddr 198.51.100.20
 - **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
 
 > Not lab-verified; stop and reset debugging after use.
+
+## `diagnose debug flow trace start 20`
+
+```text
+diagnose debug flow trace start 20
+```
+
+- **Purpose:** Start tracing up to 20 matched flow records.
+- **Arguments:** `trace start 20`: start bounded flow trace; configure filters first.
+- **Use case:** Review policy and route decisions for a test session.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
+
+> Not lab-verified; stop using `diagnose debug disable`, `diagnose debug flow trace stop`, and `diagnose debug reset`.
