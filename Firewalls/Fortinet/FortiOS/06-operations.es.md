@@ -78,3 +78,16 @@ diagnose debug reset
 
 
 > No probado en laboratorio; verificar con la ayuda CLI y documentación de la versión antes de ejecutarlo. Los respaldos completos y las salidas de diagnóstico pueden contener datos sensibles.
+
+## `execute update-now`
+
+```text
+execute update-now
+```
+
+- **Sirve para:** Solicitar una actualización inmediata de firmas FortiGuard.
+- **Parámetros:** `update-now`: inicia actualización; requiere conectividad y puede modificar firmas.
+- **Ejemplo de uso:** Actualizar firmas IPS/AV durante mantenimiento autorizado.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966
+
+> Pendiente de validación en laboratorio. Usar solo durante diagnóstico autorizado.

@@ -78,3 +78,16 @@ diagnose debug reset
 
 
 > Not lab-tested; verify against release-specific CLI help. Full backups and debug output may expose sensitive information.
+
+## `execute update-now`
+
+```text
+execute update-now
+```
+
+- **Purpose:** Trigger an immediate FortiGuard signature update check.
+- **Arguments:** `update-now`: manually initiate update; requires reachability and may alter signature versions.
+- **Use case:** Refresh IPS/AV definitions during an approved maintenance window.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966
+
+> Not lab-verified. Use only for authorized troubleshooting.
