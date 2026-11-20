@@ -64,3 +64,16 @@ diagnose vpn tunnel list | grep -i name=
 > **Nota:** Referencia rápida, no verificada en laboratorio; confirma sintaxis y permisos en tu modelo y versión.
 
 **Fuente del fabricante:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966
+
+## `sudo root execute ping 1.1.1.1`
+
+```text
+sudo root execute ping 1.1.1.1
+```
+
+- **Sirve para:** Ejecutar ping desde el VDOM root, si los permisos lo permiten.
+- **Parámetros:** `sudo root`: VDOM objetivo; `execute ping`: prueba de conectividad.
+- **Ejemplo de uso:** Validar salida desde el VDOM apropiado.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.0/administration-guide/597696/vdom-overview
+
+> Pendiente de validación en laboratorio; confirma versión y contexto.
