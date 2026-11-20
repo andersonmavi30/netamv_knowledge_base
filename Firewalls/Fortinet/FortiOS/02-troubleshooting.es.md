@@ -129,3 +129,16 @@ diagnose debug crashlog read
 - **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966
 
 > Pendiente de validación en laboratorio; confirma versión.
+
+## `execute traceroute-options source 192.0.2.1`
+
+```text
+execute traceroute-options source 192.0.2.1
+```
+
+- **Sirve para:** Seleccionar IPv4 local de origen para los próximos traceroutes.
+- **Parámetros:** `source`: IPv4 local usada por traceroute.
+- **Ejemplo de uso:** Probar la ruta desde una interfaz de VDOM.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-reference
+
+> Pendiente de validación en laboratorio.

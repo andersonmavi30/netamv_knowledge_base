@@ -129,3 +129,16 @@ diagnose debug crashlog read
 - **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966
 
 > Not lab-verified; verify release.
+
+## `execute traceroute-options source 192.0.2.1`
+
+```text
+execute traceroute-options source 192.0.2.1
+```
+
+- **Purpose:** Select a local IPv4 source for subsequent traceroute probes.
+- **Arguments:** `source`: local IPv4 to use for traceroute.
+- **Use case:** Test path selection from a VDOM-facing interface.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-reference
+
+> Not lab-verified.
