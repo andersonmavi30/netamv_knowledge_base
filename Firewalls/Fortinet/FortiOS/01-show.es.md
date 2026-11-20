@@ -113,3 +113,16 @@ get router info routing-table static
 - **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.8/administration-guide/139692/routing-concepts
 
 > Pendiente de validación en laboratorio; confirma disponibilidad por versión.
+
+## `show full-configuration`
+
+```text
+show full-configuration
+```
+
+- **Sirve para:** Mostrar toda la configuración, incluidos valores predeterminados, dentro del ámbito actual.
+- **Parámetros:** `full-configuration`: incluye valores por defecto omitidos en `show`; puede contener datos sensibles.
+- **Ejemplo de uso:** Comparar opciones durante una auditoría privada.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-reference
+
+> Pendiente de validación en laboratorio; no publiques configuraciones, logs ni secretos.

@@ -113,3 +113,16 @@ get router info routing-table static
 - **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.8/administration-guide/139692/routing-concepts
 
 > Not lab-verified; verify release support.
+
+## `show full-configuration`
+
+```text
+show full-configuration
+```
+
+- **Purpose:** Display the complete configuration, including default values, in the current CLI scope.
+- **Arguments:** `full-configuration`: include default settings omitted from ordinary `show`; output may contain secrets.
+- **Use case:** Compare settings during a private configuration audit.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-reference
+
+> Not lab-verified; never publish configurations, logs or secrets.
