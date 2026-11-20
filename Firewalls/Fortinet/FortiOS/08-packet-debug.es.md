@@ -175,3 +175,16 @@ diagnose debug flow show iprope enable
 - **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
 
 > Pendiente de validación en laboratorio; detener con `diagnose debug disable`, `diagnose debug flow trace stop` y `diagnose debug reset`.
+
+## `diagnose debug enable`
+
+```text
+diagnose debug enable
+```
+
+- **Sirve para:** Habilitar la impresión de diagnóstico previamente configurado con filtros.
+- **Parámetros:** `debug enable`: comienza a mostrar mensajes; detener luego con disable y reset.
+- **Ejemplo de uso:** Iniciar diagnóstico de políticas tras limitar la cantidad de trazas.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
+
+> Pendiente de validación en laboratorio; detener con `diagnose debug disable`, `diagnose debug flow trace stop` y `diagnose debug reset`.

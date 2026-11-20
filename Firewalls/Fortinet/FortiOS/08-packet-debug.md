@@ -175,3 +175,16 @@ diagnose debug flow show iprope enable
 - **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
 
 > Not lab-verified; stop using `diagnose debug disable`, `diagnose debug flow trace stop`, and `diagnose debug reset`.
+
+## `diagnose debug enable`
+
+```text
+diagnose debug enable
+```
+
+- **Purpose:** Enable diagnostic output previously configured with filters and trace settings.
+- **Arguments:** `debug enable`: starts printing debug output; stop later using disable and reset.
+- **Use case:** Begin bounded policy-flow diagnosis after configuring trace count.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
+
+> Not lab-verified; stop using `diagnose debug disable`, `diagnose debug flow trace stop`, and `diagnose debug reset`.
