@@ -1,0 +1,36 @@
+---
+tags: [linux, networking, cli, servers, debian]
+validation: not-lab-verified
+---
+
+# Routing and policy rules
+
+[🇬🇧 English](02-routing.md) · [🇨🇴 Español](02-routing.es.md) · [↩ Debian / Ubuntu Server](README.md)
+
+**Platform:** Debian / Ubuntu Server. Ubuntu Server may use Netplan with `systemd-networkd`; Debian can use ifupdown, NetworkManager, or systemd-networkd. `resolvectl` only works with active `systemd-resolved`; `nmcli` is not universal.
+
+## `ip route show`
+
+```bash
+ip route show
+```
+
+- **Purpose:** Inspect the main IPv4 routing table, including default gateway and next hops.
+- **Arguments:** `route`: IPv4 routing information; `show`: display routes, without modifying them.
+- **Use case:** Confirm the default gateway when a server cannot reach another subnet.
+- **Official reference:** https://man7.org/linux/man-pages/man8/ip-route.8.html
+
+> Not lab-verified.
+
+## `ip rule show`
+
+```bash
+ip rule show
+```
+
+- **Purpose:** List IPv4 policy-routing rules, their priorities and associated routing tables.
+- **Arguments:** `rule`: routing policy database; `show`: read-only view; priorities influence rule order.
+- **Use case:** Diagnose source-based routing on a multi-homed server.
+- **Official reference:** https://man7.org/linux/man-pages/man8/ip-rule.8.html
+
+> Not lab-verified.

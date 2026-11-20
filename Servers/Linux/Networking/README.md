@@ -2,12 +2,9 @@
 
 [🇬🇧 English](README.md) · [🇨🇴 Español](README.es.md) · [↩ Linux](../README.md)
 
-**Compatibility:** Modern Linux (Rocky/RHEL, Ubuntu, Debian). Availability depends on installed tools and active services.
+## Distribution families
 
-- [Interfaces and addresses](01-interfaces.md)
-- [Routing and policy rules](02-routing.md)
-- [Sockets and listening ports](03-sockets.md)
-- [DNS and network connections](04-dns-connections.md)
-- [Link diagnostics and packet capture](05-troubleshooting.md)
+- [RHEL / Rocky Linux / AlmaLinux / Fedora](RHEL-Rocky-AlmaLinux-Fedora/README.md)
+- [Debian / Ubuntu Server](Debian-Ubuntu-Server/README.md)
 
-> Primarily read-only commands. `tcpdump` needs capture privileges and may expose sensitive data. Replace `eth0` with the actual device. Pending lab validation.
+Shared commands (`ip`, `ss`, `ethtool`, `tcpdump`) appear in both families; service-specific tools (`nmcli`, `resolvectl`) are in the family where most applicable. Check your actual network stack.
