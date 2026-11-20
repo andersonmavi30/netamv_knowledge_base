@@ -87,3 +87,16 @@ get router info routing-table database
 - **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.8/administration-guide/139692/routing-concepts
 
 > Pendiente de validación en laboratorio; confirma disponibilidad por versión.
+
+## `get router info routing-table connected`
+
+```text
+get router info routing-table connected
+```
+
+- **Sirve para:** Listar rutas IPv4 directamente conectadas del FortiGate.
+- **Parámetros:** `connected`: limita rutas conectadas; confirmar disponibilidad según versión.
+- **Ejemplo de uso:** Revisar subredes conectadas al firewall.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.8/administration-guide/139692/routing-concepts
+
+> Pendiente de validación en laboratorio; confirma disponibilidad por versión.

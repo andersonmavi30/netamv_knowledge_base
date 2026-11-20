@@ -87,3 +87,16 @@ get router info routing-table database
 - **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.8/administration-guide/139692/routing-concepts
 
 > Not lab-verified; verify release support.
+
+## `get router info routing-table connected`
+
+```text
+get router info routing-table connected
+```
+
+- **Purpose:** List connected IPv4 routes reported by the FortiGate.
+- **Arguments:** `connected`: limit to directly connected routes; exact availability varies by FortiOS release.
+- **Use case:** Review subnets directly attached to the FortiGate.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.8/administration-guide/139692/routing-concepts
+
+> Not lab-verified; verify release support.
