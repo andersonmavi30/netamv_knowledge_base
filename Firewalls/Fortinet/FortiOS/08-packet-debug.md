@@ -84,3 +84,16 @@ diagnose debug flow trace stop
 - **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
 
 > Not lab-verified. Use only for authorized troubleshooting.
+
+## `diagnose debug flow filter clear`
+
+```text
+diagnose debug flow filter clear
+```
+
+- **Purpose:** Clear previously configured flow address/port filters.
+- **Arguments:** `flow filter clear`: remove IPv4 flow filters.
+- **Use case:** Prepare a clean diagnostic context.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
+
+> Not lab-verified; stop and reset debugging after use.

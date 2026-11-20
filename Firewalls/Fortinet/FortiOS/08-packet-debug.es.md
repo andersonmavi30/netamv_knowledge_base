@@ -84,3 +84,16 @@ diagnose debug flow trace stop
 - **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
 
 > Pendiente de validación en laboratorio. Usar solo durante diagnóstico autorizado.
+
+## `diagnose debug flow filter clear`
+
+```text
+diagnose debug flow filter clear
+```
+
+- **Sirve para:** Limpiar filtros previos del debug de flujo.
+- **Parámetros:** `flow filter clear`: elimina filtros IPv4 de trazas.
+- **Ejemplo de uso:** Preparar una sesión de diagnóstico limpia.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
+
+> Pendiente de validación en laboratorio; recuerda detener y resetear el debug.
