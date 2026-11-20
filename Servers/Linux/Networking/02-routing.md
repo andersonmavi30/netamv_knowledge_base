@@ -21,3 +21,16 @@ ip route show
 - **Official reference:** https://man7.org/linux/man-pages/man8/ip-route.8.html
 
 > Not lab-verified.
+
+## `ip rule show`
+
+```bash
+ip rule show
+```
+
+- **Purpose:** List IPv4 policy-routing rules, their priorities and associated routing tables.
+- **Arguments:** `rule`: routing policy database; `show`: read-only view; priorities influence rule order.
+- **Use case:** Diagnose source-based routing on a multi-homed server.
+- **Official reference:** https://man7.org/linux/man-pages/man8/ip-rule.8.html
+
+> Not lab-verified.

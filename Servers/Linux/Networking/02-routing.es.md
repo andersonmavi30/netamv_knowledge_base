@@ -21,3 +21,16 @@ ip route show
 - **Referencia oficial:** https://man7.org/linux/man-pages/man8/ip-route.8.html
 
 > Pendiente de validación en laboratorio.
+
+## `ip rule show`
+
+```bash
+ip rule show
+```
+
+- **Sirve para:** Listar reglas IPv4 de enrutamiento por políticas, prioridades y tablas asociadas.
+- **Parámetros:** `rule`: base de reglas de routing; `show`: vista de consulta; las prioridades definen orden.
+- **Ejemplo de uso:** Diagnosticar enrutamiento por origen en un servidor con múltiples NIC.
+- **Referencia oficial:** https://man7.org/linux/man-pages/man8/ip-rule.8.html
+
+> Pendiente de validación en laboratorio.
