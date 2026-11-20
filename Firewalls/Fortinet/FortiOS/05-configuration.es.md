@@ -186,3 +186,16 @@ end
 - **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.0/administration-guide/317358
 
 > Pendiente de validación en laboratorio; confirmar contexto y respaldos.
+
+## `config global`
+
+```text
+config global
+```
+
+- **Sirve para:** Entrar al contexto global de FortiOS desde una sesión multi-VDOM.
+- **Parámetros:** `config global`: cambia contexto CLI; es distinto de `config system global`.
+- **Ejemplo de uso:** Consultar ajustes globales cuando la sesión está dentro de un VDOM.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.0/administration-guide/317358
+
+> Pendiente de validación en laboratorio; confirmar contexto y respaldos.

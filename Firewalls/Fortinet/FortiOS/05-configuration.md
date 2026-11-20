@@ -186,3 +186,16 @@ end
 - **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/administration-guide/317358
 
 > Not lab-verified; verify context and backups.
+
+## `config global`
+
+```text
+config global
+```
+
+- **Purpose:** Enter the global FortiOS CLI context from a multi-VDOM session.
+- **Arguments:** `config global`: change CLI scope; not the same as `config system global`.
+- **Use case:** Inspect global-only settings when the current prompt is within a VDOM.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/administration-guide/317358
+
+> Not lab-verified; verify context and backups.
