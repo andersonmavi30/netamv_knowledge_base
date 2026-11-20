@@ -100,3 +100,16 @@ get router info routing-table connected
 - **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.8/administration-guide/139692/routing-concepts
 
 > Not lab-verified; verify release support.
+
+## `get router info routing-table static`
+
+```text
+get router info routing-table static
+```
+
+- **Purpose:** List installed static IPv4 routes.
+- **Arguments:** `static`: filter IPv4 routing table by static route source.
+- **Use case:** Validate a static route between internal VDOMs.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.8/administration-guide/139692/routing-concepts
+
+> Not lab-verified; verify release support.
