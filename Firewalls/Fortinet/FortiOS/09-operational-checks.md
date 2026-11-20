@@ -136,3 +136,16 @@ diagnose autoupdate versions
 - **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966
 
 > Not lab-verified; verify release.
+
+## `diagnose sys vd list`
+
+```text
+diagnose sys vd list
+```
+
+- **Purpose:** Show configured VDOM IDs and associated operational statistics.
+- **Arguments:** `sys vd list`: display virtual domain metadata and state.
+- **Use case:** Confirm correct VDOM mapping before advanced diagnostics.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966
+
+> Not lab-verified; verify release support.
