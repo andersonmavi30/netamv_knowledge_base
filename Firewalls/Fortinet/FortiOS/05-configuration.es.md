@@ -199,3 +199,16 @@ config global
 - **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.0/administration-guide/317358
 
 > Pendiente de validación en laboratorio; confirmar contexto y respaldos.
+
+## `config system sdwan`
+
+```text
+config system sdwan
+```
+
+- **Sirve para:** Entrar al contexto de SD-WAN en FortiOS 7.x; no altera miembros hasta realizar cambios.
+- **Parámetros:** `config system sdwan`: sustituye al comando antiguo `config system virtual-wan-link`.
+- **Ejemplo de uso:** Consultar o preparar una configuración autorizada de miembros SD-WAN.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-reference/76620/config-system-sdwan
+
+> Pendiente de validación en laboratorio. Atención: ver impacto antes de ejecutarlo.

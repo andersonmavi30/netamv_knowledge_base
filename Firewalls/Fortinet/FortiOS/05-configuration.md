@@ -199,3 +199,16 @@ config global
 - **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/administration-guide/317358
 
 > Not lab-verified; verify context and backups.
+
+## `config system sdwan`
+
+```text
+config system sdwan
+```
+
+- **Purpose:** Enter the FortiOS 7.x SD-WAN configuration context; no membership change occurs until explicit edits.
+- **Arguments:** `config system sdwan`: replaces legacy `config system virtual-wan-link` in newer FortiOS.
+- **Use case:** Inspect or prepare an approved SD-WAN member configuration.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-reference/76620/config-system-sdwan
+
+> Not lab-verified. Caution: review the impact before execution.
