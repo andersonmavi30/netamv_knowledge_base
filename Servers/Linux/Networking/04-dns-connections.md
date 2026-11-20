@@ -34,3 +34,16 @@ nmcli device status
 - **Official reference:** https://networkmanager.dev/docs/api/latest/nmcli.html
 
 > Not lab-verified.
+
+## `nmcli connection show --active`
+
+```bash
+nmcli connection show --active
+```
+
+- **Purpose:** List currently active NetworkManager connection profiles and devices.
+- **Arguments:** `connection show`: list connections; `--active`: limit to currently activated profiles; read-only.
+- **Use case:** Identify the active network profile before troubleshooting a RHEL server.
+- **Official reference:** https://networkmanager.dev/docs/api/latest/nmcli.html
+
+> Not lab-verified.

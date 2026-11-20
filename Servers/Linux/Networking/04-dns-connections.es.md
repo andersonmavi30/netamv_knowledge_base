@@ -34,3 +34,16 @@ nmcli device status
 - **Referencia oficial:** https://networkmanager.dev/docs/api/latest/nmcli.html
 
 > Pendiente de validación en laboratorio.
+
+## `nmcli connection show --active`
+
+```bash
+nmcli connection show --active
+```
+
+- **Sirve para:** Listar los perfiles de conexión activos de NetworkManager y sus dispositivos.
+- **Parámetros:** `connection show`: muestra conexiones; `--active`: filtra únicamente los perfiles activos; solo consulta.
+- **Ejemplo de uso:** Identificar el perfil de red activo antes de diagnosticar un servidor RHEL.
+- **Referencia oficial:** https://networkmanager.dev/docs/api/latest/nmcli.html
+
+> Pendiente de validación en laboratorio.
