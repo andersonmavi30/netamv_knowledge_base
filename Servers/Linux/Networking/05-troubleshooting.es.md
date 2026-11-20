@@ -21,3 +21,16 @@ ethtool eth0
 - **Referencia oficial:** https://man7.org/linux/man-pages/man8/ethtool.8.html
 
 > Pendiente de validación en laboratorio.
+
+## `sudo tcpdump -ni eth0 -c 20`
+
+```bash
+sudo tcpdump -ni eth0 -c 20
+```
+
+- **Sirve para:** Capturar y mostrar hasta 20 paquetes en una interfaz designada para un diagnóstico breve y autorizado.
+- **Parámetros:** `sudo`: privilegios de captura; `-n`: evita resolución de nombres; `-i eth0`: interfaz; `-c 20`: termina después de 20 paquetes. Puede exponer tráfico sensible.
+- **Ejemplo de uso:** Revisar brevemente tráfico de diagnóstico en un servidor de laboratorio; adaptar la interfaz y contar con autorización.
+- **Referencia oficial:** https://www.tcpdump.org/manpages/tcpdump.1.html
+
+> Pendiente de validación en laboratorio.
