@@ -63,3 +63,42 @@ get system interface | grep -n port3
 > **Note:** Quick reference, not lab-verified; confirm syntax and permissions on your model and release.
 
 **Vendor reference:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966
+
+## `get system global | grep vdom-mode`
+
+```text
+get system global | grep vdom-mode
+```
+
+- **Purpose:** Check the configured virtual-domain operating mode.
+- **Arguments:** `get system global`: global settings; `grep vdom-mode`: filter relevant field.
+- **Use case:** Confirm multi-VDOM mode after a controlled configuration change.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/administration-guide/317358
+
+> Not lab-verified; verify context and backups.
+
+## `get system performance status | grep Uptime`
+
+```text
+get system performance status | grep Uptime
+```
+
+- **Purpose:** Extract FortiGate uptime from performance status.
+- **Arguments:** `performance status`: system metrics; `grep Uptime`: filter uptime line (case-sensitive).
+- **Use case:** Correlate an outage with a recent device restart.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966
+
+> Not lab-verified; verify release.
+
+## `show | grep -f FW_SITE_A`
+
+```text
+show | grep -f FW_SITE_A
+```
+
+- **Purpose:** Locate an object or setting within the current configuration context with related matching lines.
+- **Arguments:** `show`: current context; `grep -f FW_SITE_A`: FortiOS filter with context; verify output and quoting.
+- **Use case:** Find references to a named address or policy object.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-reference
+
+> Not lab-verified; never publish configurations, logs or secrets.

@@ -64,3 +64,94 @@ diagnose vpn tunnel list | grep -i name=
 > **Note:** Quick reference, not lab-verified; confirm syntax and permissions on your model and release.
 
 **Vendor reference:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966
+
+## `sudo root execute ping 1.1.1.1`
+
+```text
+sudo root execute ping 1.1.1.1
+```
+
+- **Purpose:** Run ping within root VDOM when authorized.
+- **Arguments:** `sudo root`: target VDOM; `execute ping`: connectivity test.
+- **Use case:** Validate outbound routing from the appropriate VDOM.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/administration-guide/597696/vdom-overview
+
+> Not lab-verified; check release and context.
+
+## `execute ping-options view-settings`
+
+```text
+execute ping-options view-settings
+```
+
+- **Purpose:** Show current FortiOS ping settings without changing them.
+- **Arguments:** `ping-options`: ICMP settings; `view-settings`: read current values.
+- **Use case:** Confirm the source address and repetition count before testing.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-reference/93620/execute-ping-options
+
+> Not lab-verified; check release and context.
+
+## `execute ping-options source 192.0.2.1`
+
+```text
+execute ping-options source 192.0.2.1
+```
+
+- **Purpose:** Choose source IPv4 address for subsequent FortiGate pings.
+- **Arguments:** `source 192.0.2.1`: example local interface address; affects subsequent tests.
+- **Use case:** Test reachability from a specific internal interface.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-reference/93620/execute-ping-options
+
+> Not lab-verified; check release and context.
+
+## `execute traceroute-options view-settings`
+
+```text
+execute traceroute-options view-settings
+```
+
+- **Purpose:** Display current FortiOS traceroute settings.
+- **Arguments:** `traceroute-options`: path diagnostic settings; `view-settings`: read-only.
+- **Use case:** Inspect tracing source and output interface before a route test.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-reference
+
+> Not lab-verified; check release and context.
+
+## `diagnose debug crashlog read`
+
+```text
+diagnose debug crashlog read
+```
+
+- **Purpose:** Read recorded FortiOS process or system crash logs.
+- **Arguments:** `crashlog read`: print available crash history; output can include diagnostics.
+- **Use case:** Diagnose sudden daemon restarts or unexpected service outages.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966
+
+> Not lab-verified; verify release.
+
+## `execute traceroute-options source 192.0.2.1`
+
+```text
+execute traceroute-options source 192.0.2.1
+```
+
+- **Purpose:** Select a local IPv4 source for subsequent traceroute probes.
+- **Arguments:** `source`: local IPv4 to use for traceroute.
+- **Use case:** Test path selection from a VDOM-facing interface.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-reference
+
+> Not lab-verified.
+
+## `diagnose sniffer packet any 'host 192.0.2.50' 4 20 a`
+
+```text
+diagnose sniffer packet any 'host 192.0.2.50' 4 20 a
+```
+
+- **Purpose:** Inspect bounded traffic to or from an illustrative FortiAnalyzer IP.
+- **Arguments:** `any`: all interfaces; `host`: FAZ address; `4`: detail; `20`: limit; `a`: absolute timestamps.
+- **Use case:** Check whether logs traffic enters/leaves the expected interface.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.8/administration-guide/680228/performing-a-sniffer-trace-or-packet-capture
+
+> Not lab-verified.

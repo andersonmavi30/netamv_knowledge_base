@@ -155,3 +155,73 @@ show firewall service custom | grep -f LAB-HTTPS-8443
 > Referencia breve, no validada en laboratorio. Valida con la ayuda de la CLI y documentación del modelo/release.
 
 **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.2/administration-guide/777334/basic-configuration · https://docs.fortinet.com/document/fortigate/7.6.6/cli-reference/200835411/config-router-static
+
+## `config system global`
+
+```text
+config system global
+    set vdom-mode multi-vdom
+end
+```
+
+- **Sirve para:** Activar multi-VDOM globalmente; el cambio puede afectar acceso y redes existentes.
+- **Parámetros:** `set vdom-mode multi-vdom`: habilita VDOM independientes; `end`: guarda y sale.
+- **Ejemplo de uso:** Solo durante mantenimiento autorizado tras respaldar configuración.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.0/administration-guide/317358
+
+> Pendiente de validación en laboratorio; confirmar contexto y respaldos.
+
+## `config vdom`
+
+```text
+config vdom
+    edit LAB
+    next
+end
+```
+
+- **Sirve para:** Entrar o crear el VDOM ilustrativo LAB para su configuración; la creación modifica el sistema.
+- **Parámetros:** `config vdom`: tabla de VDOM; `edit LAB`: selecciona o crea; `next/end`: cierra/guarda.
+- **Ejemplo de uso:** Preparar un VDOM de laboratorio; comprobar nombres antes de editar.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.0/administration-guide/317358
+
+> Pendiente de validación en laboratorio; confirmar contexto y respaldos.
+
+## `config global`
+
+```text
+config global
+```
+
+- **Sirve para:** Entrar al contexto global de FortiOS desde una sesión multi-VDOM.
+- **Parámetros:** `config global`: cambia contexto CLI; es distinto de `config system global`.
+- **Ejemplo de uso:** Consultar ajustes globales cuando la sesión está dentro de un VDOM.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.0/administration-guide/317358
+
+> Pendiente de validación en laboratorio; confirmar contexto y respaldos.
+
+## `config system sdwan`
+
+```text
+config system sdwan
+```
+
+- **Sirve para:** Entrar al contexto de SD-WAN en FortiOS 7.x; no altera miembros hasta realizar cambios.
+- **Parámetros:** `config system sdwan`: sustituye al comando antiguo `config system virtual-wan-link`.
+- **Ejemplo de uso:** Consultar o preparar una configuración autorizada de miembros SD-WAN.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-reference/76620/config-system-sdwan
+
+> Pendiente de validación en laboratorio. Atención: ver impacto antes de ejecutarlo.
+
+## `show system vdom-link`
+
+```text
+show system vdom-link
+```
+
+- **Sirve para:** Consultar enlaces inter-VDOM configurados sin modificarlos.
+- **Parámetros:** `system vdom-link`: muestra definición de los enlaces; requiere contexto global y configuración compatible.
+- **Ejemplo de uso:** Identificar el enlace que conecta dos VDOM antes de revisar rutas y políticas.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.10/cli-reference/232114316/config-system-vdom-link
+
+> Pendiente de validación en laboratorio.

@@ -32,3 +32,12 @@ Identify the precise firmware and use `?` at the appropriate CLI level.
 - [Five new operational checks](09-operational-checks.md)
 
 - [Five new targeted operational queries](10-targeted-queries.md)
+
+## VDOM, routing and policy notes
+
+- Use `config global` for global scope, and `config vdom` / `edit <VDOM>` for a particular VDOM. `config vdom global` is not how you enter global scope.
+- For inter-VDOM links, configure interfaces, routes and policies based on the flows that initiate connections. Policies are stateful: return traffic for an established session does not itself require a reverse policy; create additional policies when new sessions can start in both directions.
+- NAT is not inherently required between routed internal networks, but is not universally forbidden; use depends on architecture, overlaps and policy. The management VDOM may originate FortiGuard and other local services; do not assume it is the only internet-connected VDOM.
+- `config system virtual-wan-link` is legacy syntax; FortiOS 7.x uses `config system sdwan`.
+
+**References:** https://docs.fortinet.com/document/fortigate/7.0.8/administration-guide/335646/inter-vdom-routing · https://docs.fortinet.com/document/fortigate/7.4.4/administration-guide/256518/configuring-sd-wan-in-the-cli

@@ -45,3 +45,146 @@ diagnose debug reset
 **Vendor reference:** https://docs.fortinet.com/document/fortigate/7.4.0/administration-guide/680228/performing-a-sniffer-trace-cli-and-packet-capture
 
 **Note:** EPC/sniffer may not see hardware-offloaded packets. Protocol debugging is not the same as PCAP.
+
+## `diagnose sniffer packet any 'src host 192.0.2.10 and dst host 198.51.100.20' 4 20 a`
+
+```text
+diagnose sniffer packet any 'src host 192.0.2.10 and dst host 198.51.100.20' 4 20 a
+```
+
+- **Purpose:** Capture up to 20 packets between designated source and destination.
+- **Arguments:** `any`: all interfaces; `src/dst host`: directional BPF filter; `4`: interface/header; `20`: limit; `a`: absolute timestamps.
+- **Use case:** Find whether a test flow enters and leaves the firewall.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.8/administration-guide/680228/performing-a-sniffer-trace-or-packet-capture
+
+> Not lab-verified. Use only for authorized troubleshooting.
+
+## `diagnose sniffer packet port1 'src host 192.0.2.10 and icmp' 4 20 a`
+
+```text
+diagnose sniffer packet port1 'src host 192.0.2.10 and icmp' 4 20 a
+```
+
+- **Purpose:** Capture a bounded ICMP trace from a source on port1.
+- **Arguments:** `port1`: example interface; `src host`: source filter; `icmp`: protocol; `4 20 a`: verbosity, count, timestamp.
+- **Use case:** Isolate whether ICMP reaches the expected internal port.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.8/administration-guide/680228/performing-a-sniffer-trace-or-packet-capture
+
+> Not lab-verified. Use only for authorized troubleshooting.
+
+## `diagnose debug flow trace stop`
+
+```text
+diagnose debug flow trace stop
+```
+
+- **Purpose:** Stop any active packet flow tracing session.
+- **Arguments:** `flow trace stop`: stop ongoing flow trace; use `diagnose debug reset` for complete cleanup.
+- **Use case:** End flow diagnostics after collecting sufficient evidence.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
+
+> Not lab-verified. Use only for authorized troubleshooting.
+
+## `diagnose debug flow filter clear`
+
+```text
+diagnose debug flow filter clear
+```
+
+- **Purpose:** Clear previously configured flow address/port filters.
+- **Arguments:** `flow filter clear`: remove IPv4 flow filters.
+- **Use case:** Prepare a clean diagnostic context.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
+
+> Not lab-verified; stop and reset debugging after use.
+
+## `diagnose debug flow filter addr 192.0.2.10`
+
+```text
+diagnose debug flow filter addr 192.0.2.10
+```
+
+- **Purpose:** Trace traffic involving a specific host address.
+- **Arguments:** `addr`: match host address; `192.0.2.10`: lab IP.
+- **Use case:** Reduce logs to a single test host.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
+
+> Not lab-verified; stop and reset debugging after use.
+
+## `diagnose debug flow filter saddr 192.0.2.10`
+
+```text
+diagnose debug flow filter saddr 192.0.2.10
+```
+
+- **Purpose:** Match packets sourced from a particular IPv4 address.
+- **Arguments:** `saddr`: IPv4 source filter.
+- **Use case:** Trace traffic leaving a workstation.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
+
+> Not lab-verified; stop and reset debugging after use.
+
+## `diagnose debug flow filter daddr 198.51.100.20`
+
+```text
+diagnose debug flow filter daddr 198.51.100.20
+```
+
+- **Purpose:** Match packets destined for a particular IPv4 address.
+- **Arguments:** `daddr`: IPv4 destination filter.
+- **Use case:** Check policies for a server destination.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
+
+> Not lab-verified; stop and reset debugging after use.
+
+## `diagnose debug flow trace start 20`
+
+```text
+diagnose debug flow trace start 20
+```
+
+- **Purpose:** Start tracing up to 20 matched flow records.
+- **Arguments:** `trace start 20`: start bounded flow trace; configure filters first.
+- **Use case:** Review policy and route decisions for a test session.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
+
+> Not lab-verified; stop using `diagnose debug disable`, `diagnose debug flow trace stop`, and `diagnose debug reset`.
+
+## `diagnose debug flow show function-name enable`
+
+```text
+diagnose debug flow show function-name enable
+```
+
+- **Purpose:** Include internal function names in flow diagnostic messages.
+- **Arguments:** `show function-name enable`: add function-name detail to trace output.
+- **Use case:** Find the step where a packet is dropped.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
+
+> Not lab-verified; stop using `diagnose debug disable`, `diagnose debug flow trace stop`, and `diagnose debug reset`.
+
+## `diagnose debug flow show iprope enable`
+
+```text
+diagnose debug flow show iprope enable
+```
+
+- **Purpose:** Include firewall policy processing details in flow diagnostics when supported.
+- **Arguments:** `show iprope enable`: detailed policy-engine debug output; availability varies.
+- **Use case:** Inspect policy matching during a controlled flow trace.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
+
+> Not lab-verified; stop using `diagnose debug disable`, `diagnose debug flow trace stop`, and `diagnose debug reset`.
+
+## `diagnose debug enable`
+
+```text
+diagnose debug enable
+```
+
+- **Purpose:** Enable diagnostic output previously configured with filters and trace settings.
+- **Arguments:** `debug enable`: starts printing debug output; stop later using disable and reset.
+- **Use case:** Begin bounded policy-flow diagnosis after configuring trace count.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
+
+> Not lab-verified; stop using `diagnose debug disable`, `diagnose debug flow trace stop`, and `diagnose debug reset`.

@@ -78,3 +78,81 @@ diagnose debug reset
 
 
 > Not lab-tested; verify against release-specific CLI help. Full backups and debug output may expose sensitive information.
+
+## `execute update-now`
+
+```text
+execute update-now
+```
+
+- **Purpose:** Trigger an immediate FortiGuard signature update check.
+- **Arguments:** `update-now`: manually initiate update; requires reachability and may alter signature versions.
+- **Use case:** Refresh IPS/AV definitions during an approved maintenance window.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966
+
+> Not lab-verified. Use only for authorized troubleshooting.
+
+## `diagnose log test`
+
+```text
+diagnose log test
+```
+
+- **Purpose:** Generate synthetic log entries to test FortiOS logging pipeline.
+- **Arguments:** `log test`: generates test events, not a connectivity-only probe.
+- **Use case:** Verify that a configured FortiAnalyzer receives test logs.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966
+
+> Not lab-verified; never publish configurations, logs or secrets.
+
+## `execute log fortianalyzer test-connectivity`
+
+```text
+execute log fortianalyzer test-connectivity
+```
+
+- **Purpose:** Test the FortiGate connection to configured FortiAnalyzer servers.
+- **Arguments:** `log fortianalyzer test-connectivity`: active communication test; requires configured FAZ.
+- **Use case:** Confirm connectivity before troubleshooting missing forwarded logs.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966
+
+> Not lab-verified; never publish configurations, logs or secrets.
+
+## `execute factoryreset`
+
+```text
+execute factoryreset
+```
+
+- **Purpose:** Reset a FortiGate to factory defaults and reboot, deleting most configuration.
+- **Arguments:** `factoryreset`: destructive reset and reboot; export a backup and ensure console/recovery access.
+- **Use case:** Use only for an approved decommissioning or isolated lab reset.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.7/administration-guide/702257/configuration-backups-and-reset
+
+> Not lab-verified. Caution: review the impact before execution.
+
+## `execute factoryreset2`
+
+```text
+execute factoryreset2
+```
+
+- **Purpose:** Reset most configuration while retaining specified system/network elements, unlike a full factory reset.
+- **Arguments:** `factoryreset2`: retains system settings, interfaces, VDOMs, static routes and virtual switches where supported; still destructive.
+- **Use case:** Use only with verified restoration plan and local/console access.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.7/administration-guide/702257/configuration-backups-and-reset
+
+> Not lab-verified. Caution: review the impact before execution.
+
+## `diagnose sys kill 11 1234`
+
+```text
+diagnose sys kill 11 1234
+```
+
+- **Purpose:** Send signal 11 to a process ID, forcefully interrupting or crashing it.
+- **Arguments:** `kill 11`: send SIGSEGV; `1234`: dummy PID, never copy blindly.
+- **Use case:** Only under Fortinet TAC instruction after identifying the correct daemon.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966
+
+> DANGER: do not run without explicit TAC approval.

@@ -46,3 +46,20 @@ end
 > **Nota:** Referencia rápida, no verificada en laboratorio; confirma sintaxis y permisos en tu modelo y versión.
 
 **Fuente del fabricante:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966
+
+## `config system interface`
+
+```text
+config system interface
+    edit port1
+        show full-configuration
+    next
+end
+```
+
+- **Sirve para:** Mostrar todos los parámetros, incluidos predeterminados, de una interfaz desde su contexto.
+- **Parámetros:** `edit port1`: selecciona interfaz; `show full-configuration`: muestra todos los campos; no se usa `set`.
+- **Ejemplo de uso:** Auditar parámetros de interfaz durante un incidente de rutas o VDOM.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-reference
+
+> Pendiente de validación en laboratorio. Atención: ver impacto antes de ejecutarlo.

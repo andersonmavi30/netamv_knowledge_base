@@ -155,3 +155,73 @@ show firewall service custom | grep -f LAB-HTTPS-8443
 > Short reference, not lab-verified. Validate using built-in CLI help and documentation for your model/release.
 
 **Vendor documentation:** https://docs.fortinet.com/document/fortigate/7.4.2/administration-guide/777334/basic-configuration · https://docs.fortinet.com/document/fortigate/7.6.6/cli-reference/200835411/config-router-static
+
+## `config system global`
+
+```text
+config system global
+    set vdom-mode multi-vdom
+end
+```
+
+- **Purpose:** Enable multi-VDOM mode globally; changing mode may disrupt access and existing networking.
+- **Arguments:** `set vdom-mode multi-vdom`: enable independent VDOMs; `end`: save/exit.
+- **Use case:** Only in a planned maintenance window after backing up the configuration.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/administration-guide/317358
+
+> Not lab-verified; verify context and backups.
+
+## `config vdom`
+
+```text
+config vdom
+    edit LAB
+    next
+end
+```
+
+- **Purpose:** Enter or create the illustrative LAB VDOM for per-VDOM settings; creation may change system state.
+- **Arguments:** `config vdom`: VDOM table; `edit LAB`: select or create VDOM; `next/end`: leave/save context.
+- **Use case:** Prepare an isolated lab VDOM; verify actual VDOM names before editing.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/administration-guide/317358
+
+> Not lab-verified; verify context and backups.
+
+## `config global`
+
+```text
+config global
+```
+
+- **Purpose:** Enter the global FortiOS CLI context from a multi-VDOM session.
+- **Arguments:** `config global`: change CLI scope; not the same as `config system global`.
+- **Use case:** Inspect global-only settings when the current prompt is within a VDOM.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/administration-guide/317358
+
+> Not lab-verified; verify context and backups.
+
+## `config system sdwan`
+
+```text
+config system sdwan
+```
+
+- **Purpose:** Enter the FortiOS 7.x SD-WAN configuration context; no membership change occurs until explicit edits.
+- **Arguments:** `config system sdwan`: replaces legacy `config system virtual-wan-link` in newer FortiOS.
+- **Use case:** Inspect or prepare an approved SD-WAN member configuration.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-reference/76620/config-system-sdwan
+
+> Not lab-verified. Caution: review the impact before execution.
+
+## `show system vdom-link`
+
+```text
+show system vdom-link
+```
+
+- **Purpose:** Inspect configured inter-VDOM links without modifying them.
+- **Arguments:** `system vdom-link`: display link definitions; requires appropriate global context and platform support.
+- **Use case:** Find the link between VDOMs before reviewing routes and firewall policies.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.10/cli-reference/232114316/config-system-vdom-link
+
+> Not lab-verified.

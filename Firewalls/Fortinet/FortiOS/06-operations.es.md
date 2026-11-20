@@ -78,3 +78,81 @@ diagnose debug reset
 
 
 > No probado en laboratorio; verificar con la ayuda CLI y documentación de la versión antes de ejecutarlo. Los respaldos completos y las salidas de diagnóstico pueden contener datos sensibles.
+
+## `execute update-now`
+
+```text
+execute update-now
+```
+
+- **Sirve para:** Solicitar una actualización inmediata de firmas FortiGuard.
+- **Parámetros:** `update-now`: inicia actualización; requiere conectividad y puede modificar firmas.
+- **Ejemplo de uso:** Actualizar firmas IPS/AV durante mantenimiento autorizado.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966
+
+> Pendiente de validación en laboratorio. Usar solo durante diagnóstico autorizado.
+
+## `diagnose log test`
+
+```text
+diagnose log test
+```
+
+- **Sirve para:** Generar logs de prueba para comprobar el sistema de registro FortiOS.
+- **Parámetros:** `log test`: crea eventos de prueba; no es solo una prueba de conectividad.
+- **Ejemplo de uso:** Comprobar si FortiAnalyzer recibe eventos de prueba.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966
+
+> Pendiente de validación en laboratorio; no publiques configuraciones, logs ni secretos.
+
+## `execute log fortianalyzer test-connectivity`
+
+```text
+execute log fortianalyzer test-connectivity
+```
+
+- **Sirve para:** Probar la conexión del FortiGate con los servidores FortiAnalyzer configurados.
+- **Parámetros:** `log fortianalyzer test-connectivity`: prueba activa de comunicación; requiere FAZ configurado.
+- **Ejemplo de uso:** Confirmar conectividad antes de investigar logs no enviados.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966
+
+> Pendiente de validación en laboratorio; no publiques configuraciones, logs ni secretos.
+
+## `execute factoryreset`
+
+```text
+execute factoryreset
+```
+
+- **Sirve para:** Restablecer el FortiGate a valores de fábrica y reiniciar, borrando la mayor parte de la configuración.
+- **Parámetros:** `factoryreset`: reseteo destructivo y reinicio; exigir backup y acceso de recuperación.
+- **Ejemplo de uso:** Usar solo en baja de equipo autorizada o laboratorio aislado.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.7/administration-guide/702257/configuration-backups-and-reset
+
+> Pendiente de validación en laboratorio. Atención: ver impacto antes de ejecutarlo.
+
+## `execute factoryreset2`
+
+```text
+execute factoryreset2
+```
+
+- **Sirve para:** Reiniciar gran parte de la configuración conservando ciertos elementos de sistema/red; distinto de reset completo.
+- **Parámetros:** `factoryreset2`: conserva ajustes del sistema, interfaces, VDOM, rutas estáticas y switches virtuales según versión; sigue siendo destructivo.
+- **Ejemplo de uso:** Usar solo con plan de recuperación y acceso local/consola.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.7/administration-guide/702257/configuration-backups-and-reset
+
+> Pendiente de validación en laboratorio. Atención: ver impacto antes de ejecutarlo.
+
+## `diagnose sys kill 11 1234`
+
+```text
+diagnose sys kill 11 1234
+```
+
+- **Sirve para:** Enviar la señal 11 a un PID, interrumpiéndolo o provocando un fallo.
+- **Parámetros:** `kill 11`: envía SIGSEGV; `1234`: PID ficticio; nunca copiar sin verificar.
+- **Ejemplo de uso:** Solo bajo indicación de Fortinet TAC tras identificar el proceso.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966
+
+> PELIGRO: no ejecutar sin aprobación explícita del TAC.

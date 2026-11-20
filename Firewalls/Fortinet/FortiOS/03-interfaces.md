@@ -46,3 +46,20 @@ end
 > **Note:** Quick reference, not lab-verified; confirm syntax and permissions on your model and release.
 
 **Vendor reference:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966
+
+## `config system interface`
+
+```text
+config system interface
+    edit port1
+        show full-configuration
+    next
+end
+```
+
+- **Purpose:** Display all settings, including defaults, for a selected interface from its configuration context.
+- **Arguments:** `edit port1`: select existing interface; `show full-configuration`: display all fields; no `set` is applied.
+- **Use case:** Audit interface settings during a routing or VDOM incident.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-reference
+
+> Not lab-verified. Caution: review the impact before execution.

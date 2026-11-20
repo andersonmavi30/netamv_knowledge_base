@@ -74,3 +74,55 @@ get system arp | grep 192.0.2.10
 > **Note:** Quick reference, not lab-verified; confirm syntax and permissions on your model and release.
 
 **Vendor reference:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966
+
+## `get router info routing-table database`
+
+```text
+get router info routing-table database
+```
+
+- **Purpose:** Show the IPv4 routing information base, including candidates not in the active table.
+- **Arguments:** `database`: show routing database rather than active-only forwarding entries.
+- **Use case:** Check whether a route was learned but not installed.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.8/administration-guide/139692/routing-concepts
+
+> Not lab-verified; verify release support.
+
+## `get router info routing-table connected`
+
+```text
+get router info routing-table connected
+```
+
+- **Purpose:** List connected IPv4 routes reported by the FortiGate.
+- **Arguments:** `connected`: limit to directly connected routes; exact availability varies by FortiOS release.
+- **Use case:** Review subnets directly attached to the FortiGate.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.8/administration-guide/139692/routing-concepts
+
+> Not lab-verified; verify release support.
+
+## `get router info routing-table static`
+
+```text
+get router info routing-table static
+```
+
+- **Purpose:** List installed static IPv4 routes.
+- **Arguments:** `static`: filter IPv4 routing table by static route source.
+- **Use case:** Validate a static route between internal VDOMs.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.8/administration-guide/139692/routing-concepts
+
+> Not lab-verified; verify release support.
+
+## `show full-configuration`
+
+```text
+show full-configuration
+```
+
+- **Purpose:** Display the complete configuration, including default values, in the current CLI scope.
+- **Arguments:** `full-configuration`: include default settings omitted from ordinary `show`; output may contain secrets.
+- **Use case:** Compare settings during a private configuration audit.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-reference
+
+> Not lab-verified; never publish configurations, logs or secrets.

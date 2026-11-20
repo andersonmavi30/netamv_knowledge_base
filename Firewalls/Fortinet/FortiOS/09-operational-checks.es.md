@@ -110,3 +110,42 @@ get system ha status
 - **Parámetros / flags:** ha status: resumen de alta disponibilidad; requiere HA configurado.
 - **Uso operativo:** Confirmar la unidad primaria y la sincronización al analizar failover.
 - **Validación:** Pendiente de laboratorio; confirmar versión y contexto CLI.
+
+## `diagnose sys top-summary`
+
+```text
+diagnose sys top-summary
+```
+
+- **Sirve para:** Mostrar resumen de consumo de recursos por procesos cuando esté disponible.
+- **Parámetros:** `top-summary`: resumen de procesos y recursos; disponibilidad depende de versión.
+- **Ejemplo de uso:** Detectar consumo alto de CPU antes de diagnósticos intensivos.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966
+
+> Pendiente de validación en laboratorio; confirma versión.
+
+## `diagnose autoupdate versions`
+
+```text
+diagnose autoupdate versions
+```
+
+- **Sirve para:** Mostrar versiones instaladas de firmas y componentes FortiGuard.
+- **Parámetros:** `autoupdate versions`: lista versiones de paquetes; solo consulta.
+- **Ejemplo de uso:** Confirmar paquetes IPS/AV instalados tras actualizar.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966
+
+> Pendiente de validación en laboratorio; confirma versión.
+
+## `diagnose sys vd list`
+
+```text
+diagnose sys vd list
+```
+
+- **Sirve para:** Mostrar identificadores de VDOM y estadísticas operativas relacionadas.
+- **Parámetros:** `sys vd list`: muestra metadatos y estado de VDOM.
+- **Ejemplo de uso:** Confirmar mapeo de VDOM antes de diagnóstico.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966
+
+> Pendiente de validación en laboratorio; confirma disponibilidad por versión.

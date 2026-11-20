@@ -74,3 +74,55 @@ get system arp | grep 192.0.2.10
 > **Nota:** Referencia rápida, no verificada en laboratorio; confirma sintaxis y permisos en tu modelo y versión.
 
 **Fuente del fabricante:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966
+
+## `get router info routing-table database`
+
+```text
+get router info routing-table database
+```
+
+- **Sirve para:** Consultar la base IPv4 de rutas, incluidas rutas candidatas no instaladas.
+- **Parámetros:** `database`: muestra base de rutas y no solo entradas activas.
+- **Ejemplo de uso:** Verificar si una ruta fue aprendida pero no instalada.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.8/administration-guide/139692/routing-concepts
+
+> Pendiente de validación en laboratorio; confirma disponibilidad por versión.
+
+## `get router info routing-table connected`
+
+```text
+get router info routing-table connected
+```
+
+- **Sirve para:** Listar rutas IPv4 directamente conectadas del FortiGate.
+- **Parámetros:** `connected`: limita rutas conectadas; confirmar disponibilidad según versión.
+- **Ejemplo de uso:** Revisar subredes conectadas al firewall.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.8/administration-guide/139692/routing-concepts
+
+> Pendiente de validación en laboratorio; confirma disponibilidad por versión.
+
+## `get router info routing-table static`
+
+```text
+get router info routing-table static
+```
+
+- **Sirve para:** Listar rutas IPv4 estáticas instaladas.
+- **Parámetros:** `static`: filtra las rutas IPv4 de origen estático.
+- **Ejemplo de uso:** Validar una ruta estática entre VDOM internos.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.8/administration-guide/139692/routing-concepts
+
+> Pendiente de validación en laboratorio; confirma disponibilidad por versión.
+
+## `show full-configuration`
+
+```text
+show full-configuration
+```
+
+- **Sirve para:** Mostrar toda la configuración, incluidos valores predeterminados, dentro del ámbito actual.
+- **Parámetros:** `full-configuration`: incluye valores por defecto omitidos en `show`; puede contener datos sensibles.
+- **Ejemplo de uso:** Comparar opciones durante una auditoría privada.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-reference
+
+> Pendiente de validación en laboratorio; no publiques configuraciones, logs ni secretos.
