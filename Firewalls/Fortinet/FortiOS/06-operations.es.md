@@ -143,3 +143,16 @@ execute factoryreset2
 - **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.7/administration-guide/702257/configuration-backups-and-reset
 
 > Pendiente de validación en laboratorio. Atención: ver impacto antes de ejecutarlo.
+
+## `diagnose sys kill 11 1234`
+
+```text
+diagnose sys kill 11 1234
+```
+
+- **Sirve para:** Enviar la señal 11 a un PID, interrumpiéndolo o provocando un fallo.
+- **Parámetros:** `kill 11`: envía SIGSEGV; `1234`: PID ficticio; nunca copiar sin verificar.
+- **Ejemplo de uso:** Solo bajo indicación de Fortinet TAC tras identificar el proceso.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966
+
+> PELIGRO: no ejecutar sin aprobación explícita del TAC.
