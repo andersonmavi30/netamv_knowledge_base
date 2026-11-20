@@ -170,3 +170,19 @@ end
 - **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/administration-guide/317358
 
 > Not lab-verified; verify context and backups.
+
+## `config vdom`
+
+```text
+config vdom
+    edit LAB
+    next
+end
+```
+
+- **Purpose:** Enter or create the illustrative LAB VDOM for per-VDOM settings; creation may change system state.
+- **Arguments:** `config vdom`: VDOM table; `edit LAB`: select or create VDOM; `next/end`: leave/save context.
+- **Use case:** Prepare an isolated lab VDOM; verify actual VDOM names before editing.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/administration-guide/317358
+
+> Not lab-verified; verify context and backups.

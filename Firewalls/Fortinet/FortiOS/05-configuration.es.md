@@ -170,3 +170,19 @@ end
 - **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.0/administration-guide/317358
 
 > Pendiente de validación en laboratorio; confirmar contexto y respaldos.
+
+## `config vdom`
+
+```text
+config vdom
+    edit LAB
+    next
+end
+```
+
+- **Sirve para:** Entrar o crear el VDOM ilustrativo LAB para su configuración; la creación modifica el sistema.
+- **Parámetros:** `config vdom`: tabla de VDOM; `edit LAB`: selecciona o crea; `next/end`: cierra/guarda.
+- **Ejemplo de uso:** Preparar un VDOM de laboratorio; comprobar nombres antes de editar.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.0/administration-guide/317358
+
+> Pendiente de validación en laboratorio; confirmar contexto y respaldos.
