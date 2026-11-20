@@ -71,3 +71,16 @@ diagnose sniffer packet port1 'src host 192.0.2.10 and icmp' 4 20 a
 - **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.8/administration-guide/680228/performing-a-sniffer-trace-or-packet-capture
 
 > Not lab-verified. Use only for authorized troubleshooting.
+
+## `diagnose debug flow trace stop`
+
+```text
+diagnose debug flow trace stop
+```
+
+- **Purpose:** Stop any active packet flow tracing session.
+- **Arguments:** `flow trace stop`: stop ongoing flow trace; use `diagnose debug reset` for complete cleanup.
+- **Use case:** End flow diagnostics after collecting sufficient evidence.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
+
+> Not lab-verified. Use only for authorized troubleshooting.
