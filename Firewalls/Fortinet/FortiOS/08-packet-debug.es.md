@@ -149,3 +149,16 @@ diagnose debug flow trace start 20
 - **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
 
 > Pendiente de validación en laboratorio; detener con `diagnose debug disable`, `diagnose debug flow trace stop` y `diagnose debug reset`.
+
+## `diagnose debug flow show function-name enable`
+
+```text
+diagnose debug flow show function-name enable
+```
+
+- **Sirve para:** Incluir nombres de funciones internas en mensajes del debug.
+- **Parámetros:** `show function-name enable`: agrega nombres de función a la salida.
+- **Ejemplo de uso:** Identificar la etapa en que se descarta un paquete.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
+
+> Pendiente de validación en laboratorio; detener con `diagnose debug disable`, `diagnose debug flow trace stop` y `diagnose debug reset`.

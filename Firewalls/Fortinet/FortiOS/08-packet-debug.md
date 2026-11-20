@@ -149,3 +149,16 @@ diagnose debug flow trace start 20
 - **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
 
 > Not lab-verified; stop using `diagnose debug disable`, `diagnose debug flow trace stop`, and `diagnose debug reset`.
+
+## `diagnose debug flow show function-name enable`
+
+```text
+diagnose debug flow show function-name enable
+```
+
+- **Purpose:** Include internal function names in flow diagnostic messages.
+- **Arguments:** `show function-name enable`: add function-name detail to trace output.
+- **Use case:** Find the step where a packet is dropped.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
+
+> Not lab-verified; stop using `diagnose debug disable`, `diagnose debug flow trace stop`, and `diagnose debug reset`.
