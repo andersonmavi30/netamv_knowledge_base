@@ -123,3 +123,16 @@ diagnose debug flow filter saddr 192.0.2.10
 - **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
 
 > Not lab-verified; stop and reset debugging after use.
+
+## `diagnose debug flow filter daddr 198.51.100.20`
+
+```text
+diagnose debug flow filter daddr 198.51.100.20
+```
+
+- **Purpose:** Match packets destined for a particular IPv4 address.
+- **Arguments:** `daddr`: IPv4 destination filter.
+- **Use case:** Check policies for a server destination.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
+
+> Not lab-verified; stop and reset debugging after use.
