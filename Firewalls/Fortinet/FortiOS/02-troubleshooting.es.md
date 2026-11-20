@@ -103,3 +103,16 @@ execute ping-options source 192.0.2.1
 - **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-reference/93620/execute-ping-options
 
 > Pendiente de validación en laboratorio; confirma versión y contexto.
+
+## `execute traceroute-options view-settings`
+
+```text
+execute traceroute-options view-settings
+```
+
+- **Sirve para:** Mostrar opciones actuales de traceroute en FortiOS.
+- **Parámetros:** `traceroute-options`: opciones de trazado; `view-settings`: consulta.
+- **Ejemplo de uso:** Revisar origen e interfaz de salida antes de trazar una ruta.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-reference
+
+> Pendiente de validación en laboratorio; confirma versión y contexto.

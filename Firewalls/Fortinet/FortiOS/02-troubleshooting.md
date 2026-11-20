@@ -103,3 +103,16 @@ execute ping-options source 192.0.2.1
 - **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-reference/93620/execute-ping-options
 
 > Not lab-verified; check release and context.
+
+## `execute traceroute-options view-settings`
+
+```text
+execute traceroute-options view-settings
+```
+
+- **Purpose:** Display current FortiOS traceroute settings.
+- **Arguments:** `traceroute-options`: path diagnostic settings; `view-settings`: read-only.
+- **Use case:** Inspect tracing source and output interface before a route test.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-reference
+
+> Not lab-verified; check release and context.
