@@ -45,3 +45,16 @@ diagnose debug reset
 **Vendor reference:** https://docs.fortinet.com/document/fortigate/7.4.0/administration-guide/680228/performing-a-sniffer-trace-cli-and-packet-capture
 
 **Note:** EPC/sniffer may not see hardware-offloaded packets. Protocol debugging is not the same as PCAP.
+
+## `diagnose sniffer packet any 'src host 192.0.2.10 and dst host 198.51.100.20' 4 20 a`
+
+```text
+diagnose sniffer packet any 'src host 192.0.2.10 and dst host 198.51.100.20' 4 20 a
+```
+
+- **Purpose:** Capture up to 20 packets between designated source and destination.
+- **Arguments:** `any`: all interfaces; `src/dst host`: directional BPF filter; `4`: interface/header; `20`: limit; `a`: absolute timestamps.
+- **Use case:** Find whether a test flow enters and leaves the firewall.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.8/administration-guide/680228/performing-a-sniffer-trace-or-packet-capture
+
+> Not lab-verified. Use only for authorized troubleshooting.
