@@ -97,3 +97,16 @@ diagnose debug flow filter clear
 - **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
 
 > Not lab-verified; stop and reset debugging after use.
+
+## `diagnose debug flow filter addr 192.0.2.10`
+
+```text
+diagnose debug flow filter addr 192.0.2.10
+```
+
+- **Purpose:** Trace traffic involving a specific host address.
+- **Arguments:** `addr`: match host address; `192.0.2.10`: lab IP.
+- **Use case:** Reduce logs to a single test host.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
+
+> Not lab-verified; stop and reset debugging after use.

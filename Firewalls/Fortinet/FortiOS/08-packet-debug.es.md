@@ -97,3 +97,16 @@ diagnose debug flow filter clear
 - **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
 
 > Pendiente de validación en laboratorio; recuerda detener y resetear el debug.
+
+## `diagnose debug flow filter addr 192.0.2.10`
+
+```text
+diagnose debug flow filter addr 192.0.2.10
+```
+
+- **Sirve para:** Filtrar el tráfico relacionado con una IP específica.
+- **Parámetros:** `addr`: coincide con IP del host; `192.0.2.10`: ejemplo.
+- **Ejemplo de uso:** Reducir los logs a un host de prueba.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
+
+> Pendiente de validación en laboratorio; recuerda detener y resetear el debug.
