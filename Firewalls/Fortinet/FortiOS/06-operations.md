@@ -91,3 +91,16 @@ execute update-now
 - **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966
 
 > Not lab-verified. Use only for authorized troubleshooting.
+
+## `diagnose log test`
+
+```text
+diagnose log test
+```
+
+- **Purpose:** Generate synthetic log entries to test FortiOS logging pipeline.
+- **Arguments:** `log test`: generates test events, not a connectivity-only probe.
+- **Use case:** Verify that a configured FortiAnalyzer receives test logs.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966
+
+> Not lab-verified; never publish configurations, logs or secrets.

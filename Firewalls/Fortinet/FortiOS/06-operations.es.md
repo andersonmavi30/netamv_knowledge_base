@@ -91,3 +91,16 @@ execute update-now
 - **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966
 
 > Pendiente de validación en laboratorio. Usar solo durante diagnóstico autorizado.
+
+## `diagnose log test`
+
+```text
+diagnose log test
+```
+
+- **Sirve para:** Generar logs de prueba para comprobar el sistema de registro FortiOS.
+- **Parámetros:** `log test`: crea eventos de prueba; no es solo una prueba de conectividad.
+- **Ejemplo de uso:** Comprobar si FortiAnalyzer recibe eventos de prueba.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966
+
+> Pendiente de validación en laboratorio; no publiques configuraciones, logs ni secretos.
