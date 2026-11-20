@@ -116,3 +116,16 @@ execute traceroute-options view-settings
 - **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-reference
 
 > Not lab-verified; check release and context.
+
+## `diagnose debug crashlog read`
+
+```text
+diagnose debug crashlog read
+```
+
+- **Purpose:** Read recorded FortiOS process or system crash logs.
+- **Arguments:** `crashlog read`: print available crash history; output can include diagnostics.
+- **Use case:** Diagnose sudden daemon restarts or unexpected service outages.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966
+
+> Not lab-verified; verify release.
