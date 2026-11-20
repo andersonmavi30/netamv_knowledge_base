@@ -162,3 +162,16 @@ diagnose debug flow show function-name enable
 - **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
 
 > Not lab-verified; stop using `diagnose debug disable`, `diagnose debug flow trace stop`, and `diagnose debug reset`.
+
+## `diagnose debug flow show iprope enable`
+
+```text
+diagnose debug flow show iprope enable
+```
+
+- **Purpose:** Include firewall policy processing details in flow diagnostics when supported.
+- **Arguments:** `show iprope enable`: detailed policy-engine debug output; availability varies.
+- **Use case:** Inspect policy matching during a controlled flow trace.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
+
+> Not lab-verified; stop using `diagnose debug disable`, `diagnose debug flow trace stop`, and `diagnose debug reset`.
