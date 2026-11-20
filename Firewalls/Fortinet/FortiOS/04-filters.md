@@ -63,3 +63,16 @@ get system interface | grep -n port3
 > **Note:** Quick reference, not lab-verified; confirm syntax and permissions on your model and release.
 
 **Vendor reference:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966
+
+## `get system global | grep vdom-mode`
+
+```text
+get system global | grep vdom-mode
+```
+
+- **Purpose:** Check the configured virtual-domain operating mode.
+- **Arguments:** `get system global`: global settings; `grep vdom-mode`: filter relevant field.
+- **Use case:** Confirm multi-VDOM mode after a controlled configuration change.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/administration-guide/317358
+
+> Not lab-verified; verify context and backups.

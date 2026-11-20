@@ -63,3 +63,16 @@ get system interface | grep -n port3
 > **Nota:** Referencia rápida, no verificada en laboratorio; confirma sintaxis y permisos en tu modelo y versión.
 
 **Fuente del fabricante:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966
+
+## `get system global | grep vdom-mode`
+
+```text
+get system global | grep vdom-mode
+```
+
+- **Sirve para:** Verificar el modo configurado de dominios virtuales.
+- **Parámetros:** `get system global`: parámetros globales; `grep vdom-mode`: muestra campo relacionado.
+- **Ejemplo de uso:** Confirmar multi-VDOM tras un cambio controlado.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.0/administration-guide/317358
+
+> Pendiente de validación en laboratorio; confirmar contexto y respaldos.
