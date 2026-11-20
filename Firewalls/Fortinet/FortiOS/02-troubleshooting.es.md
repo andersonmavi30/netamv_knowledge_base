@@ -142,3 +142,16 @@ execute traceroute-options source 192.0.2.1
 - **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-reference
 
 > Pendiente de validación en laboratorio.
+
+## `diagnose sniffer packet any 'host 192.0.2.50' 4 20 a`
+
+```text
+diagnose sniffer packet any 'host 192.0.2.50' 4 20 a
+```
+
+- **Sirve para:** Inspeccionar tráfico limitado hacia o desde una IP ilustrativa de FortiAnalyzer.
+- **Parámetros:** `any`: interfaces; `host`: IP FAZ; `4`: detalle; `20`: límite; `a`: marca temporal.
+- **Ejemplo de uso:** Comprobar por dónde pasa el tráfico de logs.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.8/administration-guide/680228/performing-a-sniffer-trace-or-packet-capture
+
+> Pendiente de validación en laboratorio.

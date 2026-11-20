@@ -142,3 +142,16 @@ execute traceroute-options source 192.0.2.1
 - **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-reference
 
 > Not lab-verified.
+
+## `diagnose sniffer packet any 'host 192.0.2.50' 4 20 a`
+
+```text
+diagnose sniffer packet any 'host 192.0.2.50' 4 20 a
+```
+
+- **Purpose:** Inspect bounded traffic to or from an illustrative FortiAnalyzer IP.
+- **Arguments:** `any`: all interfaces; `host`: FAZ address; `4`: detail; `20`: limit; `a`: absolute timestamps.
+- **Use case:** Check whether logs traffic enters/leaves the expected interface.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.8/administration-guide/680228/performing-a-sniffer-trace-or-packet-capture
+
+> Not lab-verified.
