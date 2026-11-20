@@ -74,3 +74,16 @@ get system arp | grep 192.0.2.10
 > **Nota:** Referencia rápida, no verificada en laboratorio; confirma sintaxis y permisos en tu modelo y versión.
 
 **Fuente del fabricante:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966
+
+## `get router info routing-table database`
+
+```text
+get router info routing-table database
+```
+
+- **Sirve para:** Consultar la base IPv4 de rutas, incluidas rutas candidatas no instaladas.
+- **Parámetros:** `database`: muestra base de rutas y no solo entradas activas.
+- **Ejemplo de uso:** Verificar si una ruta fue aprendida pero no instalada.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.8/administration-guide/139692/routing-concepts
+
+> Pendiente de validación en laboratorio; confirma disponibilidad por versión.
