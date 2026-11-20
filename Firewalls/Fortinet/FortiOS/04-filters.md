@@ -76,3 +76,16 @@ get system global | grep vdom-mode
 - **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/administration-guide/317358
 
 > Not lab-verified; verify context and backups.
+
+## `get system performance status | grep Uptime`
+
+```text
+get system performance status | grep Uptime
+```
+
+- **Purpose:** Extract FortiGate uptime from performance status.
+- **Arguments:** `performance status`: system metrics; `grep Uptime`: filter uptime line (case-sensitive).
+- **Use case:** Correlate an outage with a recent device restart.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966
+
+> Not lab-verified; verify release.

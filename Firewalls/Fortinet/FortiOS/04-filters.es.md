@@ -76,3 +76,16 @@ get system global | grep vdom-mode
 - **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.0/administration-guide/317358
 
 > Pendiente de validación en laboratorio; confirmar contexto y respaldos.
+
+## `get system performance status | grep Uptime`
+
+```text
+get system performance status | grep Uptime
+```
+
+- **Sirve para:** Extraer el tiempo encendido del FortiGate desde sus métricas.
+- **Parámetros:** `performance status`: métricas del equipo; `grep Uptime`: filtra línea de uptime (sensible a mayúsculas).
+- **Ejemplo de uso:** Relacionar una caída con un reinicio reciente.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966
+
+> Pendiente de validación en laboratorio; confirma versión.
