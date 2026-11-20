@@ -58,3 +58,16 @@ diagnose sniffer packet any 'src host 192.0.2.10 and dst host 198.51.100.20' 4 2
 - **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.8/administration-guide/680228/performing-a-sniffer-trace-or-packet-capture
 
 > Pendiente de validación en laboratorio. Usar solo durante diagnóstico autorizado.
+
+## `diagnose sniffer packet port1 'src host 192.0.2.10 and icmp' 4 20 a`
+
+```text
+diagnose sniffer packet port1 'src host 192.0.2.10 and icmp' 4 20 a
+```
+
+- **Sirve para:** Capturar una traza ICMP limitada desde un origen en port1.
+- **Parámetros:** `port1`: interfaz ejemplo; `src host`: origen; `icmp`: protocolo; `4 20 a`: detalle, cantidad y timestamp.
+- **Ejemplo de uso:** Comprobar si ICMP llega al puerto interno esperado.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.8/administration-guide/680228/performing-a-sniffer-trace-or-packet-capture
+
+> Pendiente de validación en laboratorio. Usar solo durante diagnóstico autorizado.

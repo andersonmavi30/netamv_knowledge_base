@@ -58,3 +58,16 @@ diagnose sniffer packet any 'src host 192.0.2.10 and dst host 198.51.100.20' 4 2
 - **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.8/administration-guide/680228/performing-a-sniffer-trace-or-packet-capture
 
 > Not lab-verified. Use only for authorized troubleshooting.
+
+## `diagnose sniffer packet port1 'src host 192.0.2.10 and icmp' 4 20 a`
+
+```text
+diagnose sniffer packet port1 'src host 192.0.2.10 and icmp' 4 20 a
+```
+
+- **Purpose:** Capture a bounded ICMP trace from a source on port1.
+- **Arguments:** `port1`: example interface; `src host`: source filter; `icmp`: protocol; `4 20 a`: verbosity, count, timestamp.
+- **Use case:** Isolate whether ICMP reaches the expected internal port.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.8/administration-guide/680228/performing-a-sniffer-trace-or-packet-capture
+
+> Not lab-verified. Use only for authorized troubleshooting.
