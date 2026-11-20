@@ -212,3 +212,16 @@ config system sdwan
 - **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-reference/76620/config-system-sdwan
 
 > Pendiente de validación en laboratorio. Atención: ver impacto antes de ejecutarlo.
+
+## `show system vdom-link`
+
+```text
+show system vdom-link
+```
+
+- **Sirve para:** Consultar enlaces inter-VDOM configurados sin modificarlos.
+- **Parámetros:** `system vdom-link`: muestra definición de los enlaces; requiere contexto global y configuración compatible.
+- **Ejemplo de uso:** Identificar el enlace que conecta dos VDOM antes de revisar rutas y políticas.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.10/cli-reference/232114316/config-system-vdom-link
+
+> Pendiente de validación en laboratorio.

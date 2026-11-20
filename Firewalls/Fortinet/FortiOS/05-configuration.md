@@ -212,3 +212,16 @@ config system sdwan
 - **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-reference/76620/config-system-sdwan
 
 > Not lab-verified. Caution: review the impact before execution.
+
+## `show system vdom-link`
+
+```text
+show system vdom-link
+```
+
+- **Purpose:** Inspect configured inter-VDOM links without modifying them.
+- **Arguments:** `system vdom-link`: display link definitions; requires appropriate global context and platform support.
+- **Use case:** Find the link between VDOMs before reviewing routes and firewall policies.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.10/cli-reference/232114316/config-system-vdom-link
+
+> Not lab-verified.
