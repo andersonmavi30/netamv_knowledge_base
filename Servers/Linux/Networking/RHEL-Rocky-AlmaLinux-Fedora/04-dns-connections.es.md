@@ -34,3 +34,16 @@ nmcli connection show --active
 - **Referencia oficial:** https://networkmanager.dev/docs/api/latest/nmcli.html
 
 > Pendiente de validación en laboratorio.
+
+## `nmcli -f GENERAL,IP4 device show eth0`
+
+```bash
+nmcli -f GENERAL,IP4 device show eth0
+```
+
+- **Sirve para:** Mostrar propiedades generales y configuración IPv4 de un dispositivo de NetworkManager.
+- **Parámetros:** `-f GENERAL,IP4`: seleccionar campos; `device show`: consultar propiedades; `eth0`: interfaz de ejemplo. Requiere NetworkManager.
+- **Ejemplo de uso:** Revisar IP y gateway IPv4 de una interfaz RHEL.
+- **Referencia oficial:** https://networkmanager.dev/docs/api/latest/nmcli.html
+
+> Pendiente de validación en laboratorio.
