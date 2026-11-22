@@ -47,3 +47,16 @@ ip route get 1.1.1.1
 - **Referencia oficial:** https://man7.org/linux/man-pages/man8/ip-route.8.html
 
 > Pendiente de validación en laboratorio.
+
+## `ip -6 route show`
+
+```bash
+ip -6 route show
+```
+
+- **Sirve para:** Mostrar la tabla de rutas IPv6, incluida la ruta predeterminada cuando exista.
+- **Parámetros:** `-6`: IPv6; `route`: rutas; `show`: solo consulta.
+- **Ejemplo de uso:** Comprobar el gateway IPv6 predeterminado.
+- **Referencia oficial:** https://man7.org/linux/man-pages/man8/ip-route.8.html
+
+> Pendiente de validación en laboratorio.

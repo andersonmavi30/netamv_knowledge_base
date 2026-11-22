@@ -47,3 +47,16 @@ ip route get 1.1.1.1
 - **Official reference:** https://man7.org/linux/man-pages/man8/ip-route.8.html
 
 > Not lab-verified.
+
+## `ip -6 route show`
+
+```bash
+ip -6 route show
+```
+
+- **Purpose:** Display the IPv6 routing table, including its default route when present.
+- **Arguments:** `-6`: IPv6; `route`: routes; `show`: read-only.
+- **Use case:** Check IPv6 default gateway.
+- **Official reference:** https://man7.org/linux/man-pages/man8/ip-route.8.html
+
+> Not lab-verified.
