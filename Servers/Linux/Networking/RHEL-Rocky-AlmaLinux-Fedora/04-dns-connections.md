@@ -34,3 +34,29 @@ nmcli connection show --active
 - **Official reference:** https://networkmanager.dev/docs/api/latest/nmcli.html
 
 > Not lab-verified.
+
+## `nmcli -f GENERAL,IP4 device show eth0`
+
+```bash
+nmcli -f GENERAL,IP4 device show eth0
+```
+
+- **Purpose:** Display general properties and IPv4 configuration for a NetworkManager device.
+- **Arguments:** `-f GENERAL,IP4`: select fields; `device show`: inspect properties; `eth0`: example interface. Requires NetworkManager.
+- **Use case:** Check an active RHEL interface's IPv4 address and gateway.
+- **Official reference:** https://networkmanager.dev/docs/api/latest/nmcli.html
+
+> Not lab-verified.
+
+## `nmcli -f IP4.DNS device show eth0`
+
+```bash
+nmcli -f IP4.DNS device show eth0
+```
+
+- **Purpose:** Display IPv4 DNS servers assigned to a NetworkManager device.
+- **Arguments:** `-f IP4.DNS`: DNS fields only; `device show`: read properties; `eth0`: example NIC. Requires NetworkManager.
+- **Use case:** Verify DNS assigned to a Rocky Linux interface.
+- **Official reference:** https://networkmanager.dev/docs/api/latest/nmcli.html
+
+> Not lab-verified.

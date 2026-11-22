@@ -34,3 +34,29 @@ ip rule show
 - **Official reference:** https://man7.org/linux/man-pages/man8/ip-rule.8.html
 
 > Not lab-verified.
+
+## `ip route get 1.1.1.1`
+
+```bash
+ip route get 1.1.1.1
+```
+
+- **Purpose:** Show the kernel's selected route, source IP and egress interface to a destination.
+- **Arguments:** `route get`: resolve without adding a route; `1.1.1.1`: example destination.
+- **Use case:** Validate outbound interface on a multi-homed server.
+- **Official reference:** https://man7.org/linux/man-pages/man8/ip-route.8.html
+
+> Not lab-verified.
+
+## `ip -6 route show`
+
+```bash
+ip -6 route show
+```
+
+- **Purpose:** Display the IPv6 routing table, including its default route when present.
+- **Arguments:** `-6`: IPv6; `route`: routes; `show`: read-only.
+- **Use case:** Check IPv6 default gateway.
+- **Official reference:** https://man7.org/linux/man-pages/man8/ip-route.8.html
+
+> Not lab-verified.

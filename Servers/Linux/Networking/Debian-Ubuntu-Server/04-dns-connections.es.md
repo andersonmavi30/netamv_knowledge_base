@@ -21,3 +21,16 @@ resolvectl status
 - **Referencia oficial:** https://www.freedesktop.org/software/systemd/man/latest/resolvectl.html
 
 > Pendiente de validación en laboratorio.
+
+## `resolvectl query example.com`
+
+```bash
+resolvectl query example.com
+```
+
+- **Sirve para:** Resolver un dominio mediante systemd-resolved y mostrar el resultado.
+- **Parámetros:** `query`: consulta DNS; `example.com`: dominio de ejemplo; requiere systemd-resolved activo.
+- **Ejemplo de uso:** Comprobar la resolución DNS en Ubuntu Server.
+- **Referencia oficial:** https://www.freedesktop.org/software/systemd/man/latest/resolvectl.html
+
+> Pendiente de validación en laboratorio.

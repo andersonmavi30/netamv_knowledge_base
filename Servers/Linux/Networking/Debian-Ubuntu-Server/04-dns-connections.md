@@ -21,3 +21,16 @@ resolvectl status
 - **Official reference:** https://www.freedesktop.org/software/systemd/man/latest/resolvectl.html
 
 > Not lab-verified.
+
+## `resolvectl query example.com`
+
+```bash
+resolvectl query example.com
+```
+
+- **Purpose:** Resolve a domain through systemd-resolved and display the result.
+- **Arguments:** `query`: DNS/name lookup; `example.com`: sample domain; requires active systemd-resolved.
+- **Use case:** Test whether Ubuntu Server can resolve DNS names via its configured resolver.
+- **Official reference:** https://www.freedesktop.org/software/systemd/man/latest/resolvectl.html
+
+> Not lab-verified.
