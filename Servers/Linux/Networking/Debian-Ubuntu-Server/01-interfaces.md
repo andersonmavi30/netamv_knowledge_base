@@ -47,3 +47,16 @@ ip -s link show
 - **Official reference:** https://man7.org/linux/man-pages/man8/ip-link.8.html
 
 > Not lab-verified.
+
+## `ip neigh show`
+
+```bash
+ip neigh show
+```
+
+- **Purpose:** List IPv4/IPv6 neighbor (ARP/ND) cache entries and states.
+- **Arguments:** `neigh`: neighbors; `show`: read-only list.
+- **Use case:** Check gateway MAC and neighbor state.
+- **Official reference:** https://man7.org/linux/man-pages/man8/ip-neighbour.8.html
+
+> Not lab-verified.

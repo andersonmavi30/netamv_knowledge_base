@@ -47,3 +47,16 @@ ip -s link show
 - **Referencia oficial:** https://man7.org/linux/man-pages/man8/ip-link.8.html
 
 > Pendiente de validación en laboratorio.
+
+## `ip neigh show`
+
+```bash
+ip neigh show
+```
+
+- **Sirve para:** Listar entradas y estados de vecinos IPv4/IPv6 (ARP/ND).
+- **Parámetros:** `neigh`: vecinos; `show`: consulta sin cambios.
+- **Ejemplo de uso:** Comprobar la MAC del gateway y su estado.
+- **Referencia oficial:** https://man7.org/linux/man-pages/man8/ip-neighbour.8.html
+
+> Pendiente de validación en laboratorio.
