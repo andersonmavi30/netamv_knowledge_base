@@ -34,3 +34,16 @@ ip -br link show
 - **Official reference:** https://man7.org/linux/man-pages/man8/ip-link.8.html
 
 > Not lab-verified.
+
+## `ip -s link show`
+
+```bash
+ip -s link show
+```
+
+- **Purpose:** Display per-interface RX/TX counters, errors and dropped packets.
+- **Arguments:** `-s`: statistics; `link`: interfaces; `show`: read-only.
+- **Use case:** Find interface drops while diagnosing slow links.
+- **Official reference:** https://man7.org/linux/man-pages/man8/ip-link.8.html
+
+> Not lab-verified.
