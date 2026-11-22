@@ -34,3 +34,16 @@ ip rule show
 - **Referencia oficial:** https://man7.org/linux/man-pages/man8/ip-rule.8.html
 
 > Pendiente de validación en laboratorio.
+
+## `ip route get 1.1.1.1`
+
+```bash
+ip route get 1.1.1.1
+```
+
+- **Sirve para:** Mostrar la ruta elegida por el kernel, IP origen e interfaz de salida hacia un destino.
+- **Parámetros:** `route get`: resolver sin agregar ruta; `1.1.1.1`: destino de ejemplo.
+- **Ejemplo de uso:** Validar la interfaz de salida de un servidor multihomed.
+- **Referencia oficial:** https://man7.org/linux/man-pages/man8/ip-route.8.html
+
+> Pendiente de validación en laboratorio.
