@@ -60,3 +60,16 @@ ip neigh show
 - **Referencia oficial:** https://man7.org/linux/man-pages/man8/ip-neighbour.8.html
 
 > Pendiente de validación en laboratorio.
+
+## `networkctl status eth0`
+
+```bash
+networkctl status eth0
+```
+
+- **Sirve para:** Consultar estado operativo y direcciones de un enlace mediante systemd-networkd.
+- **Parámetros:** `status`: detalles del enlace; `eth0`: interfaz de ejemplo; requiere networkctl; los detalles pueden variar sin systemd-networkd.
+- **Ejemplo de uso:** Comprobar el estado de una NIC Ubuntu Server gestionada por networkd.
+- **Referencia oficial:** https://www.freedesktop.org/software/systemd/man/latest/networkctl.html
+
+> Pendiente de validación en laboratorio.

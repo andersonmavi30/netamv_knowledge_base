@@ -60,3 +60,16 @@ ip neigh show
 - **Official reference:** https://man7.org/linux/man-pages/man8/ip-neighbour.8.html
 
 > Not lab-verified.
+
+## `networkctl status eth0`
+
+```bash
+networkctl status eth0
+```
+
+- **Purpose:** Inspect a network link's operational status and address information through systemd-networkd.
+- **Arguments:** `status`: link details; `eth0`: example interface; requires networkctl; details may be limited without systemd-networkd.
+- **Use case:** Check the status of a networkd-managed Ubuntu Server NIC.
+- **Official reference:** https://www.freedesktop.org/software/systemd/man/latest/networkctl.html
+
+> Not lab-verified.
