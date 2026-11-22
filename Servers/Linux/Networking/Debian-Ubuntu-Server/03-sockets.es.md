@@ -34,3 +34,16 @@ ss -s
 - **Referencia oficial:** https://man7.org/linux/man-pages/man8/ss.8.html
 
 > Pendiente de validación en laboratorio.
+
+## `ss -tn state established`
+
+```bash
+ss -tn state established
+```
+
+- **Sirve para:** Mostrar sockets TCP establecidos con direcciones y puertos numéricos.
+- **Parámetros:** `-t`: TCP; `-n`: formato numérico; `state established`: solo ESTABLISHED.
+- **Ejemplo de uso:** Inspeccionar sesiones TCP activas de aplicaciones.
+- **Referencia oficial:** https://man7.org/linux/man-pages/man8/ss.8.html
+
+> Pendiente de validación en laboratorio.

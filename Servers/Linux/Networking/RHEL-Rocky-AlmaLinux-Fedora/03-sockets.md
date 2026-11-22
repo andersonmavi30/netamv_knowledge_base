@@ -34,3 +34,16 @@ ss -s
 - **Official reference:** https://man7.org/linux/man-pages/man8/ss.8.html
 
 > Not lab-verified.
+
+## `ss -tn state established`
+
+```bash
+ss -tn state established
+```
+
+- **Purpose:** Show established TCP sockets with numeric addresses and ports.
+- **Arguments:** `-t`: TCP; `-n`: numeric; `state established`: ESTABLISHED only.
+- **Use case:** Inspect active application TCP sessions.
+- **Official reference:** https://man7.org/linux/man-pages/man8/ss.8.html
+
+> Not lab-verified.
