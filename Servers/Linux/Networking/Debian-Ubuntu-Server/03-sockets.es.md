@@ -21,3 +21,16 @@ ss -tulpen
 - **Referencia oficial:** https://man7.org/linux/man-pages/man8/ss.8.html
 
 > Pendiente de validación en laboratorio.
+
+## `ss -s`
+
+```bash
+ss -s
+```
+
+- **Sirve para:** Resumir cantidades de sockets y estados TCP.
+- **Parámetros:** `-s`: estadísticas resumidas; solo consulta.
+- **Ejemplo de uso:** Detectar demasiados sockets TCP o TIME-WAIT.
+- **Referencia oficial:** https://man7.org/linux/man-pages/man8/ss.8.html
+
+> Pendiente de validación en laboratorio.

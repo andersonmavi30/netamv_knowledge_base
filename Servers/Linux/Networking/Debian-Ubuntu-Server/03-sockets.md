@@ -21,3 +21,16 @@ ss -tulpen
 - **Official reference:** https://man7.org/linux/man-pages/man8/ss.8.html
 
 > Not lab-verified.
+
+## `ss -s`
+
+```bash
+ss -s
+```
+
+- **Purpose:** Summarize socket counts and TCP connection states.
+- **Arguments:** `-s`: summary statistics; read-only.
+- **Use case:** Spot unusually high TIME-WAIT or TCP counts.
+- **Official reference:** https://man7.org/linux/man-pages/man8/ss.8.html
+
+> Not lab-verified.
