@@ -47,3 +47,16 @@ nmcli -f GENERAL,IP4 device show eth0
 - **Referencia oficial:** https://networkmanager.dev/docs/api/latest/nmcli.html
 
 > Pendiente de validación en laboratorio.
+
+## `nmcli -f IP4.DNS device show eth0`
+
+```bash
+nmcli -f IP4.DNS device show eth0
+```
+
+- **Sirve para:** Mostrar servidores DNS IPv4 asignados a un dispositivo NetworkManager.
+- **Parámetros:** `-f IP4.DNS`: solo DNS; `device show`: consultar; `eth0`: interfaz de ejemplo. Requiere NetworkManager.
+- **Ejemplo de uso:** Verificar los DNS asignados a una interfaz Rocky Linux.
+- **Referencia oficial:** https://networkmanager.dev/docs/api/latest/nmcli.html
+
+> Pendiente de validación en laboratorio.
