@@ -21,3 +21,16 @@ Get-NetTCPConnection -State Listen
 - **Referencia oficial:** https://learn.microsoft.com/en-us/powershell/module/nettcpip/get-nettcpconnection?view=windowsserver2022-ps
 
 > Pendiente de validación en laboratorio.
+
+## `Test-NetConnection -ComputerName example.com -Port 443`
+
+```powershell
+Test-NetConnection -ComputerName example.com -Port 443
+```
+
+- **Sirve para:** Probar conectividad TCP hacia un nombre remoto y un puerto, con detalles diagnósticos.
+- **Parámetros:** `-ComputerName example.com`: destino; `-Port 443`: puerto TCP remoto; realiza pruebas sin cambiar configuración.
+- **Ejemplo de uso:** Verificar conectividad HTTPS saliente desde un servidor de aplicaciones.
+- **Referencia oficial:** https://learn.microsoft.com/en-us/powershell/module/nettcpip/test-netconnection?view=windowsserver2022-ps
+
+> Pendiente de validación en laboratorio.

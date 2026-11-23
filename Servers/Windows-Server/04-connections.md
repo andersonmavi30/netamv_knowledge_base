@@ -21,3 +21,16 @@ Get-NetTCPConnection -State Listen
 - **Official reference:** https://learn.microsoft.com/en-us/powershell/module/nettcpip/get-nettcpconnection?view=windowsserver2022-ps
 
 > Not lab-verified.
+
+## `Test-NetConnection -ComputerName example.com -Port 443`
+
+```powershell
+Test-NetConnection -ComputerName example.com -Port 443
+```
+
+- **Purpose:** Test TCP reachability to a remote hostname and port, with diagnostic details.
+- **Arguments:** `-ComputerName example.com`: target; `-Port 443`: remote TCP port; sends network probes without changing settings.
+- **Use case:** Verify outbound HTTPS connectivity from an application server.
+- **Official reference:** https://learn.microsoft.com/en-us/powershell/module/nettcpip/test-netconnection?view=windowsserver2022-ps
+
+> Not lab-verified.
