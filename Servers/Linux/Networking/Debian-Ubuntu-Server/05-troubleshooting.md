@@ -34,3 +34,42 @@ sudo tcpdump -ni eth0 -c 20
 - **Official reference:** https://www.tcpdump.org/manpages/tcpdump.1.html
 
 > Not lab-verified.
+
+## `ethtool -i eth0`
+
+```bash
+ethtool -i eth0
+```
+
+- **Purpose:** Show the NIC driver, firmware version and driver bus information when available.
+- **Arguments:** `-i`: query driver details; `eth0`: example interface; replace with your NIC name. Device/driver support varies.
+- **Use case:** Check the driver and firmware of a Linux server network adapter.
+- **Official reference:** https://man7.org/linux/man-pages/man8/ethtool.8.html
+
+> Not lab-verified.
+
+## `ethtool -S eth0`
+
+```bash
+ethtool -S eth0
+```
+
+- **Purpose:** Display driver-specific NIC counters when the hardware and driver expose them.
+- **Arguments:** `-S`: query device-specific statistics; `eth0`: example interface. Counters vary by NIC and driver.
+- **Use case:** Investigate hardware queue errors or packet drops on a server NIC.
+- **Official reference:** https://man7.org/linux/man-pages/man8/ethtool.8.html
+
+> Not lab-verified.
+
+## `tracepath 1.1.1.1`
+
+```bash
+tracepath 1.1.1.1
+```
+
+- **Purpose:** Probe the path and path MTU toward a destination without requiring raw-socket privileges in typical configurations.
+- **Arguments:** `1.1.1.1`: example target; no flags. Requires the tracepath utility; intermediate hops may not respond.
+- **Use case:** Locate a forwarding hop or possible MTU issue during connectivity troubleshooting.
+- **Official reference:** https://man7.org/linux/man-pages/man8/tracepath.8.html
+
+> Not lab-verified.

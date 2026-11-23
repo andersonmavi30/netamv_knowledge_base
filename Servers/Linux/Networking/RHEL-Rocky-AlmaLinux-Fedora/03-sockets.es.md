@@ -47,3 +47,29 @@ ss -tn state established
 - **Referencia oficial:** https://man7.org/linux/man-pages/man8/ss.8.html
 
 > Pendiente de validación en laboratorio.
+
+## `ss -ltnp`
+
+```bash
+ss -ltnp
+```
+
+- **Sirve para:** Listar sockets TCP en escucha, direcciones numéricas y procesos asociados cuando los permisos lo permitan.
+- **Parámetros:** `-l`: escucha; `-t`: TCP; `-n`: numérico; `-p`: procesos (puede requerir sudo).
+- **Ejemplo de uso:** Identificar el proceso que utiliza un puerto de servicio.
+- **Referencia oficial:** https://man7.org/linux/man-pages/man8/ss.8.html
+
+> Pendiente de validación en laboratorio.
+
+## `ss -uan`
+
+```bash
+ss -uan
+```
+
+- **Sirve para:** Listar sockets UDP con direcciones y puertos numéricos.
+- **Parámetros:** `-u`: UDP; `-a`: todos los estados; `-n`: sin resolución de nombres.
+- **Ejemplo de uso:** Inspeccionar sockets UDP de servicios DNS, DHCP o monitoreo.
+- **Referencia oficial:** https://man7.org/linux/man-pages/man8/ss.8.html
+
+> Pendiente de validación en laboratorio.

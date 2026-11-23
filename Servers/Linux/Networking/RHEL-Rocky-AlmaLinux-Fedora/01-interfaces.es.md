@@ -60,3 +60,29 @@ ip neigh show
 - **Referencia oficial:** https://man7.org/linux/man-pages/man8/ip-neighbour.8.html
 
 > Pendiente de validación en laboratorio.
+
+## `ip -d link show`
+
+```bash
+ip -d link show
+```
+
+- **Sirve para:** Mostrar atributos detallados del enlace, como información de VLAN, bridge o túneles cuando exista.
+- **Parámetros:** `-d`: salida detallada; `link`: interfaces; `show`: consulta sin cambios.
+- **Ejemplo de uso:** Inspeccionar identificadores VLAN o interfaces virtuales.
+- **Referencia oficial:** https://man7.org/linux/man-pages/man8/ip-link.8.html
+
+> Pendiente de validación en laboratorio.
+
+## `ip -4 addr show`
+
+```bash
+ip -4 addr show
+```
+
+- **Sirve para:** Listar únicamente direcciones IPv4 y sus interfaces asociadas.
+- **Parámetros:** `-4`: familia IPv4; `addr`: direcciones de interfaces; `show`: consulta.
+- **Ejemplo de uso:** Identificar direcciones IPv4 en un host con configuración dual-stack.
+- **Referencia oficial:** https://man7.org/linux/man-pages/man8/ip-address.8.html
+
+> Pendiente de validación en laboratorio.

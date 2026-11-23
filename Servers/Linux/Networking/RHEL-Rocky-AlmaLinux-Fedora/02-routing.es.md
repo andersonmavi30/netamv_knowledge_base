@@ -60,3 +60,29 @@ ip -6 route show
 - **Referencia oficial:** https://man7.org/linux/man-pages/man8/ip-route.8.html
 
 > Pendiente de validación en laboratorio.
+
+## `ip route show table all`
+
+```bash
+ip route show table all
+```
+
+- **Sirve para:** Mostrar rutas de todas las tablas IPv4, incluidas las utilizadas por policy routing.
+- **Parámetros:** `route show`: consultar rutas; `table all`: seleccionar todas las tablas, no solo main.
+- **Ejemplo de uso:** Encontrar rutas instaladas en tablas alternativas.
+- **Referencia oficial:** https://man7.org/linux/man-pages/man8/ip-route.8.html
+
+> Pendiente de validación en laboratorio.
+
+## `ip -6 rule show`
+
+```bash
+ip -6 rule show
+```
+
+- **Sirve para:** Listar reglas de enrutamiento por políticas IPv6 y sus prioridades.
+- **Parámetros:** `-6`: familia IPv6; `rule`: reglas de policy routing; `show`: consulta.
+- **Ejemplo de uso:** Identificar reglas IPv6 que influyen en la selección de rutas.
+- **Referencia oficial:** https://man7.org/linux/man-pages/man8/ip-rule.8.html
+
+> Pendiente de validación en laboratorio.

@@ -47,3 +47,29 @@ ss -tn state established
 - **Official reference:** https://man7.org/linux/man-pages/man8/ss.8.html
 
 > Not lab-verified.
+
+## `ss -ltnp`
+
+```bash
+ss -ltnp
+```
+
+- **Purpose:** List listening TCP sockets with numeric addresses and owning process information when permissions permit.
+- **Arguments:** `-l`: listening; `-t`: TCP; `-n`: numeric; `-p`: process information (may require sudo).
+- **Use case:** Find the process bound to a service port.
+- **Official reference:** https://man7.org/linux/man-pages/man8/ss.8.html
+
+> Not lab-verified.
+
+## `ss -uan`
+
+```bash
+ss -uan
+```
+
+- **Purpose:** List UDP sockets using numeric addresses and ports.
+- **Arguments:** `-u`: UDP; `-a`: all socket states; `-n`: no name resolution.
+- **Use case:** Inspect DNS, DHCP or monitoring service UDP sockets.
+- **Official reference:** https://man7.org/linux/man-pages/man8/ss.8.html
+
+> Not lab-verified.

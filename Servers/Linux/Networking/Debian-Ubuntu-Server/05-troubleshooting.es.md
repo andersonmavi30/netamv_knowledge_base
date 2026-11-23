@@ -34,3 +34,42 @@ sudo tcpdump -ni eth0 -c 20
 - **Referencia oficial:** https://www.tcpdump.org/manpages/tcpdump.1.html
 
 > Pendiente de validación en laboratorio.
+
+## `ethtool -i eth0`
+
+```bash
+ethtool -i eth0
+```
+
+- **Sirve para:** Mostrar controlador, versión del firmware y datos de bus de la NIC cuando estén disponibles.
+- **Parámetros:** `-i`: consultar detalles del controlador; `eth0`: interfaz de ejemplo; reemplazar por la NIC real. Depende del dispositivo.
+- **Ejemplo de uso:** Comprobar controlador y firmware de una tarjeta de red Linux.
+- **Referencia oficial:** https://man7.org/linux/man-pages/man8/ethtool.8.html
+
+> Pendiente de validación en laboratorio.
+
+## `ethtool -S eth0`
+
+```bash
+ethtool -S eth0
+```
+
+- **Sirve para:** Mostrar contadores específicos del controlador de la NIC cuando estén disponibles.
+- **Parámetros:** `-S`: consultar estadísticas del dispositivo; `eth0`: interfaz de ejemplo. Los contadores varían según NIC/controlador.
+- **Ejemplo de uso:** Investigar errores de colas o descartes de paquetes en una NIC.
+- **Referencia oficial:** https://man7.org/linux/man-pages/man8/ethtool.8.html
+
+> Pendiente de validación en laboratorio.
+
+## `tracepath 1.1.1.1`
+
+```bash
+tracepath 1.1.1.1
+```
+
+- **Sirve para:** Examinar el recorrido y la MTU de ruta hacia un destino, normalmente sin privilegios de sockets raw.
+- **Parámetros:** `1.1.1.1`: destino de ejemplo; sin flags. Requiere tracepath; algunos saltos pueden no responder.
+- **Ejemplo de uso:** Investigar saltos de red o posibles problemas de MTU en la conectividad.
+- **Referencia oficial:** https://man7.org/linux/man-pages/man8/tracepath.8.html
+
+> Pendiente de validación en laboratorio.
