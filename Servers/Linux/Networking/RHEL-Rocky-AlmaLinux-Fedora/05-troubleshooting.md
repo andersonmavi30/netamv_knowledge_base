@@ -34,3 +34,16 @@ sudo tcpdump -ni eth0 -c 20
 - **Official reference:** https://www.tcpdump.org/manpages/tcpdump.1.html
 
 > Not lab-verified.
+
+## `ethtool -i eth0`
+
+```bash
+ethtool -i eth0
+```
+
+- **Purpose:** Show the NIC driver, firmware version and driver bus information when available.
+- **Arguments:** `-i`: query driver details; `eth0`: example interface; replace with your NIC name. Device/driver support varies.
+- **Use case:** Check the driver and firmware of a Linux server network adapter.
+- **Official reference:** https://man7.org/linux/man-pages/man8/ethtool.8.html
+
+> Not lab-verified.
