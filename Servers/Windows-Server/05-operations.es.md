@@ -21,3 +21,16 @@ Get-Service -Name WinRM
 - **Referencia oficial:** https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-service?view=powershell-5.1
 
 > Pendiente de validación en laboratorio.
+
+## `Get-WinEvent -LogName System -MaxEvents 20`
+
+```powershell
+Get-WinEvent -LogName System -MaxEvents 20
+```
+
+- **Sirve para:** Consultar los 20 eventos más recientes del registro System de Windows.
+- **Parámetros:** `-LogName System`: registro System; `-MaxEvents 20`: devolver máximo 20 eventos recientes; sin cambios.
+- **Ejemplo de uso:** Revisar eventos recientes de servicios, controladores o fallos del sistema.
+- **Referencia oficial:** https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.diagnostics/get-winevent?view=powershell-5.1
+
+> Pendiente de validación en laboratorio.
