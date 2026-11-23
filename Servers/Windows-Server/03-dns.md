@@ -21,3 +21,16 @@ Get-DnsClientServerAddress
 - **Official reference:** https://learn.microsoft.com/en-us/powershell/module/dnsclient/get-dnsclientserveraddress?view=windowsserver2022-ps
 
 > Not lab-verified.
+
+## `Resolve-DnsName -Name example.com -Type A`
+
+```powershell
+Resolve-DnsName -Name example.com -Type A
+```
+
+- **Purpose:** Query IPv4 A records for a hostname using the system's configured resolver behavior.
+- **Arguments:** `-Name example.com`: example DNS name; `-Type A`: request IPv4 address records.
+- **Use case:** Check whether the server can resolve a service hostname to IPv4.
+- **Official reference:** https://learn.microsoft.com/en-us/powershell/module/dnsclient/resolve-dnsname?view=windowsserver2022-ps
+
+> Not lab-verified.
