@@ -73,3 +73,16 @@ networkctl status eth0
 - **Official reference:** https://www.freedesktop.org/software/systemd/man/latest/networkctl.html
 
 > Not lab-verified.
+
+## `ip -d link show`
+
+```bash
+ip -d link show
+```
+
+- **Purpose:** Display detailed link-layer attributes, including VLAN, bridge or tunnel metadata where supported.
+- **Arguments:** `-d`: detailed output; `link`: interfaces; `show`: read-only listing.
+- **Use case:** Inspect VLAN identifiers or virtual-interface details.
+- **Official reference:** https://man7.org/linux/man-pages/man8/ip-link.8.html
+
+> Not lab-verified.

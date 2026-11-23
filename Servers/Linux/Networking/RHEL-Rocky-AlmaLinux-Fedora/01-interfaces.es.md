@@ -60,3 +60,16 @@ ip neigh show
 - **Referencia oficial:** https://man7.org/linux/man-pages/man8/ip-neighbour.8.html
 
 > Pendiente de validación en laboratorio.
+
+## `ip -d link show`
+
+```bash
+ip -d link show
+```
+
+- **Sirve para:** Mostrar atributos detallados del enlace, como información de VLAN, bridge o túneles cuando exista.
+- **Parámetros:** `-d`: salida detallada; `link`: interfaces; `show`: consulta sin cambios.
+- **Ejemplo de uso:** Inspeccionar identificadores VLAN o interfaces virtuales.
+- **Referencia oficial:** https://man7.org/linux/man-pages/man8/ip-link.8.html
+
+> Pendiente de validación en laboratorio.
