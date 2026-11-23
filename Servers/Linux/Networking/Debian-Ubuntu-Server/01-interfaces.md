@@ -86,3 +86,16 @@ ip -d link show
 - **Official reference:** https://man7.org/linux/man-pages/man8/ip-link.8.html
 
 > Not lab-verified.
+
+## `ip -4 addr show`
+
+```bash
+ip -4 addr show
+```
+
+- **Purpose:** List only IPv4 addresses and their associated interfaces.
+- **Arguments:** `-4`: IPv4 family; `addr`: interface addresses; `show`: read-only listing.
+- **Use case:** Identify IPv4 addresses when a host has dual-stack configuration.
+- **Official reference:** https://man7.org/linux/man-pages/man8/ip-address.8.html
+
+> Not lab-verified.
