@@ -60,3 +60,16 @@ ss -ltnp
 - **Official reference:** https://man7.org/linux/man-pages/man8/ss.8.html
 
 > Not lab-verified.
+
+## `ss -uan`
+
+```bash
+ss -uan
+```
+
+- **Purpose:** List UDP sockets using numeric addresses and ports.
+- **Arguments:** `-u`: UDP; `-a`: all socket states; `-n`: no name resolution.
+- **Use case:** Inspect DNS, DHCP or monitoring service UDP sockets.
+- **Official reference:** https://man7.org/linux/man-pages/man8/ss.8.html
+
+> Not lab-verified.
