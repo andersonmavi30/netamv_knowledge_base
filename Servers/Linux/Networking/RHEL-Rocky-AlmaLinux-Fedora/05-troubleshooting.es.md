@@ -47,3 +47,16 @@ ethtool -i eth0
 - **Referencia oficial:** https://man7.org/linux/man-pages/man8/ethtool.8.html
 
 > Pendiente de validación en laboratorio.
+
+## `ethtool -S eth0`
+
+```bash
+ethtool -S eth0
+```
+
+- **Sirve para:** Mostrar contadores específicos del controlador de la NIC cuando estén disponibles.
+- **Parámetros:** `-S`: consultar estadísticas del dispositivo; `eth0`: interfaz de ejemplo. Los contadores varían según NIC/controlador.
+- **Ejemplo de uso:** Investigar errores de colas o descartes de paquetes en una NIC.
+- **Referencia oficial:** https://man7.org/linux/man-pages/man8/ethtool.8.html
+
+> Pendiente de validación en laboratorio.

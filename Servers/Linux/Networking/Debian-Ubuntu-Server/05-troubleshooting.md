@@ -47,3 +47,16 @@ ethtool -i eth0
 - **Official reference:** https://man7.org/linux/man-pages/man8/ethtool.8.html
 
 > Not lab-verified.
+
+## `ethtool -S eth0`
+
+```bash
+ethtool -S eth0
+```
+
+- **Purpose:** Display driver-specific NIC counters when the hardware and driver expose them.
+- **Arguments:** `-S`: query device-specific statistics; `eth0`: example interface. Counters vary by NIC and driver.
+- **Use case:** Investigate hardware queue errors or packet drops on a server NIC.
+- **Official reference:** https://man7.org/linux/man-pages/man8/ethtool.8.html
+
+> Not lab-verified.
