@@ -21,3 +21,16 @@ Get-NetAdapter
 - **Referencia oficial:** https://learn.microsoft.com/en-us/powershell/module/netadapter/get-netadapter?view=windowsserver2022-ps
 
 > Pendiente de validación en laboratorio.
+
+## `Get-NetIPConfiguration`
+
+```powershell
+Get-NetIPConfiguration
+```
+
+- **Sirve para:** Mostrar configuración de red activa, incluidas direcciones IP, gateways y servidores DNS.
+- **Parámetros:** Sin parámetros; resume interfaces utilizables y su configuración IP.
+- **Ejemplo de uso:** Verificar IP y gateway de un servidor tras un cambio.
+- **Referencia oficial:** https://learn.microsoft.com/en-us/powershell/module/nettcpip/get-netipconfiguration?view=windowsserver2022-ps
+
+> Pendiente de validación en laboratorio.

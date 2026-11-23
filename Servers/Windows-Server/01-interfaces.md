@@ -21,3 +21,16 @@ Get-NetAdapter
 - **Official reference:** https://learn.microsoft.com/en-us/powershell/module/netadapter/get-netadapter?view=windowsserver2022-ps
 
 > Not lab-verified.
+
+## `Get-NetIPConfiguration`
+
+```powershell
+Get-NetIPConfiguration
+```
+
+- **Purpose:** Show active network configuration, including IP addresses, default gateways and DNS servers.
+- **Arguments:** No flags; summarizes usable network interfaces and IP configuration.
+- **Use case:** Verify a server's addressing and default gateway after a change.
+- **Official reference:** https://learn.microsoft.com/en-us/powershell/module/nettcpip/get-netipconfiguration?view=windowsserver2022-ps
+
+> Not lab-verified.
