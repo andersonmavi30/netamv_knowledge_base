@@ -34,3 +34,16 @@ resolvectl query example.com
 - **Official reference:** https://www.freedesktop.org/software/systemd/man/latest/resolvectl.html
 
 > Not lab-verified.
+
+## `getent ahosts example.com`
+
+```bash
+getent ahosts example.com
+```
+
+- **Purpose:** Resolve a hostname via the system Name Service Switch (NSS), showing address and socket types.
+- **Arguments:** `ahosts`: use getaddrinfo/NSS host lookup; `example.com`: sample hostname. Uses configured NSS sources, not necessarily DNS alone.
+- **Use case:** Compare system-level hostname resolution with application behavior.
+- **Official reference:** https://man7.org/linux/man-pages/man1/getent.1.html
+
+> Not lab-verified.

@@ -34,3 +34,16 @@ resolvectl query example.com
 - **Referencia oficial:** https://www.freedesktop.org/software/systemd/man/latest/resolvectl.html
 
 > Pendiente de validación en laboratorio.
+
+## `getent ahosts example.com`
+
+```bash
+getent ahosts example.com
+```
+
+- **Sirve para:** Resolver un nombre mediante Name Service Switch (NSS) y mostrar direcciones y tipos de socket.
+- **Parámetros:** `ahosts`: consulta de nombres mediante getaddrinfo/NSS; `example.com`: nombre de ejemplo. Puede usar fuentes distintas a DNS.
+- **Ejemplo de uso:** Comparar la resolución de nombres del sistema con el comportamiento de una aplicación.
+- **Referencia oficial:** https://man7.org/linux/man-pages/man1/getent.1.html
+
+> Pendiente de validación en laboratorio.
