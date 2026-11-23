@@ -21,3 +21,16 @@ Get-NetRoute -AddressFamily IPv4
 - **Referencia oficial:** https://learn.microsoft.com/en-us/powershell/module/nettcpip/get-netroute?view=windowsserver2022-ps
 
 > Pendiente de validación en laboratorio.
+
+## `Find-NetRoute -RemoteIPAddress 1.1.1.1`
+
+```powershell
+Find-NetRoute -RemoteIPAddress 1.1.1.1
+```
+
+- **Sirve para:** Encontrar la ruta e IP de origen seleccionadas para alcanzar una IP remota.
+- **Parámetros:** `-RemoteIPAddress`: destino a evaluar; `1.1.1.1`: dirección de ejemplo; no agrega rutas.
+- **Ejemplo de uso:** Comprobar la ruta de salida de un servidor con varias NIC.
+- **Referencia oficial:** https://learn.microsoft.com/en-us/powershell/module/nettcpip/find-netroute?view=windowsserver2022-ps
+
+> Pendiente de validación en laboratorio.

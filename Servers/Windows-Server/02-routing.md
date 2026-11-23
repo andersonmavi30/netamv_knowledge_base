@@ -21,3 +21,16 @@ Get-NetRoute -AddressFamily IPv4
 - **Official reference:** https://learn.microsoft.com/en-us/powershell/module/nettcpip/get-netroute?view=windowsserver2022-ps
 
 > Not lab-verified.
+
+## `Find-NetRoute -RemoteIPAddress 1.1.1.1`
+
+```powershell
+Find-NetRoute -RemoteIPAddress 1.1.1.1
+```
+
+- **Purpose:** Find the local route and source address selected to reach a remote IP.
+- **Arguments:** `-RemoteIPAddress`: destination to evaluate; `1.1.1.1`: example address; does not add routes.
+- **Use case:** Check selected egress path on a server with multiple NICs.
+- **Official reference:** https://learn.microsoft.com/en-us/powershell/module/nettcpip/find-netroute?view=windowsserver2022-ps
+
+> Not lab-verified.
