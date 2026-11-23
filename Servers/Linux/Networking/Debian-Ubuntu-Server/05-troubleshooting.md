@@ -60,3 +60,16 @@ ethtool -S eth0
 - **Official reference:** https://man7.org/linux/man-pages/man8/ethtool.8.html
 
 > Not lab-verified.
+
+## `tracepath 1.1.1.1`
+
+```bash
+tracepath 1.1.1.1
+```
+
+- **Purpose:** Probe the path and path MTU toward a destination without requiring raw-socket privileges in typical configurations.
+- **Arguments:** `1.1.1.1`: example target; no flags. Requires the tracepath utility; intermediate hops may not respond.
+- **Use case:** Locate a forwarding hop or possible MTU issue during connectivity troubleshooting.
+- **Official reference:** https://man7.org/linux/man-pages/man8/tracepath.8.html
+
+> Not lab-verified.

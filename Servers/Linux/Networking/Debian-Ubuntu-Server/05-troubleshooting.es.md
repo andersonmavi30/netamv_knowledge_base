@@ -60,3 +60,16 @@ ethtool -S eth0
 - **Referencia oficial:** https://man7.org/linux/man-pages/man8/ethtool.8.html
 
 > Pendiente de validación en laboratorio.
+
+## `tracepath 1.1.1.1`
+
+```bash
+tracepath 1.1.1.1
+```
+
+- **Sirve para:** Examinar el recorrido y la MTU de ruta hacia un destino, normalmente sin privilegios de sockets raw.
+- **Parámetros:** `1.1.1.1`: destino de ejemplo; sin flags. Requiere tracepath; algunos saltos pueden no responder.
+- **Ejemplo de uso:** Investigar saltos de red o posibles problemas de MTU en la conectividad.
+- **Referencia oficial:** https://man7.org/linux/man-pages/man8/tracepath.8.html
+
+> Pendiente de validación en laboratorio.
