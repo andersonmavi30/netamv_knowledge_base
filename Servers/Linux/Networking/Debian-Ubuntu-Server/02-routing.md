@@ -60,3 +60,16 @@ ip -6 route show
 - **Official reference:** https://man7.org/linux/man-pages/man8/ip-route.8.html
 
 > Not lab-verified.
+
+## `ip route show table all`
+
+```bash
+ip route show table all
+```
+
+- **Purpose:** Show routes from every IPv4 routing table, including policy-routing tables.
+- **Arguments:** `route show`: inspect routes; `table all`: select all tables, not only main.
+- **Use case:** Find a route installed in a non-default routing table.
+- **Official reference:** https://man7.org/linux/man-pages/man8/ip-route.8.html
+
+> Not lab-verified.
