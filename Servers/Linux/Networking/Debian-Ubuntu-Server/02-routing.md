@@ -73,3 +73,16 @@ ip route show table all
 - **Official reference:** https://man7.org/linux/man-pages/man8/ip-route.8.html
 
 > Not lab-verified.
+
+## `ip -6 rule show`
+
+```bash
+ip -6 rule show
+```
+
+- **Purpose:** List IPv6 policy-routing rules and their priorities.
+- **Arguments:** `-6`: IPv6 family; `rule`: policy-routing rules; `show`: read-only.
+- **Use case:** Check whether custom IPv6 policy routing affects traffic selection.
+- **Official reference:** https://man7.org/linux/man-pages/man8/ip-rule.8.html
+
+> Not lab-verified.
