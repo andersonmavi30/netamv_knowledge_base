@@ -23,7 +23,7 @@
   - ↳ [Linux · Networking](Servers/Linux/Networking/README.md)
     - [RHEL / Rocky Linux / AlmaLinux / Fedora](Servers/Linux/Networking/RHEL-Rocky-AlmaLinux-Fedora/README.md)
     - [Debian / Ubuntu Server](Servers/Linux/Networking/Debian-Ubuntu-Server/README.md)
-  - ↳ [Windows Server · PowerShell](Servers/Windows-Server/README.md) — interfaces, routing, DNS, TCP connectivity, services and event logs
+  - ↳ [Windows Server · PowerShell](Servers/Windows-Server/README.md)
 - 📦 **Virtualization** *(planned)*
 - ⚙️ **[NetDevOps & Network Automation - DevNet](NetDevOps/README.md)**
   - ↳ [Git](NetDevOps/Git/README.md)
