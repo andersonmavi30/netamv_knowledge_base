@@ -21,6 +21,9 @@
   - ↳ [F5 · BIG-IP TMOS / LTM](Load-Balancers/F5/README.es.md)
 - 🖥️ **[Servidores](Servers/README.es.md)**
   - ↳ [Linux · Networking](Servers/Linux/Networking/README.es.md)
+    - [RHEL / Rocky Linux / AlmaLinux / Fedora](Servers/Linux/Networking/RHEL-Rocky-AlmaLinux-Fedora/README.es.md)
+    - [Debian / Ubuntu Server](Servers/Linux/Networking/Debian-Ubuntu-Server/README.es.md)
+  - ↳ [Windows Server · PowerShell](Servers/Windows-Server/README.es.md) — interfaces, rutas, DNS, conectividad TCP, servicios y registros de eventos
 - 📦 **Virtualización** *(próximamente)*
 - ⚙️ **[NetDevOps & Network Automation - DevNet](NetDevOps/README.es.md)**
   - ↳ [Git](NetDevOps/Git/README.es.md)
