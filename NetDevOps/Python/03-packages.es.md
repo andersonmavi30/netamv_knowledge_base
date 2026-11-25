@@ -21,3 +21,16 @@ python -m pip install requests
 - **Referencia oficial:** https://pip.pypa.io/en/stable/cli/pip_install/
 
 > Pendiente de validación en laboratorio.
+
+## `python -m pip install netmiko`
+
+```bash
+python -m pip install netmiko
+```
+
+- **Sirve para:** Instalar Netmiko en el entorno Python activo para automatización SSH de dispositivos de red.
+- **Parámetros:** `-m pip`: ejecutar pip con el intérprete actual; `install`: instalar desde el índice configurado; `netmiko`: nombre del paquete.
+- **Ejemplo de uso:** Dentro de `.venv`, instalar Netmiko para un script de laboratorio que consulte interfaces por SSH.
+- **Referencia oficial:** https://pip.pypa.io/en/stable/cli/pip_install/
+
+> Pendiente de validación en laboratorio.
