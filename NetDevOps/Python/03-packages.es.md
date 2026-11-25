@@ -60,3 +60,16 @@ python -m pip freeze > requirements.txt
 - **Referencia oficial:** https://pip.pypa.io/en/stable/cli/pip_freeze/
 
 > Pendiente de validación en laboratorio.
+
+## `python -m pip install -r requirements.txt`
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+- **Sirve para:** Instalar las dependencias del proyecto desde un archivo de requisitos revisado en el entorno activo.
+- **Parámetros:** `-m pip`: utilizar el intérprete actual; `install`: instalar paquetes; `-r requirements.txt`: leer las dependencias del archivo.
+- **Ejemplo de uso:** Recrear dependencias aprobadas en un nuevo `.venv` antes de ejecutar automatización de redes en CI.
+- **Referencia oficial:** https://pip.pypa.io/en/stable/cli/pip_install/
+
+> Pendiente de validación en laboratorio.

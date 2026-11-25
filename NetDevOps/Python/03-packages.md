@@ -47,3 +47,16 @@ python -m pip freeze > requirements.txt
 - **Official reference:** https://pip.pypa.io/en/stable/cli/pip_freeze/
 
 > Not lab-verified.
+
+## `python -m pip install -r requirements.txt`
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+- **Purpose:** Install project packages from a pinned or reviewed requirements file into the active environment.
+- **Arguments:** `-m pip`: use the current interpreter; `install`: install packages; `-r requirements.txt`: read dependency specifications from the file.
+- **Use case:** Recreate approved project dependencies in a new `.venv` before running network automation in CI.
+- **Official reference:** https://pip.pypa.io/en/stable/cli/pip_install/
+
+> Not lab-verified.
