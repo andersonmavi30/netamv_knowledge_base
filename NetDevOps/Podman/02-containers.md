@@ -21,3 +21,16 @@ podman ps -a
 - **Official reference:** https://docs.podman.io/en/latest/markdown/podman-ps.1.html
 
 > Not lab-verified.
+
+## `podman run -d --name web-lab -p 127.0.0.1:8080:80 docker.io/library/nginx:stable-alpine`
+
+```bash
+podman run -d --name web-lab -p 127.0.0.1:8080:80 docker.io/library/nginx:stable-alpine
+```
+
+- **Purpose:** Create and start an Nginx lab container, exposing HTTP only on the host loopback address.
+- **Arguments:** `run`: create and start; `-d`: detached; `--name web-lab`: container name; `-p 127.0.0.1:8080:80`: bind host loopback port 8080 to container port 80; `docker.io/library/nginx:stable-alpine`: fully qualified image.
+- **Use case:** Serve a local test endpoint for a NetDevOps API or HTTP health-check lab; requires free host port 8080 and image access.
+- **Official reference:** https://docs.podman.io/en/latest/markdown/podman-run.1.html
+
+> Not lab-verified.
