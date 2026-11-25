@@ -34,3 +34,16 @@ podman info
 - **Referencia oficial:** https://docs.podman.io/en/latest/markdown/podman-info.1.html
 
 > Pendiente de validación en laboratorio.
+
+## `podman images`
+
+```bash
+podman images
+```
+
+- **Sirve para:** Listar imágenes locales con repositorios, etiquetas, identificadores y tamaños.
+- **Parámetros:** `images`: enumerar imágenes locales; solo consulta.
+- **Ejemplo de uso:** Confirmar que la imagen Python o del entorno de ejecución Ansible está disponible para un laboratorio sin Internet.
+- **Referencia oficial:** https://docs.podman.io/en/latest/markdown/podman-images.1.html
+
+> Pendiente de validación en laboratorio.

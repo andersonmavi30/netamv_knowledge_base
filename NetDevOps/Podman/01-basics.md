@@ -34,3 +34,16 @@ podman info
 - **Official reference:** https://docs.podman.io/en/latest/markdown/podman-info.1.html
 
 > Not lab-verified.
+
+## `podman images`
+
+```bash
+podman images
+```
+
+- **Purpose:** List locally stored images, repositories, tags, IDs and sizes.
+- **Arguments:** `images`: list local images; read-only.
+- **Use case:** Confirm a Python or Ansible execution image is already available before an offline lab.
+- **Official reference:** https://docs.podman.io/en/latest/markdown/podman-images.1.html
+
+> Not lab-verified.
