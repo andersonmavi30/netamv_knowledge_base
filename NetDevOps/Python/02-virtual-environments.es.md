@@ -21,3 +21,16 @@ python3 -m venv .venv
 - **Referencia oficial:** https://docs.python.org/3/library/venv.html
 
 > Pendiente de validación en laboratorio.
+
+## `source .venv/bin/activate`
+
+```bash
+source .venv/bin/activate
+```
+
+- **Sirve para:** Activar el entorno virtual existente en la sesión actual de Bash.
+- **Parámetros:** `source`: cargar el script en el shell actual; `.venv/bin/activate`: script creado por `venv`. Sintaxis Bash en Linux/macOS.
+- **Ejemplo de uso:** Activar el entorno antes de instalar librerías o ejecutar scripts; en Windows PowerShell usar `.venv\Scripts\Activate.ps1`.
+- **Referencia oficial:** https://docs.python.org/3/library/venv.html
+
+> Pendiente de validación en laboratorio.

@@ -21,3 +21,16 @@ python3 -m venv .venv
 - **Official reference:** https://docs.python.org/3/library/venv.html
 
 > Not lab-verified.
+
+## `source .venv/bin/activate`
+
+```bash
+source .venv/bin/activate
+```
+
+- **Purpose:** Activate the existing virtual environment in the current Bash shell.
+- **Arguments:** `source`: execute the activation script in the current shell; `.venv/bin/activate`: activation script created by `venv`. Linux/macOS Bash syntax.
+- **Use case:** Activate the environment before installing Python libraries or running automation scripts; Windows PowerShell uses `.venv\Scripts\Activate.ps1`.
+- **Official reference:** https://docs.python.org/3/library/venv.html
+
+> Not lab-verified.
