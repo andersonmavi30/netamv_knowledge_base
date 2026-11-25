@@ -22,15 +22,15 @@ python -m pip install requests
 
 > Not lab-verified.
 
-## `python -m pip install netmiko`
+## `python -m pip list`
 
 ```bash
-python -m pip install netmiko
+python -m pip list
 ```
 
-- **Purpose:** Install Netmiko for SSH-based network device automation into the active Python environment.
-- **Arguments:** `-m pip`: run pip with the current interpreter; `install`: install from the configured package index; `netmiko`: package name.
-- **Use case:** Inside an activated `.venv`, install Netmiko for a controlled lab script that reads switch interface status via SSH.
-- **Official reference:** https://pip.pypa.io/en/stable/cli/pip_install/
+- **Purpose:** List installed packages and their versions in the active environment.
+- **Arguments:** `-m pip`: use the current Python interpreter; `list`: display installed distributions and versions.
+- **Use case:** Verify the versions of Requests and Netmiko before running automation scripts.
+- **Official reference:** https://pip.pypa.io/en/stable/cli/pip_list/
 
 > Not lab-verified.

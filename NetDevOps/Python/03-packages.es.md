@@ -34,3 +34,16 @@ python -m pip install netmiko
 - **Referencia oficial:** https://pip.pypa.io/en/stable/cli/pip_install/
 
 > Pendiente de validación en laboratorio.
+
+## `python -m pip list`
+
+```bash
+python -m pip list
+```
+
+- **Sirve para:** Listar paquetes instalados y sus versiones en el entorno activo.
+- **Parámetros:** `-m pip`: utilizar el intérprete Python actual; `list`: mostrar distribuciones y versiones instaladas.
+- **Ejemplo de uso:** Verificar versiones de Requests y Netmiko antes de ejecutar scripts.
+- **Referencia oficial:** https://pip.pypa.io/en/stable/cli/pip_list/
+
+> Pendiente de validación en laboratorio.
