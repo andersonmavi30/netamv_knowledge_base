@@ -47,3 +47,16 @@ podman logs --tail 30 web-lab
 - **Referencia oficial:** https://docs.podman.io/en/latest/markdown/podman-logs.1.html
 
 > Pendiente de validación en laboratorio.
+
+## `podman exec -it web-lab /bin/sh`
+
+```bash
+podman exec -it web-lab /bin/sh
+```
+
+- **Sirve para:** Abrir una consola interactiva dentro de un contenedor activo.
+- **Parámetros:** `exec`: ejecutar un proceso en un contenedor activo; `-i`: mantener stdin; `-t`: asignar terminal; `web-lab`: contenedor; `/bin/sh`: consola disponible en Alpine.
+- **Ejemplo de uso:** Inspeccionar configuración o procesos de un contenedor de laboratorio; salir de la consola al terminar.
+- **Referencia oficial:** https://docs.podman.io/en/latest/markdown/podman-exec.1.html
+
+> Pendiente de validación en laboratorio.

@@ -47,3 +47,16 @@ podman logs --tail 30 web-lab
 - **Official reference:** https://docs.podman.io/en/latest/markdown/podman-logs.1.html
 
 > Not lab-verified.
+
+## `podman exec -it web-lab /bin/sh`
+
+```bash
+podman exec -it web-lab /bin/sh
+```
+
+- **Purpose:** Open an interactive shell inside a currently running container.
+- **Arguments:** `exec`: run a process in a running container; `-i`: keep stdin open; `-t`: allocate TTY; `web-lab`: container; `/bin/sh`: shell available in Alpine-based images.
+- **Use case:** Inspect a lab container's configuration or running process; exit the shell after diagnostics.
+- **Official reference:** https://docs.podman.io/en/latest/markdown/podman-exec.1.html
+
+> Not lab-verified.
