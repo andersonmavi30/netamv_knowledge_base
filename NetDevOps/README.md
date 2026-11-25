@@ -2,6 +2,7 @@
 
 [🇬🇧 English](README.md) · [🇨🇴 Español](README.es.md) · [🏠 Home](../README.md)
 
+- [Python](Python/README.md) — interpreter, isolated environments, pip packages and validation
 - [Git](Git/README.md) — version control and workflow
 - [Docker](Docker/README.md) — containers, images and Dockerfile
 - [Ansible](Ansible/README.md) — inventories, ad-hoc commands, playbooks and validation

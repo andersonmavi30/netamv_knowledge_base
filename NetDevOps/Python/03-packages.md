@@ -1,0 +1,62 @@
+---
+tags: [python, netdevops, automation, cli]
+validation: not-lab-verified
+---
+
+# pip and project dependencies
+
+[🇬🇧 English](03-packages.md) · [🇨🇴 Español](03-packages.es.md) · [↩ Python](README.md)
+
+**Platform:** Python 3.10+; Linux/macOS Bash; Windows activation commands differ.
+
+## `python -m pip install requests`
+
+```bash
+python -m pip install requests
+```
+
+- **Purpose:** Install the `requests` HTTP client into the active Python environment for REST API automation.
+- **Arguments:** `-m pip`: execute pip with the active Python interpreter; `install`: download/install a package; `requests`: package name. Requires package-index access.
+- **Use case:** Install Requests inside `.venv` to query a lab NetBox or firewall REST API; review and pin approved versions for reproducibility.
+- **Official reference:** https://pip.pypa.io/en/stable/cli/pip_install/
+
+> Not lab-verified.
+
+## `python -m pip list`
+
+```bash
+python -m pip list
+```
+
+- **Purpose:** List installed packages and their versions in the active environment.
+- **Arguments:** `-m pip`: use the current Python interpreter; `list`: display installed distributions and versions.
+- **Use case:** Verify the versions of Requests and Netmiko before running automation scripts.
+- **Official reference:** https://pip.pypa.io/en/stable/cli/pip_list/
+
+> Not lab-verified.
+
+## `python -m pip freeze > requirements.txt`
+
+```bash
+python -m pip freeze > requirements.txt
+```
+
+- **Purpose:** Export installed package versions into a requirements file for repeatable lab setup.
+- **Arguments:** `-m pip freeze`: print installed packages in requirements format; `>`: shell redirection that creates or overwrites `requirements.txt`.
+- **Use case:** Capture exact installed versions of a NetBox integration project's current `.venv`; review the generated file before committing it.
+- **Official reference:** https://pip.pypa.io/en/stable/cli/pip_freeze/
+
+> Not lab-verified.
+
+## `python -m pip install -r requirements.txt`
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+- **Purpose:** Install project packages from a pinned or reviewed requirements file into the active environment.
+- **Arguments:** `-m pip`: use the current interpreter; `install`: install packages; `-r requirements.txt`: read dependency specifications from the file.
+- **Use case:** Recreate approved project dependencies in a new `.venv` before running network automation in CI.
+- **Official reference:** https://pip.pypa.io/en/stable/cli/pip_install/
+
+> Not lab-verified.
