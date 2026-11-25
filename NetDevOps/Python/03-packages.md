@@ -34,3 +34,16 @@ python -m pip list
 - **Official reference:** https://pip.pypa.io/en/stable/cli/pip_list/
 
 > Not lab-verified.
+
+## `python -m pip freeze > requirements.txt`
+
+```bash
+python -m pip freeze > requirements.txt
+```
+
+- **Purpose:** Export installed package versions into a requirements file for repeatable lab setup.
+- **Arguments:** `-m pip freeze`: print installed packages in requirements format; `>`: shell redirection that creates or overwrites `requirements.txt`.
+- **Use case:** Capture exact installed versions of a NetBox integration project's current `.venv`; review the generated file before committing it.
+- **Official reference:** https://pip.pypa.io/en/stable/cli/pip_freeze/
+
+> Not lab-verified.

@@ -47,3 +47,16 @@ python -m pip list
 - **Referencia oficial:** https://pip.pypa.io/en/stable/cli/pip_list/
 
 > Pendiente de validación en laboratorio.
+
+## `python -m pip freeze > requirements.txt`
+
+```bash
+python -m pip freeze > requirements.txt
+```
+
+- **Sirve para:** Exportar las versiones instaladas a un archivo de requisitos para reproducir el laboratorio.
+- **Parámetros:** `-m pip freeze`: imprimir paquetes y versiones en formato requirements; `>`: redirección que crea o sobrescribe `requirements.txt`.
+- **Ejemplo de uso:** Guardar versiones del `.venv` de un proyecto de integración con NetBox; revisar el archivo antes de versionarlo.
+- **Referencia oficial:** https://pip.pypa.io/en/stable/cli/pip_freeze/
+
+> Pendiente de validación en laboratorio.
