@@ -60,3 +60,16 @@ podman exec -it web-lab /bin/sh
 - **Official reference:** https://docs.podman.io/en/latest/markdown/podman-exec.1.html
 
 > Not lab-verified.
+
+## `podman stop web-lab`
+
+```bash
+podman stop web-lab
+```
+
+- **Purpose:** Gracefully stop the named running lab container.
+- **Arguments:** `stop`: request graceful shutdown (then forced termination after timeout if necessary); `web-lab`: example container name.
+- **Use case:** Stop the disposable Nginx lab endpoint after an HTTP test; confirm you are not stopping a production service.
+- **Official reference:** https://docs.podman.io/en/latest/markdown/podman-stop.1.html
+
+> Not lab-verified.

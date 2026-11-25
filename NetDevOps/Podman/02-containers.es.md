@@ -60,3 +60,16 @@ podman exec -it web-lab /bin/sh
 - **Referencia oficial:** https://docs.podman.io/en/latest/markdown/podman-exec.1.html
 
 > Pendiente de validación en laboratorio.
+
+## `podman stop web-lab`
+
+```bash
+podman stop web-lab
+```
+
+- **Sirve para:** Detener ordenadamente el contenedor de laboratorio indicado.
+- **Parámetros:** `stop`: solicitar apagado ordenado (puede forzar el cierre al agotarse el tiempo); `web-lab`: nombre de ejemplo.
+- **Ejemplo de uso:** Detener Nginx tras las pruebas HTTP; confirmar que no sea un servicio productivo.
+- **Referencia oficial:** https://docs.podman.io/en/latest/markdown/podman-stop.1.html
+
+> Pendiente de validación en laboratorio.
