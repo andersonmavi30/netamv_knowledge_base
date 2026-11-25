@@ -26,6 +26,7 @@
   - ↳ [Windows Server · PowerShell](Servers/Windows-Server/README.md)
 - 📦 **Virtualization** *(planned)*
 - ⚙️ **[NetDevOps & Network Automation - DevNet](NetDevOps/README.md)**
+  - ↳ [Python](NetDevOps/Python/README.md)
   - ↳ [Git](NetDevOps/Git/README.md)
   - ↳ [Docker](NetDevOps/Docker/README.md)
   - ↳ [Ansible](NetDevOps/Ansible/README.md)

@@ -26,6 +26,7 @@
   - ↳ [Windows Server · PowerShell](Servers/Windows-Server/README.es.md) — interfaces, rutas, DNS, conectividad TCP, servicios y registros de eventos
 - 📦 **Virtualización** *(próximamente)*
 - ⚙️ **[NetDevOps & Network Automation - DevNet](NetDevOps/README.es.md)**
+  - ↳ [Python](NetDevOps/Python/README.es.md)
   - ↳ [Git](NetDevOps/Git/README.es.md)
   - ↳ [Docker](NetDevOps/Docker/README.es.md)
   - ↳ [Ansible](NetDevOps/Ansible/README.es.md)
