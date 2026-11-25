@@ -29,6 +29,7 @@
   - ↳ [Python](NetDevOps/Python/README.es.md)
   - ↳ [Git](NetDevOps/Git/README.es.md)
   - ↳ [Docker](NetDevOps/Docker/README.es.md)
+  - ↳ [Podman](NetDevOps/Podman/README.es.md)
   - ↳ [Ansible](NetDevOps/Ansible/README.es.md)
   - ↳ [Terraform](NetDevOps/Terraform/README.es.md)
   - ↳ [Kubernetes](NetDevOps/Kubernetes/README.es.md)

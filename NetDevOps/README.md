@@ -5,6 +5,7 @@
 - [Python](Python/README.md) — interpreter, isolated environments, pip packages and validation
 - [Git](Git/README.md) — version control and workflow
 - [Docker](Docker/README.md) — containers, images and Dockerfile
+- [Podman](Podman/README.md) — rootless containers, operations and Python venv/pip in containers
 - [Ansible](Ansible/README.md) — inventories, ad-hoc commands, playbooks and validation
 - [Terraform](Terraform/README.md) — IaC initialization, plans, state and validation
 - [Kubernetes](Kubernetes/README.md) — kubectl, workloads, networking and troubleshooting
