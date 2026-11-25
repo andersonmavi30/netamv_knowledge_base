@@ -228,3 +228,19 @@ gh auth setup-git
 > Git uses native flags; pipes are optional, not mandatory. Avoid destructive operations before reviewing status.
 
 [Git reference](https://git-scm.com/docs)
+
+## `git remote set-url rhcsa_simulator git@github.com:andersonmavi30/rhcsa_simulator.git`
+
+```bash
+git remote -v
+git remote set-url rhcsa_simulator git@github.com:andersonmavi30/rhcsa_simulator.git
+git remote -v
+```
+
+- **Purpose:** Switch the existing local `rhcsa_simulator` remote's URL to GitHub SSH in the current Git repository; does not change files or branches.
+- **Arguments:** `remote set-url`: replace an existing remote's URL; `rhcsa_simulator`: **local remote name**, not the repository name; `git@github.com:andersonmavi30/rhcsa_simulator.git`: destination SSH URL. `git remote -v`: inspect fetch/push URLs before and after.
+- **Use case:** Switch the RHCSA simulator Git remote to SSH-based authentication from a WSL2 shell, after registering the public key with GitHub.
+- **Caution:** `set-url` requires the remote to **already exist**. If the configured remote is `origin`, instead use `git remote set-url origin git@github.com:andersonmavi30/rhcsa_simulator.git`. Check `git remote -v` first; the remote name is not automatically the repository name.
+- **Official reference:** https://git-scm.com/docs/git-remote
+
+> Set up SSH **inside WSL2** using [GitHub SSH from WSL2](02-github-ssh-wsl2.md). Never publish private keys or tokens.
