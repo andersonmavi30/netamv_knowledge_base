@@ -21,3 +21,16 @@ podman run --rm -v "$PWD:/workspace:Z" -w /workspace docker.io/library/python:3.
 - **Referencia oficial:** https://docs.podman.io/en/latest/markdown/podman-run.1.html
 
 > Pendiente de validación en laboratorio.
+
+## `podman run --rm -v "$PWD:/workspace:Z" -w /workspace docker.io/library/python:3.12-slim .venv/bin/python -m pip install requests`
+
+```bash
+podman run --rm -v "$PWD:/workspace:Z" -w /workspace docker.io/library/python:3.12-slim .venv/bin/python -m pip install requests
+```
+
+- **Sirve para:** Instalar la librería Requests en el `.venv` montado desde el host, usando la misma imagen de contenedor Python con la que fue creado.
+- **Parámetros:** `run --rm`: contenedor temporal; `-v "$PWD:/workspace:Z"`: montar proyecto con reetiquetado SELinux; `-w /workspace`: directorio de trabajo; `.venv/bin/python -m pip`: pip del entorno; `install requests`: instalar paquete revisado desde el índice configurado.
+- **Ejemplo de uso:** Después de crear `.venv`, instalar Requests para pruebas de APIs REST de NetBox o firewalls. Requiere red/índice de paquetes; preferir versiones aprobadas y fijadas, sin exponer secretos en el directorio montado.
+- **Referencia oficial:** https://docs.podman.io/en/latest/markdown/podman-run.1.html
+
+> Pendiente de validación en laboratorio.

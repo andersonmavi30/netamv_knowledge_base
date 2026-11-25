@@ -21,3 +21,16 @@ podman run --rm -v "$PWD:/workspace:Z" -w /workspace docker.io/library/python:3.
 - **Official reference:** https://docs.podman.io/en/latest/markdown/podman-run.1.html
 
 > Not lab-verified.
+
+## `podman run --rm -v "$PWD:/workspace:Z" -w /workspace docker.io/library/python:3.12-slim .venv/bin/python -m pip install requests`
+
+```bash
+podman run --rm -v "$PWD:/workspace:Z" -w /workspace docker.io/library/python:3.12-slim .venv/bin/python -m pip install requests
+```
+
+- **Purpose:** Install the Requests library into the existing bind-mounted `.venv` from inside the same Python container image used to create it.
+- **Arguments:** `run --rm`: temporary container; `-v "$PWD:/workspace:Z"`: project bind mount with SELinux relabel; `-w /workspace`: working directory; `.venv/bin/python -m pip`: use the environment's pip; `install requests`: install the reviewed Python package from the configured index.
+- **Use case:** After creating `.venv` with the previous command, install Requests for NetBox or firewall REST API test scripts. Requires network/package-index access; prefer approved pinned versions and do not expose secrets in the mounted project.
+- **Official reference:** https://docs.podman.io/en/latest/markdown/podman-run.1.html
+
+> Not lab-verified.
