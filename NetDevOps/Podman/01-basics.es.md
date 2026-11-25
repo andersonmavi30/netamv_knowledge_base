@@ -21,3 +21,16 @@ podman --version
 - **Referencia oficial:** https://docs.podman.io/en/latest/markdown/podman.1.html
 
 > Pendiente de validación en laboratorio.
+
+## `podman info`
+
+```bash
+podman info
+```
+
+- **Sirve para:** Consultar configuración de host, almacenamiento, runtime y registros de Podman.
+- **Parámetros:** `info`: muestra detalles del host y runtime; solo consulta. Puede revelar rutas locales y registros.
+- **Ejemplo de uso:** Comprobar modo rootless, driver de almacenamiento y runtime OCI antes de desplegar automatización.
+- **Referencia oficial:** https://docs.podman.io/en/latest/markdown/podman-info.1.html
+
+> Pendiente de validación en laboratorio.

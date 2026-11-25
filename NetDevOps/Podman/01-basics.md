@@ -21,3 +21,16 @@ podman --version
 - **Official reference:** https://docs.podman.io/en/latest/markdown/podman.1.html
 
 > Not lab-verified.
+
+## `podman info`
+
+```bash
+podman info
+```
+
+- **Purpose:** Inspect Podman's host, storage, runtime and registries configuration.
+- **Arguments:** `info`: display host and runtime configuration; read-only. Output can reveal host paths and registry details.
+- **Use case:** Verify rootless mode, storage driver and OCI runtime before deploying a network automation container.
+- **Official reference:** https://docs.podman.io/en/latest/markdown/podman-info.1.html
+
+> Not lab-verified.
