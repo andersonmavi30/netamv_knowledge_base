@@ -21,3 +21,16 @@ python -m pip check
 - **Official reference:** https://pip.pypa.io/en/stable/cli/pip_check/
 
 > Not lab-verified.
+
+## `python -m json.tool payload.json`
+
+```bash
+python -m json.tool payload.json
+```
+
+- **Purpose:** Validate JSON syntax and pretty-print an input file to the terminal.
+- **Arguments:** `-m json.tool`: run the standard JSON utility; `payload.json`: example input file. Invalid JSON produces an error and nonzero exit status.
+- **Use case:** Check a NetBox or firewall REST API request body before using it in an automation script.
+- **Official reference:** https://docs.python.org/3/library/json.html#module-json.tool
+
+> Not lab-verified.
