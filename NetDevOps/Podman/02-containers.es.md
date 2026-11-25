@@ -34,3 +34,16 @@ podman run -d --name web-lab -p 127.0.0.1:8080:80 docker.io/library/nginx:stable
 - **Referencia oficial:** https://docs.podman.io/en/latest/markdown/podman-run.1.html
 
 > Pendiente de validación en laboratorio.
+
+## `podman logs --tail 30 web-lab`
+
+```bash
+podman logs --tail 30 web-lab
+```
+
+- **Sirve para:** Consultar las últimas 30 líneas del registro del contenedor indicado.
+- **Parámetros:** `logs`: ver salida del contenedor; `--tail 30`: últimas 30 líneas; `web-lab`: nombre del contenedor.
+- **Ejemplo de uso:** Revisar errores de inicio o accesos HTTP tras una prueba de monitoreo fallida; los logs pueden contener datos sensibles.
+- **Referencia oficial:** https://docs.podman.io/en/latest/markdown/podman-logs.1.html
+
+> Pendiente de validación en laboratorio.

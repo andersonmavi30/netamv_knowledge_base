@@ -34,3 +34,16 @@ podman run -d --name web-lab -p 127.0.0.1:8080:80 docker.io/library/nginx:stable
 - **Official reference:** https://docs.podman.io/en/latest/markdown/podman-run.1.html
 
 > Not lab-verified.
+
+## `podman logs --tail 30 web-lab`
+
+```bash
+podman logs --tail 30 web-lab
+```
+
+- **Purpose:** Read the last 30 log lines from the named container.
+- **Arguments:** `logs`: view container output; `--tail 30`: only the last 30 lines; `web-lab`: example container name.
+- **Use case:** Check Nginx startup errors or HTTP access entries after a failed monitoring check; logs may contain sensitive data.
+- **Official reference:** https://docs.podman.io/en/latest/markdown/podman-logs.1.html
+
+> Not lab-verified.
