@@ -292,3 +292,16 @@ diagnose debug application fnbamd -1
 - **Referencia oficial:** https://docs.fortinet.com/document/fortigate/latest/administration-guide/502390/debug-commands
 
 > No probado en laboratorio. Activar solo durante un diagnóstico autorizado con `diagnose debug enable`; detener luego con `diagnose debug disable` y `diagnose debug reset`. Revisar y proteger la salida por posibles datos sensibles.
+
+## `diagnose debug application update -1`
+
+```text
+diagnose debug application update -1
+```
+
+- **Sirve para:** Configurar registros detallados del proceso de actualización FortiGuard durante problemas de conectividad.
+- **Parámetros:** `application update`: servicio de actualizaciones FortiGuard; `-1`: nivel detallado; requiere `diagnose debug enable` para emitir salida.
+- **Ejemplo de uso:** Investigar por qué un FortiGate de laboratorio no descarga actualizaciones AV/IPS/FortiGuard, limitando la salida y protegiendo logs.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966/cli-troubleshooting-cheat-sheet
+
+> No probado en laboratorio. Activar solo durante un diagnóstico autorizado con `diagnose debug enable`; detener luego con `diagnose debug disable` y `diagnose debug reset`. Revisar y proteger la salida por posibles datos sensibles.
