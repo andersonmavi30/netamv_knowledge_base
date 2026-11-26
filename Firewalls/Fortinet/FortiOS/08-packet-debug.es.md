@@ -279,3 +279,16 @@ diagnose debug application dnsproxy -1
 - **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.6/administration-guide/150448/troubleshooting-for-dns-filter
 
 > No probado en laboratorio. Activar solo durante un diagnóstico autorizado con `diagnose debug enable`; detener luego con `diagnose debug disable` y `diagnose debug reset`. Revisar y proteger la salida por posibles datos sensibles.
+
+## `diagnose debug application fnbamd -1`
+
+```text
+diagnose debug application fnbamd -1
+```
+
+- **Sirve para:** Configurar debug detallado del demonio de autenticación remota del FortiGate.
+- **Parámetros:** `application fnbamd`: proceso de autenticación remota; `-1`: nivel detallado; salida tras `diagnose debug enable`.
+- **Ejemplo de uso:** Investigar una falla RADIUS/LDAP en pruebas autorizadas de VPN o portal cautivo; los logs pueden contener identificadores sensibles.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/latest/administration-guide/502390/debug-commands
+
+> No probado en laboratorio. Activar solo durante un diagnóstico autorizado con `diagnose debug enable`; detener luego con `diagnose debug disable` y `diagnose debug reset`. Revisar y proteger la salida por posibles datos sensibles.
