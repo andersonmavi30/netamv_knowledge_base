@@ -188,3 +188,16 @@ diagnose debug enable
 - **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
 
 > Pendiente de validación en laboratorio; detener con `diagnose debug disable`, `diagnose debug flow trace stop` y `diagnose debug reset`.
+
+## `diagnose debug flow filter proto 6`
+
+```text
+diagnose debug flow filter proto 6
+```
+
+- **Sirve para:** Limitar el debug flow IPv4 al tráfico TCP (protocolo IP número 6).
+- **Parámetros:** `flow filter`: filtros de flujo IPv4; `proto 6`: protocolo TCP. Configurar filtro de host y límite de trazas antes de activar debug.
+- **Ejemplo de uso:** Diagnosticar bloqueos de conexiones TCP sin incluir UDP ni ICMP en la salida.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
+
+> No probado en laboratorio. Antes de iniciar, limitar IP/protocolo/trazas; al finalizar: `diagnose debug disable`, `diagnose debug flow trace stop` y `diagnose debug reset`.

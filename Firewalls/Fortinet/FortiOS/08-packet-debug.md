@@ -188,3 +188,16 @@ diagnose debug enable
 - **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
 
 > Not lab-verified; stop using `diagnose debug disable`, `diagnose debug flow trace stop`, and `diagnose debug reset`.
+
+## `diagnose debug flow filter proto 6`
+
+```text
+diagnose debug flow filter proto 6
+```
+
+- **Purpose:** Restrict IPv4 flow tracing to TCP traffic (IP protocol number 6).
+- **Arguments:** `flow filter`: IPv4 flow-filter settings; `proto 6`: TCP protocol number. Configure a host filter and bounded trace before enabling debug.
+- **Use case:** Diagnose TCP connection denial while excluding UDP and ICMP from flow output.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
+
+> Not lab-verified. Scope IP/protocol/trace count before starting; afterwards run `diagnose debug disable`, `diagnose debug flow trace stop`, and `diagnose debug reset`.
