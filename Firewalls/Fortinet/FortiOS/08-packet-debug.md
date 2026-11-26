@@ -214,3 +214,16 @@ diagnose debug flow filter dport 443
 - **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
 
 > Not lab-verified. Scope IP/protocol/trace count before starting; afterwards run `diagnose debug disable`, `diagnose debug flow trace stop`, and `diagnose debug reset`.
+
+## `diagnose debug flow filter sport 12345`
+
+```text
+diagnose debug flow filter sport 12345
+```
+
+- **Purpose:** Restrict flow tracing to packets with an example source port of 12345.
+- **Arguments:** `sport 12345`: source transport-layer port; replace with the observed client source port; combine with address/protocol filters.
+- **Use case:** Follow one client connection with a known ephemeral source port while diagnosing policy selection.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
+
+> Not lab-verified. Scope IP/protocol/trace count before starting; afterwards run `diagnose debug disable`, `diagnose debug flow trace stop`, and `diagnose debug reset`.

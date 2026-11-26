@@ -214,3 +214,16 @@ diagnose debug flow filter dport 443
 - **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
 
 > No probado en laboratorio. Antes de iniciar, limitar IP/protocolo/trazas; al finalizar: `diagnose debug disable`, `diagnose debug flow trace stop` y `diagnose debug reset`.
+
+## `diagnose debug flow filter sport 12345`
+
+```text
+diagnose debug flow filter sport 12345
+```
+
+- **Sirve para:** Limitar la traza de flujo a paquetes con el puerto de origen de ejemplo 12345.
+- **Parámetros:** `sport 12345`: puerto origen de transporte; sustituir por el puerto real del cliente; combinar con filtros IP/protocolo.
+- **Ejemplo de uso:** Seguir una sesión con puerto efímero conocido mientras se revisa la selección de políticas.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
+
+> No probado en laboratorio. Antes de iniciar, limitar IP/protocolo/trazas; al finalizar: `diagnose debug disable`, `diagnose debug flow trace stop` y `diagnose debug reset`.
