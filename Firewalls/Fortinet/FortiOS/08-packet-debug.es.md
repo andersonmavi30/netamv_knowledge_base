@@ -188,3 +188,133 @@ diagnose debug enable
 - **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
 
 > Pendiente de validación en laboratorio; detener con `diagnose debug disable`, `diagnose debug flow trace stop` y `diagnose debug reset`.
+
+## `diagnose debug flow filter proto 6`
+
+```text
+diagnose debug flow filter proto 6
+```
+
+- **Sirve para:** Limitar el debug flow IPv4 al tráfico TCP (protocolo IP número 6).
+- **Parámetros:** `flow filter`: filtros de flujo IPv4; `proto 6`: protocolo TCP. Configurar filtro de host y límite de trazas antes de activar debug.
+- **Ejemplo de uso:** Diagnosticar bloqueos de conexiones TCP sin incluir UDP ni ICMP en la salida.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
+
+> No probado en laboratorio. Antes de iniciar, limitar IP/protocolo/trazas; al finalizar: `diagnose debug disable`, `diagnose debug flow trace stop` y `diagnose debug reset`.
+
+## `diagnose debug flow filter dport 443`
+
+```text
+diagnose debug flow filter dport 443
+```
+
+- **Sirve para:** Filtrar el debug flow IPv4 por puerto de destino 443; combinar con `proto 6` para HTTPS por TCP.
+- **Parámetros:** `dport 443`: puerto destino 443; por sí solo no limita a TCP. Complementar con filtros de origen y destino.
+- **Ejemplo de uso:** Seguir una conexión HTTPS/TCP fallida hacia un servidor del laboratorio sin recopilar otros puertos.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
+
+> No probado en laboratorio. Antes de iniciar, limitar IP/protocolo/trazas; al finalizar: `diagnose debug disable`, `diagnose debug flow trace stop` y `diagnose debug reset`.
+
+## `diagnose debug flow filter sport 12345`
+
+```text
+diagnose debug flow filter sport 12345
+```
+
+- **Sirve para:** Limitar la traza de flujo a paquetes con el puerto de origen de ejemplo 12345.
+- **Parámetros:** `sport 12345`: puerto origen de transporte; sustituir por el puerto real del cliente; combinar con filtros IP/protocolo.
+- **Ejemplo de uso:** Seguir una sesión con puerto efímero conocido mientras se revisa la selección de políticas.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
+
+> No probado en laboratorio. Antes de iniciar, limitar IP/protocolo/trazas; al finalizar: `diagnose debug disable`, `diagnose debug flow trace stop` y `diagnose debug reset`.
+
+## `diagnose debug flow filter vd -1`
+
+```text
+diagnose debug flow filter vd -1
+```
+
+- **Sirve para:** Configurar el filtro de VDOM del debug flow IPv4 para incluir todos los VDOM, cuando sea compatible.
+- **Parámetros:** `vd -1`: incluye todos los dominios virtuales; `-1` amplía el alcance. Combinar con filtros IP/puerto y límite de trazas.
+- **Ejemplo de uso:** Comparar decisiones de tráfico entre VDOM durante un diagnóstico controlado de enrutamiento inter-VDOM.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
+
+> No probado en laboratorio. Usar únicamente durante diagnóstico autorizado, limitar la captura y detener al terminar con `diagnose debug disable`, `diagnose debug flow trace stop`, `diagnose debug reset`.
+
+## `diagnose debug flow filter6 addr 2001:db8::10`
+
+```text
+diagnose debug flow filter6 addr 2001:db8::10
+```
+
+- **Sirve para:** Restringir el debug flow IPv6 a una dirección de host IPv6 del rango de documentación.
+- **Parámetros:** `filter6`: filtros de flujo IPv6; `addr`: dirección IPv6 del host; `2001:db8::10`: reemplazar por destino autorizado.
+- **Ejemplo de uso:** Diagnosticar discrepancias en políticas o rutas IPv6 sin recopilar todos los flujos IPv6.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
+
+> No probado en laboratorio. Usar únicamente durante diagnóstico autorizado, limitar la captura y detener al terminar con `diagnose debug disable`, `diagnose debug flow trace stop`, `diagnose debug reset`.
+
+## `diagnose debug application ike -1`
+
+```text
+diagnose debug application ike -1
+```
+
+- **Sirve para:** Configurar diagnóstico detallado del proceso IKE para investigar negociaciones de VPN IPsec.
+- **Parámetros:** `application ike`: proceso IKE; `-1`: nivel detallado. Requiere `diagnose debug enable` para mostrar salida; usar filtros IKE cuando existan.
+- **Ejemplo de uso:** Analizar fallas de negociación Fase 1/Fase 2 de una VPN durante una ventana de mantenimiento.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.0.0/secgw-for-mobile-networks-deployment/945456
+
+> No probado en laboratorio. Usar únicamente durante diagnóstico autorizado, limitar la captura y detener al terminar con `diagnose debug disable`, `diagnose debug reset`.
+
+## `diagnose debug application dnsproxy -1`
+
+```text
+diagnose debug application dnsproxy -1
+```
+
+- **Sirve para:** Configurar debug detallado del proceso DNS proxy para investigar fallas de resolución o filtrado DNS en FortiGate.
+- **Parámetros:** `application dnsproxy`: servicio DNS proxy; `-1`: nivel detallado; además se requiere `diagnose debug enable` para mostrar registros.
+- **Ejemplo de uso:** Analizar fallas de DNS Filter o del proxy DNS durante una prueba breve de un cliente autorizado.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.6/administration-guide/150448/troubleshooting-for-dns-filter
+
+> No probado en laboratorio. Activar solo durante un diagnóstico autorizado con `diagnose debug enable`; detener luego con `diagnose debug disable` y `diagnose debug reset`. Revisar y proteger la salida por posibles datos sensibles.
+
+## `diagnose debug application fnbamd -1`
+
+```text
+diagnose debug application fnbamd -1
+```
+
+- **Sirve para:** Configurar debug detallado del demonio de autenticación remota del FortiGate.
+- **Parámetros:** `application fnbamd`: proceso de autenticación remota; `-1`: nivel detallado; salida tras `diagnose debug enable`.
+- **Ejemplo de uso:** Investigar una falla RADIUS/LDAP en pruebas autorizadas de VPN o portal cautivo; los logs pueden contener identificadores sensibles.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/latest/administration-guide/502390/debug-commands
+
+> No probado en laboratorio. Activar solo durante un diagnóstico autorizado con `diagnose debug enable`; detener luego con `diagnose debug disable` y `diagnose debug reset`. Revisar y proteger la salida por posibles datos sensibles.
+
+## `diagnose debug application update -1`
+
+```text
+diagnose debug application update -1
+```
+
+- **Sirve para:** Configurar registros detallados del proceso de actualización FortiGuard durante problemas de conectividad.
+- **Parámetros:** `application update`: servicio de actualizaciones FortiGuard; `-1`: nivel detallado; requiere `diagnose debug enable` para emitir salida.
+- **Ejemplo de uso:** Investigar por qué un FortiGate de laboratorio no descarga actualizaciones AV/IPS/FortiGuard, limitando la salida y protegiendo logs.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966/cli-troubleshooting-cheat-sheet
+
+> No probado en laboratorio. Activar solo durante un diagnóstico autorizado con `diagnose debug enable`; detener luego con `diagnose debug disable` y `diagnose debug reset`. Revisar y proteger la salida por posibles datos sensibles.
+
+## `diagnose debug application miglogd 0x1000`
+
+```text
+diagnose debug application miglogd 0x1000
+```
+
+- **Sirve para:** Configurar un nivel de diagnóstico específico del demonio de logs para inspeccionar filtros de búsqueda, cuando sea compatible.
+- **Parámetros:** `application miglogd`: proceso de logging; `0x1000`: máscara documentada para filtros de búsqueda; requiere habilitar la salida debug.
+- **Ejemplo de uso:** Investigar filtros de búsqueda durante el diagnóstico de registros/FortiAnalyzer sin activar debug general sin restricciones.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.1/administration-guide/668197
+
+> No probado en laboratorio. Activar solo durante un diagnóstico autorizado con `diagnose debug enable`; detener luego con `diagnose debug disable` y `diagnose debug reset`. Revisar y proteger la salida por posibles datos sensibles.

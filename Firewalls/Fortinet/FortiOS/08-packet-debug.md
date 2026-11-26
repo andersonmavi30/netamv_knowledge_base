@@ -188,3 +188,133 @@ diagnose debug enable
 - **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
 
 > Not lab-verified; stop using `diagnose debug disable`, `diagnose debug flow trace stop`, and `diagnose debug reset`.
+
+## `diagnose debug flow filter proto 6`
+
+```text
+diagnose debug flow filter proto 6
+```
+
+- **Purpose:** Restrict IPv4 flow tracing to TCP traffic (IP protocol number 6).
+- **Arguments:** `flow filter`: IPv4 flow-filter settings; `proto 6`: TCP protocol number. Configure a host filter and bounded trace before enabling debug.
+- **Use case:** Diagnose TCP connection denial while excluding UDP and ICMP from flow output.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
+
+> Not lab-verified. Scope IP/protocol/trace count before starting; afterwards run `diagnose debug disable`, `diagnose debug flow trace stop`, and `diagnose debug reset`.
+
+## `diagnose debug flow filter dport 443`
+
+```text
+diagnose debug flow filter dport 443
+```
+
+- **Purpose:** Restrict IPv4 flow tracing to destination TCP/UDP port 443; combine with `proto 6` for HTTPS over TCP.
+- **Arguments:** `dport 443`: destination port 443; the filter is not inherently TCP-only; narrow source/destination IP as well.
+- **Use case:** Trace a failed HTTPS/TCP connection to a lab server without dumping unrelated ports.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
+
+> Not lab-verified. Scope IP/protocol/trace count before starting; afterwards run `diagnose debug disable`, `diagnose debug flow trace stop`, and `diagnose debug reset`.
+
+## `diagnose debug flow filter sport 12345`
+
+```text
+diagnose debug flow filter sport 12345
+```
+
+- **Purpose:** Restrict flow tracing to packets with an example source port of 12345.
+- **Arguments:** `sport 12345`: source transport-layer port; replace with the observed client source port; combine with address/protocol filters.
+- **Use case:** Follow one client connection with a known ephemeral source port while diagnosing policy selection.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
+
+> Not lab-verified. Scope IP/protocol/trace count before starting; afterwards run `diagnose debug disable`, `diagnose debug flow trace stop`, and `diagnose debug reset`.
+
+## `diagnose debug flow filter vd -1`
+
+```text
+diagnose debug flow filter vd -1
+```
+
+- **Purpose:** Set the IPv4 flow-debug VDOM filter to match all VDOM IDs, where supported.
+- **Arguments:** `vd -1`: match all virtual domains; `-1` broadens rather than narrows the scope; apply IP/port filters and a limited trace count.
+- **Use case:** Compare policy-flow decisions across multiple VDOMs during a controlled inter-VDOM routing investigation.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
+
+> Not lab-verified. Use only during authorized, scoped diagnostics; finish with `diagnose debug disable`, `diagnose debug flow trace stop`, `diagnose debug reset`.
+
+## `diagnose debug flow filter6 addr 2001:db8::10`
+
+```text
+diagnose debug flow filter6 addr 2001:db8::10
+```
+
+- **Purpose:** Restrict IPv6 flow debugging to a documentation-range IPv6 host address.
+- **Arguments:** `filter6`: IPv6 flow filters; `addr`: match host IPv6 address; `2001:db8::10`: replace with a real authorized target.
+- **Use case:** Diagnose a policy or route mismatch for IPv6 traffic without collecting all IPv6 flows.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
+
+> Not lab-verified. Use only during authorized, scoped diagnostics; finish with `diagnose debug disable`, `diagnose debug flow trace stop`, `diagnose debug reset`.
+
+## `diagnose debug application ike -1`
+
+```text
+diagnose debug application ike -1
+```
+
+- **Purpose:** Set verbose diagnostic output for the IKE daemon when investigating IPsec VPN negotiation.
+- **Arguments:** `application ike`: IKE daemon; `-1`: verbose debug level. Requires `diagnose debug enable` to display output; scope IKE logging where supported.
+- **Use case:** Inspect failed Phase 1/Phase 2 VPN negotiation in a short authorized maintenance window.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.0.0/secgw-for-mobile-networks-deployment/945456
+
+> Not lab-verified. Use only during authorized, scoped diagnostics; finish with `diagnose debug disable`, `diagnose debug reset`.
+
+## `diagnose debug application dnsproxy -1`
+
+```text
+diagnose debug application dnsproxy -1
+```
+
+- **Purpose:** Set detailed DNS proxy daemon debugging to investigate FortiGate DNS-proxy or DNS-filter behavior.
+- **Arguments:** `application dnsproxy`: DNS proxy service; `-1`: verbose debug level; `diagnose debug enable` is also required to emit messages.
+- **Use case:** Troubleshoot DNS Filter categorization or DNS proxy failures for a bounded test on an authorized client.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.6/administration-guide/150448/troubleshooting-for-dns-filter
+
+> Not lab-verified. Enable output only for authorized diagnostics using `diagnose debug enable`; then stop with `diagnose debug disable` and `diagnose debug reset`. Review and protect possibly sensitive output.
+
+## `diagnose debug application fnbamd -1`
+
+```text
+diagnose debug application fnbamd -1
+```
+
+- **Purpose:** Set detailed debug for the authentication daemon used in remote-user authentication.
+- **Arguments:** `application fnbamd`: remote authentication daemon; `-1`: verbose level; output begins after `diagnose debug enable`.
+- **Use case:** Investigate a RADIUS/LDAP authentication failure during authorized VPN or captive-portal testing; logs may contain sensitive identifiers.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/latest/administration-guide/502390/debug-commands
+
+> Not lab-verified. Enable output only for authorized diagnostics using `diagnose debug enable`; then stop with `diagnose debug disable` and `diagnose debug reset`. Review and protect possibly sensitive output.
+
+## `diagnose debug application update -1`
+
+```text
+diagnose debug application update -1
+```
+
+- **Purpose:** Set detailed logging for the FortiGuard update daemon during update/connectivity troubleshooting.
+- **Arguments:** `application update`: FortiGuard update service; `-1`: verbose level; combine with `diagnose debug enable` for output.
+- **Use case:** Investigate why a lab FortiGate cannot download AV/IPS/FortiGuard package updates; limit output and protect token-bearing logs.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966/cli-troubleshooting-cheat-sheet
+
+> Not lab-verified. Enable output only for authorized diagnostics using `diagnose debug enable`; then stop with `diagnose debug disable` and `diagnose debug reset`. Review and protect possibly sensitive output.
+
+## `diagnose debug application miglogd 0x1000`
+
+```text
+diagnose debug application miglogd 0x1000
+```
+
+- **Purpose:** Set a targeted debug level on the log daemon to inspect log-search filter strings, where supported.
+- **Arguments:** `application miglogd`: logging daemon; `0x1000`: documented diagnostic bitmask for log-search filters; requires debug output enabled.
+- **Use case:** Investigate log-search filtering during FortiAnalyzer/log troubleshooting without enabling an unrestricted general log debug.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.1/administration-guide/668197
+
+> Not lab-verified. Enable output only for authorized diagnostics using `diagnose debug enable`; then stop with `diagnose debug disable` and `diagnose debug reset`. Review and protect possibly sensitive output.
