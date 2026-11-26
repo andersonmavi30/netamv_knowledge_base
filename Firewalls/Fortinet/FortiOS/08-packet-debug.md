@@ -305,3 +305,16 @@ diagnose debug application update -1
 - **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966/cli-troubleshooting-cheat-sheet
 
 > Not lab-verified. Enable output only for authorized diagnostics using `diagnose debug enable`; then stop with `diagnose debug disable` and `diagnose debug reset`. Review and protect possibly sensitive output.
+
+## `diagnose debug application miglogd 0x1000`
+
+```text
+diagnose debug application miglogd 0x1000
+```
+
+- **Purpose:** Set a targeted debug level on the log daemon to inspect log-search filter strings, where supported.
+- **Arguments:** `application miglogd`: logging daemon; `0x1000`: documented diagnostic bitmask for log-search filters; requires debug output enabled.
+- **Use case:** Investigate log-search filtering during FortiAnalyzer/log troubleshooting without enabling an unrestricted general log debug.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.1/administration-guide/668197
+
+> Not lab-verified. Enable output only for authorized diagnostics using `diagnose debug enable`; then stop with `diagnose debug disable` and `diagnose debug reset`. Review and protect possibly sensitive output.

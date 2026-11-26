@@ -305,3 +305,16 @@ diagnose debug application update -1
 - **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.0/cli-troubleshooting-cheat-sheet/420966/cli-troubleshooting-cheat-sheet
 
 > No probado en laboratorio. Activar solo durante un diagnóstico autorizado con `diagnose debug enable`; detener luego con `diagnose debug disable` y `diagnose debug reset`. Revisar y proteger la salida por posibles datos sensibles.
+
+## `diagnose debug application miglogd 0x1000`
+
+```text
+diagnose debug application miglogd 0x1000
+```
+
+- **Sirve para:** Configurar un nivel de diagnóstico específico del demonio de logs para inspeccionar filtros de búsqueda, cuando sea compatible.
+- **Parámetros:** `application miglogd`: proceso de logging; `0x1000`: máscara documentada para filtros de búsqueda; requiere habilitar la salida debug.
+- **Ejemplo de uso:** Investigar filtros de búsqueda durante el diagnóstico de registros/FortiAnalyzer sin activar debug general sin restricciones.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.1/administration-guide/668197
+
+> No probado en laboratorio. Activar solo durante un diagnóstico autorizado con `diagnose debug enable`; detener luego con `diagnose debug disable` y `diagnose debug reset`. Revisar y proteger la salida por posibles datos sensibles.
