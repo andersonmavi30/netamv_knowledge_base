@@ -253,3 +253,16 @@ diagnose debug flow filter6 addr 2001:db8::10
 - **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
 
 > No probado en laboratorio. Usar únicamente durante diagnóstico autorizado, limitar la captura y detener al terminar con `diagnose debug disable`, `diagnose debug flow trace stop`, `diagnose debug reset`.
+
+## `diagnose debug application ike -1`
+
+```text
+diagnose debug application ike -1
+```
+
+- **Sirve para:** Configurar diagnóstico detallado del proceso IKE para investigar negociaciones de VPN IPsec.
+- **Parámetros:** `application ike`: proceso IKE; `-1`: nivel detallado. Requiere `diagnose debug enable` para mostrar salida; usar filtros IKE cuando existan.
+- **Ejemplo de uso:** Analizar fallas de negociación Fase 1/Fase 2 de una VPN durante una ventana de mantenimiento.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.0.0/secgw-for-mobile-networks-deployment/945456
+
+> No probado en laboratorio. Usar únicamente durante diagnóstico autorizado, limitar la captura y detener al terminar con `diagnose debug disable`, `diagnose debug reset`.
