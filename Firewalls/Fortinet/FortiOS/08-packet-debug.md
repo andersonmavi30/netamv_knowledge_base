@@ -266,3 +266,16 @@ diagnose debug application ike -1
 - **Official reference:** https://docs.fortinet.com/document/fortigate/7.0.0/secgw-for-mobile-networks-deployment/945456
 
 > Not lab-verified. Use only during authorized, scoped diagnostics; finish with `diagnose debug disable`, `diagnose debug reset`.
+
+## `diagnose debug application dnsproxy -1`
+
+```text
+diagnose debug application dnsproxy -1
+```
+
+- **Purpose:** Set detailed DNS proxy daemon debugging to investigate FortiGate DNS-proxy or DNS-filter behavior.
+- **Arguments:** `application dnsproxy`: DNS proxy service; `-1`: verbose debug level; `diagnose debug enable` is also required to emit messages.
+- **Use case:** Troubleshoot DNS Filter categorization or DNS proxy failures for a bounded test on an authorized client.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.6/administration-guide/150448/troubleshooting-for-dns-filter
+
+> Not lab-verified. Enable output only for authorized diagnostics using `diagnose debug enable`; then stop with `diagnose debug disable` and `diagnose debug reset`. Review and protect possibly sensitive output.
