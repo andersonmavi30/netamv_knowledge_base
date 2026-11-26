@@ -227,3 +227,16 @@ diagnose debug flow filter sport 12345
 - **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
 
 > No probado en laboratorio. Antes de iniciar, limitar IP/protocolo/trazas; al finalizar: `diagnose debug disable`, `diagnose debug flow trace stop` y `diagnose debug reset`.
+
+## `diagnose debug flow filter vd -1`
+
+```text
+diagnose debug flow filter vd -1
+```
+
+- **Sirve para:** Configurar el filtro de VDOM del debug flow IPv4 para incluir todos los VDOM, cuando sea compatible.
+- **Parámetros:** `vd -1`: incluye todos los dominios virtuales; `-1` amplía el alcance. Combinar con filtros IP/puerto y límite de trazas.
+- **Ejemplo de uso:** Comparar decisiones de tráfico entre VDOM durante un diagnóstico controlado de enrutamiento inter-VDOM.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
+
+> No probado en laboratorio. Usar únicamente durante diagnóstico autorizado, limitar la captura y detener al terminar con `diagnose debug disable`, `diagnose debug flow trace stop`, `diagnose debug reset`.

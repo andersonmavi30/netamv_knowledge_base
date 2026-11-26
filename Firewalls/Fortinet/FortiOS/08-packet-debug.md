@@ -227,3 +227,16 @@ diagnose debug flow filter sport 12345
 - **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
 
 > Not lab-verified. Scope IP/protocol/trace count before starting; afterwards run `diagnose debug disable`, `diagnose debug flow trace stop`, and `diagnose debug reset`.
+
+## `diagnose debug flow filter vd -1`
+
+```text
+diagnose debug flow filter vd -1
+```
+
+- **Purpose:** Set the IPv4 flow-debug VDOM filter to match all VDOM IDs, where supported.
+- **Arguments:** `vd -1`: match all virtual domains; `-1` broadens rather than narrows the scope; apply IP/port filters and a limited trace count.
+- **Use case:** Compare policy-flow decisions across multiple VDOMs during a controlled inter-VDOM routing investigation.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
+
+> Not lab-verified. Use only during authorized, scoped diagnostics; finish with `diagnose debug disable`, `diagnose debug flow trace stop`, `diagnose debug reset`.
