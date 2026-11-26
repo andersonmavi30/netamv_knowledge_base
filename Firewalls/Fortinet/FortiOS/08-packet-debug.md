@@ -240,3 +240,16 @@ diagnose debug flow filter vd -1
 - **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
 
 > Not lab-verified. Use only during authorized, scoped diagnostics; finish with `diagnose debug disable`, `diagnose debug flow trace stop`, `diagnose debug reset`.
+
+## `diagnose debug flow filter6 addr 2001:db8::10`
+
+```text
+diagnose debug flow filter6 addr 2001:db8::10
+```
+
+- **Purpose:** Restrict IPv6 flow debugging to a documentation-range IPv6 host address.
+- **Arguments:** `filter6`: IPv6 flow filters; `addr`: match host IPv6 address; `2001:db8::10`: replace with a real authorized target.
+- **Use case:** Diagnose a policy or route mismatch for IPv6 traffic without collecting all IPv6 flows.
+- **Official reference:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
+
+> Not lab-verified. Use only during authorized, scoped diagnostics; finish with `diagnose debug disable`, `diagnose debug flow trace stop`, `diagnose debug reset`.
