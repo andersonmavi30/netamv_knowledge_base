@@ -201,3 +201,16 @@ diagnose debug flow filter proto 6
 - **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
 
 > No probado en laboratorio. Antes de iniciar, limitar IP/protocolo/trazas; al finalizar: `diagnose debug disable`, `diagnose debug flow trace stop` y `diagnose debug reset`.
+
+## `diagnose debug flow filter dport 443`
+
+```text
+diagnose debug flow filter dport 443
+```
+
+- **Sirve para:** Filtrar el debug flow IPv4 por puerto de destino 443; combinar con `proto 6` para HTTPS por TCP.
+- **Parámetros:** `dport 443`: puerto destino 443; por sí solo no limita a TCP. Complementar con filtros de origen y destino.
+- **Ejemplo de uso:** Seguir una conexión HTTPS/TCP fallida hacia un servidor del laboratorio sin recopilar otros puertos.
+- **Referencia oficial:** https://docs.fortinet.com/document/fortigate/7.4.10/administration-guide/54688/debugging-the-packet-flow
+
+> No probado en laboratorio. Antes de iniciar, limitar IP/protocolo/trazas; al finalizar: `diagnose debug disable`, `diagnose debug flow trace stop` y `diagnose debug reset`.
