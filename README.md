@@ -46,3 +46,17 @@ Use the [English](Templates/command-reference.md) or [Spanish](Templates/command
 ## 📄 License
 
 Original documentation © 2026 Anderson Martínez Virviescas · [CC BY 4.0](LICENSE). Trademarks belong to their owners.
+
+
+---
+
+## 🧭 Current repository scope
+
+Bilingual CLI knowledge base covering firewalls, networking, Linux, Git, Docker, Ansible, Python, Podman and NetDevOps.
+
+This README is kept aligned with the repository’s current implementation and documentation structure. Contributions, experiments and improvements should preserve reproducibility, security and clear operational intent.
+
+## ✍️ Author
+
+**Anderson Martinez Virviescas**  
+*Network Administrator | Firewall Administrator | Linux Administrator | NetDevOps - Network Automation Specialist*
