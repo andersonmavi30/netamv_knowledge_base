@@ -46,3 +46,17 @@ Usa la [plantilla en español](Templates/command-reference.es.md) o [en inglés]
 ## 📄 Licencia
 
 Documentación original © 2026 Anderson Martínez Virviescas · [CC BY 4.0](LICENSE). Las marcas pertenecen a sus titulares.
+
+
+---
+
+## 🧭 Alcance actual del repositorio
+
+Base de conocimiento CLI bilingüe sobre firewalls, networking, Linux, Git, Docker, Ansible, Python, Podman y NetDevOps.
+
+Este README se mantiene alineado con la implementación y la estructura documental actual del repositorio. Las contribuciones, experimentos y mejoras deben conservar la reproducibilidad, la seguridad y una intención operativa clara.
+
+## ✍️ Autor
+
+**Anderson Martinez Virviescas**  
+*Network Administrator | Firewall Administrator | Linux Administrator | NetDevOps - Network Automation Specialist*
